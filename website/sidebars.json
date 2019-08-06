@@ -1,6 +1,8 @@
 {
   "docs": {
+    "Docusaurus": ["hello-world"]
   },
   "docs-other": {
+    "Docusaurus2": ["hello-world"]
   }
 }

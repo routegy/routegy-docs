@@ -14,3 +14,12 @@
 
 @media only screen and (min-width: 1500px) {
 }
+
+
+.nav-footer .footer-logo {
+    display: block;
+    margin: 1em auto;
+    opacity: 0.4;
+    transition: opacity 0.15s ease-in-out;
+    width: 170px;
+  }

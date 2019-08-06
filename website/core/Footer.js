@@ -1,10 +1,3 @@
-/**
- * Copyright (c) 2017-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
 const React = require('react');
 
 class Footer extends React.Component {
@@ -36,14 +29,14 @@ class Footer extends React.Component {
             )}
           </a>
           <div>
-            <h5>Docs</h5>
-            <a href={this.docUrl('doc1.html', this.props.language)}>
-              Getting Started (or other categories)
+            <h5>Documentation</h5>
+            <a href={this.docUrl('routable-api.html', this.props.language)}>
+              Routable API
             </a>
-            <a href={this.docUrl('doc2.html', this.props.language)}>
+            <a href={this.docUrl('routable-web.html', this.props.language)}>
               Guides (or other categories)
             </a>
-            <a href={this.docUrl('doc3.html', this.props.language)}>
+            <a href={this.docUrl('routable-touch.html', this.props.language)}>
               API Reference (or other categories)
             </a>
           </div>
@@ -105,13 +98,13 @@ class Footer extends React.Component {
         </section>
 
         <a
-          href="https://opensource.facebook.com/"
+          href="https://getroutable.com/"
           target="_blank"
           rel="noreferrer noopener"
-          className="fbOpenSource">
+          className="footer-logo">
           <img
             src={`${this.props.config.baseUrl}img/oss_logo.png`}
-            alt="Facebook Open Source"
+            alt="Routable Inc."
             width="170"
             height="45"
           />
