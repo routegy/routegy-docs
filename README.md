@@ -1,5 +1,7 @@
 # routegy-docs
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/d2eadfbb-4a38-42f9-8b75-896a01be7edc/deploy-status)](https://app.netlify.com/sites/routegy-docs/deploys)
+
 Public documentation for Routegy
 
 ## Status
