@@ -2,12 +2,14 @@
 
 TS        ?= $(shell date -u)
 COMMIT    ?= $(shell git rev-parse --short HEAD)
+YARN      := yarn
+YARN_RUN  := $(YARN) run
 VUEPRESS  := vuepress
 BUILD_DIR := .vuepress/dist
 
 .PHONY: build
 build:  ## Build site.
-	@$(VUEPRESS) build
+	@$(YARN_RUN) build
 
 .PHONY: clean
 clean:  ## Clean local compiled site.
@@ -15,7 +17,7 @@ clean:  ## Clean local compiled site.
 
 .PHONY: serve
 serve: ## Serve locally at http://localhost:8080.
-	@$(VUEPRESS) dev
+	@$(YARN_RUN) serve
 
 .phony: help
 help: ## Print Makefile usage.
