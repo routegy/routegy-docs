@@ -10,5 +10,6 @@ module.exports = {
         sidebar: 'auto',
         repo: 'getroutable/routable-docs',
         editLinks: true,
+        lastUpdated: true
     }
   }
