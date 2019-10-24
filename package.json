@@ -10,7 +10,7 @@
     "private": false,
     "scripts": {
         "docs:build": "vuepress build docs",
-        "docs:clean": "rm -rm docs/.vuepress/dist",
+        "docs:clean": "rm -rf docs/.vuepress/dist",
         "docs:serve": "vuepress dev docs"
     },
     "dependencies": {
