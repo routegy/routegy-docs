@@ -9,8 +9,9 @@
     },
     "private": false,
     "scripts": {
-        "build": "vuepress build",
-        "serve": "vuepress dev"
+        "docs:build": "vuepress build docs",
+        "docs:clean": "rm -rm docs/.vuepress/dist",
+        "docs:serve": "vuepress dev docs"
     },
     "dependencies": {
         "vuepress": "^1.2.0"

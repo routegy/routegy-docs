@@ -6,8 +6,9 @@ module.exports = {
             { text: 'Reference', link: '/reference/' },
             { text: 'Topic', link: '/topic/' },
             { text: 'Tutorial', link: '/tutorial/' },
-            { text: 'GitHub', link: 'https://github.com/getroutable/routable-docs' },
         ],
-        sidebar: 'auto'
+        sidebar: 'auto',
+        repo: 'getroutable/routable-docs',
+        editLinks: true,
     }
   }
