@@ -1,9 +1,24 @@
 ---
-title: Touches
+title: "Reference: Touches"
 description: "Routegy Touches"
 sidebar: false
 ---
 
 # Touches
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed gravida arcu eget leo scelerisque finibus. Duis porttitor risus est, non finibus nulla posuere at. Sed sed est fermentum lacus hendrerit imperdiet a eu augue. Cras pellentesque eros vel posuere lacinia. Sed a quam sed massa pharetra pulvinar sed at justo. Cras iaculis tortor at libero tincidunt, a aliquam enim faucibus. Sed dui magna, feugiat eu libero eu, pulvinar bibendum odio. Nulla accumsan ipsum eu risus tincidunt interdum. Aenean dictum suscipit tellus, ut elementum tellus. Maecenas placerat laoreet est, eget pharetra nulla. Sed ex elit, lacinia at vestibulum ac, pharetra eget est. Integer ullamcorper consequat magna ut vehicula. Sed sed diam eu enim feugiat sagittis.
+Touches are created when people interact with a [touchpoint](/reference/touchpoints).
+
+A touch contains [schema values](/references/schema-values) data needed to fulfill the [schema](/refernces/schema) of the [touchpoint](/reference/touchpoints).
+
+Each touch created will be run through every [touch handler](/references/touch-handlers) attached to its [touchpoint](/reference/touchpoints).
+
+## Relations
+
+A touch is made up of the following relations:
+
+* [Touchpoint](/reference/touchpoints) (many-to-one)
+* [SchemaValues](/reference/schemas) (many-to-one)
+
+## Permissions
+
+Touches inherit permissions from their [Workspace](/reference/workspaces) and its [Organization](/reference/organizations) through it's [Location](/reference/locations). Read more about how permission inheritance [here](/reference/permissions).
