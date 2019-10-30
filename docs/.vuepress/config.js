@@ -1,6 +1,6 @@
 module.exports = {
     head: [
-        ['link', { rel: 'icon', href: `/logo.png` }],
+        ['link', { rel: 'icon', href: `/favicon.ico` }],
         ['meta', { name: 'theme-color', content: '#25135f' }]
     ],
     themeConfig: {
