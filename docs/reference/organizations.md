@@ -1,5 +1,5 @@
 ---
-title: Organizations
+title: "Reference: Organizations"
 description: "Routegy Organizations"
 sidebar: false
 ---

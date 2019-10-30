@@ -1,5 +1,5 @@
 ---
-title: Locations
+title: "Reference: Locations"
 description: "Routegy Locations"
 sidebar: false
 ---
