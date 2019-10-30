@@ -5,14 +5,7 @@ sidebar: false
 home: true
 heroText: Routegy
 heroImage: /logo.png
-actionText: "Get Started"
+actionText: "Get started"
 actionLink: /intro
-features:
-- title: Report
-  details: Instantly with a simple tap-and-go
-- title: Receive
-  details: Location-aware notifications immediately
-- title: Resolve
-  details: Issues directly at the source
-footer: © 2018-2019 Routegy, Inc.
+footer: © 2019 Routegy, Inc.
 ---
