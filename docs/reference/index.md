@@ -21,6 +21,6 @@ If you're currently asking yourself a "How does this work..." question, you're i
 * [Schemas & SchemaValues](/reference/schemas)
 * [Touch Handler Types](/reference/touch-handler-types)
 * [Touch Handlers](/reference/touch-handlers)
-* [Touch Points](/reference/touch-points)
+* [Touchpoints](/reference/touchpoints)
 * [Touches](/reference/touches)
 * [Workspaces](/reference/workspaces)
