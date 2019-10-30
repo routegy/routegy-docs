@@ -30,3 +30,7 @@ A touchpoint is made up of the following relations:
 * [TouchHandler](/reference/touch-handlers) (many-to-many)
 * [Touch](/reference/touches) (one-to-many)
 * [Code](/reference/codes) (one-to-one)
+
+## Permissions
+
+Touchpoints inherit permissions from their [Workspace](/reference/workspaces) and its [Organization](/reference/organizations) through it's [Location](/reference/locations). Read more about how permission inheritance [here](/reference/permissions).
