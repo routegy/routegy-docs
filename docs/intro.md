@@ -6,7 +6,9 @@ sidebar: false
 
 ## What is Routegy?
 
-[Routegy](https://routegy.com) empowers the people in your facilities to report issues quickly and easily.
+Reporting issues around the workplace is painful, and people wait until things are dire or never report at all. This leads to unhappy employees and an operations team that’s constantly putting out fires.
+
+[Routegy](https://routegy.com) simplifies the workplace experience by making it quick and easy for people to report issues and make requests. Issues are reported by scanning QR codes or NFC tags (no app required), pressing IoT buttons, or triggering sensors. They are then routed to the destination of your choice, whether that’s a CMMS, email, text, or whatever combination of tools you use for your business. With Routegy, you’ll discover issues faster and keep people happy.
 
 ## How the documentation is organized
 
