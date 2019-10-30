@@ -1,9 +1,29 @@
 ---
-title: Touch Handler Types
-description: "Routegy Touch Handler Types"
+title: "Reference: Touch Handler Types"
+description: "Routegy Touch Handlers Types"
 sidebar: false
 ---
 
 # Touch Handler Types
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed gravida arcu eget leo scelerisque finibus. Duis porttitor risus est, non finibus nulla posuere at. Sed sed est fermentum lacus hendrerit imperdiet a eu augue. Cras pellentesque eros vel posuere lacinia. Sed a quam sed massa pharetra pulvinar sed at justo. Cras iaculis tortor at libero tincidunt, a aliquam enim faucibus. Sed dui magna, feugiat eu libero eu, pulvinar bibendum odio. Nulla accumsan ipsum eu risus tincidunt interdum. Aenean dictum suscipit tellus, ut elementum tellus. Maecenas placerat laoreet est, eget pharetra nulla. Sed ex elit, lacinia at vestibulum ac, pharetra eget est. Integer ullamcorper consequat magna ut vehicula. Sed sed diam eu enim feugiat sagittis.
+A touch handler type represents a type of action that can be run for every [touch](/reference/touches) created by a [touchpoint](/reference/touchpoints).
+
+Some examples of touch handler types could be:
+
+* Send SMS
+* Send email
+* Create ticket in the Trello board
+* Send pager alert via Pagerduty
+* Invoke AWS Lambda function
+
+## Relations
+
+A touch handler type is made up of the following relations:
+
+* [Workspace](/reference/workspaces) (many-to-one)
+* [Schema](/reference/schemas) (many-to-one)
+* [TouchHandler](/reference/touch-handlers) (one-to-many)
+
+## Permissions
+
+Touch handler types inherit permissions from their [Workspace](/reference/workspaces) and its [Organization](/reference/organizations). Read more about permission inheritance [here](/reference/permissions).
