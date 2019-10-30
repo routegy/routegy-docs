@@ -1,9 +1,30 @@
 ---
-title: Touch Handlers
+title: "Reference: Touch Handlers"
 description: "Routegy Touch Handlers"
 sidebar: false
 ---
 
 # Touch Handlers
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed gravida arcu eget leo scelerisque finibus. Duis porttitor risus est, non finibus nulla posuere at. Sed sed est fermentum lacus hendrerit imperdiet a eu augue. Cras pellentesque eros vel posuere lacinia. Sed a quam sed massa pharetra pulvinar sed at justo. Cras iaculis tortor at libero tincidunt, a aliquam enim faucibus. Sed dui magna, feugiat eu libero eu, pulvinar bibendum odio. Nulla accumsan ipsum eu risus tincidunt interdum. Aenean dictum suscipit tellus, ut elementum tellus. Maecenas placerat laoreet est, eget pharetra nulla. Sed ex elit, lacinia at vestibulum ac, pharetra eget est. Integer ullamcorper consequat magna ut vehicula. Sed sed diam eu enim feugiat sagittis.
+A touch handler is an action that is run for every [touch](/reference/touches) created by a [touchpoint](/reference/touchpoints).
+
+A touch handler joins a [touch handler type](/reference/touch-handler-types) with [schema values](/reference/schema-values). For example, "Send SMS" would be the touch handler type and "+1-123-123-1234" would be the phone number in the schema values.
+
+Some examples of touch handlers could be:
+
+* Send SMS to `+1-123-123-1234`
+* Send email to `john@example.com`
+* Create ticket in the `Routegy` Trello board
+* Send pager alert to `user@example.com` via PagerDuty
+
+## Relations
+
+A touch handler is made up of the following relations:
+
+* [TouchHandlerType](/reference/touch-handler-types) (many-to-one)
+* [SchemaValues](/reference/schema-values) (many-to-one)
+* [Touchpoint](/reference/touchpoints) (many-to-many)
+
+## Permissions
+
+Touch handlers inherit permissions from their [Workspace](/reference/workspaces) and its [Organization](/reference/organizations). Read more about permission inheritance [here](/reference/permissions).
