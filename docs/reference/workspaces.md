@@ -44,7 +44,7 @@ The [user](/reference/users) that created the workspace is automatically added t
 
 [Users](/reference/users) must have permissions (directly or through a [Team](/reference/teams) membership) in order to interact with individual workspace. Workspaces support the following permissions:
 
-* [Add](/reference/permissions#add) - Required to create new organization
-* [Change](/reference/permissions#change) - Required to modify existing organization
-* [Delete](/reference/permissions#delete) - Required to delete existing organization
-* [View](/reference/permissions#view) - Required to view existing organization
+* [Add](/reference/permissions#add) - Required to create new workspace
+* [Change](/reference/permissions#change) - Required to modify existing workspace
+* [Delete](/reference/permissions#delete) - Required to delete existing workspace
+* [View](/reference/permissions#view) - Required to view existing workspace
