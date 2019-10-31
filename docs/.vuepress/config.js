@@ -4,6 +4,14 @@ module.exports = {
         ['link', { rel: 'icon', href: `/favicon.ico` }],
         ['meta', { name: 'theme-color', content: '#25135f' }]
     ],
+    plugins: [
+        [
+            '@vuepress/google-analytics',
+            {
+                'ga': 'UA-150728185-2'
+            }
+        ]
+    ],
     themeConfig: {
         nav: [
             { text: 'Home', link: '/' },
