@@ -1,5 +1,6 @@
 module.exports = {
     title: "Routegy",
+    description: "Documentation for Routegy (https://routegy.com)",
     head: [
         ['link', { rel: 'icon', href: `/favicon.ico` }],
         ['meta', { name: 'theme-color', content: '#25135f' }]
