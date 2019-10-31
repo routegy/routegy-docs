@@ -1,4 +1,5 @@
 module.exports = {
+    title: "Routegy",
     head: [
         ['link', { rel: 'icon', href: `/favicon.ico` }],
         ['meta', { name: 'theme-color', content: '#25135f' }]
