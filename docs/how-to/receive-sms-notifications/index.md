@@ -1,5 +1,5 @@
 ---
-title: "How-to: SMS Notifications"
+title: "How to receive SMS notifications with Routegy"
 description: "How to receive SMS notifications"
 sidebar: false
 ---
