@@ -1,5 +1,5 @@
 module.exports = {
-    title: "Routegy",
+    title: "Routegy Docs",
     description: "Documentation for Routegy (https://routegy.com)",
     head: [
         ['link', { rel: 'icon', href: `/favicon.ico` }],
