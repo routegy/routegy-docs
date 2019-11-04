@@ -20,14 +20,14 @@ Some examples of an organization could be:
 
 An organization is made up of the following relations:
 
-* [Contact](/reference/contacts) (many-to-one)
-* [Workspace](/reference/workspaces) (one-to-many)
-* [Team](/reference/teams) (one-to-many)
-* [User](/reference/users) (one-to-many)
+* [Contact](/reference/contacts.html) (many-to-one)
+* [Workspace](/reference/workspaces.html) (one-to-many)
+* [Team](/reference/teams.html) (one-to-many)
+* [User](/reference/users.html) (one-to-many)
 
 ## Personalized Organization
 
-When a [User](/reference/users) is created through the [sign up flow](/topic/signed-up-flow), a personalized organization is automatically created. This organization contains resources that help walk the user through the [sign up walkthrough](/tutorials/signed-up-walkthrough) and quickly get started. This will be named after the user, e.g. "John Smith Organization".
+When a [User](/reference/users.html) is created through the [sign up flow](/topic/signed-up-flow.html), a personalized organization is automatically created. This organization contains resources that help walk the user through the [sign up walkthrough](/tutorials/signed-up-walkthrough.html) and quickly get started. This will be named after the user, e.g. "John Smith Organization".
 
 ## Template Organization
 
@@ -35,25 +35,25 @@ The personalized organization for each new user is created from a clone of the *
 
 ## Users
 
-[Users](/reference/users) can gain permissions to an organization.
+[Users](/reference/users.html) can gain permissions to an organization.
 
 **This feature is not currently used**
 
 ## Teams
 
-[Teams](/reference/teams) can gain permissions to an organization. When an organization is created, the following teams are automatically created:
+[Teams](/reference/teams.html) can gain permissions to an organization. When an organization is created, the following teams are automatically created:
 
-* [Administrators](reference/teams#administrators)
-* [Collaborators](reference/teams#collaborators)
-* [Observers](reference/teams#observers)
+* [Administrators](reference/teams.html#administrators)
+* [Collaborators](reference/teams.html#collaborators)
+* [Observers](reference/teams.html#observers)
 
-The [user](/reference/users) that created the organization is automatically added to the [Administrators](reference/teams#administrators) team.
+The [user](/reference/users.html) that created the organization is automatically added to the [Administrators](reference/teams.html#administrators) team.
 
 ## Permissions
 
-[Users](/reference/users) must have permissions (directly or through a [Team](/reference/teams) membership) in order to interact with individual organizations. Organizations support the following permissions:
+[Users](/reference/users.html) must have permissions (directly or through a [Team](/reference/teams.html) membership) in order to interact with individual organizations. Organizations support the following permissions:
 
-* [Add](/reference/permissions#add) - Required to create new organization
-* [Change](/reference/permissions#change) - Required to modify existing organization
-* [Delete](/reference/permissions#delete) - Required to delete existing organization
-* [View](/reference/permissions#view) - Required to view existing organization
+* [Add](/reference/permissions.html#add) - Required to create new organization
+* [Change](/reference/permissions.html#change) - Required to modify existing organization
+* [Delete](/reference/permissions.html#delete) - Required to delete existing organization
+* [View](/reference/permissions.html#view) - Required to view existing organization

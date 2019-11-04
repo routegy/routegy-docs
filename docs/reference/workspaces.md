@@ -6,7 +6,7 @@ sidebar: false
 
 # Workspaces
 
-A workspace represents an abstract or physical space used for grouping. An [organization](/reference/organizations) will have one or more workspaces and all other resources will be grouped under the umbrella of a single workspace.
+A workspace represents an abstract or physical space used for grouping. An [organization](/reference/organizations.html) will have one or more workspaces and all other resources will be grouped under the umbrella of a single workspace.
 
 Some examples of a workspace could be:
 
@@ -19,32 +19,32 @@ Some examples of a workspace could be:
 
 A workspace is made up of the following relations:
 
-* [Organization](/reference/organizations) (many-to-one)
-* [Location](/reference/locations) (one-to-many)
-* [Team](/reference/teams) (one-to-many)
-* [User](/reference/users) (one-to-many)
+* [Organization](/reference/organizations.html) (many-to-one)
+* [Location](/reference/locations.html) (one-to-many)
+* [Team](/reference/teams.html) (one-to-many)
+* [User](/reference/users.html) (one-to-many)
 
 ## Users
 
-[Users](/reference/users) can gain permissions to a workspace.
+[Users](/reference/users.html) can gain permissions to a workspace.
 
 **This feature is not currently used**
 
 ## Teams
 
-[Teams](/reference/teams) can gain permissions to a workspace. When a workspace is created, the following teams are automatically created:
+[Teams](/reference/teams.html) can gain permissions to a workspace. When a workspace is created, the following teams are automatically created:
 
-* [Administrators](reference/teams#administrators)
-* [Collaborators](reference/teams#collaborators)
-* [Observers](reference/teams#observers)
+* [Administrators](reference/team.htmls#administrators)
+* [Collaborators](reference/teams.html#collaborators)
+* [Observers](reference/teams.html#observers)
 
-The [user](/reference/users) that created the workspace is automatically added to the [Administrators](reference/teams#administrators) team.
+The [user](/reference/users.html) that created the workspace is automatically added to the [Administrators](reference/teams.html#administrators) team.
 
 ## Permissions
 
-[Users](/reference/users) must have permissions (directly or through a [Team](/reference/teams) membership) in order to interact with individual workspace. Workspaces support the following permissions:
+[Users](/reference/users.html) must have permissions (directly or through a [Team](/reference/teams.html) membership) in order to interact with individual workspace. Workspaces support the following permissions:
 
-* [Add](/reference/permissions#add) - Required to create new workspace
-* [Change](/reference/permissions#change) - Required to modify existing workspace
-* [Delete](/reference/permissions#delete) - Required to delete existing workspace
-* [View](/reference/permissions#view) - Required to view existing workspace
+* [Add](/reference/permissions.html#add) - Required to create new workspace
+* [Change](/reference/permissions.html#change) - Required to modify existing workspace
+* [Delete](/reference/permissions.html#delete) - Required to delete existing workspace
+* [View](/reference/permissions.html#view) - Required to view existing workspace
