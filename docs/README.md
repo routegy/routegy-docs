@@ -7,5 +7,4 @@ heroText: Routegy
 heroImage: /logo.png
 actionText: "Get started"
 actionLink: /intro
-footer: © 2019 Routegy, Inc.
 ---
