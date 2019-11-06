@@ -14,7 +14,8 @@
         "docs:serve": "vuepress dev docs"
     },
     "dependencies": {
-        "vuepress": "^1.2.0"
+        "vuepress": "^1.2.0",
+        "vuepress-theme-routegy": "^1.0.4"
     },
     "devDependencies": {
         "@vuepress/plugin-google-analytics": "^1.2.0"

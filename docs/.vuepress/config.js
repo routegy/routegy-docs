@@ -13,6 +13,7 @@ module.exports = {
             }
         ]
     ],
+    theme: 'routegy',
     themeConfig: {
         nav: [
             { text: 'Home', link: '/' },
