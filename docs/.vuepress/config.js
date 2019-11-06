@@ -25,6 +25,28 @@ module.exports = {
         sidebar: 'auto',
         repo: 'getroutable/routable-docs',
         editLinks: true,
-        lastUpdated: true
+        lastUpdated: true,
+        footer: {
+            contact: [
+              {
+                type: 'github',
+                link: 'https://github.com/routegy',
+              },
+              {
+                type: 'twitter',
+                link: 'https://twitter.com/routegy',
+              },
+              {
+                type: 'linkedin',
+                link: 'https://www.linkedin.com/company/routegy/about/',
+              },
+            ],
+            copyright: [
+                {
+                  text: '© 2019 Routegy, Inc',
+                  link: 'https://routegy.com',
+                },
+              ],
+          },
     }
   }
