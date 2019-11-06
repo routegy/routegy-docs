@@ -23,7 +23,8 @@ module.exports = {
             { text: 'Tutorial', link: '/tutorial/' },
         ],
         sidebar: 'auto',
-        repo: 'getroutable/routable-docs',
+        repo: 'routegy/routegy-docs',
+        docsDir: 'docs',
         editLinks: true,
         lastUpdated: true,
         footer: {
