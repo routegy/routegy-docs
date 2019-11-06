@@ -21,6 +21,7 @@ module.exports = {
             { text: 'Reference', link: '/reference/' },
             { text: 'Topic', link: '/topic/' },
             { text: 'Tutorial', link: '/tutorial/' },
+            { text: 'Blog', link: 'https://blog.routegy.com' },
         ],
         sidebar: 'auto',
         repo: 'routegy/routegy-docs',
