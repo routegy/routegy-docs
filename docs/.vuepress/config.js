@@ -36,7 +36,7 @@ module.exports = {
           {
             text: 'Documentation',
             items: [
-              { text: 'Home', link: '' },
+              { text: 'Home', link: '/' },
               { text: 'How-to guides', link: '/how-to/' },
               { text: 'Reference guides', link: '/reference/' },
               { text: 'Topic guides', link: '/topic/' },
