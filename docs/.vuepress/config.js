@@ -15,16 +15,37 @@ module.exports = {
     ],
     theme: 'routegy',
     themeConfig: {
+        company: 'Routegy',
+        subdomain: 'Docs',
         nav: [
-            { text: 'Home', link: '/' },
-            { text: 'How-to', link: '/how-to/' },
-            { text: 'Reference', link: '/reference/' },
-            { text: 'Topic', link: '/topic/' },
-            { text: 'Tutorial', link: '/tutorial/' },
-            { text: 'Blog', link: 'https://blog.routegy.com' },
+          {
+            text: 'Routegy',
+            items: [
+              { text: 'Home', link: 'https://routegy.com' },
+              { text: 'About', link: 'https://routegy.com/about' },
+            ]
+          },
+          {
+            text: 'Blog',
+            items: [
+              { text: 'Home', link: 'https://blog.routegy.com' },
+              { text: 'Posts by tag', link: 'https://blog.routegy.com/tags' },
+              { text: 'Posts by author', link: 'https://blog.routegy.com/authors' },
+            ]
+          },
+          {
+            text: 'Documentation',
+            items: [
+              { text: 'Home', link: '' },
+              { text: 'How-to guides', link: '/how-to/' },
+              { text: 'Reference guides', link: '/reference/' },
+              { text: 'Topic guides', link: '/topic/' },
+              { text: 'Tutorials', link: '/tutorial/' },
+            ]
+          },
         ],
-        sidebar: 'auto',
-        repo: 'routegy/routegy-docs',
+        logo: '/logo-navbar.png',
+        repo: 'routegy/routegy-doscs',
         docsDir: 'docs',
         editLinks: true,
         lastUpdated: true,
