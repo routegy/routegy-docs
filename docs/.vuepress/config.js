@@ -22,6 +22,7 @@ module.exports = {
             text: 'Routegy',
             items: [
               { text: 'Home', link: 'https://routegy.com' },
+              { text: 'Solutions', link: 'https://routegy.com/solutions' },
               { text: 'About', link: 'https://routegy.com/about' },
             ]
           },
