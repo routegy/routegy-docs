@@ -2,13 +2,11 @@
 title: Routegy Docs
 ---
 
-<img style="border:none; width:75%" src="/images/routegy-wordmark-dark.svg">
+# Routegy Documentation
 
-## Build better experiences. Together.
+Build better experiences. Together.
 
-[Schedule a demo](https://routegy.com/connect) to learn how [Routegy](https://routegy.com) can streamline how people interact with your business.
-
-## Get started with Routegy
+## Getting started
 
 * [Tutorials](tutorial/) take you by the hand through a series of steps to get the most out of Routegy. _Start here if you’re new to Routegy._
 * [Topic guides](topic/) discuss key topics and concepts at a fairly high level and provide useful background information and explanation.
