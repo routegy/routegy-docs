@@ -39,7 +39,7 @@ module.exports = {
         ],
         logo: '/images/web-logo-light.svg',
         repo: 'routegy/routegy-docs',
-        docsDir: 'docs',
+        docsDir: 'app/docs',
         editLinks: true,
         lastUpdated: true,
         footer: {
