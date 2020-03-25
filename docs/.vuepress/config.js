@@ -30,8 +30,6 @@ module.exports = {
             text: 'Blog',
             items: [
               { text: 'Home', link: 'https://blog.routegy.com' },
-              { text: 'Posts by tag', link: 'https://blog.routegy.com/tags' },
-              { text: 'Posts by author', link: 'https://blog.routegy.com/authors' },
             ]
           },
           {
@@ -45,8 +43,8 @@ module.exports = {
             ]
           },
         ],
-        logo: '/logo-navbar.png',
-        repo: 'routegy/routegy-doscs',
+        logo: '/images/web-logo-light.svg',
+        repo: 'routegy/routegy-docs',
         docsDir: 'docs',
         editLinks: true,
         lastUpdated: true,
@@ -55,6 +53,10 @@ module.exports = {
               {
                 type: 'github',
                 link: 'https://github.com/routegy',
+              },
+              {
+                type: 'instagram',
+                link: 'https://instagram.com/routegy',
               },
               {
                 type: 'twitter',
@@ -67,7 +69,7 @@ module.exports = {
             ],
             copyright: [
                 {
-                  text: '© 2019 Routegy, Inc',
+                  text: '© 2020 Routegy, Inc',
                   link: 'https://routegy.com',
                 },
               ],
