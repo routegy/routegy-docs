@@ -8,7 +8,7 @@ sidebar: false
 
 This document describes how to make use of the [SMS Touch Handler Type](/reference/touch-handler-types/sms) to receive text message notifications.
 
-SMS touch handlers are commonly used with high priority [touchpoints](/reference/touchpoints) that requires immediate attention or staff members that are constantly on the go.
+SMS touch handlers are commonly used with high priority [touchpoints](/reference/touchpoints) that require immediate attention or staff members that are constantly on the go.
 
 ### Creating the Touch Handler
 
@@ -43,7 +43,7 @@ From the touch handler creation model, select **SMS** from the _Handler type_ dr
 Enter a _name_, _description_ (optional) and desired phone number.
 
 ::: warning Heads up!
-The phone number **must** start with your country calling code. See [wikipedia](https://en.wikipedia.org/wiki/List_of_country_calling_codes) for details.
+If you don't provide a country code, it will default to 1. See [wikipedia](https://en.wikipedia.org/wiki/List_of_country_calling_codes) for details.
 :::
 
 #### Step 6
