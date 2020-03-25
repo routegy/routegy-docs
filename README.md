@@ -12,9 +12,16 @@ Active development
 
 ```
 ⇒  make help
-build                          Build site.
-clean                          Clean local compiled site.
-serve                          Serve locally at http://localhost:8080.
+stack-build                    Build stack images
+stack-build-no-cache           Build stack images ignoring docker cache
+stack-volume-clean             Clean node_modules volume
+stack-up                       Run stack from latest built images
+stack-down                     Bring down running stack
+stack-rm                       Remove any active running stack containers
+stack-shell                    Run interactive shell in stack service image
+stack-test                     Run all tests for the project
+clean                          Clean local compiled state.
+shell                          Run shell environment capable of managing dependencies.
 help                           Print Makefile usage.
 ```
 
