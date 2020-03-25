@@ -19,7 +19,7 @@ If you're currently asking yourself a "How does this work..." question, you're i
 * [Organizations](/reference/organizations.html)
 * [Pusher Integration](/reference/pusher.html)
 * [Schemas & SchemaValues](/reference/schemas.html)
-* [Touch Handler Types](/reference/touch-handler-types.html)
+* [Touch Handler Types](/reference/touch-handler-types/)
 * [Touch Handlers](/reference/touch-handlers.html)
 * [Touchpoints](/reference/touchpoints.html)
 * [Touches](/reference/touches.html)
