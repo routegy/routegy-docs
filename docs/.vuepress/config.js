@@ -19,20 +19,6 @@ module.exports = {
         subdomain: 'Docs',
         nav: [
           {
-            text: 'Routegy',
-            items: [
-              { text: 'Home', link: 'https://routegy.com' },
-              { text: 'Solutions', link: 'https://routegy.com/solutions' },
-              { text: 'About', link: 'https://routegy.com/about' },
-            ]
-          },
-          {
-            text: 'Blog',
-            items: [
-              { text: 'Home', link: 'https://blog.routegy.com' },
-            ]
-          },
-          {
             text: 'Documentation',
             items: [
               { text: 'Home', link: '/' },
@@ -42,6 +28,14 @@ module.exports = {
               { text: 'Tutorials', link: '/tutorial/' },
             ]
           },
+          {
+            text: 'Sign in',
+            link: 'https://web.routegy.com'
+          },
+          {
+            text: 'Schedule a demo',
+            link: 'https://routegy.com/connect'
+          }
         ],
         logo: '/images/web-logo-light.svg',
         repo: 'routegy/routegy-docs',
