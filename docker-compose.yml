@@ -1,0 +1,30 @@
+version: "3.5"
+
+services:
+  routegy-docs:
+    build:
+      context: .
+      target: ${ENVIRONMENT:-local}
+      args:
+        WORKDIR: ${WORKDIR}
+        SRCDIR: ${SRCDIR}
+        CACHEDIR: ${CACHEDIR}
+        YARN_VERSION_ARG: ${YARN_VERSION}
+        ENVIRONMENT: ${ENVIRONMENT:-local}
+    volumes:
+      - ${PWD}:${SRCDIR}
+      - node_modules:${SRCDIR}/node_modules
+      - yarn_cache:${CACHEDIR}
+    restart: always
+    ports:
+      - "3002:3002"
+    networks:
+      - routegy-dev-network
+
+volumes:
+  node_modules:
+  yarn_cache:
+
+networks:
+  routegy-dev-network:
+    name: routegy-dev-network
