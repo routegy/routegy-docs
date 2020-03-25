@@ -13,6 +13,8 @@ module.exports = {
             }
         ]
     ],
+    host: '0.0.0.0',
+    port: 3002,
     theme: 'routegy',
     themeConfig: {
         company: 'Routegy',
