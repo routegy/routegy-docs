@@ -1,0 +1,14 @@
+#!/bin/sh
+#
+# update-deps
+#
+# Script responsible for installing dependencies prior to opening
+# a shell into a running container for managing npm/yarn dependencies.
+
+set -e
+
+apk add --no-cache openssh git python make g++
+
+yarn policies set-version ${YARN_VERSION}
+
+exec "$@"
