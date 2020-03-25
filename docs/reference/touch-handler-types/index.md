@@ -16,6 +16,15 @@ Some examples of touch handler types could be:
 * Send pager alert via Pagerduty
 * Invoke AWS Lambda function
 
+## Available
+
+The following is a list of available touch handler types:
+
+* [Email](/reference/touch-handler-types/email.html)
+* [Slack](/reference/touch-handler-types/slack.html)
+* [SMS](/reference/touch-handler-types/sms.html)
+* [Webhook](/reference/touch-handler-types/webhook.html)
+
 ## Relations
 
 A touch handler type is made up of the following relations:
