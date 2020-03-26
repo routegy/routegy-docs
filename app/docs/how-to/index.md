@@ -12,4 +12,5 @@ If you're currently asking yourself a "How do I..." question, you're in the righ
 
 ## Guides
 
+* [Create new touchpoints](/how-to/create-new-touchpoints)
 * [Receive SMS Notifications](/how-to/receive-sms-notifications)
