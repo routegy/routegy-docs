@@ -14,10 +14,16 @@ Users do not need to worry about managing codes as creating a touchpoint will au
 
 If a code is not linked to a touchpoint, you must go through the [provision flow](/topic/provision-flow.html) to link them.
 
-## Examples
+### Examples
 
 | Code | URL | Metadata |
 | ---- | --- | -------- |
 | yPe9BPD | https://rtgy.io/yPe9BPD?o=qr | Touchpoint is a QR code
 | VRnekwa | https://rtgy.io/VRnekwa | Touchpoint is a Direct link
 | y42gVPg | https://rtgy.io/y42gVPg?o=nfc | Touchpoint is an NFC tag
+
+### Related
+
+* [Topic: Touchpoints](/topic/touchpoints)
+* [Reference: Code](/reference/codes)
+* [Reference: Touchpoint](/reference/touchpoints)

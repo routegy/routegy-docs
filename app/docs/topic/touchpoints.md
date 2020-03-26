@@ -16,10 +16,16 @@ A touchpoint is linked to a [schema](/topic/schemas) which defines the user expe
 
 A person interacting with a touchpoint will potentially create a [touch](/topic/touches). The touch contains information gathered from the person, constrained by the schema used.
 
-## Examples
+### Examples
 
 | Code (URL) | Name | Description | Image |
 | ---------- | ---- | ----------- | ----- |
 | https://rtgy.io/yPe9BPD | Need something? | Let us know and we'll bring it to your room | [![](/images/marketing/hotel-closet.jpg)](/images/marketing/hotel-closet.jpg) |
 | https://rtgy.io/VRnekwa | Out of coffee? | We'll get you caffeinated in no time | [![](/images/marketing/office-coffee.jpg)](/images/marketing/office-coffee.jpg) |
 | https://rtgy.io/y42gVPg | How are we doing? | Let us know so we can provide the best service | [![](/images/marketing/hotel-survey.jpg)](/images/marketing/hotel-survey.jpg) |
+
+### Related
+
+* [Topic: Code](/topic/codes)
+* [Reference: Code](/reference/codes)
+* [Reference: Touchpoint](/reference/touchpoints)
