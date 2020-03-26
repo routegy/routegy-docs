@@ -1,13 +1,9 @@
 ---
-title: Schemas
-description: "Routegy Schemas & SchemaValues"
+title: "Schemas | Reference"
+description: "Schema reference documentation"
 sidebar: false
 ---
 
 # Schemas
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed gravida arcu eget leo scelerisque finibus. Duis porttitor risus est, non finibus nulla posuere at. Sed sed est fermentum lacus hendrerit imperdiet a eu augue. Cras pellentesque eros vel posuere lacinia. Sed a quam sed massa pharetra pulvinar sed at justo. Cras iaculis tortor at libero tincidunt, a aliquam enim faucibus. Sed dui magna, feugiat eu libero eu, pulvinar bibendum odio. Nulla accumsan ipsum eu risus tincidunt interdum. Aenean dictum suscipit tellus, ut elementum tellus. Maecenas placerat laoreet est, eget pharetra nulla. Sed ex elit, lacinia at vestibulum ac, pharetra eget est. Integer ullamcorper consequat magna ut vehicula. Sed sed diam eu enim feugiat sagittis.
-
-# SchemaValues
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed gravida arcu eget leo scelerisque finibus. Duis porttitor risus est, non finibus nulla posuere at. Sed sed est fermentum lacus hendrerit imperdiet a eu augue. Cras pellentesque eros vel posuere lacinia. Sed a quam sed massa pharetra pulvinar sed at justo. Cras iaculis tortor at libero tincidunt, a aliquam enim faucibus. Sed dui magna, feugiat eu libero eu, pulvinar bibendum odio. Nulla accumsan ipsum eu risus tincidunt interdum. Aenean dictum suscipit tellus, ut elementum tellus. Maecenas placerat laoreet est, eget pharetra nulla. Sed ex elit, lacinia at vestibulum ac, pharetra eget est. Integer ullamcorper consequat magna ut vehicula. Sed sed diam eu enim feugiat sagittis.
+Sorry, it looks like we haven't filled this out yet.
