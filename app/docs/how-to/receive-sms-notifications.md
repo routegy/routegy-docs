@@ -85,3 +85,9 @@ From the touchpoint edit model, type in the name of your touch handler in _Handl
 Click on the **Save changes** button and you're done!
 
 ![Save Touchpoint](/images/modals/personal-office-coffee-machine-edit-touchpoint-handlers-sms-save.png)
+
+### Wait for Touchpoint Interaction 
+
+Now that your touchpoint is configured, you just wait until someone interacts with it. Once they do, you'll receive an SMS that looks something like this.
+
+![Handler Integration](/images/handlers/personal-office-coffee-machine-sms.png)
