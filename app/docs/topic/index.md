@@ -12,4 +12,4 @@ If you're currently asking yourself "What is a..." question, you're in the right
 
 ## Guides
 
-TODO
+* What is a [Touchpoint](/topic/touchpoints)?

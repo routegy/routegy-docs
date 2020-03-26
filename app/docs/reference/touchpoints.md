@@ -1,5 +1,5 @@
 ---
-title: "Reference: Touchpoints"
+title: "Touchpoints | Reference"
 description: "Routegy Touchpoints"
 sidebar: false
 ---
@@ -9,17 +9,6 @@ sidebar: false
 Touchpoints are where interactions occur within locations of a workspace.
 
 A person interacting with a Touchpoint can potentially create a [touch](/reference/touches.html).
-
-Some examples of a Touchpoint could be:
-
-* Refrigerator
-* Coffee machine
-* Projector
-* Whiteboard
-* Bathroom stall
-* Conference table
-* Supply cabinet
-* Fax machine
 
 ## Relations
 
