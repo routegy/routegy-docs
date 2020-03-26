@@ -12,4 +12,5 @@ If you're currently asking yourself "What is a..." question, you're in the right
 
 ## Guides
 
-* What is a [Touchpoint](/topic/touchpoints)?
+* [Codes](/topic/codes)
+* [Touchpoints](/topic/touchpoints)
