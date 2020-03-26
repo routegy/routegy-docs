@@ -14,4 +14,5 @@ If you're currently asking yourself a "How do I..." question, you're in the righ
 
 * [Create new touchpoints](/how-to/create-new-touchpoints/)
 * [Receive email notifications](/how-to/receive-email-notifications/)
+* [Receive Slack notifications](/how-to/receive-slack-notifications/)
 * [Receive SMS notifications](/how-to/receive-sms-notifications/)
