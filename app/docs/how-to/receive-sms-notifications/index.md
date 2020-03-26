@@ -1,5 +1,5 @@
 ---
-title: "How to receive SMS notifications with Routegy"
+title: "Receive SMS notifications | How-to"
 description: "How to receive SMS notifications"
 sidebar: false
 ---
@@ -18,39 +18,39 @@ Follow the steps below to create a [touch handler](/references/touch-handlers) f
 
 Start by making sure you're in the desired [workspace](/references/workspaces). Click on the menu bar dropdown to choose.
 
-![Choose Workspace](./choose-workspace.png)
+![Choose Workspace](/images/navigation/choose-workspace-dropdown.png)
 
 #### Step 2
 
 Select the **Handlers** tab within the workspace view.
 
-![Select Handlers Menu](./select-handlers-menu.png)
+![Select Handlers Menu](/images/navigation/select-handlers-menu.png)
 
 #### Step 3
 
 Click on the **+ New Handler** button. This will launch a modal for creating new touch handlers.
 
-![New Handler Button](./new-handler-button.png)
+![New Handler Button](/images/buttons/new-handler.png)
 
 #### Step 4
 
 From the touch handler creation model, select **SMS** from the _Handler type_ dropdown list.
 
-![SMS Handler Type Dropdown List](./sms-handler-type-dropdown-list.png)
+![SMS Handler Type Dropdown List](/images/modals/office-create-handler.png)
 
 #### Step 5
 
 Enter a _name_, _description_ (optional) and desired phone number.
 
-::: warning Heads up!
-If you don't provide a country code, it will default to 1. See [wikipedia](https://en.wikipedia.org/wiki/List_of_country_calling_codes) for details.
+::: tip
+If you don't provide a country code, it will default to 1. See [wikipedia](https://en.wikipedia.org/wiki/List_of_country_calling_codes) for more details.
 :::
 
 #### Step 6
 
 Click on **+ Create handler** to complete the process.
 
-![SMS Handler Filled](./sms-touch-handler-filled.png)
+![SMS Handler Filled](/images/modals/office-create-handler-sms-filled.png)
 
 ### Attaching Touch Handler to Touchpoint
 
@@ -60,28 +60,28 @@ Follow the steps below to attach the SMS touch handler created above to one or m
 
 Select the **Touchpoints** tab within the workspace view.
 
-![Select Touchpoints Menu](./select-touchpoints-menu.png)
+![Select Touchpoints Menu](/images/navigation/select-touchpoints-menu.png)
 
 #### Step 2
 
 Select the [touchpoint](/reference/touchpoints) you wish to receive SMS notifications for.
 
-![Select Touchpoint](./select-touchpoint.png)
+![Select Touchpoint](/images/tree/personal-office-select-touchpoint.png)
 
 #### Step 3
 
 From the touchpoint model, click on the **Edit** button.
 
-![Edit Touchpoint](./edit-touchpoint.png)
+![Edit Touchpoint](/images/modals/personal-office-coffee-machine-edit-touchpoint.png)
 
 #### Step 4
 
 From the touchpoint edit model, type in the name of your touch handler in _Handlers_ list. The name will autocomplete as you type.
 
-![Add Touch Handler](./autocomplete-handler-add.png)
+![Add Touch Handler](/images/modals/personal-office-coffee-machine-edit-touchpoint-handlers-sms.png)
 
 #### Step 5
 
 Click on the **Save changes** button and you're done!
 
-![Save Touchpoint](./touchpoint-edit-save.png)
+![Save Touchpoint](/images/modals/personal-office-coffee-machine-edit-touchpoint-handlers-sms-save.png)
