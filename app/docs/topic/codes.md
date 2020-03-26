@@ -1,6 +1,6 @@
 ---
 title: "Codes | Topic"
-description: "Routegy Codes"
+description: "Code topic documentation"
 sidebar: false
 ---
 

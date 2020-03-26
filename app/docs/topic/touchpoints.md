@@ -1,6 +1,6 @@
 ---
 title: "Touchpoints | Topic"
-description: "Routegy Touchpoints"
+description: "Touchpoint topic documentation"
 sidebar: false
 ---
 
