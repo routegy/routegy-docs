@@ -36,7 +36,7 @@ Click on the **+ New Handler** button. This will launch a modal for creating new
 
 From the touch handler creation model, select **SMS** from the _Handler type_ dropdown list.
 
-![SMS Handler Type Dropdown List](/images/modals/office-create-handler.png)
+![SMS Handler Type Dropdown List](/images/modals/office-create-handler-sms.png)
 
 #### Step 5
 
