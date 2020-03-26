@@ -6,11 +6,11 @@ sidebar: false
 
 # Create new touchpoints
 
-This document describes how to create new [touchpoints](/topic/touchpoints) using the Admin web app.
+This document describes how to create new [touchpoints](/topic/touchpoints/) using the Admin web app.
 
 #### Step 1
 
-Start by making sure you're in the desired [workspace](/references/workspaces). Click on the menu bar dropdown to choose.
+Start by making sure you're in the desired [workspace](/reference/workspaces/). Click on the menu bar dropdown to choose.
 
 ![Choose Workspace](/images/navigation/choose-workspace-dropdown.png)
 
@@ -30,7 +30,7 @@ Click **+ Create touchpoint** and you're done!
 
 ### Related
 
-* [Location | Topic](/topic/locations)
-* [Touchpoint | Topic](/topic/touchpoints)
-* [Touchpoint | Reference](/reference/touchpoints)
+* [Location | Topic](/topic/locations/)
+* [Touchpoint | Topic](/topic/touchpoints/)
+* [Touchpoint | Reference](/reference/touchpoints/)
 

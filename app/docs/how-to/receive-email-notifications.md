@@ -6,17 +6,17 @@ sidebar: false
 
 # Receive Email Notifications
 
-This document describes how to make use of the [Email Touch Handler Type](/reference/touch-handler-types/email) to receive email notifications.
+This document describes how to make use of the [Email Touch Handler Type](/reference/touch-handler-types/email/) to receive email notifications.
 
-Email touch handlers are commonly used for lower priority [touchpoints](/reference/touchpoints) that can be addressed in an asynchronous fashion.
+Email touch handlers are commonly used for lower priority [touchpoints](/reference/touchpoints/) that can be addressed in an asynchronous fashion.
 
 ### Creating the Touch Handler
 
-Follow the steps below to create a [touch handler](/references/touch-handlers) for sending email notifications.
+Follow the steps below to create a [touch handler](/reference/touch-handlers/) for sending email notifications.
 
 #### Step 1
 
-Start by making sure you're in the desired [workspace](/references/workspaces). Click on the menu bar dropdown to choose.
+Start by making sure you're in the desired [workspace](/reference/workspaces/). Click on the menu bar dropdown to choose.
 
 ![Choose Workspace](/images/navigation/choose-workspace-dropdown.png)
 
@@ -54,7 +54,7 @@ Click on **+ Create handler** to complete the process.
 
 ### Attaching Touch Handler to Touchpoint
 
-Follow the steps below to attach the email touch handler created above to one or more [touchpoints](/reference/touchpoints).
+Follow the steps below to attach the email touch handler created above to one or more [touchpoints](/reference/touchpoints/).
 
 #### Step 1
 
@@ -64,7 +64,7 @@ Select the **Touchpoints** tab within the workspace view.
 
 #### Step 2
 
-Select the [touchpoint](/reference/touchpoints) you wish to receive email notifications for.
+Select the [touchpoint](/reference/touchpoints/) you wish to receive email notifications for.
 
 ![Select Touchpoint](/images/tree/personal-office-select-touchpoint.png)
 
