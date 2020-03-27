@@ -17,7 +17,7 @@ Each touch created will be run through every [touch handler](/references/touch-h
 A touch is made up of the following relations:
 
 * [Touchpoint](/reference/touchpoints/) (many-to-one)
-* [SchemaValues](/reference/schemas/) (many-to-one)
+* [SchemaValues](/reference/schema-values/) (many-to-one)
 
 ## Permissions
 
