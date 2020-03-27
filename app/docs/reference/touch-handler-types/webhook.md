@@ -1,6 +1,6 @@
 ---
-title: "Reference: Touch Handler Types | Webhook"
-description: "Routegy Touch Handlers Types (Webhook)"
+title: "Touch Handler Types | Webhook | Reference"
+description: "How do webhook touch handler types work?"
 sidebar: false
 ---
 

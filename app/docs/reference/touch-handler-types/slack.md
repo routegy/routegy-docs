@@ -1,6 +1,6 @@
 ---
-title: "Reference: Touch Handler Types | Slack"
-description: "Routegy Touch Handlers Types (Slack)"
+title: "Touch Handler Types | Slack | Reference"
+description: "How do slack touch handler types work?"
 sidebar: false
 ---
 

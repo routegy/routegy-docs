@@ -24,6 +24,10 @@ Drag and drop the **touchpoint** icon from the right-corner into the desired loc
 
 Fill out the modal dialog with information about the touchpoint you wish to create.
 
+::: tip
+  The `Location` field will be populated based on where the icon was dragged.
+:::
+
 ![New Touchpoint Modal](/images/modals/office-1st-conf-room-101-create-touchpoint.png)
 
 Click **+ Create touchpoint** and you're done!

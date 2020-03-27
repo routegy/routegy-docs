@@ -1,6 +1,6 @@
 ---
-title: "Reference: Touch Handler Types | SMS"
-description: "Routegy Touch Handlers Types (SMS)"
+title: "Touch Handler Types | SMS | Reference"
+description: "How do sms touch handler types work?"
 sidebar: false
 ---
 

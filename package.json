@@ -18,7 +18,7 @@
     },
     "dependencies": {
         "vuepress": "^1.2.0",
-        "vuepress-theme-routegy": "^1.0.9"
+        "vuepress-theme-routegy": "^1.0.10"
     },
     "devDependencies": {
         "@vuepress/plugin-google-analytics": "^1.2.0"

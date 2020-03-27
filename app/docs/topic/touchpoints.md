@@ -26,6 +26,6 @@ A person interacting with a touchpoint will potentially create a [touch](/topic/
 
 ### Related
 
-* [Topic: Code](/topic/codes)
-* [Reference: Code](/reference/codes)
-* [Reference: Touchpoint](/reference/touchpoints)
+* [Topic: Code](/topic/codes/)
+* [Reference: Code](/reference/codes/)
+* [Reference: Touchpoint](/reference/touchpoints/)
