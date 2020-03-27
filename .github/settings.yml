@@ -6,5 +6,6 @@ _extends: routegy-probot-config
 
 repository:
   name: routegy-docs
+  private: false
   description: Public documentation for Routegy
   homepage: https://docs.routegy.com
