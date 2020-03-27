@@ -1,9 +1,9 @@
 ---
-title: "Activity | Reference"
-description: "How do activites and feeds work?"
+title: "Activity Streams & Feeds | Reference"
+description: "How do activity streams & feeds work?"
 sidebar: false
 ---
 
-# Activity
+# Activity Streams & Feeds
 
 Sorry, it looks like we haven't filled this out yet.
