@@ -1,6 +1,6 @@
 ---
 title: "Receive SMS notifications | How-to"
-description: "How to receive SMS notifications"
+description: "How do I receive SMS notifications?"
 sidebar: false
 ---
 

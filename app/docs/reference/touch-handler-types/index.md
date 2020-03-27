@@ -1,6 +1,6 @@
 ---
-title: "Reference: Touch Handler Types"
-description: "Routegy Touch Handlers Types"
+title: "Touch Handler Types | Reference"
+description: "How do touch handler types work?"
 sidebar: false
 ---
 

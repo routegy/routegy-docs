@@ -1,6 +1,6 @@
 ---
 title: "Codes | Reference"
-description: "Code reference documentation"
+description: "How do codes work?"
 sidebar: false
 ---
 

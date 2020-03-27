@@ -1,6 +1,6 @@
 ---
 title: "Pusher | Reference"
-description: "Pusher reference documentation"
+description: "How do pusher integrations work?"
 sidebar: false
 ---
 

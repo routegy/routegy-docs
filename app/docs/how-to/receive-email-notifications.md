@@ -1,6 +1,6 @@
 ---
 title: "Receive email notifications | How-to"
-description: "How to receive email notifications"
+description: "How do I receive email notifications?"
 sidebar: false
 ---
 

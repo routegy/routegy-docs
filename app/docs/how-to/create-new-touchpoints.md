@@ -1,6 +1,6 @@
 ---
 title: "Create new touchpoints | How-to"
-description: "How to create new touchpoints"
+description: "How do I create new touchpoints?"
 sidebar: false
 ---
 

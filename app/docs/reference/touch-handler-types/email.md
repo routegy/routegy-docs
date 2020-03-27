@@ -1,6 +1,6 @@
 ---
-title: "Reference: Touch Handler Types | Email"
-description: "Routegy Touch Handlers Types (Email)"
+title: "Touch Handler Types | Email | Reference"
+description: "How do email touch handler types work?"
 sidebar: false
 ---
 
