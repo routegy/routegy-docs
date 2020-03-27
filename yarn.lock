@@ -915,10 +915,10 @@
     vuepress-plugin-disqus-comment "^0.2.3"
     vuepress-plugin-sitemap "^2.3.0"
 
-"@vuepress/plugin-google-analytics@^1.2.0":
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/@vuepress/plugin-google-analytics/-/plugin-google-analytics-1.2.0.tgz#54555fd14f01a032c5acff04ecbbe0911577d7d0"
-  integrity sha512-0zol5D4Efb5GKel7ADO/s65MLtKSLnOEGkeWzuipkWomSQPzP7TJ3+/RcYBnGdyBFHd1BSpTUHGK0b/IGwM3UA==
+"@vuepress/plugin-google-analytics@^1.4.0":
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/@vuepress/plugin-google-analytics/-/plugin-google-analytics-1.4.0.tgz#0243da6ff80e47b1d41d0227cb8bcb040ebba90f"
+  integrity sha512-Q3jTyNovy81vlqfCQ5MewYU2K/brn0DfhAlJJnelXdbYH7XRe1IA3hZCcQQO73rzIMA/HxIsMBWevs8jTQF3QA==
 
 "@vuepress/plugin-last-updated@^1.2.0":
   version "1.2.0"
@@ -7731,10 +7731,10 @@ vuepress-plugin-smooth-scroll@^0.0.3:
   dependencies:
     smoothscroll-polyfill "^0.4.3"
 
-vuepress-theme-routegy@^1.0.9:
-  version "1.0.9"
-  resolved "https://registry.yarnpkg.com/vuepress-theme-routegy/-/vuepress-theme-routegy-1.0.9.tgz#3d170ac101f39e713728b799cc1904523484a502"
-  integrity sha512-5IbI7PgD5GbIFRfBNjOqteA7V/KYTe5mxcfmOVvqqJbGWQ+vrrIZ+caqVfPf3GEidGhXCwlDoyAFvYwGcRZVxA==
+vuepress-theme-routegy@^1.0.10:
+  version "1.0.10"
+  resolved "https://registry.yarnpkg.com/vuepress-theme-routegy/-/vuepress-theme-routegy-1.0.10.tgz#b434f5cbf4c54da021eb1ee8a7c8147ef0871b72"
+  integrity sha512-Ohp86zsmxqAbLHLUmZ3wzVuK3iJHCj4gufftaXijlYzlrj0ep9wYSKbxvzQBwc7N3HmYLgJFVqSFUw/4yLxPug==
   dependencies:
     "@vuepress/plugin-blog" "^1.5.1"
     node-sass "^4.13.0"
