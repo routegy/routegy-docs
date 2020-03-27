@@ -16,7 +16,7 @@ A schema with a `null` JSON Schema document indicates that no information should
 
 The following is an example [JSON Schema](https://json-schema.org/) document in YAML form.
 
-```js
+```yaml
 type: object
 title: Problem with the coffee machine?
 properties:
