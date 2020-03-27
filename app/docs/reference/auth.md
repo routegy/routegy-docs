@@ -1,6 +1,6 @@
 ---
 title: "Auth | Reference"
-description: "Auth reference documentation"
+description: "How do authentication and authorization work?"
 sidebar: false
 ---
 

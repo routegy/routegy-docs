@@ -1,6 +1,6 @@
 ---
 title: "Activity | Reference"
-description: "Activity reference documentation"
+description: "How do activites and feeds work?"
 sidebar: false
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Schemas | Reference"
-description: "Schema reference documentation"
+description: "How do schemas work?"
 sidebar: false
 ---
 

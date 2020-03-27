@@ -1,6 +1,6 @@
 ---
 title: "Touch Handlers | Reference"
-description: "Touch Handler reference documentation"
+description: "How do touch handlers work?"
 sidebar: false
 ---
 

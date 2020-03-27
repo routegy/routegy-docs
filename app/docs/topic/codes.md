@@ -1,6 +1,6 @@
 ---
 title: "Codes | Topic"
-description: "Code topic documentation"
+description: "What is a topic?"
 sidebar: false
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Receive Slack notifications | How-to"
-description: "How to receive Slack notifications"
+description: "How do I receive Slack notifications?"
 sidebar: false
 ---
 

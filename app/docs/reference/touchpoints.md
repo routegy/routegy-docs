@@ -1,6 +1,6 @@
 ---
 title: "Touchpoints | Reference"
-description: "Routegy Touchpoints"
+description: "How do touchpoints work?"
 sidebar: false
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Touches | Reference"
-description: "Touch reference documentation"
+description: "How do touches work?"
 sidebar: false
 ---
 

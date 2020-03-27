@@ -1,6 +1,6 @@
 ---
 title: "Touchpoints | Topic"
-description: "Touchpoint topic documentation"
+description: "What is a touchpoint?"
 sidebar: false
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Organizations | Reference"
-description: "Organization reference documentation"
+description: "How do organizations work?"
 sidebar: false
 ---
 

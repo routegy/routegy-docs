@@ -1,6 +1,6 @@
 ---
 title: "Locations | Reference"
-description: "Location reference documentation"
+description: "How do locations work?"
 sidebar: false
 ---
 
