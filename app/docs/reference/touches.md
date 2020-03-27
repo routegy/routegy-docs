@@ -21,4 +21,4 @@ A touch is made up of the following relations:
 
 ## Permissions
 
-Touches inherit permissions from their [Workspace](/reference/workspaces/) and its [Organization](/reference/organizations/) through it's [Location](/reference/locations/). Read more about how permission inheritance [here](/reference/permissions/).
+Touches inherit permissions from their [Workspace](/reference/workspaces/) and its [Organization](/reference/organizations/) through its [Location](/reference/locations/). Read more about how permission inheritance [here](/reference/permissions/).
