@@ -50,6 +50,7 @@ The following is an example [JSON Schema](https://json-schema.org/) document in 
 ### Related
 
 * [Topic: Touchpoint](/topic/touchpoints/)
-* [Topic: Code](/topic/codes/)
+* [Topic: SchemaValues](/topic/schema-values/)
 * [Reference: Touchpoint](/reference/touchpoints/)
-* [Reference: Code](/reference/codes/)
+* [Reference: Schemas](/reference/schemas/)
+* [Reference: SchemaValues](/reference/schema-values/)
