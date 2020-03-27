@@ -24,6 +24,6 @@ If a code is not linked to a touchpoint, you must go through the [provision flow
 
 ### Related
 
-* [Topic: Touchpoints](/topic/touchpoints)
-* [Reference: Code](/reference/codes)
-* [Reference: Touchpoint](/reference/touchpoints)
+* [Topic: Touchpoints](/topic/touchpoints/)
+* [Reference: Code](/reference/codes/)
+* [Reference: Touchpoint](/reference/touchpoints/)
