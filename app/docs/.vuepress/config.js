@@ -21,7 +21,7 @@ module.exports = {
         subdomain: 'Docs',
         nav: [
           {
-            text: 'Documentation',
+            text: 'Navigation',
             items: [
               { text: 'Home', link: '/' },
               { text: 'How-to guides', link: '/how-to/' },
@@ -29,6 +29,10 @@ module.exports = {
               { text: 'Topic guides', link: '/topic/' },
               { text: 'Tutorials', link: '/tutorial/' },
             ]
+          },
+          {
+            text: 'API Docs',
+            link: 'https://api.docs.routegy.com'
           },
           {
             text: 'Sign in',
