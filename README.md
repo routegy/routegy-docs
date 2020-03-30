@@ -25,6 +25,17 @@ shell                          Run shell environment capable of managing depende
 help                           Print Makefile usage.
 ```
 
+### Theme Development
+
+If you're working on theme modifications, it's easiest to just use [yarn link](https://classic.yarnpkg.com/en/docs/cli/link/) so you can modifications on refresh.
+
+```sh
+$ cd routegy-vuepress-theme
+$ yarn link
+$ cd ../routegy-docs
+$ yarn link vuepress-theme-routegy
+```
+
 ## Technology
 
 * [Vuepress](https://vuepress.vuejs.org)
