@@ -12,6 +12,7 @@ If you're currently asking yourself a "How do I..." question, you're in the righ
 
 ## Guides
 
+* [Create new schemas](/how-to/create-new-schemas/)
 * [Create new touchpoints](/how-to/create-new-touchpoints/)
 * [Receive email notifications](/how-to/receive-email-notifications/)
 * [Receive Slack notifications](/how-to/receive-slack-notifications/)
