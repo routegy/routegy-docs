@@ -1,5 +1,5 @@
 ---
-title: "Capture hot/cold requests | Tutorial"
+title: "Capture hot/cold requests | How-to"
 description: "How do I capture hot/cold requests?"
 sidebar: false
 ---
