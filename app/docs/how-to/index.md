@@ -13,6 +13,7 @@ If you're currently asking yourself a "How do I..." question, you're in the righ
 ## Guides
 
 * [Capture hot/cold requests](/how-to/capture-hot-cold-requests/)
+* [Capture IT requests](/how-to/capture-it-requests/)
 * [Capture maintenance requests](/how-to/capture-maintenance-requests/)
 * [Capture supply requests](/how-to/capture-supply-requests/)
 * [Capture rating & review feedback](/how-to/capture-rating-review-feedback/)
