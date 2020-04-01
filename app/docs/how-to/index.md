@@ -12,6 +12,8 @@ If you're currently asking yourself a "How do I..." question, you're in the righ
 
 ## Guides
 
+* [Capture survey feedback](/how-to/capture-survey-feedback/)
+* [Capture rating & review feedback](/how-to/capture-rating-review-feedback/)
 * [Create new schemas](/how-to/create-new-schemas/)
 * [Create new touchpoints](/how-to/create-new-touchpoints/)
 * [Receive email notifications](/how-to/receive-email-notifications/)
