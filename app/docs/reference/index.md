@@ -15,7 +15,7 @@ If you're currently asking yourself a "How does this work..." question, you're i
 * [Activity Streams & Feeds](/reference/activity/)
 * [Authentication & Authorization](/reference/auth/)
 * [Codes](/reference/codes/)
-* [Compatible Devices](/reference//compatible-devices/)
+* [Device Compatibility](/reference/device-compatibility/)
 * [Locations](/reference/locations/)
 * [Organizations](/reference/organizations/)
 * [Pusher Integration](/reference/pusher/)
