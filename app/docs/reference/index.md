@@ -16,6 +16,7 @@ If you're currently asking yourself a "How does this work..." question, you're i
 * [Authentication & Authorization](/reference/auth/)
 * [Codes](/reference/codes/)
 * [Device Compatibility](/reference/device-compatibility/)
+* [FAQ](/reference/faq/)
 * [Locations](/reference/locations/)
 * [Organizations](/reference/organizations/)
 * [Pusher Integration](/reference/pusher/)
