@@ -44,6 +44,7 @@ module.exports = {
           }
         ],
         logo: '/images/web-logo-light.svg',
+        logoUrl: 'https://routegy.com',
         repo: 'routegy/routegy-docs',
         docsDir: 'app/docs',
         editLinks: true,
