@@ -19,6 +19,7 @@ module.exports = {
     themeConfig: {
         company: 'Routegy',
         subdomain: 'Docs',
+        hostname: 'https://docs.routegy.com',
         nav: [
           {
             text: 'Navigation',
