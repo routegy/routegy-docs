@@ -15,4 +15,5 @@ If you're currently asking yourself "What is a..." question, you're in the right
 * [Codes](/topic/codes/)
 * [Locations](/topic/locations/)
 * [Schemas](/topic/schemas/)
+* [Schema Elements](/topic/schema_elements/)
 * [Touchpoints](/topic/touchpoints/)
