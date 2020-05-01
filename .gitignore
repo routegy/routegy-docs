@@ -16,3 +16,6 @@ dist
 
 # test coverage results
 app/coverage
+
+# MacOs DS files
+.DS_Store
