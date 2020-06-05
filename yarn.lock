@@ -7731,10 +7731,10 @@ vuepress-plugin-smooth-scroll@^0.0.3:
   dependencies:
     smoothscroll-polyfill "^0.4.3"
 
-vuepress-theme-routegy@^1.0.12:
-  version "1.0.12"
-  resolved "https://registry.yarnpkg.com/vuepress-theme-routegy/-/vuepress-theme-routegy-1.0.12.tgz#1453901293325ea93239f679ea128c5878c1db21"
-  integrity sha512-411GyfgDr3tAawUUao0tPlt3RKdrj1osW3YHWeAWxmCXPsh9xsWnmt1eIVhO7hgUcPqv1/1wysENcgOrdwIdJg==
+vuepress-theme-routegy@^1.0.13:
+  version "1.0.13"
+  resolved "https://registry.yarnpkg.com/vuepress-theme-routegy/-/vuepress-theme-routegy-1.0.13.tgz#59dce1fab6b33f229b3c0b21e710b11e303dc61d"
+  integrity sha512-6D2aQS1lmqa/2q45LaFXaVEYuObjfXhyZeIIaaIW5vjnRf5m9jK0CtXFHWny4AEnlrrDzazxMIuEJVvgn3uXbw==
   dependencies:
     "@vuepress/plugin-blog" "^1.5.1"
     node-sass "^4.13.0"
@@ -7908,9 +7908,9 @@ websocket-driver@>=0.5.1:
     websocket-extensions ">=0.1.1"
 
 websocket-extensions@>=0.1.1:
-  version "0.1.3"
-  resolved "https://registry.yarnpkg.com/websocket-extensions/-/websocket-extensions-0.1.3.tgz#5d2ff22977003ec687a4b87073dfbbac146ccf29"
-  integrity sha512-nqHUnMXmBzT0w570r2JpJxfiSD1IzoI+HGVdd3aZ0yNi3ngvQ4jv1dtHt5VGxfI2yj5yqImPhOK4vmIh2xMbGg==
+  version "0.1.4"
+  resolved "https://registry.yarnpkg.com/websocket-extensions/-/websocket-extensions-0.1.4.tgz#7f8473bc839dfd87608adb95d7eb075211578a42"
+  integrity sha512-OqedPIGOfsDlo31UNwYbCFMSaO9m9G/0faIHj5/dZFDMFqPTcx6UwqyOy3COEaEOg/9VsGIpdqn62W5KhoKSpg==
 
 whatwg-url@^7.0.0:
   version "7.1.0"
