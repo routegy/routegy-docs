@@ -20,6 +20,7 @@ If you're currently asking yourself a "How do I..." question, you're in the righ
 * [Capture survey feedback](/how-to/capture-survey-feedback/)
 * [Create new schemas](/how-to/create-new-schemas/)
 * [Create new touchpoints](/how-to/create-new-touchpoints/)
+* [Print QR codes](/how-to/print-qr-codes/)
 * [Receive email notifications](/how-to/receive-email-notifications/)
 * [Receive Slack notifications](/how-to/receive-slack-notifications/)
 * [Receive SMS notifications](/how-to/receive-sms-notifications/)
