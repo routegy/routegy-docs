@@ -26,3 +26,13 @@ If you're currently asking yourself a "How does this work..." question, you're i
 * [Touchpoints](/reference/touchpoints/)
 * [Touches](/reference/touches/)
 * [Workspaces](/reference/workspaces/)
+
+## Integrations
+
+* [Echo](/reference/touch-handler-types/echo/)
+* [Email](/reference/touch-handler-types/email/)
+* [Slack Webhook](/reference/touch-handler-types/slack-webhook/)
+* [SMS](/reference/touch-handler-types/sms/)
+* [Trello](/reference/touch-handler-types/trello/)
+* [Webhook](/reference/touch-handler-types/webhook/)
+* [Zapier REST Hook](/reference/touch-handler-types/zapier-rest-hook/)

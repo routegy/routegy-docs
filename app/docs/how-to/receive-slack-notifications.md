@@ -6,7 +6,7 @@ sidebar: false
 
 # Receive Slack Notifications
 
-This document describes how to make use of the [Slack Touch Handler Type](/reference/touch-handler-types/slack/) to receive slack message notifications.
+This document describes how to make use of the [Slack Webhook Touch Handler Type](/reference/touch-handler-types/slack-webhook/) to receive slack message notifications.
 
 Slack touch handlers are used with a wide variety of [touchpoints](/reference/touchpoints/). These can require near immediate attention, a slower asynchronous approach, or even provide an easy-to-browse archive of all interactions.
 
