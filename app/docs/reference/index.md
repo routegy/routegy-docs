@@ -21,6 +21,7 @@ If you're currently asking yourself a "How does this work..." question, you're i
 * [Pusher Integration](/reference/pusher/)
 * [Schemas](/reference/schemas/)
 * [SchemaValues](/reference/schema-values)
+* [Templating](/reference/templating/)
 * [Touch Handler Types](/reference/touch-handler-types/)
 * [Touch Handlers](/reference/touch-handlers/)
 * [Touchpoints](/reference/touchpoints/)
