@@ -26,3 +26,4 @@ If you're currently asking yourself a "How do I..." question, you're in the righ
 * [Receive SMS notifications](/how-to/receive-sms-notifications/)
 * [Receive webhook requests](/how-to/receive-webhook-requests/)
 * [Create Trello cards](/how-to/create-trello-cards/)
+* [Streamline curbside pickup with Routegy and Trello](/how-to/streamline-curbside/)
