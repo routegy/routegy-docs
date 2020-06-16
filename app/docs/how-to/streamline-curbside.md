@@ -17,7 +17,7 @@ Customers simply pull up, scan a QR code placed on a strofront or a curbside sig
 Once they click submit, Routegy will create a new card in your Trello board that details who just arrived, how did they order and where they are waiting.
 
 <p align="center">
-	<img src="/images/external/trello-curbside-waitlist.png" width="90%">
+	<img src="/images/how-tos/curbside-pickup/trello-curbside-waitlist.png" width="90%">
 </p>
 
 To get started you will need the following:
