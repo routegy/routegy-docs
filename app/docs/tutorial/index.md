@@ -13,3 +13,5 @@ If you're currently asking yourself a "How do I use Routegy to..." question, you
 ## Guides
 
 * [Routegy at a glance](/tutorial/routegy-at-a-glance/)
+* [Streamline curbside pickup with Routegy and Trello](/tutorial/streamline-curbside/)
+
