@@ -241,7 +241,7 @@ Go back to the **Touchpoints** tab and click on your curbside pickup touchpoint 
 	<img src="/images/curbside-pickup/workspace-edit-touchpoint.png" width="90%">
 </p>
 
-Click **Edit** to edit the touchpoint and add your Trello handler to it using the **Handler** field. Just click on the field, start typing you handler name, and then choose the handler from the list.
+Click **Edit** to edit the touchpoint and add your Trello handler to it using the **Handler** field. Just click on the field, start typing your handler name, and then choose the handler from the list.
 
 <p align="center">
 	<img src="/images/curbside-pickup/touchpoint-add-handler.png" width="75%">
