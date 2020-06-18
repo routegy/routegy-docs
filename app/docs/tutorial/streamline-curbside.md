@@ -21,8 +21,8 @@ Once they click submit, Routegy will create a new card in your Trello board that
 </p>
 
 To get started you will need the following:
-1. Routegy account.
-2. Trello account (it's free and you can create one [here](https://trello.com/signup)).
+1. Routegy account (you can create one [here](https://web.routegy.com/auth/sign-in)).
+2. Trello account (you can create one [here](https://trello.com/signup)).
 3. Tablet, laptop or some other device that you and your staff can use to monitor your curbside delivery board on Trello.
 
 Let's get started!
@@ -252,4 +252,6 @@ Click **Save changes** to save your touchpoint.
 #### Step 3: Test
 
 Now that everything is ready, let's test it out. Click the touchpoint link or scan the QR code with your phone, fill out the form, and watch a new Trello card appear automatically in your board.
+
+If you would like to learn more about Routegy, [this tutorial](https://docs.routegy.com/tutorial/routegy-at-a-glance.html) is a great place to start.
 
