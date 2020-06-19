@@ -8,20 +8,20 @@ sidebar: false
 
 This document describes how to streamline your curbside delivery process using [Routegy](https://routegy.com) and [Trello](https://trello.com). 
 
-Customers pull up, scan a QR code placed on a storefront or curbside, and the staff inside inside are notified.
+Customers pull up, scan a QR code placed on a storefront or curbside, and the staff inside are notified.
 
 <p align="center">
 	<img src="/images/curbside-pickup/curbside-form-filled.png" width="40%">
 </p>
 
-Once they click submit, Routegy will create a new card in your Trello board that details who just arrived, how did they order and where they are waiting.
+Once they click submit, Routegy will add a new card to your Trello board that details who just arrived, how did they order and where they are waiting.
 
 <p align="center">
 	<img src="/images/curbside-pickup/trello-curbside-waitlist.png" width="90%">
 </p>
 
 To get started you will need the following:
-1. Routegy account (you can create one [here](https://web.routegy.com/auth/sign-in)).
+1. Routegy account (you can create one [here](https://web.routegy.com/auth/join)).
 2. Trello account (you can create one [here](https://trello.com/signup)).
 3. Tablet, laptop or some other device that you and your staff can use to monitor your curbside delivery board on Trello.
 
