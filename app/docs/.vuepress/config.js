@@ -20,6 +20,7 @@ module.exports = {
         company: 'Routegy',
         subdomain: 'Docs',
         hostname: 'https://docs.routegy.com',
+        joinCta: 'Start today!',
         nav: [
           {
             text: 'Navigation',
@@ -38,10 +39,6 @@ module.exports = {
           {
             text: 'Sign in',
             link: 'https://web.routegy.com'
-          },
-          {
-            text: 'Schedule a demo',
-            link: 'https://routegy.com/connect'
           }
         ],
         logo: '/images/web-logo-light.svg',
