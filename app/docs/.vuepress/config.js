@@ -71,6 +71,14 @@ module.exports = {
                   text: '© 2020 Routegy, Inc',
                   link: 'https://routegy.com',
                 },
+                {
+                  text: 'Terms',
+                  link: 'https://www.routegy.com/site-policy/routegy-terms-of-service/',
+                },
+                {
+                  text: 'Privacy',
+                  link: 'https://www.routegy.com/site-policy/routegy-privacy-policy/',
+                },
               ],
           },
     }
