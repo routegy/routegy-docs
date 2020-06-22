@@ -14,26 +14,26 @@ Customers pull up, scan a QR code placed on a storefront or curbside, and the st
 	<img src="/images/curbside-pickup/curbside-form-filled.png" width="40%">
 </p>
 
-Once they click submit, Routegy will add a new card to your Trello board that details who just arrived, how did they order and where they are waiting.
+Once a customer scans the code and submits their information, Routegy will add a new card to your Trello board that details who just arrived, how they ordered, and where they are waiting.
 
 <p align="center">
 	<img src="/images/curbside-pickup/trello-curbside-waitlist.png" width="90%">
 </p>
 
 To get started you will need the following:
-1. Routegy account (you can create one [here](https://web.routegy.com/auth/join)).
-2. Trello account (you can create one [here](https://trello.com/signup)).
-3. Tablet, laptop or some other device that you and your staff can use to monitor your curbside delivery board on Trello.
+1. Routegy account (Create one [here](https://web.routegy.com/auth/join)).
+2. Trello account (Create one [here](https://trello.com/signup)).
+3. Tablet, laptop, or other device that you and your staff will use to monitor your curbside delivery board on Trello.
 
 Let's get started!
 
-### Creating the Routegy Touchpoint for curbside delivery
+### Creating a Routegy Touchpoint for curbside delivery
 
-We are going to start with creating a [touchpoint](/reference/touchpoints/) that collects desired information from the customer when they arrive and scan the code. We are going to ask how did they place the order, their name and some details about their car.
+We will start by creating a [touchpoint](/reference/touchpoints/) that collects information from the customer when they arrive and scan the code. We are going to ask for their name, how they placed the order, and for some details about their vehicle.
 
-#### Step 1: Choose workspace
+#### Step 1: Choose a workspace
 
-Start by making sure you're in the desired [workspace](/reference/workspaces/). Click on the menu bar dropdown to choose, and then select **Touchpoints** tab.
+Start by making sure you're in the desired [workspace](/reference/workspaces/). Open the workspace dropdown in the navigation bar to choose, and then select the **Touchpoints** tab.
 
 <p align="center">
 	<img src="/images/curbside-pickup/workspace-touchpoints.png" width="90%">
@@ -43,13 +43,13 @@ Start by making sure you're in the desired [workspace](/reference/workspaces/). 
 
 Next step is to create a new [location](/reference/locations/) for our curbside touchpoint. If you already have a location that you'd like to use, you can skip this step and go directly to [Step 3](#step-3-create-a-new-touchpoint).
 
-Create a new location by dragging a location icon into a desired parent location.
+Create a new location by clicking the location icon or dragging the location icon into the desired parent location.
 
 <p align="center">
 	<img src="/images/curbside-pickup/location-drag-drop.png" width="90%">
 </p>
 
-Then, give your new location a name, description (optional) and click **Create Location** button.
+Then, give your new location a name, description (optional), and click the **Create Location** button.
 
 <p align="center">
 	<img src="/images/curbside-pickup/location-dialog.png" width="75%">
@@ -57,29 +57,29 @@ Then, give your new location a name, description (optional) and click **Create L
 
 #### Step 3: Create a new touchpoint
 
-Create a new touchpoint by dragging a touchpoint icon into a desired location. In this example, we are putting it under the *Parking* location created in [Step 2](#step-2-create-a-new-location).
+Create a new touchpoint by clicking the touchpoint icon or dragging the touchpoint icon into the desired location. In this example, we are putting it under the *Parking* location created in [Step 2](#step-2-create-a-new-location).
 
 <p align="center">
 	<img src="/images/curbside-pickup/touchpoint-drag-drop.png" width="90%">
 </p>
 
-Then, define name and description for your new touchpoint.
+Then, define a name and description for your new touchpoint.
 
 <p align="center">
 	<img src="/images/curbside-pickup/touchpoint-name-description.png" width="75%">
 </p>
 
-Routegy will use the name and description in the header of your new touchpoint form as its title and subtitle respectively (see screenshot below). With this in mind, try using short, concise language to provide clear instructions to your customers (e.g. a simple call to to action).
+Routegy will use the name and description in the header of your new touchpoint form as its title and subtitle respectively (see screenshot below). With this in mind, try using short, concise language to provide clear instructions to your customers (i.e., a simple call to to action).
 
 <p align="center">
 	<img src="/images/curbside-pickup/curbside-form-name-description.png" width="30%">
 </p>
 
-#### Step 4: Define touchpoint schema
+#### Step 4: Define a touchpoint schema
 
-Next, we are going to define a touchpoint [schema](/reference/schemas/). The touchpoint schema defines what kind of data is collected from your customers interacting with it.
+Next, we are going to create a touchpoint [schema](/reference/schemas/). The touchpoint schema defines the data to collect when a customer interacts with your touchpoint.
 
-To get started, select **Define your own schema** from **Schema** dropdown list and name your new schema.
+To get started, select **Define your own schema** from the **Schema** dropdown list, and name your new schema.
 
 <p align="center">
 	<img src="/images/curbside-pickup/touchpoint-define-schema.png" width="75%">
@@ -122,9 +122,9 @@ properties:
     title: How did you place your order?
 ```
 
-This YAML document defines a simple schema with **car**, **name** and **order_type** fields, and it can be easily tailored to meet the needs of your business. For instance, you can easily modify titles of these fields by changing **title** attribute under each individual field.
+This YAML document defines a simple schema with **car**, **name**, and **order_type** fields, and it can be easily tailored to meet the needs of your business. For instance, you can modify the titles of these fields by changing the **title** attribute under each individual field.
 
-To apply this document to our newly created schema, scroll down to **Definition (YAML)** section of the form, and copy/paste the YAML code above replacing the default schema YAML.
+To apply this document to our newly created schema, scroll down to the **Definition (YAML)** section of the form, and copy/paste the YAML code above replacing the default schema YAML.
 
 <p align="center">
 	<img src="/images/curbside-pickup/touchpoint-schema-yaml.png" width="75%">
@@ -138,13 +138,13 @@ Once done, you can click the **Preview** tab to inspect the contents of the sche
 
 #### Step 5: Save and test your touchpoint
 
-Once you are happy with the name, description and schema, click **Create touchpoint** button to save the changes, and you will be presented with a QR code and a URL for your new touchpoint.
+Once you are happy with the name, description, and schema, click the **Create touchpoint** button to save your changes.  You will be presented with a QR code and a URL for your new touchpoint.
 
 <p align="center">
 	<img src="/images/curbside-pickup/touchpoint-qr.png" width="75%">
 </p>
 
-Click the link or scan the code with the camera app on [your phone](/reference/device-compatibility/) to check it out! Want to make some changes? Don't worry, you can always go back and tweak it at anytime.
+Click the link or scan the code with the camera app on [your phone](/reference/device-compatibility/) to check it out! Want to make some changes? Don't worry, you can edit it anytime.
 
 
 ### Setting up your Trello board
@@ -153,15 +153,15 @@ Next, we are going to configure your Trello board. In order to keep track of arr
 * *Waiting Curbside Customers*
 * *Delivered Curbside Customers*
 
-Routegy will automatically add a new Trello card to the *Waiting Customers* list every time a customer interacts with the touchpoint that you defined earlier. Then, you and your staff can move these cards to the *Delivered Customers* list as orders are fullfiled.
+Routegy will automatically add a new Trello card to the *Waiting Customers* list every time a customer interacts with the touchpoint that you defined earlier. Then, you and your staff can move these cards to the *Delivered Customers* list as orders are fulfilled.
 
 <p align="center">
 	<img src="/images/curbside-pickup/trello-lists.png" width="75%">
 </p>
 
-Creating your first board and list in Trello is very straight forward, and well explained in [this official guide](https://trello.com/guide/create-a-board). 
+Creating your first board and list in Trello is very straightforward and well explained in [the official guide](https://trello.com/guide/create-a-board). 
 
-Once you have your lists created, you'll need to collect two bits of data from Trello that are required for the integration with Routegy.
+Once you have create your lists, you'll need to collect two bits of data from Trello that are required for the integration with Routegy:
 * Your **Trello API Key** and **Token**
 * **ListId** of your *Waiting Curbside Customers* list
 
@@ -179,7 +179,7 @@ Once you have recorded the key, click on the **Token** link to generate your **T
 	<img src="/images/curbside-pickup/trello-api-token-allow.png" width="75%">
 </p>
 
-Scroll to the bottom of the page, click **Allow** and you should be able to see and record your **API Token**.
+Scroll to the bottom of the page, click **Allow**, and you should be able to see and record your **API Token**.
 
 <p align="center">
 	<img src="/images/curbside-pickup/trello-api-token.png" width="75%">
@@ -187,7 +187,7 @@ Scroll to the bottom of the page, click **Allow** and you should be able to see 
 
 #### Finding the ListId for your *Waiting Curbside Customers* list
 
-To find this, perform the following steps:
+To find the **ListId**, perform the following steps:
 
 * Open the board that contains the list you wish to use. In the address bar, you will see a URL like `https://trello.com/b/DRzgczUF/customer-waitlist`.
   
@@ -209,7 +209,7 @@ The final step is to connect Routegy and Trello using a [touch handler](/referen
 
 #### Step 1: Create a touch handler
 
-Go back to your Routegy workspace, select **Handlers** tab, and click **Create handler** button.
+Go back to your Routegy workspace, select the **Handlers** tab, and click the **Create handler** button.
 
 <p align="center">
 	<img src="/images/curbside-pickup/handlers-tab.png" width="90%">
@@ -233,7 +233,7 @@ The **Card name** field controls how Routegy will name Trello cards that it crea
 
 Click **Create handler** to save all changes.
 
-#### Step 2: Attach touch handler to your touchpoint
+#### Step 2: Attach the touch handler to your touchpoint
 
 Go back to the **Touchpoints** tab and click on your curbside pickup touchpoint to open touchpoint details.
 
@@ -241,7 +241,7 @@ Go back to the **Touchpoints** tab and click on your curbside pickup touchpoint 
 	<img src="/images/curbside-pickup/workspace-edit-touchpoint.png" width="90%">
 </p>
 
-Click **Edit** to edit the touchpoint and add your Trello handler to it using the **Handler** field. Just click on the field, start typing your handler name, and then choose the handler from the list.
+Click **Edit** and add your Trello handler to the touchpoint using the **Handler** field. Just click on the field, start typing your handler name, and then choose the handler from the list.
 
 <p align="center">
 	<img src="/images/curbside-pickup/touchpoint-add-handler.png" width="75%">
@@ -251,7 +251,7 @@ Click **Save changes** to save your touchpoint.
 
 #### Step 3: Test
 
-Now that everything is ready, let's test it out. Click the touchpoint link or scan the QR code with your phone, fill out the form, and watch a new Trello card appear automatically in your board.
+Now that everything is ready, let's test it out. Click the touchpoint link or scan the QR code with your phone, fill out the form, and a new Trello card will automatically appear in your board.
 
 If you would like to learn more about Routegy, [this tutorial](https://docs.routegy.com/tutorial/routegy-at-a-glance.html) is a great place to start.
 
