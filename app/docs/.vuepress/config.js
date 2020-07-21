@@ -19,22 +19,17 @@ module.exports = {
     themeConfig: {
         company: 'Routegy',
         subdomain: 'Docs',
+        subdomainLogo: '/images/docs-logo-light.svg',
         hostname: 'https://docs.routegy.com',
         joinCta: 'Start today!',
         nav: [
           {
-            text: 'Navigation',
-            items: [
-              { text: 'Home', link: '/' },
-              { text: 'How-to guides', link: '/how-to/' },
-              { text: 'Reference guides', link: '/reference/' },
-              { text: 'Topic guides', link: '/topic/' },
-              { text: 'Tutorials', link: '/tutorial/' },
-            ]
-          },
-          {
             text: 'API Docs',
             link: 'https://api.docs.routegy.com'
+          },
+          {
+            text: 'Blog',
+            link: 'https://blog.routegy.com'
           },
           {
             text: 'Sign in',
