@@ -21,6 +21,6 @@
         "vuepress-theme-routegy": "^1.0.27"
     },
     "devDependencies": {
-        "@vuepress/plugin-google-analytics": "^1.5.2"
+        "@vuepress/plugin-google-analytics": "^1.8.0"
     }
 }
