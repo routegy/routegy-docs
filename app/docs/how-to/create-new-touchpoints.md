@@ -1,12 +1,12 @@
 ---
-title: "Create new touchpoints | How-to"
-description: "How do I create new touchpoints?"
+title: "Create new microapps | How-to"
+description: "How do I create new microapps?"
 sidebar: false
 ---
 
-# Create new touchpoints
+# Create new microapps
 
-This document describes how to create new [touchpoints](/topic/touchpoints/) using the Admin web app.
+This document describes how to create new [microapps](/topic/microapps/) using the Admin web app.
 
 #### Step 1
 
@@ -16,25 +16,25 @@ Start by making sure you're in the desired [workspace](/reference/workspaces/). 
 
 #### Step 2
 
-Drag and drop the **touchpoint** icon from the right-corner into the desired location.
+Drag and drop the **microapp** icon from the right-corner into the desired group.
 
-![Drag Touchpoint](/images/tree/office-drag-drop-touchpoint.png)
+![Drag Microapp](/images/tree/office-drag-drop-microapp.png)
 
 #### Step 3
 
-Fill out the modal dialog with information about the touchpoint you wish to create.
+Fill out the modal dialog with information about the microapp you wish to create.
 
 ::: tip
-  The `Location` field will be populated based on where the icon was dragged.
+  The `Group` field will be populated based on where the icon was dragged.
 :::
 
-![New Touchpoint Modal](/images/modals/office-1st-conf-room-101-create-touchpoint.png)
+![New Microapp Modal](/images/modals/office-1st-conf-room-101-create-microapp.png)
 
-Click **+ Create touchpoint** and you're done!
+Click **+ Create microapp** and you're done!
 
 ### Related
 
-* [Location | Topic](/topic/locations/)
-* [Touchpoint | Topic](/topic/touchpoints/)
-* [Touchpoint | Reference](/reference/touchpoints/)
+* [Group | Topic](/topic/groups/)
+* [Microapp | Topic](/topic/microapps/)
+* [Microapp | Reference](/reference/microapps/)
 

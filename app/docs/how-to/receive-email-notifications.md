@@ -6,13 +6,13 @@ sidebar: false
 
 # Receive Email Notifications
 
-This document describes how to make use of the [Email Touch Handler Type](/reference/touch-handler-types/email/) to receive email notifications.
+This document describes how to make use of the [Email Action Type](/reference/action-types/email/) to receive email notifications.
 
-Email touch handlers are commonly used for lower priority [touchpoints](/reference/touchpoints/) that can be addressed in an asynchronous fashion.
+Email actions are commonly used for lower priority [microapps](/reference/microapps/) that can be addressed in an asynchronous fashion.
 
-### Creating the Touch Handler
+### Creating the Action
 
-Follow the steps below to create a [touch handler](/reference/touch-handlers/) for sending email notifications.
+Follow the steps below to create a [action](/reference/actions/) for sending email notifications.
 
 #### Step 1
 
@@ -22,21 +22,21 @@ Start by making sure you're in the desired [workspace](/reference/workspaces/). 
 
 #### Step 2
 
-Select the **Handlers** tab within the workspace view.
+Select the **Actions** tab within the workspace view.
 
-![Select Handlers Menu](/images/navigation/select-handlers-menu.png)
+![Select Actions Menu](/images/navigation/select-actions-menu.png)
 
 #### Step 3
 
-Click on the **+ New Handler** button. This will launch a modal for creating new touch handlers.
+Click on the **+ New Action** button. This will launch a modal for creating new actions.
 
-![New Handler Button](/images/buttons/new-handler.png)
+![New Action Button](/images/buttons/new-action.png)
 
 #### Step 4
 
-From the touch handler creation model, select **Email** from the _Handler type_ dropdown list.
+From the action creation model, select **Email** from the _Action type_ dropdown list.
 
-![SMS Handler Type Dropdown List](/images/modals/office-create-handler-email.png)
+![SMS Action Type Dropdown List](/images/modals/office-create-action-email.png)
 
 #### Step 5
 
@@ -48,46 +48,46 @@ The email can be to a single person or a mailing list.
 
 #### Step 6
 
-Click on **+ Create handler** to complete the process.
+Click on **+ Create action** to complete the process.
 
-![SMS Handler Filled](/images/modals/office-create-handler-email-filled.png)
+![SMS Action Filled](/images/modals/office-create-action-email-filled.png)
 
-### Attaching Touch Handler to Touchpoint
+### Attaching Action to Microapp
 
-Follow the steps below to attach the email touch handler created above to one or more [touchpoints](/reference/touchpoints/).
+Follow the steps below to attach the email action created above to one or more [microapps](/reference/microapps/).
 
 #### Step 1
 
-Select the **Touchpoints** tab within the workspace view.
+Select the **Microapps** tab within the workspace view.
 
-![Select Touchpoints Menu](/images/navigation/select-touchpoints-menu.png)
+![Select Microapps Menu](/images/navigation/select-microapps-menu.png)
 
 #### Step 2
 
-Select the [touchpoint](/reference/touchpoints/) you wish to receive email notifications for.
+Select the [microapp](/reference/microapps/) you wish to receive email notifications for.
 
-![Select Touchpoint](/images/tree/personal-office-select-touchpoint.png)
+![Select Microapp](/images/tree/personal-office-select-microapp.png)
 
 #### Step 3
 
-From the touchpoint model, click on the **Edit** button.
+From the microapp model, click on the **Edit** button.
 
-![Edit Touchpoint](/images/modals/personal-office-coffee-machine-edit-touchpoint.png)
+![Edit Microapp](/images/modals/personal-office-coffee-machine-edit-microapp.png)
 
 #### Step 4
 
-From the touchpoint edit model, type in the name of your touch handler in _Handlers_ list. The name will autocomplete as you type.
+From the microapp edit model, type in the name of your action in _Actions_ list. The name will autocomplete as you type.
 
-![Add Touch Handler](/images/modals/personal-office-coffee-machine-edit-touchpoint-handlers-email.png)
+![Add Action](/images/modals/personal-office-coffee-machine-edit-microapp-actions-email.png)
 
 #### Step 5
 
 Click on the **Save changes** button and you're done!
 
-![Save Touchpoint](/images/modals/personal-office-coffee-machine-edit-touchpoint-handlers-email-save.png)
+![Save Microapp](/images/modals/personal-office-coffee-machine-edit-microapp-actions-email-save.png)
 
-### Wait for Touchpoint Interaction 
+### Wait for Microapp Interaction 
 
-Now that your touchpoint is configured, you just wait until someone interacts with it. Once they do, you'll receive an email that looks something like this.
+Now that your microapp is configured, you just wait until someone interacts with it. Once they do, you'll receive an email that looks something like this.
 
-![Handler Integration](/images/handlers/personal-office-coffee-machine-email.png)
+![Action Integration](/images/actions/personal-office-coffee-machine-email.png)

@@ -14,7 +14,7 @@ RUN test -n "${WORKDIR}" && \
     test -n "${YARN_VERSION_ARG}" && \
     test -n "${ENVIRONMENT}"
 
-RUN apk add --no-cache openssh git python make g++
+RUN apk add --no-cache openssh git python2 python3 make g++
 
 RUN mkdir -p ${WORKDIR} ${CACHEDIR}
 

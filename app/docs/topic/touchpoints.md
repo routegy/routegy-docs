@@ -1,20 +1,20 @@
 ---
-title: "Touchpoints | Topic"
-description: "What is a touchpoint?"
+title: "Microapps | Topic"
+description: "What is a microapp?"
 sidebar: false
 ---
 
-# Touchpoints
+# Microapps
 
-A touchpoint is the point where interactions occur within locations of a workspace.
+A microapp is the point where interactions occur within groups of a workspace.
 
-A touchpoint is linked to a [code](/topic/codes). This enables referencing a touchpoint by an opaque value (URL) that can be encoded into touchpoints like QR codes, NFC tags, API clients, etc.
+A microapp is linked to a [code](/topic/codes). This enables referencing a microapp by an opaque value (URL) that can be encoded into microapps like QR codes, NFC tags, API clients, etc.
 
-A touchpoint has `name` and `description` fields which define a "call to action", indicating to a person its purpose and what happens when they interact with it. Depending on the physical touchpoint used, the length of these values should be limited on a common sense basis.
+A microapp has `name` and `description` fields which define a "call to action", indicating to a person its purpose and what happens when they interact with it. Depending on the physical microapp used, the length of these values should be limited on a common sense basis.
 
-A touchpoint is linked to a [schema](/topic/schemas) which defines the user experience when interacting with it. It can used to (optionally) prompt the user for additional information.
+A microapp is linked to a [schema](/topic/schemas) which defines the user experience when interacting with it. It can used to (optionally) prompt the user for additional information.
 
-A person interacting with a touchpoint will potentially create a [touch](/topic/touches). The touch contains information gathered from the person, constrained by the schema used.
+A person interacting with a microapp will potentially create a [event](/topic/events). The event contains information gathered from the person, constrained by the schema used.
 
 ### Examples
 
@@ -28,4 +28,4 @@ A person interacting with a touchpoint will potentially create a [touch](/topic/
 
 * [Topic: Code](/topic/codes/)
 * [Reference: Code](/reference/codes/)
-* [Reference: Touchpoint](/reference/touchpoints/)
+* [Reference: Microapp](/reference/microapps/)

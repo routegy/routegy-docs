@@ -10,17 +10,17 @@ The goal of this tutorial is to give you enough specifics to understand how Rout
 
 Routegy was designed to empower people to interact with physical spaces in streamlined ways. Here’s an informal overview of how Routegy works.
 
-## Define locations and touchpoints
+## Define groups and microapps
 
-[Locations](/topic/locations/) are structured in a hierarchy that maps to locations that make sense to you and your business. These can be physical locations, e.g. `1st Floor` or `Jamrich Building`, or virtual locations, e.g. `Blog post` or `Slack channel`.
+[Groups](/topic/groups/) are structured in a hierarchy that maps to groups that make sense to you and your business. These can be physical groups, e.g. `1st Floor` or `Jamrich Building`, or virtual groups, e.g. `Blog post` or `Slack channel`.
 
-[Touchpoints](/topic/touchpoints/) are structured as common points of interaction within those locations. These interactions can be for making purchases, reporting issues, submitting requests, starting chat conversations, or providing feedback.
+[Microapps](/topic/microapps/) are structured as common points of interaction within those groups. These interactions can be for making purchases, reporting issues, submitting requests, starting chat conversations, or providing feedback.
 
-![Location Tree](/images/navigation/office-1st-floor-conference-room-101-tree.png)
+![Group Tree](/images/navigation/office-1st-floor-conference-room-101-tree.png)
 
 ## Choosing what kind of information to collect
 
-[Schemas](/topic/schemas/) are structured to control the UX and constraints of information you're collecting for each interaction. You have full control to create and customize these experience for each touchpoint.
+[Schemas](/topic/schemas/) are structured to control the UX and constraints of information you're collecting for each interaction. You have full control to create and customize these experience for each microapp.
 
 Write a structured schema document that can be used to capture any information you like.
 
@@ -54,15 +54,15 @@ additionalProperties: false
 
 ## Choosing where the information should go
 
-[Handlers](/topic/touch-handlers/) are structured to control how Routegy should process and route the captured information to you. These can be notifications like `email` or `SMS`, work management systems like `Trello` or `JIRA`, and hooks like `Zapier`, `IFTTT` or `Webhooks`.
+[Actions](/topic/actions/) are structured to control how Routegy should process and route the captured information to you. These can be notifications like `email` or `SMS`, work management systems like `Trello` or `JIRA`, and hooks like `Zapier`, `IFTTT` or `Webhooks`.
 
 Minimize the noise of the daily ephemera. Be notified instantly for high priority issues. It's entirely up to you.
 
-![Handlers List](/images/modals/office-experience-edit-touchpoint-handlers.png)
-![JIRA Handler Creation](/images/modals/office-create-handler-jira.png)
+![Actions List](/images/modals/office-experience-edit-microapp-actions.png)
+![JIRA Action Creation](/images/modals/office-create-action-jira.png)
 
-## Place touchpoints around your space
+## Place microapps around your space
 
-[Touchpoints](/topic/touchpoints/) are placed around your space for people to interact with. QR codes, NFC tags, buttons or sensors. Use our designs or customize for your brand.
+[Microapps](/topic/microapps/) are placed around your space for people to interact with. QR codes, NFC tags, buttons or sensors. Use our designs or customize for your brand.
 
 ![Hotel Survey](/images/marketing/hotel-survey.jpg)

@@ -6,13 +6,13 @@ sidebar: false
 
 # Receive SMS Notifications
 
-This document describes how to make use of the [SMS Touch Handler Type](/reference/touch-handler-types/sms/) to receive text message notifications.
+This document describes how to make use of the [SMS Action Type](/reference/action-types/sms/) to receive text message notifications.
 
-SMS touch handlers are commonly used with high priority [touchpoints](/reference/touchpoints/) that require immediate attention or staff members that are constantly on the go.
+SMS actions are commonly used with high priority [microapps](/reference/microapps/) that require immediate attention or staff members that are constantly on the go.
 
-### Creating the Touch Handler
+### Creating the Action
 
-Follow the steps below to create a [touch handler](/reference/touch-handlers/) for sending SMS notifications.
+Follow the steps below to create a [action](/reference/actions/) for sending SMS notifications.
 
 #### Step 1
 
@@ -22,21 +22,21 @@ Start by making sure you're in the desired [workspace](/reference/workspaces/). 
 
 #### Step 2
 
-Select the **Handlers** tab within the workspace view.
+Select the **Actions** tab within the workspace view.
 
-![Select Handlers Menu](/images/navigation/select-handlers-menu.png)
+![Select Actions Menu](/images/navigation/select-actions-menu.png)
 
 #### Step 3
 
-Click on the **+ New Handler** button. This will launch a modal for creating new touch handlers.
+Click on the **+ New Action** button. This will launch a modal for creating new actions.
 
-![New Handler Button](/images/buttons/new-handler.png)
+![New Action Button](/images/buttons/new-action.png)
 
 #### Step 4
 
-From the touch handler creation model, select **SMS** from the _Handler type_ dropdown list.
+From the action creation model, select **SMS** from the _Action type_ dropdown list.
 
-![SMS Handler Type Dropdown List](/images/modals/office-create-handler-sms.png)
+![SMS Action Type Dropdown List](/images/modals/office-create-action-sms.png)
 
 #### Step 5
 
@@ -48,46 +48,46 @@ If you don't provide a country code, it will default to 1. See [wikipedia](https
 
 #### Step 6
 
-Click on **+ Create handler** to complete the process.
+Click on **+ Create action** to complete the process.
 
-![SMS Handler Filled](/images/modals/office-create-handler-sms-filled.png)
+![SMS Action Filled](/images/modals/office-create-action-sms-filled.png)
 
-### Attaching Touch Handler to Touchpoint
+### Attaching Action to Microapp
 
-Follow the steps below to attach the SMS touch handler created above to one or more [touchpoints](/reference/touchpoints/).
+Follow the steps below to attach the SMS action created above to one or more [microapps](/reference/microapps/).
 
 #### Step 1
 
-Select the **Touchpoints** tab within the workspace view.
+Select the **Microapps** tab within the workspace view.
 
-![Select Touchpoints Menu](/images/navigation/select-touchpoints-menu.png)
+![Select Microapps Menu](/images/navigation/select-microapps-menu.png)
 
 #### Step 2
 
-Select the [touchpoint](/reference/touchpoints/) you wish to receive SMS notifications for.
+Select the [microapp](/reference/microapps/) you wish to receive SMS notifications for.
 
-![Select Touchpoint](/images/tree/personal-office-select-touchpoint.png)
+![Select Microapp](/images/tree/personal-office-select-microapp.png)
 
 #### Step 3
 
-From the touchpoint model, click on the **Edit** button.
+From the microapp model, click on the **Edit** button.
 
-![Edit Touchpoint](/images/modals/personal-office-coffee-machine-edit-touchpoint.png)
+![Edit Microapp](/images/modals/personal-office-coffee-machine-edit-microapp.png)
 
 #### Step 4
 
-From the touchpoint edit model, type in the name of your touch handler in _Handlers_ list. The name will autocomplete as you type.
+From the microapp edit model, type in the name of your action in _Actions_ list. The name will autocomplete as you type.
 
-![Add Touch Handler](/images/modals/personal-office-coffee-machine-edit-touchpoint-handlers-sms.png)
+![Add Action](/images/modals/personal-office-coffee-machine-edit-microapp-actions-sms.png)
 
 #### Step 5
 
 Click on the **Save changes** button and you're done!
 
-![Save Touchpoint](/images/modals/personal-office-coffee-machine-edit-touchpoint-handlers-sms-save.png)
+![Save Microapp](/images/modals/personal-office-coffee-machine-edit-microapp-actions-sms-save.png)
 
-### Wait for Touchpoint Interaction 
+### Wait for Microapp Interaction 
 
-Now that your touchpoint is configured, you just wait until someone interacts with it. Once they do, you'll receive an SMS that looks something like this.
+Now that your microapp is configured, you just wait until someone interacts with it. Once they do, you'll receive an SMS that looks something like this.
 
-![Handler Integration](/images/handlers/personal-office-coffee-machine-sms.png)
+![Action Integration](/images/actions/personal-office-coffee-machine-sms.png)

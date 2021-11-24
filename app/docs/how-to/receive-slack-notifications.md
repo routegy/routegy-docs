@@ -6,13 +6,13 @@ sidebar: false
 
 # Receive Slack Notifications
 
-This document describes how to make use of the [Slack Webhook Touch Handler Type](/reference/touch-handler-types/slack-webhook/) to receive slack message notifications.
+This document describes how to make use of the [Slack Webhook Action Type](/reference/action-types/slack-webhook/) to receive slack message notifications.
 
-Slack touch handlers are used with a wide variety of [touchpoints](/reference/touchpoints/). These can require near immediate attention, a slower asynchronous approach, or even provide an easy-to-browse archive of all interactions.
+Slack actions are used with a wide variety of [microapps](/reference/microapps/). These can require near immediate attention, a slower asynchronous approach, or even provide an easy-to-browse archive of all interactions.
 
-### Creating the Touch Handler
+### Creating the Action
 
-Follow the steps below to create a [touch handler](/reference/touch-handlers/) for sending Slack notifications.
+Follow the steps below to create a [action](/reference/actions/) for sending Slack notifications.
 
 #### Step 1
 
@@ -22,21 +22,21 @@ Start by making sure you're in the desired [workspace](/reference/workspaces/). 
 
 #### Step 2
 
-Select the **Handlers** tab within the workspace view.
+Select the **Actions** tab within the workspace view.
 
-![Select Handlers Menu](/images/navigation/select-handlers-menu.png)
+![Select Actions Menu](/images/navigation/select-actions-menu.png)
 
 #### Step 3
 
-Click on the **+ New Handler** button. This will launch a modal for creating new touch handlers.
+Click on the **+ New Action** button. This will launch a modal for creating new actions.
 
-![New Handler Button](/images/buttons/new-handler.png)
+![New Action Button](/images/buttons/new-action.png)
 
 #### Step 4
 
-From the touch handler creation model, select **Slack** from the _Handler type_ dropdown list.
+From the action creation model, select **Slack** from the _Action type_ dropdown list.
 
-![Slack Handler Type Dropdown List](/images/modals/office-create-handler-slack.png)
+![Slack Action Type Dropdown List](/images/modals/office-create-action-slack.png)
 
 #### Step 5
 
@@ -48,46 +48,46 @@ Create or view your Slack webhook integrations [here](https://slack.com/apps/A0F
 
 #### Step 6
 
-Click on **+ Create handler** to complete the process.
+Click on **+ Create action** to complete the process.
 
-![Slack Handler Filled](/images/modals/office-create-handler-slack-filled.png)
+![Slack Action Filled](/images/modals/office-create-action-slack-filled.png)
 
-### Attaching Touch Handler to Touchpoint
+### Attaching Action to Microapp
 
-Follow the steps below to attach the Slack touch handler created above to one or more [touchpoints](/reference/touchpoints/).
+Follow the steps below to attach the Slack action created above to one or more [microapps](/reference/microapps/).
 
 #### Step 1
 
-Select the **Touchpoints** tab within the workspace view.
+Select the **Microapps** tab within the workspace view.
 
-![Select Touchpoints Menu](/images/navigation/select-touchpoints-menu.png)
+![Select Microapps Menu](/images/navigation/select-microapps-menu.png)
 
 #### Step 2
 
-Select the [touchpoint](/reference/touchpoints/) you wish to receive Slack notifications for.
+Select the [microapp](/reference/microapps/) you wish to receive Slack notifications for.
 
-![Select Touchpoint](/images/tree/personal-office-select-touchpoint.png)
+![Select Microapp](/images/tree/personal-office-select-microapp.png)
 
 #### Step 3
 
-From the touchpoint model, click on the **Edit** button.
+From the microapp model, click on the **Edit** button.
 
-![Edit Touchpoint](/images/modals/personal-office-coffee-machine-edit-touchpoint.png)
+![Edit Microapp](/images/modals/personal-office-coffee-machine-edit-microapp.png)
 
 #### Step 4
 
-From the touchpoint edit model, type in the name of your touch handler in _Handlers_ list. The name will autocomplete as you type.
+From the microapp edit model, type in the name of your action in _Actions_ list. The name will autocomplete as you type.
 
-![Add Touch Handler](/images/modals/personal-office-coffee-machine-edit-touchpoint-handlers-slack.png)
+![Add Action](/images/modals/personal-office-coffee-machine-edit-microapp-actions-slack.png)
 
 #### Step 5
 
 Click on the **Save changes** button and you're done!
 
-![Save Touchpoint](/images/modals/personal-office-coffee-machine-edit-touchpoint-handlers-slack-save.png)
+![Save Microapp](/images/modals/personal-office-coffee-machine-edit-microapp-actions-slack-save.png)
 
-### Wait for Touchpoint Interaction 
+### Wait for Microapp Interaction 
 
-Now that your touchpoint is configured, you just wait until someone interacts with it. Once they do, you'll receive an Slack that looks something like this.
+Now that your microapp is configured, you just wait until someone interacts with it. Once they do, you'll receive an Slack that looks something like this.
 
-![Handler Integration](/images/handlers/personal-office-coffee-machine-slack.png)
+![Action Integration](/images/actions/personal-office-coffee-machine-slack.png)

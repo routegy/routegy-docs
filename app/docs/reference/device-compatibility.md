@@ -1,12 +1,12 @@
 ---
 title: "Device compatibility | Reference"
-description: "How do I know if my device is compatible with Routegy touchpoints?"
+description: "How do I know if my device is compatible with Routegy microapps?"
 sidebar: false
 ---
 
-# Devices compatible with QR and NFC touchpoints
+# Devices compatible with QR and NFC microapps
 
-Interacting with Routegy QR and NFC touchpoints uses built-in capabilities of a person's device. These capabilities are a standard feature in most modern iOS and Android devices.
+Interacting with Routegy QR and NFC microapps uses built-in capabilities of a person's device. These capabilities are a standard feature in most modern iOS and Android devices.
 
 ## iOS device compatibility
 

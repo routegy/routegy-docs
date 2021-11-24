@@ -6,11 +6,11 @@ sidebar: false
 
 # Print QR Codes
 
-This document describes how to download and print [QR codes](https://en.wikipedia.org/wiki/QR_code) for your Routegy [touchpoints](/topic/touchpoints/).
+This document describes how to download and print [QR codes](https://en.wikipedia.org/wiki/QR_code) for your Routegy [microapps](/topic/microapps/).
 
 ### Downloading the QR code
 
-Follow the steps below to download the QR code for a single touchpoint.
+Follow the steps below to download the QR code for a single microapp.
 
 #### Step 1
 
@@ -20,15 +20,15 @@ Start by making sure you're in the desired [workspace](/reference/workspaces/). 
 
 #### Step 2
 
-Select the **Touchpoints** tab within the workspace view.
+Select the **Microapps** tab within the workspace view.
 
-![Select Touchpoint Menu](/images/navigation/select-touchpoints-menu.png)
+![Select Microapp Menu](/images/navigation/select-microapps-menu.png)
 
 #### Step 2
 
-Select the [touchpoint](/reference/touchpoints/) you wish to download.
+Select the [microapp](/reference/microapps/) you wish to download.
 
-![Download Touchpoint](/images/modals/personal-office-coffee-machine-download-touchpoint.png)
+![Download Microapp](/images/modals/personal-office-coffee-machine-download-microapp.png)
 
 ### Print the QR code
 
@@ -38,7 +38,7 @@ Follow the steps below to print the downloaded QR code.
 
 Open the downloaded QR code image. This will be located in the default Downloads folder configured for your web browser.
 
-![Open SVG](/images/navigation/personal-office-coffee-machine-open-touchpoint-svg.png)
+![Open SVG](/images/navigation/personal-office-coffee-machine-open-microapp-svg.png)
 
 #### Step 2
 

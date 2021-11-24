@@ -6,13 +6,13 @@ sidebar: false
 
 # Receive Webhook Notifications
 
-This document describes how to make use of the [Webhook Touch Handler Type](/reference/touch-handler-types/webhook/) to receive HTTP requests with JSON data when someone interacts with your touchpoints.
+This document describes how to make use of the [Webhook Action Type](/reference/action-types/webhook/) to receive HTTP requests with JSON data when someone interacts with your microapps.
 
-Webhook touch handlers are extremely powerful as they can be integrated with any existing system that can receive HTTP requests.
+Webhook actions are extremely powerful as they can be integrated with any existing system that can receive HTTP requests.
 
-### Creating the Touch Handler
+### Creating the Action
 
-Follow the steps below to create a [touch handler](/reference/touch-handlers/) for creating Webhooks.
+Follow the steps below to create a [action](/reference/actions/) for creating Webhooks.
 
 #### Step 1
 
@@ -22,21 +22,21 @@ Start by making sure you're in the desired [workspace](/reference/workspaces/). 
 
 #### Step 2
 
-Select the **Handlers** tab within the workspace view.
+Select the **Actions** tab within the workspace view.
 
-![Select Handlers Menu](/images/navigation/select-handlers-menu.png)
+![Select Actions Menu](/images/navigation/select-actions-menu.png)
 
 #### Step 3
 
-Click on the **+ New Handler** button. This will launch a modal for creating new touch handlers.
+Click on the **+ New Action** button. This will launch a modal for creating new actions.
 
-![New Handler Button](/images/buttons/new-handler.png)
+![New Action Button](/images/buttons/new-action.png)
 
 #### Step 4
 
-From the touch handler creation model, select **Webhook** from the _Handler type_ dropdown list.
+From the action creation model, select **Webhook** from the _Action type_ dropdown list.
 
-![Webhook Handler Type Dropdown List](/images/modals/office-create-handler-webhook.png)
+![Webhook Action Type Dropdown List](/images/modals/office-create-action-webhook.png)
 
 #### Step 5
 
@@ -44,46 +44,46 @@ Enter the URL for the webhook endpoint you would like to use.
 
 #### Step 7
 
-Click on **+ Create handler** to complete the process.
+Click on **+ Create action** to complete the process.
 
-![Webhook Handler Filled](/images/modals/office-create-handler-webhook-filled.png)
+![Webhook Action Filled](/images/modals/office-create-action-webhook-filled.png)
 
-### Attaching Touch Handler to Touchpoint
+### Attaching Action to Microapp
 
-Follow the steps below to attach the Webhook touch handler created above to one or more [touchpoints](/reference/touchpoints/).
+Follow the steps below to attach the Webhook action created above to one or more [microapps](/reference/microapps/).
 
 #### Step 1
 
-Select the **Touchpoints** tab within the workspace view.
+Select the **Microapps** tab within the workspace view.
 
-![Select Touchpoints Menu](/images/navigation/select-touchpoints-menu.png)
+![Select Microapps Menu](/images/navigation/select-microapps-menu.png)
 
 #### Step 2
 
-Select the [touchpoint](/reference/touchpoints/) you wish to receive webhook requests from.
+Select the [microapp](/reference/microapps/) you wish to receive webhook requests from.
 
-![Select Touchpoint](/images/tree/personal-office-select-touchpoint.png)
+![Select Microapp](/images/tree/personal-office-select-microapp.png)
 
 #### Step 3
 
-From the touchpoint model, click on the **Edit** button.
+From the microapp model, click on the **Edit** button.
 
-![Edit Touchpoint](/images/modals/personal-office-coffee-machine-edit-touchpoint.png)
+![Edit Microapp](/images/modals/personal-office-coffee-machine-edit-microapp.png)
 
 #### Step 4
 
-From the touchpoint edit model, type in the name of your touch handler in _Handlers_ list. The name will autocomplete as you type.
+From the microapp edit model, type in the name of your action in _Actions_ list. The name will autocomplete as you type.
 
-![Add Touch Handler](/images/modals/personal-office-coffee-machine-edit-touchpoint-handlers-webhook.png)
+![Add Action](/images/modals/personal-office-coffee-machine-edit-microapp-actions-webhook.png)
 
 #### Step 5
 
 Click on the **Save changes** button and you're done!
 
-![Save Touchpoint](/images/modals/personal-office-coffee-machine-edit-touchpoint-handlers-webhook-save.png)
+![Save Microapp](/images/modals/personal-office-coffee-machine-edit-microapp-actions-webhook-save.png)
 
-### Wait for Touchpoint Interactions
+### Wait for Microapp Interactions
 
-Now that your touchpoint is configured, you just wait until someone interacts with it. Once they do, you'll automatically receive an HTTP requests that looks something like this.
+Now that your microapp is configured, you just wait until someone interacts with it. Once they do, you'll automatically receive an HTTP requests that looks something like this.
 
-![Handler Integration](/images/handlers/personal-office-coffee-machine-webhook.png)
+![Action Integration](/images/actions/personal-office-coffee-machine-webhook.png)

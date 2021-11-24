@@ -6,9 +6,9 @@ sidebar: false
 
 # Schemas
 
-A schema defines the constraints of how a person can interact with a [touchpoint](/topics/touchpoints) or a [touch handler type](/topics/touch-handler-types/).
+A schema defines the constraints of how a person can interact with a [microapp](/topics/microapps) or a [action type](/topics/action-types/).
 
-These constraints are defined with a [JSON Schema](https://json-schema.org/) document and validated when a [touch](/topics/touches) or [touch handler](/topics/touch-handlers/) is created.
+These constraints are defined with a [JSON Schema](https://json-schema.org/) document and validated when a [event](/topics/events) or [action](/topics/actions/) is created.
 
 A schema with a `null` JSON Schema document indicates that no information should be collected.
 
@@ -49,8 +49,8 @@ The following is an example [JSON Schema](https://json-schema.org/) document in 
 
 ### Related
 
-* [Topic: Touchpoint](/topic/touchpoints/)
+* [Topic: Microapp](/topic/microapps/)
 * [Topic: SchemaValues](/topic/schema-values/)
-* [Reference: Touchpoint](/reference/touchpoints/)
+* [Reference: Microapp](/reference/microapps/)
 * [Reference: Schemas](/reference/schemas/)
 * [Reference: SchemaValues](/reference/schema-values/)

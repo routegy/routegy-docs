@@ -1,14 +1,14 @@
 ---
-title: "Locations | Topic"
-description: "What is a location?"
+title: "Groups | Topic"
+description: "What is a group?"
 sidebar: false
 ---
 
-# Locations
+# Groups
 
-A location represents a physical space. Locations are structured in a tree hierarchy so you can describe most complex structures with them.
+A group represents a physical space. Groups are structured in a tree hierarchy so you can describe most complex structures with them.
 
-An example of a hierarchy of locations could be:
+An example of a hierarchy of groups could be:
 
 ```
 > University Campus
@@ -17,7 +17,7 @@ An example of a hierarchy of locations could be:
             > Classroom 251
 ```
 
-A location has zero or more [touchpoints](/topic/touchpoints/), which define common interactions relative to that location. A touchpoint requesting more printer paper makes sense for an office supply room location but does not make sense for a bathroom location.
+A group has zero or more [microapps](/topic/microapps/), which define common interactions relative to that group. A microapp requesting more printer paper makes sense for an office supply room group but does not make sense for a bathroom group.
 
 ### Examples
 
@@ -25,6 +25,6 @@ A location has zero or more [touchpoints](/topic/touchpoints/), which define com
 
 ### Related
 
-* [Topic: Touchpoint](/topic/touchpoints/)
-* [Reference: Location](/reference/locations/)
-* [Reference: Touchpoint](/reference/touchpoints/)
+* [Topic: Microapp](/topic/microapps/)
+* [Reference: Group](/reference/groups/)
+* [Reference: Microapp](/reference/microapps/)

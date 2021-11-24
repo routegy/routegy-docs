@@ -13,6 +13,6 @@ If you're currently asking yourself "What is a..." question, you're in the right
 ## Guides
 
 * [Codes](/topic/codes/)
-* [Locations](/topic/locations/)
+* [Groups](/topic/groups/)
 * [Schemas](/topic/schemas/)
-* [Touchpoints](/topic/touchpoints/)
+* [Microapps](/topic/microapps/)

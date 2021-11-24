@@ -7,7 +7,7 @@
 
 set -e
 
-apk add --no-cache openssh git python make g++
+apk add --no-cache openssh git python2 python3 make g++
 
 yarn policies set-version ${YARN_VERSION}
 

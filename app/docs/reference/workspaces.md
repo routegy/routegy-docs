@@ -20,7 +20,7 @@ Some examples of a workspace could be:
 A workspace is made up of the following relations:
 
 * [Organization](/reference/organizations/) (many-to-one)
-* [Location](/reference/locations/) (one-to-many)
+* [Group](/reference/groups/) (one-to-many)
 * [Team](/reference/teams/) (one-to-many)
 * [User](/reference/users/) (one-to-many)
 

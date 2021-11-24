@@ -6,15 +6,15 @@ sidebar: false
 
 # Create Trello Cards
 
-This document describes how to make use of the [Trello](/reference/touch-handler-types/trello/) touch handler to create cards when someone interacts with your touchpoints.
+This document describes how to make use of the [Trello](/reference/action-types/trello/) action to create cards when someone interacts with your microapps.
 
 If you don't have a Trello account, you can create one [here](https://trello.com/signup).
 
 [Routegy](https://routegy.com) + [Trello](https://trello.com) is an extremely powerful combination and is being used by people around the world to manage supply requests, purchase orders, and curbside pickups. Trello can be customized in near infinite ways to fit your exact needs.
 
-### Creating the Touch Handler
+### Creating the Action
 
-Follow the steps below to create a [touch handler](/reference/touch-handlers/) for creating Trello cards.
+Follow the steps below to create a [action](/reference/actions/) for creating Trello cards.
 
 #### Step 1
 
@@ -24,21 +24,21 @@ Start by making sure you're in the desired [workspace](/reference/workspaces/). 
 
 #### Step 2
 
-Select the **Handlers** tab within the workspace view.
+Select the **Actions** tab within the workspace view.
 
-![Select Handlers Menu](/images/navigation/select-handlers-menu.png)
+![Select Actions Menu](/images/navigation/select-actions-menu.png)
 
 #### Step 3
 
-Click on the **+ New Handler** button. This will launch a modal for creating new touch handlers.
+Click on the **+ New Action** button. This will launch a modal for creating new actions.
 
-![New Handler Button](/images/buttons/new-handler.png)
+![New Action Button](/images/buttons/new-action.png)
 
 #### Step 4
 
-From the touch handler creation model, select **Trello** from the _Handler type_ dropdown list.
+From the action creation model, select **Trello** from the _Action type_ dropdown list.
 
-![Trello Handler Type Dropdown List](/images/modals/office-create-handler-trello.png)
+![Trello Action Type Dropdown List](/images/modals/office-create-action-trello.png)
 
 #### Step 5
 
@@ -71,46 +71,46 @@ To find this, perform the following steps:
 
 #### Step 7
 
-Click on **+ Create handler** to complete the process.
+Click on **+ Create action** to complete the process.
 
-![Trello Handler Filled](/images/modals/office-create-handler-trello-filled.png)
+![Trello Action Filled](/images/modals/office-create-action-trello-filled.png)
 
-### Attaching Touch Handler to Touchpoint
+### Attaching Action to Microapp
 
-Follow the steps below to attach the Trello touch handler created above to one or more [touchpoints](/reference/touchpoints/).
+Follow the steps below to attach the Trello action created above to one or more [microapps](/reference/microapps/).
 
 #### Step 1
 
-Select the **Touchpoints** tab within the workspace view.
+Select the **Microapps** tab within the workspace view.
 
-![Select Touchpoints Menu](/images/navigation/select-touchpoints-menu.png)
+![Select Microapps Menu](/images/navigation/select-microapps-menu.png)
 
 #### Step 2
 
-Select the [touchpoint](/reference/touchpoints/) you wish to create Trello cards with.
+Select the [microapp](/reference/microapps/) you wish to create Trello cards with.
 
-![Select Touchpoint](/images/tree/personal-office-select-touchpoint.png)
+![Select Microapp](/images/tree/personal-office-select-microapp.png)
 
 #### Step 3
 
-From the touchpoint model, click on the **Edit** button.
+From the microapp model, click on the **Edit** button.
 
-![Edit Touchpoint](/images/modals/personal-office-coffee-machine-edit-touchpoint.png)
+![Edit Microapp](/images/modals/personal-office-coffee-machine-edit-microapp.png)
 
 #### Step 4
 
-From the touchpoint edit model, type in the name of your touch handler in _Handlers_ list. The name will autocomplete as you type.
+From the microapp edit model, type in the name of your action in _Actions_ list. The name will autocomplete as you type.
 
-![Add Touch Handler](/images/modals/personal-office-coffee-machine-edit-touchpoint-handlers-trello.png)
+![Add Action](/images/modals/personal-office-coffee-machine-edit-microapp-actions-trello.png)
 
 #### Step 5
 
 Click on the **Save changes** button and you're done!
 
-![Save Touchpoint](/images/modals/personal-office-coffee-machine-edit-touchpoint-handlers-trello-save.png)
+![Save Microapp](/images/modals/personal-office-coffee-machine-edit-microapp-actions-trello-save.png)
 
-### Wait for Touchpoint Interactions
+### Wait for Microapp Interactions
 
-Now that your touchpoint is configured, you just wait until someone interacts with it. Once they do, you'll automatically have a card created in Trello for you that looks something like this.
+Now that your microapp is configured, you just wait until someone interacts with it. Once they do, you'll automatically have a card created in Trello for you that looks something like this.
 
-![Handler Integration](/images/handlers/personal-office-coffee-machine-trello.png)
+![Action Integration](/images/actions/personal-office-coffee-machine-trello.png)
