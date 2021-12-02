@@ -6,11 +6,11 @@ sidebar: false
 
 # Capture maintenance requests
 
-The goal of this document is to cover how to create [schemas](/topics/schemas/) that capture maintenance requests. These are meant to gain immediate insight to the exact area of a problem without requiring additional requests for more information.
+The goal of this document is to cover how to create [patterns](/topics/patterns/) that capture maintenance requests. These are meant to gain immediate insight to the exact area of a problem without requiring additional requests for more information.
 
 ## Prerequisites
 
-Before starting, you should familiarize yourself with the [How to: Create new schemas](/how-to/create-new-schemas/) document. Only once you've read that and are confident in creating new schemas in the Admin web app, should you continue.
+Before starting, you should familiarize yourself with the [How to: Create new patterns](/how-to/create-new-patterns/) document. Only once you've read that and are confident in creating new patterns in the Admin web app, should you continue.
 
 ## Maintenance Requests
 
@@ -18,7 +18,7 @@ In most cases, fielding mantenance requests within a space can be handled by a g
 
 ### Elevator Problem
 
-This schema snippet would capture a problem with an elevator.
+This pattern snippet would capture a problem with an elevator.
 
 ```yaml
 type: object

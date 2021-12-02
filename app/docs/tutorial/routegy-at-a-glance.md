@@ -20,9 +20,9 @@ Routegy was designed to empower people to interact with physical spaces in strea
 
 ## Choosing what kind of information to collect
 
-[Schemas](/topic/schemas/) are structured to control the UX and constraints of information you're collecting for each interaction. You have full control to create and customize these experience for each microapp.
+[Patterns](/topic/patterns/) are structured to control the UX and constraints of information you're collecting for each interaction. You have full control to create and customize these experience for each microapp.
 
-Write a structured schema document that can be used to capture any information you like.
+Write a structured pattern document that can be used to capture any information you like.
 
 ```yaml
 type: object
@@ -50,7 +50,7 @@ properties:
 additionalProperties: false
 ```
 
-![Elevator Issue Preview](/images/schemas/office-elevator-issue-schema-preview.png)
+![Elevator Issue Preview](/images/patterns/office-elevator-issue-pattern-preview.png)
 
 ## Choosing where the information should go
 

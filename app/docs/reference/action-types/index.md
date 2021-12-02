@@ -33,7 +33,7 @@ The following is a list of available action types:
 A action type is made up of the following relations:
 
 * [Workspace](/reference/workspaces/) (many-to-one)
-* [Schema](/reference/schemas/) (many-to-one)
+* [Pattern](/reference/patterns/) (many-to-one)
 * [Action](/reference/actions/) (one-to-many)
 
 ## Permissions

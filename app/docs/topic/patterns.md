@@ -1,16 +1,16 @@
 ---
-title: "Schemas | Topic"
-description: "What is a schema?"
+title: "Patterns | Topic"
+description: "What is a pattern?"
 sidebar: false
 ---
 
-# Schemas
+# Patterns
 
-A schema defines the constraints of how a person can interact with a [microapp](/topics/microapps) or a [action type](/topics/action-types/).
+A pattern defines the constraints of how a person can interact with a [microapp](/topics/microapps) or a [action type](/topics/action-types/).
 
 These constraints are defined with a [JSON Schema](https://json-schema.org/) document and validated when a [event](/topics/events) or [action](/topics/actions/) is created.
 
-A schema with a `null` JSON Schema document indicates that no information should be collected.
+A pattern with a `null` JSON Schema document indicates that no information should be collected.
 
 ### Examples
 
@@ -45,12 +45,12 @@ additionalProperties: false
 
 The following is an example [JSON Schema](https://json-schema.org/) document in a rendered form.
 
-![Schema Preview](/images/schemas/office-coffee-machine-schema-preview.png)
+![Pattern Preview](/images/patterns/office-coffee-machine-pattern-preview.png)
 
 ### Related
 
 * [Topic: Microapp](/topic/microapps/)
-* [Topic: SchemaValues](/topic/schema-values/)
+* [Topic: MicroappData](/topic/microapp-data/)
 * [Reference: Microapp](/reference/microapps/)
-* [Reference: Schemas](/reference/schemas/)
-* [Reference: SchemaValues](/reference/schema-values/)
+* [Reference: Patterns](/reference/patterns/)
+* [Reference: MicroappData](/reference/microapp-data/)

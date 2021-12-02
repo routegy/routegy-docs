@@ -15,7 +15,7 @@ A person interacting with a Microapp can potentially create a [event](/reference
 A microapp is made up of the following relations:
 
 * [Group](/reference/groups/) (many-to-one)
-* [Schema](/reference/schemas/) (many-to-one)
+* [Pattern](/reference/patterns/) (many-to-one)
 * [Action](/reference/actions/) (many-to-many)
 * [Event](/reference/events/) (one-to-many)
 * [Code](/reference/codes/) (one-to-one)

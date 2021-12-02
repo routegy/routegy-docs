@@ -6,11 +6,11 @@ sidebar: false
 
 # Capture temperature requests
 
-The goal of this document is to cover how to create [schemas](/topics/schemas/) that capture temperature change requests. These are meant to gain insight into HVAC problems or quickly respond to improve the spaces and people that you serve.
+The goal of this document is to cover how to create [patterns](/topics/patterns/) that capture temperature change requests. These are meant to gain insight into HVAC problems or quickly respond to improve the spaces and people that you serve.
 
 ## Prerequisites
 
-Before starting, you should familiarize yourself with the [How to: Create new schemas](/how-to/create-new-schemas/) document. Only once you've read that and are confident in creating new schemas in the Admin web app, should you continue.
+Before starting, you should familiarize yourself with the [How to: Create new patterns](/how-to/create-new-patterns/) document. Only once you've read that and are confident in creating new patterns in the Admin web app, should you continue.
 
 ## Temperature Changes
 
@@ -18,7 +18,7 @@ Temperature change requests a.k.a "Hot/Cold" requests are simple mutually exclus
 
 ### Hot/Cold
 
-This schema snippet would capture a mutually exclusive choice for whether it is too hot or cold.
+This pattern snippet would capture a mutually exclusive choice for whether it is too hot or cold.
 
 ```yaml
 type: object

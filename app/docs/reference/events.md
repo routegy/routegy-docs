@@ -8,7 +8,7 @@ sidebar: false
 
 Events are created when people interact with a [microapp](/reference/microapps/).
 
-A event contains [schema values](/references/schema-values/) data needed to fulfill the [schema](/refernces/schema/) of the [microapp](/reference/microapps/).
+A event contains [microapp data](/references/microapp-data/) data needed to fulfill the [pattern](/refernces/pattern/) of the [microapp](/reference/microapps/).
 
 Each event created will be run through every [action](/references/actions/) attached to its [microapp](/reference/microapps/).
 
@@ -17,7 +17,7 @@ Each event created will be run through every [action](/references/actions/) atta
 A event is made up of the following relations:
 
 * [Microapp](/reference/microapps/) (many-to-one)
-* [SchemaValues](/reference/schema-values/) (many-to-one)
+* [MicroappData](/reference/microapp-data/) (many-to-one)
 
 ## Permissions
 

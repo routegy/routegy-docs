@@ -12,9 +12,9 @@ A microapp is linked to a [code](/topic/codes). This enables referencing a micro
 
 A microapp has `name` and `description` fields which define a "call to action", indicating to a person its purpose and what happens when they interact with it. Depending on the physical microapp used, the length of these values should be limited on a common sense basis.
 
-A microapp is linked to a [schema](/topic/schemas) which defines the user experience when interacting with it. It can used to (optionally) prompt the user for additional information.
+A microapp is linked to a [pattern](/topic/patterns) which defines the user experience when interacting with it. It can used to (optionally) prompt the user for additional information.
 
-A person interacting with a microapp will potentially create a [event](/topic/events). The event contains information gathered from the person, constrained by the schema used.
+A person interacting with a microapp will potentially create a [event](/topic/events). The event contains information gathered from the person, constrained by the pattern used.
 
 ### Examples
 

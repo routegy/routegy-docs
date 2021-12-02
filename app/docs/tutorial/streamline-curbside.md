@@ -75,17 +75,17 @@ Routegy will use the name and description in the header of your new microapp for
   <img src="/images/curbside-pickup/curbside-form-name-description.png" width="30%">
 </p>
 
-#### Step 4: Define a microapp schema
+#### Step 4: Define a microapp pattern
 
-Next, we are going to create a microapp [schema](/reference/schemas/). The microapp schema defines the data to collect when a customer interacts with your microapp.
+Next, we are going to create a microapp [pattern](/reference/patterns/). The microapp pattern defines the data to collect when a customer interacts with your microapp.
 
-To get started, select **Define your own schema** from the **Schema** dropdown list, and name your new schema.
+To get started, select **Define your own pattern** from the **Pattern** dropdown list, and name your new pattern.
 
 <p align="center">
-  <img src="/images/curbside-pickup/microapp-define-schema.png" width="75%">
+  <img src="/images/curbside-pickup/microapp-define-pattern.png" width="75%">
 </p>
 
-Routegy schemas are defined by a [JSON Schema](https://json-schema.org/) document in YAML format. To collect customer's name, car information, and order type, we are going to use the following schema:
+Routegy patterns are defined by a [JSON Schema](https://json-schema.org/) document in YAML format. To collect customer's name, car information, and order type, we are going to use the following pattern:
 
 ```yaml
 type: object
@@ -122,23 +122,23 @@ properties:
     title: How did you place your order?
 ```
 
-This YAML document defines a simple schema with **car**, **name**, and **order_type** fields, and it can be easily tailored to meet the needs of your business. For instance, you can modify the titles of these fields by changing the **title** attribute under each individual field.
+This YAML document defines a simple pattern with **car**, **name**, and **order_type** fields, and it can be easily tailored to meet the needs of your business. For instance, you can modify the titles of these fields by changing the **title** attribute under each individual field.
 
-To apply this document to our newly created schema, scroll down to the **Definition (YAML)** section of the form, and copy/paste the YAML code above replacing the default schema YAML.
+To apply this document to our newly created pattern, scroll down to the **Definition (YAML)** section of the form, and copy/paste the YAML code above replacing the default pattern YAML.
 
 <p align="center">
-  <img src="/images/curbside-pickup/microapp-schema-yaml.png" width="75%">
+  <img src="/images/curbside-pickup/microapp-pattern-yaml.png" width="75%">
 </p>
 
-Once done, you can click the **Preview** tab to inspect the contents of the schema form.
+Once done, you can click the **Preview** tab to inspect the contents of the pattern form.
 
 <p align="center">
-  <img src="/images/curbside-pickup/microapp-schema-preview.png" width="75%">
+  <img src="/images/curbside-pickup/microapp-pattern-preview.png" width="75%">
 </p>
 
 #### Step 5: Save and test your microapp
 
-Once you are happy with the name, description, and schema, click the **Create microapp** button to save your changes.  You will be presented with a QR code and a URL for your new microapp.
+Once you are happy with the name, description, and pattern, click the **Create microapp** button to save your changes.  You will be presented with a QR code and a URL for your new microapp.
 
 <p align="center">
   <img src="/images/curbside-pickup/microapp-qr.png" width="75%">

@@ -6,15 +6,15 @@ sidebar: false
 
 # Capture survey feedback
 
-The goal of this document is to cover how to create [schemas](/topics/schemas/) that capture feedback with a survey. Surveys are meant to gain insight by asking targeted questions to better understand the person and their feedback.
+The goal of this document is to cover how to create [patterns](/topics/patterns/) that capture feedback with a survey. Surveys are meant to gain insight by asking targeted questions to better understand the person and their feedback.
 
 ## Prerequisites
 
-Before starting, you should familiarize yourself with the [How to: Create new schemas](/how-to/create-new-schemas/) document. Only once you've read that and are confident in creating new schemas in the Admin web app, should you continue.
+Before starting, you should familiarize yourself with the [How to: Create new patterns](/how-to/create-new-patterns/) document. Only once you've read that and are confident in creating new patterns in the Admin web app, should you continue.
 
 ### Example
 
-This schema snippet is an imaginary survey that capture some information about the person and how they heard about the company before asking them for feedback.
+This pattern snippet is an imaginary survey that capture some information about the person and how they heard about the company before asking them for feedback.
 
 ```yaml
 type: object

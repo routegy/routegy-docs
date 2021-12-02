@@ -6,11 +6,11 @@ sidebar: false
 
 # Capture IT requests
 
-The goal of this document is to cover how to create [schemas](/topics/schemas/) that capture IT requests. These are meant to gain immediate insight to the exact area of a problem without requiring additional requests for more information.
+The goal of this document is to cover how to create [patterns](/topics/patterns/) that capture IT requests. These are meant to gain immediate insight to the exact area of a problem without requiring additional requests for more information.
 
 ## Prerequisites
 
-Before starting, you should familiarize yourself with the [How to: Create new schemas](/how-to/create-new-schemas/) document. Only once you've read that and are confident in creating new schemas in the Admin web app, should you continue.
+Before starting, you should familiarize yourself with the [How to: Create new patterns](/how-to/create-new-patterns/) document. Only once you've read that and are confident in creating new patterns in the Admin web app, should you continue.
 
 ## IT Requests
 
@@ -20,7 +20,7 @@ IT related requests tend to be a merge between the patterns used in [maintenance
 
 ### Call Room Problems
 
-This schema snippet would capture isssues within a call room.
+This pattern snippet would capture isssues within a call room.
 
 ```yaml
 type: object

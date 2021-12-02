@@ -14,7 +14,7 @@ Be sure to check out the document for your specific [action type](/reference/act
 
 Templates have access to all of the data captured by the [microapp](/reference/microapps/) for the [event](/reference/events/). These values are top-level items in the templating language.
 
-For example, imagine you have a [schema](/reference/schemas/) that captures problems with a coffee machine. It has two properties: `problem` and `additional_comment`.
+For example, imagine you have a [pattern](/reference/patterns/) that captures problems with a coffee machine. It has two properties: `problem` and `additional_comment`.
 
 These values would be accessed in your [actions](/reference/actions/) fields by using:
 
@@ -42,12 +42,12 @@ All variables are accessed using the <span v-pre>`{{ variable }}`</span> syntax,
 | `context.action.slug` | Slug of the action | sms-alerts |
 | `context.action.created_at` | Datetime when action was created | 2020-06-04T11:53:25-07:00 |
 | `context.action.updated_at` | Datetime when action was last updated | 2020-06-04T12:32:54-07:00 |
-| `context.action.schema.id` | ID of the action schema | 74e41b0d-3c5a-4cbb-96ab-145984341bc7 |
-| `context.action.schema.url` | URL of the action schema | https://web.routegy.com/workspaces/4e96d27a-7624-45ef-8411-a2ef8f27cc29/schemas/74e41b0d-3c5a-4cbb-96ab-145984341bc7 |
-| `context.action.schema.name` | Name of the action schema | SMS |
-| `context.action.schema.slug` | Slug of the action schema | sms |
-| `context.action.schema.created_at` | Datetime when action schema was created | 2020-06-04T11:53:25-07:00 |
-| `context.action.schema.updated_at` | Datetime when action schema was last updated | 2020-06-04T12:32:54-07:00 |
+| `context.action.pattern.id` | ID of the action pattern | 74e41b0d-3c5a-4cbb-96ab-145984341bc7 |
+| `context.action.pattern.url` | URL of the action pattern | https://web.routegy.com/workspaces/4e96d27a-7624-45ef-8411-a2ef8f27cc29/patterns/74e41b0d-3c5a-4cbb-96ab-145984341bc7 |
+| `context.action.pattern.name` | Name of the action pattern | SMS |
+| `context.action.pattern.slug` | Slug of the action pattern | sms |
+| `context.action.pattern.created_at` | Datetime when action pattern was created | 2020-06-04T11:53:25-07:00 |
+| `context.action.pattern.updated_at` | Datetime when action pattern was last updated | 2020-06-04T12:32:54-07:00 |
 | `context.group.id` | ID of the group | c47d3b00-28a6-4129-a485-60682d48bddd |
 | `context.group.url` | URL of the group | https://web.routegy.com/workspaces/4e96d27a-7624-45ef-8411-a2ef8f27cc29/tree/groups/c47d3b00-28a6-4129-a485-60682d48bddd |
 | `context.group.name` | Name of the group | Kitchen |
@@ -71,12 +71,12 @@ All variables are accessed using the <span v-pre>`{{ variable }}`</span> syntax,
 | `context.microapp.created_at` | Datetime when microapp was created | 2020-06-04T11:53:25-07:00 |
 | `context.microapp.updated_at` | Datetime when microapp was last updated | 2020-06-04T12:32:54-07:00 |
 | `context.microapp.breadcrumbs` | Breadcrumbs of microapp | Office / First Floor / Kitchen / Coffee Machine |
-| `context.microapp.schema.id` | ID of the microapp schema | 8e2e5a9a-e8f0-4f83-839d-246d865c98cb |
-| `context.microapp.schema.url` | URL of the microapp schema | https://web.routegy.com/workspaces/4e96d27a-7624-45ef-8411-a2ef8f27cc29/schemas/8e2e5a9a-e8f0-4f83-839d-246d865c98cb |
-| `context.microapp.schema.name` | Name of the microapp schema | Coffee machine problem |
-| `context.microapp.schema.slug` | Slug of the microapp schema | coffee-machine-problem |
-| `context.microapp.schema.created_at` | Datetime when microapp schema was created | 2020-06-04T11:53:25-07:00 |
-| `context.microapp.schema.updated_at` | Datetime when microapp schema was last updated | 2020-06-04T12:32:54-07:00 |
+| `context.microapp.pattern.id` | ID of the microapp pattern | 8e2e5a9a-e8f0-4f83-839d-246d865c98cb |
+| `context.microapp.pattern.url` | URL of the microapp pattern | https://web.routegy.com/workspaces/4e96d27a-7624-45ef-8411-a2ef8f27cc29/patterns/8e2e5a9a-e8f0-4f83-839d-246d865c98cb |
+| `context.microapp.pattern.name` | Name of the microapp pattern | Coffee machine problem |
+| `context.microapp.pattern.slug` | Slug of the microapp pattern | coffee-machine-problem |
+| `context.microapp.pattern.created_at` | Datetime when microapp pattern was created | 2020-06-04T11:53:25-07:00 |
+| `context.microapp.pattern.updated_at` | Datetime when microapp pattern was last updated | 2020-06-04T12:32:54-07:00 |
 | `context.user.id` | ID of the organization owner | 2de59476-fa4e-45ea-9cfb-cd11944b5eda |
 | `context.user.name` | Name of the organization owner | John Smith |
 | `context.user.slug` | Slug of the organization owner | john-smith |

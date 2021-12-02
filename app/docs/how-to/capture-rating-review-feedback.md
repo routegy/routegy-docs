@@ -6,11 +6,11 @@ sidebar: false
 
 # Capture rating & review feedback
 
-The goal of this document is to cover how to create [schemas](/topics/schemas/) that capture feedback with a rating & review prompt. These are meant to gain insight with a fixed size scoring mechanism and optionally an additional free-form input to capture personalized feedback.
+The goal of this document is to cover how to create [patterns](/topics/patterns/) that capture feedback with a rating & review prompt. These are meant to gain insight with a fixed size scoring mechanism and optionally an additional free-form input to capture personalized feedback.
 
 ## Prerequisites
 
-Before starting, you should familiarize yourself with the [How to: Create new schemas](/how-to/create-new-schemas/) document. Only once you've read that and are confident in creating new schemas in the Admin web app, should you continue.
+Before starting, you should familiarize yourself with the [How to: Create new patterns](/how-to/create-new-patterns/) document. Only once you've read that and are confident in creating new patterns in the Admin web app, should you continue.
 
 ## Ratings
 
@@ -26,7 +26,7 @@ All of these are examples of a ratings prompt but they are slightly different. V
 
 ### Upvote/Downvote
 
-This schema snippet would capture a mutually exclusive choice.
+This pattern snippet would capture a mutually exclusive choice.
 
 ```yaml
 type: object
@@ -49,7 +49,7 @@ additionalProperties: false
 
 ### Stars
 
-This schema snippet would capture a 1 to 5 rating with a default value of 3.
+This pattern snippet would capture a 1 to 5 rating with a default value of 3.
 
 ```yaml
 type: object
@@ -74,7 +74,7 @@ additionalProperties: false
 
 ### Like?
 
-This schema snippet would capture a 'Like' with a default value indicating no action. 
+This pattern snippet would capture a 'Like' with a default value indicating no action. 
 
 ```yaml
 type: object
@@ -99,7 +99,7 @@ It can be a great tool to understand the sentiment of the people you serve and f
 
 ### Open-ended Form
 
-This schema snippet would capture open-ended feedback for areas of an experience that went well and those that can be improved.
+This pattern snippet would capture open-ended feedback for areas of an experience that went well and those that can be improved.
 
 ```yaml
 type: object
