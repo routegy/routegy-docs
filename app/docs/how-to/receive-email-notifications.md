@@ -62,7 +62,7 @@ Select the **Apps** tab within the workspace view and select the [app](/referenc
   <img src="/images/how-tos/edit-app.png" width="90%">
 </p>
 
-#### Step 3
+#### Step 2
 
 From the app modal, click on the **Edit** button.
 
@@ -70,7 +70,7 @@ From the app modal, click on the **Edit** button.
   <img src="/images/modals/personal-office-coffee-machine-edit-app.png" width="70%">
 </p>
 
-#### Step 4
+#### Step 3
 
 From the app edit model, type in the name of your action in _Actions_ list. The name will autocomplete as you type.
 
@@ -78,7 +78,7 @@ From the app edit model, type in the name of your action in _Actions_ list. The 
   <img src="/images/modals/personal-office-coffee-machine-edit-app-actions-email.png" width="70%">
 </p>
 
-#### Step 5
+#### Step 4
 
 Click on the **Save changes** button and you're done!
 
