@@ -20,11 +20,11 @@ If you're currently asking yourself a "How does this work..." question, you're i
 * [Organizations](/reference/organizations/)
 * [Pusher Integration](/reference/pusher/)
 * [Patterns](/reference/patterns/)
-* [MicroappData](/reference/microapp-data)
+* [AppData](/reference/app-data)
 * [Templating](/reference/templating/)
 * [Action Types](/reference/action-types/)
 * [Actions](/reference/actions/)
-* [Microapps](/reference/microapps/)
+* [Apps](/reference/apps/)
 * [Events](/reference/events/)
 * [Workspaces](/reference/workspaces/)
 

@@ -6,7 +6,7 @@ sidebar: false
 
 # Capture IT requests
 
-The goal of this document is to cover how to create [patterns](/topics/patterns/) that capture IT requests. These are meant to gain immediate insight to the exact area of a problem without requiring additional requests for more information.
+The goal of this document is to cover how to create [patterns](/topic/patterns/) that capture IT requests. These are meant to gain immediate insight to the exact area of a problem without requiring additional requests for more information.
 
 ## Prerequisites
 

@@ -6,9 +6,9 @@ sidebar: false
 
 # Patterns
 
-A pattern defines the constraints of how a person can interact with a [microapp](/topics/microapps) or a [action type](/topics/action-types/).
+A pattern defines the constraints of how a person can interact with a [app](/topic/apps) or a [action type](/topic/action-types/).
 
-These constraints are defined with a [JSON Schema](https://json-schema.org/) document and validated when a [event](/topics/events) or [action](/topics/actions/) is created.
+These constraints are defined with a [JSON Schema](https://json-schema.org/) document and validated when a [event](/topic/events) or [action](/topic/actions/) is created.
 
 A pattern with a `null` JSON Schema document indicates that no information should be collected.
 
@@ -49,8 +49,8 @@ The following is an example [JSON Schema](https://json-schema.org/) document in 
 
 ### Related
 
-* [Topic: Microapp](/topic/microapps/)
-* [Topic: MicroappData](/topic/microapp-data/)
-* [Reference: Microapp](/reference/microapps/)
+* [Topic: App](/topic/apps/)
+* [Topic: AppData](/topic/app-data/)
+* [Reference: App](/reference/apps/)
 * [Reference: Patterns](/reference/patterns/)
-* [Reference: MicroappData](/reference/microapp-data/)
+* [Reference: AppData](/reference/app-data/)

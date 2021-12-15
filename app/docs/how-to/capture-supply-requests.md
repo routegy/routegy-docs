@@ -6,7 +6,7 @@ sidebar: false
 
 # Capture supply requests
 
-The goal of this document is to cover how to create [patterns](/topics/patterns/) that capture supply requests. These are meant to gain immediate insight into supply chain issues, what's out of stock and where to best allocate your resources.
+The goal of this document is to cover how to create [patterns](/topic/patterns/) that capture supply requests. These are meant to gain immediate insight into supply chain issues, what's out of stock and where to best allocate your resources.
 
 ## Prerequisites
 

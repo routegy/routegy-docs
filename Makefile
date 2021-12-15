@@ -87,7 +87,7 @@ clean: ## Clean local compiled state.
 
 .PHONY: shell
 shell: ## Run shell environment capable of managing dependencies.
-	$(call NODE_SHELL,node:alpine,/bin/sh)
+	$(call NODE_SHELL,node:lts-alpine,/bin/sh)
 
 .phony: help
 help: ## Print Makefile usage.

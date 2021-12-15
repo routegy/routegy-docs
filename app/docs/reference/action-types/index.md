@@ -6,7 +6,7 @@ sidebar: false
 
 # Action Types
 
-A action type represents a type of action that can be run for every [event](/reference/events/) created by a [microapp](/reference/microapps/).
+A action type represents a type of action that can be run for every [event](/reference/events/) created by a [app](/reference/apps/).
 
 Some examples of action types could be:
 

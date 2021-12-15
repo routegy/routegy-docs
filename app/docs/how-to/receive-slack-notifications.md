@@ -8,7 +8,7 @@ sidebar: false
 
 This document describes how to make use of the [Slack Webhook Action Type](/reference/action-types/slack-webhook/) to receive slack message notifications.
 
-Slack actions are used with a wide variety of [microapps](/reference/microapps/). These can require near immediate attention, a slower asynchronous approach, or even provide an easy-to-browse archive of all interactions.
+Slack actions are used with a wide variety of [apps](/reference/apps/). These can require near immediate attention, a slower asynchronous approach, or even provide an easy-to-browse archive of all interactions.
 
 ### Creating the Action
 
@@ -52,42 +52,42 @@ Click on **+ Create action** to complete the process.
 
 ![Slack Action Filled](/images/modals/office-create-action-slack-filled.png)
 
-### Attaching Action to Microapp
+### Attaching Action to App
 
-Follow the steps below to attach the Slack action created above to one or more [microapps](/reference/microapps/).
+Follow the steps below to attach the Slack action created above to one or more [apps](/reference/apps/).
 
 #### Step 1
 
-Select the **Microapps** tab within the workspace view.
+Select the **Apps** tab within the workspace view.
 
-![Select Microapps Menu](/images/navigation/select-microapps-menu.png)
+![Select Apps Menu](/images/navigation/select-apps-menu.png)
 
 #### Step 2
 
-Select the [microapp](/reference/microapps/) you wish to receive Slack notifications for.
+Select the [app](/reference/apps/) you wish to receive Slack notifications for.
 
-![Select Microapp](/images/tree/personal-office-select-microapp.png)
+![Select App](/images/tree/personal-office-select-app.png)
 
 #### Step 3
 
-From the microapp model, click on the **Edit** button.
+From the app model, click on the **Edit** button.
 
-![Edit Microapp](/images/modals/personal-office-coffee-machine-edit-microapp.png)
+![Edit App](/images/modals/personal-office-coffee-machine-edit-app.png)
 
 #### Step 4
 
-From the microapp edit model, type in the name of your action in _Actions_ list. The name will autocomplete as you type.
+From the app edit model, type in the name of your action in _Actions_ list. The name will autocomplete as you type.
 
-![Add Action](/images/modals/personal-office-coffee-machine-edit-microapp-actions-slack.png)
+![Add Action](/images/modals/personal-office-coffee-machine-edit-app-actions-slack.png)
 
 #### Step 5
 
 Click on the **Save changes** button and you're done!
 
-![Save Microapp](/images/modals/personal-office-coffee-machine-edit-microapp-actions-slack-save.png)
+![Save App](/images/modals/personal-office-coffee-machine-edit-app-actions-slack-save.png)
 
-### Wait for Microapp Interaction 
+### Wait for App Interaction 
 
-Now that your microapp is configured, you just wait until someone interacts with it. Once they do, you'll receive an Slack that looks something like this.
+Now that your app is configured, you just wait until someone interacts with it. Once they do, you'll receive an Slack that looks something like this.
 
 ![Action Integration](/images/actions/personal-office-coffee-machine-slack.png)

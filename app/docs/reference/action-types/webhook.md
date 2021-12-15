@@ -6,7 +6,7 @@ sidebar: false
 
 # Webhook
 
-The webhook action type is used to call a webhook URL with JSON payload for every [event](/reference/events/) created by a [microapp](/reference/microapps/).
+The webhook action type is used to call a webhook URL with JSON payload for every [event](/reference/events/) created by a [app](/reference/apps/).
 
 ::: warning
 Webhooks are not yet configurable using [templating](/reference/templating/).

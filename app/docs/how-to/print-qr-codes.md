@@ -6,11 +6,11 @@ sidebar: false
 
 # Print QR Codes
 
-This document describes how to download and print [QR codes](https://en.wikipedia.org/wiki/QR_code) for your Routegy [microapps](/topic/microapps/).
+This document describes how to download and print [QR codes](https://en.wikipedia.org/wiki/QR_code) for your Routegy [apps](/topic/apps/).
 
 ### Downloading the QR code
 
-Follow the steps below to download the QR code for a single microapp.
+Follow the steps below to download the QR code for a single app.
 
 #### Step 1
 
@@ -20,15 +20,15 @@ Start by making sure you're in the desired [workspace](/reference/workspaces/). 
 
 #### Step 2
 
-Select the **Microapps** tab within the workspace view.
+Select the **Apps** tab within the workspace view.
 
-![Select Microapp Menu](/images/navigation/select-microapps-menu.png)
+![Select App Menu](/images/navigation/select-apps-menu.png)
 
 #### Step 2
 
-Select the [microapp](/reference/microapps/) you wish to download.
+Select the [app](/reference/apps/) you wish to download.
 
-![Download Microapp](/images/modals/personal-office-coffee-machine-download-microapp.png)
+![Download App](/images/modals/personal-office-coffee-machine-download-app.png)
 
 ### Print the QR code
 
@@ -38,7 +38,7 @@ Follow the steps below to print the downloaded QR code.
 
 Open the downloaded QR code image. This will be located in the default Downloads folder configured for your web browser.
 
-![Open SVG](/images/navigation/personal-office-coffee-machine-open-microapp-svg.png)
+![Open SVG](/images/navigation/personal-office-coffee-machine-open-app-svg.png)
 
 #### Step 2
 

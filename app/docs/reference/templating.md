@@ -12,7 +12,7 @@ Be sure to check out the document for your specific [action type](/reference/act
 
 ## Values
 
-Templates have access to all of the data captured by the [microapp](/reference/microapps/) for the [event](/reference/events/). These values are top-level items in the templating language.
+Templates have access to all of the data captured by the [app](/reference/apps/) for the [event](/reference/events/). These values are top-level items in the templating language.
 
 For example, imagine you have a [pattern](/reference/patterns/) that captures problems with a coffee machine. It has two properties: `problem` and `additional_comment`.
 
@@ -23,7 +23,7 @@ These values would be accessed in your [actions](/reference/actions/) fields by 
 
 ## Context
 
-In addition to the values captured from the end user, templates have access to all of the _related_ data. The [microapp](/reference/microapps/) that was used, its [group](/reference/groups/), the [workspace](/reference/workspaces/) these are encapsulated in, etc. All of this values are stored and available to templates through the `context` object.
+In addition to the values captured from the end user, templates have access to all of the _related_ data. The [app](/reference/apps/) that was used, its [group](/reference/groups/), the [workspace](/reference/workspaces/) these are encapsulated in, etc. All of this values are stored and available to templates through the `context` object.
 
 ### Variables
 
@@ -33,7 +33,7 @@ All variables are accessed using the <span v-pre>`{{ variable }}`</span> syntax,
 | ---------| ----------- | ------- |
 | `context.code.id` | ID of the code | d6a1a3af-2bad-40be-9aac-4bbfea50c02e |
 | `context.code.url` | URL of the code | https://rtgy.io/e6Por4d |
-| `context.code.short_id` | Code short id for the microapp | e6Por4d |
+| `context.code.short_id` | Code short id for the app | e6Por4d |
 | `context.code.created_at` | Datetime when code was created | 2020-06-04T11:53:25-07:00 |
 | `context.code.updated_at` | Datetime when code was last updated | 2020-06-04T12:32:54-07:00 |
 | `context.action.id` | ID of the action | 0617c463-a6c4-411e-8747-3dfaccdaf5af |
@@ -64,19 +64,19 @@ All variables are accessed using the <span v-pre>`{{ variable }}`</span> syntax,
 | `context.event.url` | URL of the group | https://web.routegy.com/workspaces/4e96d27a-7624-45ef-8411-a2ef8f27cc29/events/f3496601-92dc-4750-bddc-83afda953013 |
 | `context.event.created_at` | Datetime when event was created | 2020-06-04T11:53:25-07:00 |
 | `context.event.updated_at` | Datetime when event was last updated | 2020-06-04T12:32:54-07:00 |
-| `context.microapp.id` | ID of the microapp | 8b50a1c8-01c8-4f58-8215-ee5cb22d8585 |
-| `context.microapp.url` | URL of the microapp | https://web.routegy.com/workspaces/4e96d27a-7624-45ef-8411-a2ef8f27cc29/tree/microapps/8b50a1c8-01c8-4f58-8215-ee5cb22d8585 |
-| `context.microapp.name` | Name of the microapp | Coffee Machine |
-| `context.microapp.slug` | Slug of the microapp | coffee-machine |
-| `context.microapp.created_at` | Datetime when microapp was created | 2020-06-04T11:53:25-07:00 |
-| `context.microapp.updated_at` | Datetime when microapp was last updated | 2020-06-04T12:32:54-07:00 |
-| `context.microapp.breadcrumbs` | Breadcrumbs of microapp | Office / First Floor / Kitchen / Coffee Machine |
-| `context.microapp.pattern.id` | ID of the microapp pattern | 8e2e5a9a-e8f0-4f83-839d-246d865c98cb |
-| `context.microapp.pattern.url` | URL of the microapp pattern | https://web.routegy.com/workspaces/4e96d27a-7624-45ef-8411-a2ef8f27cc29/patterns/8e2e5a9a-e8f0-4f83-839d-246d865c98cb |
-| `context.microapp.pattern.name` | Name of the microapp pattern | Coffee machine problem |
-| `context.microapp.pattern.slug` | Slug of the microapp pattern | coffee-machine-problem |
-| `context.microapp.pattern.created_at` | Datetime when microapp pattern was created | 2020-06-04T11:53:25-07:00 |
-| `context.microapp.pattern.updated_at` | Datetime when microapp pattern was last updated | 2020-06-04T12:32:54-07:00 |
+| `context.app.id` | ID of the app | 8b50a1c8-01c8-4f58-8215-ee5cb22d8585 |
+| `context.app.url` | URL of the app | https://web.routegy.com/workspaces/4e96d27a-7624-45ef-8411-a2ef8f27cc29/tree/apps/8b50a1c8-01c8-4f58-8215-ee5cb22d8585 |
+| `context.app.name` | Name of the app | Coffee Machine |
+| `context.app.slug` | Slug of the app | coffee-machine |
+| `context.app.created_at` | Datetime when app was created | 2020-06-04T11:53:25-07:00 |
+| `context.app.updated_at` | Datetime when app was last updated | 2020-06-04T12:32:54-07:00 |
+| `context.app.breadcrumbs` | Breadcrumbs of app | Office / First Floor / Kitchen / Coffee Machine |
+| `context.app.pattern.id` | ID of the app pattern | 8e2e5a9a-e8f0-4f83-839d-246d865c98cb |
+| `context.app.pattern.url` | URL of the app pattern | https://web.routegy.com/workspaces/4e96d27a-7624-45ef-8411-a2ef8f27cc29/patterns/8e2e5a9a-e8f0-4f83-839d-246d865c98cb |
+| `context.app.pattern.name` | Name of the app pattern | Coffee machine problem |
+| `context.app.pattern.slug` | Slug of the app pattern | coffee-machine-problem |
+| `context.app.pattern.created_at` | Datetime when app pattern was created | 2020-06-04T11:53:25-07:00 |
+| `context.app.pattern.updated_at` | Datetime when app pattern was last updated | 2020-06-04T12:32:54-07:00 |
 | `context.user.id` | ID of the organization owner | 2de59476-fa4e-45ea-9cfb-cd11944b5eda |
 | `context.user.name` | Name of the organization owner | John Smith |
 | `context.user.slug` | Slug of the organization owner | john-smith |

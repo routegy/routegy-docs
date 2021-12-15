@@ -15,4 +15,4 @@ If you're currently asking yourself "What is a..." question, you're in the right
 * [Codes](/topic/codes/)
 * [Groups](/topic/groups/)
 * [Patterns](/topic/patterns/)
-* [Microapps](/topic/microapps/)
+* [Apps](/topic/apps/)

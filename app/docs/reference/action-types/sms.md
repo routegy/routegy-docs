@@ -6,7 +6,7 @@ sidebar: false
 
 # SMS
 
-The SMS action type is used to send text messages to a configured phone number for every [event](/reference/events/) created by a [microapp](/reference/microapps/).
+The SMS action type is used to send text messages to a configured phone number for every [event](/reference/events/) created by a [app](/reference/apps/).
 
 ::: tip
 Text messages can be configured using [templating](/reference/templating/).

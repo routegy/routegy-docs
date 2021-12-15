@@ -23,7 +23,7 @@ A group is made up of the following relations:
 
 * [Workspace](/reference/workspaces/) (many-to-one)
 * [Group](/reference/groups/) (one-to-many)
-* [Microapp](/reference/microapps/) (one-to-many)
+* [App](/reference/apps/) (one-to-many)
 
 ## Permissions
 

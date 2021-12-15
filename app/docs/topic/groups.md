@@ -17,7 +17,7 @@ An example of a hierarchy of groups could be:
             > Classroom 251
 ```
 
-A group has zero or more [microapps](/topic/microapps/), which define common interactions relative to that group. A microapp requesting more printer paper makes sense for an office supply room group but does not make sense for a bathroom group.
+A group has zero or more [apps](/topic/apps/), which define common interactions relative to that group. an app requesting more printer paper makes sense for an office supply room group but does not make sense for a bathroom group.
 
 ### Examples
 
@@ -25,6 +25,6 @@ A group has zero or more [microapps](/topic/microapps/), which define common int
 
 ### Related
 
-* [Topic: Microapp](/topic/microapps/)
+* [Topic: App](/topic/apps/)
 * [Reference: Group](/reference/groups/)
-* [Reference: Microapp](/reference/microapps/)
+* [Reference: App](/reference/apps/)

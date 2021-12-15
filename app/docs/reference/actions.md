@@ -6,9 +6,9 @@ sidebar: false
 
 # Actions
 
-A action is an action that is run for every [event](/reference/events/) created by a [microapp](/reference/microapps/).
+A action is an action that is run for every [event](/reference/events/) created by a [app](/reference/apps/).
 
-A action joins a [action type](/reference/action-types/) with [microapp data](/reference/microapp-data/). For example, "Send SMS" would be the action type and "+1-123-123-1234" would be the phone number in the microapp data.
+A action joins a [action type](/reference/action-types/) with [app data](/reference/app-data/). For example, "Send SMS" would be the action type and "+1-123-123-1234" would be the phone number in the app data.
 
 Some examples of actions could be:
 
@@ -22,8 +22,8 @@ Some examples of actions could be:
 A action is made up of the following relations:
 
 * [ActionType](/reference/action-types/) (many-to-one)
-* [MicroappData](/reference/microapp-data/) (many-to-one)
-* [Microapp](/reference/microapps/) (many-to-many)
+* [AppData](/reference/app-data/) (many-to-one)
+* [App](/reference/apps/) (many-to-many)
 
 ## Permissions
 

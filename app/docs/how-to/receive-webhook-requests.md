@@ -6,7 +6,7 @@ sidebar: false
 
 # Receive Webhook Notifications
 
-This document describes how to make use of the [Webhook Action Type](/reference/action-types/webhook/) to receive HTTP requests with JSON data when someone interacts with your microapps.
+This document describes how to make use of the [Webhook Action Type](/reference/action-types/webhook/) to receive HTTP requests with JSON data when someone interacts with your apps.
 
 Webhook actions are extremely powerful as they can be integrated with any existing system that can receive HTTP requests.
 
@@ -18,72 +18,70 @@ Follow the steps below to create a [action](/reference/actions/) for creating We
 
 Start by making sure you're in the desired [workspace](/reference/workspaces/). Click on the menu bar dropdown to choose.
 
-![Choose Workspace](/images/navigation/choose-workspace-dropdown.png)
+<p align="center">
+  <img src="/images/navigation/choose-workspace-dropdown.png" width="90%">
+</p>
 
 #### Step 2
 
-Select the **Actions** tab within the workspace view.
+Select the **Actions** tab within the workspace view and click the **+ New Action** button. This will launch a modal for creating new actions.
 
-![Select Actions Menu](/images/navigation/select-actions-menu.png)
+<p align="center">
+  <img src="/images/how-tos/create-new-action.png" width="90%">
+</p>
 
 #### Step 3
-
-Click on the **+ New Action** button. This will launch a modal for creating new actions.
-
-![New Action Button](/images/buttons/new-action.png)
-
-#### Step 4
 
 From the action creation model, select **Webhook** from the _Action type_ dropdown list.
 
-![Webhook Action Type Dropdown List](/images/modals/office-create-action-webhook.png)
-
-#### Step 5
-
-Enter the URL for the webhook endpoint you would like to use.
-
-#### Step 7
-
-Click on **+ Create action** to complete the process.
-
-![Webhook Action Filled](/images/modals/office-create-action-webhook-filled.png)
-
-### Attaching Action to Microapp
-
-Follow the steps below to attach the Webhook action created above to one or more [microapps](/reference/microapps/).
-
-#### Step 1
-
-Select the **Microapps** tab within the workspace view.
-
-![Select Microapps Menu](/images/navigation/select-microapps-menu.png)
-
-#### Step 2
-
-Select the [microapp](/reference/microapps/) you wish to receive webhook requests from.
-
-![Select Microapp](/images/tree/personal-office-select-microapp.png)
-
-#### Step 3
-
-From the microapp model, click on the **Edit** button.
-
-![Edit Microapp](/images/modals/personal-office-coffee-machine-edit-microapp.png)
+<p align="center">
+  <img src="/images/modals/office-create-action-webhook.png" width="70%">
+</p>
 
 #### Step 4
 
-From the microapp edit model, type in the name of your action in _Actions_ list. The name will autocomplete as you type.
+Enter a _name_, _description_ (optional), enter the URL for the webhook endpoint you would like to use, and click on **+ Create action** to complete the process.
 
-![Add Action](/images/modals/personal-office-coffee-machine-edit-microapp-actions-webhook.png)
+<p align="center">
+  <img src="/images/modals/office-create-action-webhook-filled.png" width="70%">
+</p>
 
-#### Step 5
+### Attaching Action to App
+
+Follow the steps below to attach the Webhook action created above to one or more [apps](/reference/apps/).
+
+Select the **Apps** tab within the workspace view and select the [app](/reference/apps/) you wish to receive SMS notifications for.
+
+<p align="center">
+  <img src="/images/how-tos/edit-app.png" width="90%">
+</p>
+
+#### Step 2
+
+From the app model, click on the **Edit** button.
+
+<p align="center">
+  <img src="/images/modals/personal-office-coffee-machine-edit-app.png" width="70%">
+</p>
+
+#### Step 3
+
+From the app edit model, type in the name of your action in _Actions_ list. The name will autocomplete as you type.
+
+<p align="center">
+  <img src="/images/modals/personal-office-coffee-machine-edit-app-actions-webhook.png" width="70%">
+</p>
+
+#### Step 4
 
 Click on the **Save changes** button and you're done!
 
-![Save Microapp](/images/modals/personal-office-coffee-machine-edit-microapp-actions-webhook-save.png)
+<p align="center">
+  <img src="/images/modals/personal-office-coffee-machine-edit-app-actions-webhook-save.png" width="70%">
+</p>
 
-### Wait for Microapp Interactions
+### Wait for App Interactions
 
-Now that your microapp is configured, you just wait until someone interacts with it. Once they do, you'll automatically receive an HTTP requests that looks something like this.
+Now that your app is configured, you just wait until someone interacts with it. Once they do, you'll automatically receive an HTTP requests that looks something like this.
 
 ![Action Integration](/images/actions/personal-office-coffee-machine-webhook.png)

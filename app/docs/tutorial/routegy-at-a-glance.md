@@ -10,17 +10,17 @@ The goal of this tutorial is to give you enough specifics to understand how Rout
 
 Routegy was designed to empower people to interact with physical spaces in streamlined ways. Here’s an informal overview of how Routegy works.
 
-## Define groups and microapps
+## Define groups and apps
 
 [Groups](/topic/groups/) are structured in a hierarchy that maps to groups that make sense to you and your business. These can be physical groups, e.g. `1st Floor` or `Jamrich Building`, or virtual groups, e.g. `Blog post` or `Slack channel`.
 
-[Microapps](/topic/microapps/) are structured as common points of interaction within those groups. These interactions can be for making purchases, reporting issues, submitting requests, starting chat conversations, or providing feedback.
+[Apps](/topic/apps/) are structured as common points of interaction within those groups. These interactions can be for making purchases, reporting issues, submitting requests, starting chat conversations, or providing feedback.
 
 ![Group Tree](/images/navigation/office-1st-floor-conference-room-101-tree.png)
 
 ## Choosing what kind of information to collect
 
-[Patterns](/topic/patterns/) are structured to control the UX and constraints of information you're collecting for each interaction. You have full control to create and customize these experience for each microapp.
+[Patterns](/topic/patterns/) are structured to control the UX and constraints of information you're collecting for each interaction. You have full control to create and customize these experience for each app.
 
 Write a structured pattern document that can be used to capture any information you like.
 
@@ -58,11 +58,11 @@ additionalProperties: false
 
 Minimize the noise of the daily ephemera. Be notified instantly for high priority issues. It's entirely up to you.
 
-![Actions List](/images/modals/office-experience-edit-microapp-actions.png)
+![Actions List](/images/modals/office-experience-edit-app-actions.png)
 ![JIRA Action Creation](/images/modals/office-create-action-jira.png)
 
-## Place microapps around your space
+## Place apps around your space
 
-[Microapps](/topic/microapps/) are placed around your space for people to interact with. QR codes, NFC tags, buttons or sensors. Use our designs or customize for your brand.
+[Apps](/topic/apps/) are placed around your space for people to interact with. QR codes, NFC tags, buttons or sensors. Use our designs or customize for your brand.
 
 ![Hotel Survey](/images/marketing/hotel-survey.jpg)

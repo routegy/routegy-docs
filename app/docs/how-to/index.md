@@ -19,7 +19,7 @@ If you're currently asking yourself a "How do I..." question, you're in the righ
 * [Capture rating & review feedback](/how-to/capture-rating-review-feedback/)
 * [Capture survey feedback](/how-to/capture-survey-feedback/)
 * [Create new patterns](/how-to/create-new-patterns/)
-* [Create new microapps](/how-to/create-new-microapps/)
+* [Create new apps](/how-to/create-new-apps/)
 * [Print QR codes](/how-to/print-qr-codes/)
 * [Receive email notifications](/how-to/receive-email-notifications/)
 * [Receive Slack notifications](/how-to/receive-slack-notifications/)

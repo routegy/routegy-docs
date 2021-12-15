@@ -6,7 +6,7 @@ sidebar: false
 
 # Create Trello Cards
 
-This document describes how to make use of the [Trello](/reference/action-types/trello/) action to create cards when someone interacts with your microapps.
+This document describes how to make use of the [Trello](/reference/action-types/trello/) action to create cards when someone interacts with your apps.
 
 If you don't have a Trello account, you can create one [here](https://trello.com/signup).
 
@@ -75,42 +75,42 @@ Click on **+ Create action** to complete the process.
 
 ![Trello Action Filled](/images/modals/office-create-action-trello-filled.png)
 
-### Attaching Action to Microapp
+### Attaching Action to App
 
-Follow the steps below to attach the Trello action created above to one or more [microapps](/reference/microapps/).
+Follow the steps below to attach the Trello action created above to one or more [apps](/reference/apps/).
 
 #### Step 1
 
-Select the **Microapps** tab within the workspace view.
+Select the **Apps** tab within the workspace view.
 
-![Select Microapps Menu](/images/navigation/select-microapps-menu.png)
+![Select Apps Menu](/images/navigation/select-apps-menu.png)
 
 #### Step 2
 
-Select the [microapp](/reference/microapps/) you wish to create Trello cards with.
+Select the [app](/reference/apps/) you wish to create Trello cards with.
 
-![Select Microapp](/images/tree/personal-office-select-microapp.png)
+![Select App](/images/tree/personal-office-select-app.png)
 
 #### Step 3
 
-From the microapp model, click on the **Edit** button.
+From the app model, click on the **Edit** button.
 
-![Edit Microapp](/images/modals/personal-office-coffee-machine-edit-microapp.png)
+![Edit App](/images/modals/personal-office-coffee-machine-edit-app.png)
 
 #### Step 4
 
-From the microapp edit model, type in the name of your action in _Actions_ list. The name will autocomplete as you type.
+From the app edit model, type in the name of your action in _Actions_ list. The name will autocomplete as you type.
 
-![Add Action](/images/modals/personal-office-coffee-machine-edit-microapp-actions-trello.png)
+![Add Action](/images/modals/personal-office-coffee-machine-edit-app-actions-trello.png)
 
 #### Step 5
 
 Click on the **Save changes** button and you're done!
 
-![Save Microapp](/images/modals/personal-office-coffee-machine-edit-microapp-actions-trello-save.png)
+![Save App](/images/modals/personal-office-coffee-machine-edit-app-actions-trello-save.png)
 
-### Wait for Microapp Interactions
+### Wait for App Interactions
 
-Now that your microapp is configured, you just wait until someone interacts with it. Once they do, you'll automatically have a card created in Trello for you that looks something like this.
+Now that your app is configured, you just wait until someone interacts with it. Once they do, you'll automatically have a card created in Trello for you that looks something like this.
 
 ![Action Integration](/images/actions/personal-office-coffee-machine-trello.png)

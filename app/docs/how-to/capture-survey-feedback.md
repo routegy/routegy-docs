@@ -6,7 +6,7 @@ sidebar: false
 
 # Capture survey feedback
 
-The goal of this document is to cover how to create [patterns](/topics/patterns/) that capture feedback with a survey. Surveys are meant to gain insight by asking targeted questions to better understand the person and their feedback.
+The goal of this document is to cover how to create [patterns](/topic/patterns/) that capture feedback with a survey. Surveys are meant to gain insight by asking targeted questions to better understand the person and their feedback.
 
 ## Prerequisites
 

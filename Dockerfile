@@ -2,7 +2,7 @@
 #
 # Image responsible for building the 'node_modules' dependency directory
 # and have it available for COPY from other images.
-FROM node:alpine as builder
+FROM node:lts-alpine as builder
 
 ARG WORKDIR
 ARG CACHEDIR
@@ -36,7 +36,7 @@ COPY . ${WORKDIR}/
 # Local image
 #
 # Image responsible for running a local version of this app.
-FROM node:alpine as local
+FROM node:lts-alpine as local
 
 ARG WORKDIR
 ARG SRCDIR
