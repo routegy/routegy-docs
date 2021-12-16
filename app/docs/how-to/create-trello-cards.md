@@ -12,35 +12,35 @@ If you don't have a Trello account, you can create one [here](https://trello.com
 
 [Routegy](https://routegy.com) + [Trello](https://trello.com) is an extremely powerful combination and is being used by people around the world to manage supply requests, purchase orders, and curbside pickups. Trello can be customized in near infinite ways to fit your exact needs.
 
-### Creating the Action
+## Creating the Action
 
-Follow the steps below to create a [action](/reference/actions/) for creating Trello cards.
+Follow the steps below to create a [action](/reference/actions/) for sending email notifications.
 
 #### Step 1
 
 Start by making sure you're in the desired [workspace](/reference/workspaces/). Click on the menu bar dropdown to choose.
 
-![Choose Workspace](/images/navigation/choose-workspace-dropdown.png)
+<p align="center">
+  <img src="/images/navigation/choose-workspace-dropdown.png" width="90%">
+</p>
 
 #### Step 2
 
-Select the **Actions** tab within the workspace view.
+Select the **Actions** tab within the workspace view and click the **+ New Action** button. This will launch a modal for creating new actions.
 
-![Select Actions Menu](/images/navigation/select-actions-menu.png)
+<p align="center">
+  <img src="/images/how-tos/create-new-action.png" width="90%">
+</p>
 
 #### Step 3
 
-Click on the **+ New Action** button. This will launch a modal for creating new actions.
-
-![New Action Button](/images/buttons/new-action.png)
-
-#### Step 4
-
 From the action creation model, select **Trello** from the _Action type_ dropdown list.
 
-![Trello Action Type Dropdown List](/images/modals/office-create-action-trello.png)
+<p align="center">
+  <img src="/images/modals/office-create-action-trello.png" width="70%">
+</p>
 
-#### Step 5
+#### Step 4
 
 Enter your **API Key/Token** for the Trello account you wish to use.
 
@@ -52,62 +52,74 @@ Enter your **API Key/Token** for the Trello account you wish to use.
 Hang tight, we're working on it!
 :::
 
+<p align="center">
+  <img src="/images/modals/office-create-action-trello-api-key.png" width="70%">
+</p>
+
 #### Step 6
 
 Enter the **List ID** for the Trello list you wish to use.
 
 To find this, perform the following steps:
 
-* Open the board that contains the list you wish to use. In the address bar, you will see a URL like `https://trello.com/b/wl10IocP/office`.
+* Open the board that contains the list you wish to use. In the address bar, you will see a URL like `https://trello.com/b/3fdtL4eS/office-demo`.
   
-* Change the value in your address bar to `https://trello.com/b/wl10IocP.json?fields=id,name&lists=open` using **your unique** board identifier. 
-* This URL will display all open lists on your Trello board. Choose the one you want and capture the `id` value. In this example, we're using the `Requests` list with an id of `5ee52070865ece5f85d34db9`.
+* Change the value in your address bar to `https://trello.com/b/3fdtL4eS.json?fields=id,name&lists=open` using **your unique** board identifier. 
+* This URL will display all open lists on your Trello board. Choose the one you want and capture the `id` value. In this example, we're using the `Things To Do` list with an id of `5d700d11bb1d6f12643ace12`.
 
 ![Trello List ID](/images/external/trello-list-id.png)
 
 ::: warning The board ID is unique to you!
-* The `wl10IocP` value used in this example is a **unique** board identifier and the value for your Trello board **will be different**.
+* The `3fdtL4eS` value used in this example is a **unique** board identifier and the value for your Trello board **will be different**.
 :::
+
+<p align="center">
+  <img src="/images/modals/office-create-action-trello-list-id.png" width="70%">
+</p>
+
 
 #### Step 7
 
-Click on **+ Create action** to complete the process.
+Customize the name and description of you card by providing your own [Jinja2 template](https://jinja.palletsprojects.com/en/3.0.x/) (optional), and click on **+ Create action** to complete the process.
 
-![Trello Action Filled](/images/modals/office-create-action-trello-filled.png)
+<p align="center">
+  <img src="/images/modals/office-create-action-trello-filled.png" width="70%">
+</p>
+
 
 ### Attaching Action to App
 
-Follow the steps below to attach the Trello action created above to one or more [apps](/reference/apps/).
+Follow the steps below to attach the Webhook action created above to one or more [apps](/reference/apps/).
 
-#### Step 1
+Select the **Apps** tab within the workspace view and select the [app](/reference/apps/) you wish to receive SMS notifications for.
 
-Select the **Apps** tab within the workspace view.
-
-![Select Apps Menu](/images/navigation/select-apps-menu.png)
+<p align="center">
+  <img src="/images/how-tos/edit-app.png" width="90%">
+</p>
 
 #### Step 2
 
-Select the [app](/reference/apps/) you wish to create Trello cards with.
+From the app model, click on the **Edit** button.
 
-![Select App](/images/tree/personal-office-select-app.png)
+<p align="center">
+  <img src="/images/modals/personal-office-coffee-machine-edit-app.png" width="70%">
+</p>
 
 #### Step 3
 
-From the app model, click on the **Edit** button.
+From the app edit model, type in the name of your action in _Actions_ list. The name will autocomplete as you type.
 
-![Edit App](/images/modals/personal-office-coffee-machine-edit-app.png)
+<p align="center">
+  <img src="/images/modals/personal-office-coffee-machine-edit-app-actions-trello.png" width="70%">
+</p>
 
 #### Step 4
 
-From the app edit model, type in the name of your action in _Actions_ list. The name will autocomplete as you type.
-
-![Add Action](/images/modals/personal-office-coffee-machine-edit-app-actions-trello.png)
-
-#### Step 5
-
 Click on the **Save changes** button and you're done!
 
-![Save App](/images/modals/personal-office-coffee-machine-edit-app-actions-trello-save.png)
+<p align="center">
+  <img src="/images/modals/personal-office-coffee-machine-edit-app-actions-trello-save.png" width="70%">
+</p>
 
 ### Wait for App Interactions
 
