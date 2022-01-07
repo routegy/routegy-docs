@@ -14,7 +14,7 @@ An app has `name` and `description` fields which define a "call to action", indi
 
 An app is linked to a [pattern](/topic/patterns) which defines the user experience when interacting with it. It can used to (optionally) prompt the user for additional information.
 
-A person interacting with an app will potentially create a [event](/topic/events). The event contains information gathered from the person, constrained by the pattern used.
+A person interacting with an app will potentially create a [event](/topic/events). The event contains information gathered by the app (as defined by the app pattern), and it will trigger any [action](/topic/actions) that is tied to the app.
 
 ### Examples
 

@@ -1,9 +1,9 @@
 ---
-title: "AppData | Topic"
-description: "How does app data work?"
+title: "Actions | Topic"
+description: "How do actions work?"
 sidebar: false
 ---
 
-# AppData
+# Actions
 
 Sorry, it looks like we haven't filled this out yet.

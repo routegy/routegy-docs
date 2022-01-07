@@ -6,7 +6,7 @@ sidebar: false
 
 # Templating
 
-Routegy supports customizing [actions](/reference/actions/) fields with a template language. This allows actions to react dynamically to the event provided _values_ and the _context_ its being executed in.
+Routegy supports customizing [actions](/reference/actions/) fields using [Jinja2 template language](https://jinja.palletsprojects.com/en/3.0.x/). This allows actions to react dynamically to the event provided _values_ and the _context_ its being executed in.
 
 Be sure to check out the document for your specific [action type](/reference/action-types/) to see if templating is supported.
 
@@ -14,7 +14,7 @@ Be sure to check out the document for your specific [action type](/reference/act
 
 Templates have access to all of the data captured by the [app](/reference/apps/) for the [event](/reference/events/). These values are top-level items in the templating language.
 
-For example, imagine you have a [pattern](/reference/patterns/) that captures problems with a coffee machine. It has two properties: `problem` and `additional_comment`.
+For example, imagine you have a [pattern](/reference/patterns/) that uses an [object schema](http://json-schema.org/understanding-json-schema/reference/object.html) with two properties: `problem` and `additional_comment`.
 
 These values would be accessed in your [actions](/reference/actions/) fields by using:
 
