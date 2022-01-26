@@ -39,8 +39,7 @@ descriptor:
 ```
 Here is how this example pattern is rendered as a Routegy app.
 
-<p align="center">
-  <img src="/images/patterns/name-example-app-preview.png" width="85%">
+<p align="center">  <img src="/images/patterns/name-example-app-preview.png" width="85%">
 </p>
 
 ## Text inputs
@@ -167,6 +166,30 @@ descriptor:
   <img src="/images/patterns/examples/text-input-textarea.png" width="75%">
 </p>
 
+### Number input
+
+To render a number input with up and down buttons, define a schema of `input` or `number` type. Optionally, set `minimum` and `maximum` schema attributes to define the allowed range, and set a default value using the `default` attribute.
+
+```yaml
+schema:
+  type: object
+  properties:
+    count:
+      type: integer
+      default: 5
+      maximum: 10
+      minimum: 1
+descriptor:
+  properties:
+    count:
+      label: Count
+```
+
+<p align="center">
+  <img src="/images/patterns/examples/number-input.png" width="75%">
+</p>
+
+
 ## Radio buttons
 
 To render a group of radio buttons, define a schema with a list defined inside an `enum` attribute.
@@ -292,6 +315,52 @@ descriptor:
 <p align="center">
   <img src="/images/patterns/examples/multiple-checkboxes.png" width="75%">
 </p>
+
+## Tag input
+
+Tag input is an input element for entering a list of string tags. To render one, define a schema of `array` type and set its kind in the descriptor to `tags`. Schema's `maxItems` attribute (optional) can be used to define a maxium number of tags that can be entered.
+
+```yaml
+schema:
+  type: object
+  properties:
+    items:
+      type: array
+      maxItems: 10
+descriptor:
+  properties:
+    items:
+      kind: tags
+      label: Items to refill
+```
+
+<p align="center">
+  <img src="/images/patterns/examples/tag-input.png" width="75%">
+</p>
+
+## Star rating
+
+To render a star rating widget, define a schema of `integer` or `number` type, and set its kind to `rating` in the descriptor. Use schemas `default` attribute to define the initial star selection.
+
+```yaml
+schema:
+  type: object
+  properties:
+    experience:
+      type: integer
+      default: 4
+descriptor:
+  properties:
+    experience:
+      kind: rating
+      label: How was your experience?
+
+```
+
+<p align="center">
+  <img src="/images/patterns/examples/rating.png" width="75%">
+</p>
+
 
 ## Relations
 
