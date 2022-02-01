@@ -1,7 +1,6 @@
 ---
 title: "Action Types | SMS | Reference"
 description: "How do sms action types work?"
-sidebar: false
 ---
 
 # SMS

@@ -1,7 +1,6 @@
 ---
 title: "Actions | Reference"
 description: "How do actions work?"
-sidebar: false
 ---
 
 # Actions

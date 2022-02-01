@@ -1,7 +1,6 @@
 ---
 title: "Apps | Reference"
 description: "How do apps work?"
-sidebar: false
 ---
 
 # Apps

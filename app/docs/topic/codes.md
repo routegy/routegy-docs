@@ -1,7 +1,6 @@
 ---
 title: "Codes | Topic"
-description: "What is a topic?"
-sidebar: false
+description: "What is a code?"
 ---
 
 # Codes
@@ -14,7 +13,7 @@ Users do not need to worry about managing codes as creating an app will automati
 
 If a code is not linked to an app, you must go through the [provision flow](/topic/provision-flow.html) to link them.
 
-### Examples
+## Examples
 
 | Code | URL | Metadata |
 | ---- | --- | -------- |
@@ -22,7 +21,7 @@ If a code is not linked to an app, you must go through the [provision flow](/top
 | VRnekwa | https://rtgy.io/VRnekwa | App is a Direct link
 | y42gVPg | https://rtgy.io/y42gVPg?o=nfc | App is an NFC tag
 
-### Related
+## Related
 
 * [Topic: Apps](/topic/apps/)
 * [Reference: Code](/reference/codes/)

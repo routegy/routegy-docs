@@ -1,7 +1,6 @@
 ---
 title: "Receive SMS notifications | How-to"
 description: "How do I receive SMS notifications?"
-sidebar: false
 ---
 
 # Receive SMS Notifications
@@ -10,11 +9,11 @@ This document describes how to make use of the [SMS Action Type](/reference/acti
 
 SMS actions are commonly used with high priority [apps](/reference/apps/) that require immediate attention or staff members that are constantly on the go.
 
-### Creating the Action
+## Creating the Action
 
 Follow the steps below to create a [action](/reference/actions/) for sending SMS notifications.
 
-#### Step 1
+### Step 1
 
 Start by making sure you're in the desired [workspace](/reference/workspaces/). Click on the menu bar dropdown to choose.
 
@@ -22,7 +21,7 @@ Start by making sure you're in the desired [workspace](/reference/workspaces/). 
   <img src="/images/navigation/choose-workspace-dropdown.png" width="90%">
 </p>
 
-#### Step 2
+### Step 2
 
 Select the **Actions** tab within the workspace view and click the **+ New Action** button. This will launch a modal for creating new actions.
 
@@ -30,7 +29,7 @@ Select the **Actions** tab within the workspace view and click the **+ New Actio
   <img src="/images/how-tos/create-new-action.png" width="90%">
 </p>
 
-#### Step 3
+### Step 3
 
 From the action creation model, select **SMS** from the _Action type_ dropdown list.
 
@@ -38,7 +37,7 @@ From the action creation model, select **SMS** from the _Action type_ dropdown l
   <img src="/images/modals/office-create-action-sms.png" width="70%">
 </p>
 
-#### Step 4
+### Step 4
 
 Enter a _name_, _description_ (optional) and desired phone number. You can also customize a text _message_ format by providing your own [Jinja2 template](https://jinja.palletsprojects.com/en/3.0.x/). Click on **+ Create action** to complete the process.
 
@@ -50,11 +49,11 @@ If you don't provide a country code, it will default to 1. See [wikipedia](https
   <img src="/images/modals/office-create-action-sms-filled.png" width="70%">
 </p>
 
-### Attaching Action to App
+## Attach the action to the app
 
 Follow the steps below to attach the SMS action created above to one or more [apps](/reference/apps/).
 
-#### Step 1
+### Step 1
 
 Select the **Apps** tab within the workspace view and select the [app](/reference/apps/) you wish to receive SMS notifications for.
 
@@ -62,7 +61,7 @@ Select the **Apps** tab within the workspace view and select the [app](/referenc
   <img src="/images/how-tos/edit-app.png" width="90%">
 </p>
 
-#### Step 2
+### Step 2
 
 From the app model, click on the **Edit** button.
 
@@ -70,7 +69,7 @@ From the app model, click on the **Edit** button.
   <img src="/images/modals/personal-office-coffee-machine-edit-app.png" width="70%">
 </p>
 
-#### Step 3
+### Step 3
 
 From the app edit model, type in the name of your SMS action in _Actions_ list. The name will autocomplete as you type.
 
@@ -78,7 +77,7 @@ From the app edit model, type in the name of your SMS action in _Actions_ list. 
   <img src="/images/modals/personal-office-coffee-machine-edit-app-actions-sms.png" width="70%">
 </p>
 
-#### Step 4
+### Step 4
 
 Click on the **Save changes** button and you're done!
 
@@ -86,7 +85,7 @@ Click on the **Save changes** button and you're done!
   <img src="/images/modals/personal-office-coffee-machine-edit-app-actions-sms-save.png" width="70%">
 </p>
 
-### Wait for App Interaction 
+## Wait for App Interaction 
 
 Now that your app is configured, you just wait until someone interacts with it. Once they do, you'll receive an SMS that looks something like this.
 

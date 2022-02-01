@@ -1,7 +1,6 @@
 ---
 title: "Activity Streams & Feeds | Reference"
 description: "How do activity streams & feeds work?"
-sidebar: false
 ---
 
 # Activity Streams & Feeds

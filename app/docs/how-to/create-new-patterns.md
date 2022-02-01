@@ -1,7 +1,6 @@
 ---
 title: "Create new patterns | How-to"
 description: "How do I create new patterns?"
-sidebar: false
 ---
 
 # Create new patterns

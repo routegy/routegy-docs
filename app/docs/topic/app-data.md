@@ -1,7 +1,6 @@
 ---
 title: "AppData | Topic"
 description: "How does app data work?"
-sidebar: false
 ---
 
 # AppData

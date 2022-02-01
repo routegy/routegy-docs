@@ -1,7 +1,6 @@
 ---
 title: "Actions | Topic"
 description: "How do actions work?"
-sidebar: false
 ---
 
 # Actions

@@ -1,7 +1,6 @@
 ---
 title: "Capture supply requests | How-to"
 description: "How do I capture supply requests?"
-sidebar: false
 ---
 
 # Capture supply requests

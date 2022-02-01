@@ -1,7 +1,6 @@
 ---
 title: "Codes | Reference"
 description: "How do codes work?"
-sidebar: false
 ---
 
 # Codes

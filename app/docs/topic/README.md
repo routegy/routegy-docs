@@ -1,7 +1,6 @@
 ---
 title: Topic guides
 description: "Guides to provide high level information on key concepts"
-sidebar: false
 ---
 
 # Topic Guides

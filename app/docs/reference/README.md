@@ -1,7 +1,6 @@
 ---
 title: Reference guides
 description: "Deep technical guides for describing how Routegy works"
-sidebar: false
 ---
 
 # Reference Guides

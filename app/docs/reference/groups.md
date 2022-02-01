@@ -1,7 +1,6 @@
 ---
 title: "Groups | Reference"
 description: "How do groups work?"
-sidebar: false
 ---
 
 # Groups

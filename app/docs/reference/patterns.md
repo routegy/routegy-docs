@@ -1,7 +1,6 @@
 ---
 title: "Patterns | Reference"
 description: "How do patterns work?"
-sidebar: false
 ---
 
 # Patterns

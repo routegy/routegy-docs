@@ -1,7 +1,6 @@
 ---
 title: "Routegy at a glance | Tutorial"
 description: "How do I use Routegy?"
-sidebar: false
 ---
 
 # Routegy at a glance

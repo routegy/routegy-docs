@@ -1,7 +1,6 @@
 ---
 title: "Capture survey feedback | How-to"
 description: "How do I capture survey feedback?"
-sidebar: false
 ---
 
 # Capture survey feedback

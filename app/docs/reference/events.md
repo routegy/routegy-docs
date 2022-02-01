@@ -1,7 +1,6 @@
 ---
 title: "Events | Reference"
 description: "How do events work?"
-sidebar: false
 ---
 
 # Events

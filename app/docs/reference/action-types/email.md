@@ -1,7 +1,6 @@
 ---
 title: "Action Types | Email | Reference"
 description: "How do email action types work?"
-sidebar: false
 ---
 
 # Email

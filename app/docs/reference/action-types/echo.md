@@ -1,7 +1,6 @@
 ---
 title: "Action Types | Echo | Reference"
 description: "How do echo action types work?"
-sidebar: false
 ---
 
 # Echo

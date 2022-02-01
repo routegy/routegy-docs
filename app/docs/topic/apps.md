@@ -1,7 +1,6 @@
 ---
 title: "Apps | Topic"
 description: "What is an app?"
-sidebar: false
 ---
 
 # Apps
@@ -16,7 +15,7 @@ An app is linked to a [pattern](/topic/patterns) which defines the user experien
 
 A person interacting with an app will potentially create a [event](/topic/events). The event contains information gathered by the app (as defined by the app pattern), and it will trigger any [action](/topic/actions) that is tied to the app.
 
-### Examples
+## Examples
 
 | Code (URL) | Name | Description | Image |
 | ---------- | ---- | ----------- | ----- |
@@ -24,7 +23,7 @@ A person interacting with an app will potentially create a [event](/topic/events
 | https://rtgy.io/VRnekwa | Out of coffee? | We'll get you caffeinated in no time | [![](/images/marketing/office-coffee.jpg)](/images/marketing/office-coffee.jpg) |
 | https://rtgy.io/y42gVPg | How are we doing? | Let us know so we can provide the best service | [![](/images/marketing/hotel-survey.jpg)](/images/marketing/hotel-survey.jpg) |
 
-### Related
+## Related
 
 * [Topic: Code](/topic/codes/)
 * [Reference: Code](/reference/codes/)

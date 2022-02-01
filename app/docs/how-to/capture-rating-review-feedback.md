@@ -1,7 +1,6 @@
 ---
 title: "Capture rating & review feedback | How-to"
 description: "How do I capture rating & review feedback?"
-sidebar: false
 ---
 
 # Capture rating & review feedback

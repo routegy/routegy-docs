@@ -1,7 +1,6 @@
 ---
 title: "Action Types | Webhook | Reference"
 description: "How do webhook action types work?"
-sidebar: false
 ---
 
 # Webhook

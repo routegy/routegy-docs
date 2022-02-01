@@ -1,7 +1,6 @@
 ---
 title: "Device compatibility | Reference"
 description: "How do I know if my device is compatible with Routegy apps?"
-sidebar: false
 ---
 
 # Devices compatible with QR and NFC apps

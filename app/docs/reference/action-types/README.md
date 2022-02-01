@@ -1,7 +1,6 @@
 ---
 title: "Action Types | Reference"
 description: "How do action types work?"
-sidebar: false
 ---
 
 # Action Types

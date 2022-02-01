@@ -1,7 +1,6 @@
 ---
 title: "Create Trello cards | How-to"
 description: "How do I create Trello cards?"
-sidebar: false
 ---
 
 # Create Trello Cards

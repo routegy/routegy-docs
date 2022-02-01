@@ -1,7 +1,6 @@
 ---
 title: "Action Types | Slack Webhook | Reference"
 description: "How do slack webhook action types work?"
-sidebar: false
 ---
 
 # Slack Webhook

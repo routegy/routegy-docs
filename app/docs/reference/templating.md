@@ -1,7 +1,6 @@
 ---
 title: "Templating | Reference"
 description: "How does templating work?"
-sidebar: false
 ---
 
 # Templating

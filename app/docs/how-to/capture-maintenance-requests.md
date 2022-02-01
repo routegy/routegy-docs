@@ -1,7 +1,6 @@
 ---
 title: "Capture maintenance requests | How-to"
 description: "How do I capture maintenance requests?"
-sidebar: false
 ---
 
 # Capture maintenance requests

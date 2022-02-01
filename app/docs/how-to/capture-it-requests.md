@@ -1,7 +1,6 @@
 ---
 title: "Capture IT requests | How-to"
 description: "How do I capture IT requests?"
-sidebar: false
 ---
 
 # Capture IT requests

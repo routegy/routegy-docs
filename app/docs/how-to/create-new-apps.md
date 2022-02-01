@@ -1,7 +1,6 @@
 ---
 title: "Create new apps | How-to"
 description: "How do I create new apps?"
-sidebar: false
 ---
 
 # Create new apps

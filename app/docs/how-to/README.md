@@ -1,7 +1,6 @@
 ---
 title: How-to guides
 description: "Step by step walkthroughs to solve a specific problem"
-sidebar: false
 ---
 
 # How-to Guides

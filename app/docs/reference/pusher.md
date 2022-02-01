@@ -1,7 +1,6 @@
 ---
 title: "Pusher | Reference"
 description: "How do pusher integrations work?"
-sidebar: false
 ---
 
 # Pusher

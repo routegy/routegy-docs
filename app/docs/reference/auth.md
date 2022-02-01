@@ -1,7 +1,6 @@
 ---
 title: "Auth | Reference"
 description: "How do authentication and authorization work?"
-sidebar: false
 ---
 
 # Authentication

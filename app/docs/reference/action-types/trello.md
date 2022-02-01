@@ -1,7 +1,6 @@
 ---
 title: "Action Types | Trello | Reference"
 description: "How do trello action types work?"
-sidebar: false
 ---
 
 # Trello

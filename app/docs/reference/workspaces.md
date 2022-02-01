@@ -1,7 +1,6 @@
 ---
 title: "Workspaces | Reference"
 description: "How do workspaces work?"
-sidebar: false
 ---
 
 # Workspaces

@@ -1,7 +1,6 @@
 ---
 title: Tutorials
 description: "Lessons to get started with Routegy"
-sidebar: false
 ---
 
 # Tutorials

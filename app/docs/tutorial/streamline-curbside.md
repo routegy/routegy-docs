@@ -1,7 +1,6 @@
 ---
 title: "Streamline curbside pickup with Routegy and Trello | How-to"
 description: "How do I streamline curbside pickup with Routegy and Trello?"
-sidebar: false
 ---
 
 # Streamline curbside pickup with Routegy and Trello

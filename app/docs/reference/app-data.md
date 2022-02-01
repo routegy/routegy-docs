@@ -1,7 +1,6 @@
 ---
 title: "AppData | Reference"
 description: "How does app data work?"
-sidebar: false
 ---
 
 # AppData
