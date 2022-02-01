@@ -17,10 +17,10 @@
         "docs:serve": "cd app && vuepress dev docs"
     },
     "dependencies": {
-        "vuepress": "1.8.2",
-        "vuepress-theme-routegy": "1.0.31"
+        "vuepress": "1.9.7",
+        "vuepress-theme-routegy": "1.0.40"
     },
     "devDependencies": {
-        "@vuepress/plugin-google-analytics": "^1.5.2"
+        "@vuepress/plugin-google-analytics": "1.9.7"
     }
 }

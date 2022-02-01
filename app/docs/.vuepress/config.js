@@ -18,8 +18,15 @@ module.exports = {
     theme: 'routegy',
     themeConfig: {
         company: 'Routegy',
+        logo: '/images/routegy-logo-light.svg',
+        logoAlt: 'Routegy logo containing an illustration of a purple mountain with a pink flag flying at the summit',
+        logoUrl: 'https://routegy.com',
+        wordmark: '/images/routegy-wordmark-light.svg',
+        wordmarkAlt: 'Text image that says \'Routegy\'',
+        separator: '/images/separator.svg',
         subdomain: 'Docs',
-        subdomainLogo: '/images/docs-logo-light.svg',
+        subdomainLogo: '/images/routegy-docs-logo-light.svg',
+        subdomainLogoAlt: 'Text image that says \'Docs\'',
         hostname: 'https://docs.routegy.com',
         joinCta: 'Start today!',
         nav: [
@@ -36,8 +43,109 @@ module.exports = {
             link: 'https://web.routegy.com'
           }
         ],
-        logo: '/images/web-logo-light.svg',
-        logoUrl: 'https://routegy.com',
+        sidebarDepth: 2,
+        sidebar: [
+          {
+            title: 'Routegy documentation',
+            path: '/',
+            collapsable: false,
+            children: [
+              {
+                title: 'At a glance',
+                path: '/tutorial/routegy-at-a-glance',
+              },
+              {
+                title: 'Getting started',
+                path: '/tutorial/getting-started',
+              },
+              {
+                title: 'Tutorials',
+                path: '/tutorial/',
+                collapsable: false,
+                children: [
+                  {
+                    title: 'Streamline curbside pickup',
+                    path: '/tutorial/streamline-curbside',
+                  },
+                ],
+              },
+              {
+                title: 'Key concepts',
+                path: '/reference/',
+                collapsable: false,
+                children: [
+                  {
+                    title: 'Actions',
+                    path: '/reference/actions',
+                  },
+                  {
+                    title: 'Apps',
+                    path: '/reference/apps',
+                  },
+                ],
+              },
+              {
+                title: 'How-to guides',
+                path: '/how-to/',
+                collapsable: true,
+                children: [
+                  {
+                    title: 'Capture hot/cold requests',
+                    path: '/how-to/capture-hot-cold-requests',
+                  },
+                  {
+                    title: 'Capture IT requests',
+                    path: '/how-to/capture-it-requests',
+                  },
+                  {
+                    title: 'Capture maintenance requests',
+                    path: '/how-to/capture-maintenance-requests',
+                  },
+                  {
+                    title: 'Capture rating and review feedback',
+                    path: '/how-to/capture-rating-review-feedback',
+                  },
+                  {
+                    title: 'Capture supply requests',
+                    path: '/how-to/capture-supply-requests',
+                  },
+                  {
+                    title: 'Capture survey feedback',
+                    path: '/how-to/capture-survey-feedback',
+                  },
+                  {
+                    title: 'Create new apps',
+                    path: '/how-to/create-new-apps',
+                  },
+                  {
+                    title: 'Create new patterns',
+                    path: '/how-to/create-new-patterns',
+                  },
+                  {
+                    title: 'Print QR codes',
+                    path: '/how-to/print-qr-codes',
+                  },
+                  {
+                    title: 'Receive email notifications',
+                    path: '/how-to/receive-email-notifications',
+                  },
+                  {
+                    title: 'Receive slack notifications',
+                    path: '/how-to/receive-slack-notifications',
+                  },
+                  {
+                    title: 'Receive SMS notifications',
+                    path: '/how-to/receive-sms-notifications',
+                  },
+                  {
+                    title: 'Receive webhook requests',
+                    path: '/how-to/receive-webhook-requests',
+                  },
+                ],
+              }
+            ],
+          },
+        ],
         repo: 'routegy/routegy-docs',
         docsDir: 'app/docs',
         editLinks: true,
@@ -63,7 +171,7 @@ module.exports = {
             ],
             copyright: [
                 {
-                  text: '© 2020 Routegy, Inc',
+                  text: '© 2022 Routegy, Inc',
                   link: 'https://routegy.com',
                 },
                 {
