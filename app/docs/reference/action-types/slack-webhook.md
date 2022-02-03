@@ -5,7 +5,7 @@ description: "How do slack webhook action types work?"
 
 # Slack Webhook
 
-The Slack webhook action type is used to send a message to Slack for every [event](/reference/events/) created by a [app](/reference/apps/).
+The Slack webhook action type is used to send a message to Slack for every [event](/reference/events/) created by an [app](/reference/apps/).
 
 ::: tip
 Slack messages can be configured using [templating](/reference/templating/).

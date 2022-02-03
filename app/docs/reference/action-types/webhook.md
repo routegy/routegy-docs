@@ -5,7 +5,7 @@ description: "How do webhook action types work?"
 
 # Webhook
 
-The webhook action type is used to call a webhook URL with JSON payload for every [event](/reference/events/) created by a [app](/reference/apps/).
+The webhook action type is used to call a webhook URL with JSON payload for every [event](/reference/events/) created by an [app](/reference/apps/).
 
 ::: warning
 Webhooks are not yet configurable using [templating](/reference/templating/).
@@ -13,7 +13,7 @@ Webhooks are not yet configurable using [templating](/reference/templating/).
 
 ## Guides
 
-* [How-to: Receive webhook notifications](/how-to/receive-webhook-notifications/)
+* [How-to: Receive webhook notifications](/how-to/receive-webhook-requests)
 
 ## Screenshots
 

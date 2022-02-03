@@ -5,7 +5,7 @@ description: "How do email action types work?"
 
 # Email
 
-The email action type is used to send an email to a configured address for every [event](/reference/events/) created by a [app](/reference/apps/).
+The email action type is used to send an email to a configured address for every [event](/reference/events/) created by an [app](/reference/apps/).
 
 ::: warning
 Emails are not yet configurable using [templating](/reference/templating/).

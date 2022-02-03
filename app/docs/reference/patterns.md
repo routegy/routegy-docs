@@ -38,7 +38,8 @@ descriptor:
 ```
 Here is how this example pattern is rendered as a Routegy app.
 
-<p align="center">  <img src="/images/patterns/name-example-app-preview.png" width="85%">
+<p align="center">
+  <img src="/images/patterns/name-example-app-preview.png" width="85%">
 </p>
 
 ## Text inputs

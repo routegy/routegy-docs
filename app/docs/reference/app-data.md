@@ -1,8 +1,8 @@
 ---
-title: "AppData | Reference"
+title: "App data | Reference"
 description: "How does app data work?"
 ---
 
-# AppData
+# App data
 
 Sorry, it looks like we haven't filled this out yet.

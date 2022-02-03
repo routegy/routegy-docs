@@ -17,7 +17,6 @@ If you're currently asking yourself a "How does this work..." question, you're i
 * [Device Compatibility](/reference/device-compatibility/)
 * [Groups](/reference/groups/)
 * [Organizations](/reference/organizations/)
-* [Pusher Integration](/reference/pusher/)
 * [Patterns](/reference/patterns/)
 * [AppData](/reference/app-data)
 * [Templating](/reference/templating/)

@@ -3,44 +3,39 @@ title: "Print QR codes | How-to"
 description: "How do I print QR codes?"
 ---
 
-# Print QR Codes
+# Download and print a QR Code
 
-This document describes how to download and print [QR codes](https://en.wikipedia.org/wiki/QR_code) for your Routegy [apps](/topic/apps/).
+This document describes how to download and print a [QR code](https://en.wikipedia.org/wiki/QR_code) for a Routegy [app](/topic/apps/).
 
-## Downloading the QR code
+## Step 1: Choose a workspace
 
-Follow the steps below to download the QR code for a single app.
-
-### Step 1
-
-Start by making sure you're in the desired [workspace](/reference/workspaces/). Click on the menu bar dropdown to choose.
+Start by making sure you're in the desired [workspace](/reference/workspaces/). Hover over the menu bar dropdown to choose.
 
 ![Choose Workspace](/images/navigation/choose-workspace-dropdown.png)
 
-### Step 2
+## Step 2: Select an app
 
-Select the **Apps** tab within the workspace view.
+Select the **Apps** tab within the workspace view and click an [app](/reference/apps/) in the tree.
 
-![Select App Menu](/images/navigation/select-apps-menu.png)
+![Select App Menu](/images/how-tos/select-app.png)
 
-### Step 2
 
-Select the [app](/reference/apps/) you wish to download.
+## Step 3: Download the QR code
+
+ Press the file download button in the app dialog.
 
 ![Download App](/images/modals/personal-office-coffee-machine-download-app.png)
 
-## Print the QR code
+## Step 4: Open the QR code
 
-Follow the steps below to print the downloaded QR code.
-
-### Step 1
-
-Open the downloaded QR code image. This will be located in the default Downloads folder configured for your web browser.
+Open the downloaded QR code image. It will be located in the default Downloads folder configured for your web browser.
 
 ![Open SVG](/images/navigation/personal-office-coffee-machine-open-app-svg.png)
 
-### Step 2
+## Step 5: Print (or edit) your QR code
 
-From here, open the `.svg` in the default viewer on your computer and go to `File > Print`.
+Go to `File > Print` to print your QR code. You can also use your favorite SVG editor to change the color, add text, etc.
 
-If you would like customized designs or to use our SVG templates, please contact us at <connect@routegy.com>.
+::: tip
+If you'd like help with customized designs or tips on how to use your own SVG templates, please contact us at <connect@routegy.com>.
+:::

@@ -11,35 +11,42 @@ If you don't have a Trello account, you can create one [here](https://trello.com
 
 [Routegy](https://routegy.com) + [Trello](https://trello.com) is an extremely powerful combination and is being used by people around the world to manage supply requests, purchase orders, and curbside pickups. Trello can be customized in near infinite ways to fit your exact needs.
 
-## Creating the Action
+## Create the action
 
 Follow the steps below to create a [action](/reference/actions/) for sending email notifications.
 
-#### Step 1
+### Step 1: Choose a workspace
 
-Start by making sure you're in the desired [workspace](/reference/workspaces/). Click on the menu bar dropdown to choose.
+Start by making sure you're in the desired [workspace](/reference/workspaces/). Hover over the menu bar dropdown to choose.
 
 <p align="center">
   <img src="/images/navigation/choose-workspace-dropdown.png" width="90%">
 </p>
 
-#### Step 2
+<CaptionedImage
+  src="/images/navigation/choose-workspace-dropdown.png"
+  caption="Admin app workspace selection"
+  alt=""
+  width="90%"
+/>
 
-Select the **Actions** tab within the workspace view and click the **+ New Action** button. This will launch a modal for creating new actions.
+### Step 2: Open the new action dialog
+
+Select the **Actions** tab within the workspace view and click the **+ New Action** button. This will launch a dialog for creating a new action.
 
 <p align="center">
   <img src="/images/how-tos/create-new-action.png" width="90%">
 </p>
 
-#### Step 3
+### Step 3: Select the Trello action type
 
-From the action creation model, select **Trello** from the _Action type_ dropdown list.
+From the action creation dialog, select **Trello** from the _Action type_ dropdown list.
 
 <p align="center">
   <img src="/images/modals/office-create-action-trello.png" width="70%">
 </p>
 
-#### Step 4
+### Step 4: Enter your API information
 
 Enter your **API Key/Token** for the Trello account you wish to use.
 
@@ -55,7 +62,7 @@ Hang tight, we're working on it!
   <img src="/images/modals/office-create-action-trello-api-key.png" width="70%">
 </p>
 
-#### Step 6
+### Step 5: Specify which list to use
 
 Enter the **List ID** for the Trello list you wish to use.
 
@@ -77,7 +84,7 @@ To find this, perform the following steps:
 </p>
 
 
-#### Step 7
+### Step 6: Finish configuring your action
 
 Customize the name and description of you card by providing your own [Jinja2 template](https://jinja.palletsprojects.com/en/3.0.x/) (optional), and click on **+ Create action** to complete the process.
 
@@ -86,33 +93,35 @@ Customize the name and description of you card by providing your own [Jinja2 tem
 </p>
 
 
-### Attaching Action to App
+## Attach the action to an app
 
-Follow the steps below to attach the Webhook action created above to one or more [apps](/reference/apps/).
+Follow the steps below to attach the Trello action created above to one or more [apps](/reference/apps/).
 
-Select the **Apps** tab within the workspace view and select the [app](/reference/apps/) you wish to receive SMS notifications for.
+### Step 1: Choose an app
+
+Select the **Apps** tab within the workspace view and select the [app](/reference/apps/) you wish to create Trello cards.
 
 <p align="center">
   <img src="/images/how-tos/edit-app.png" width="90%">
 </p>
 
-#### Step 2
+### Step 2: Open the app editor
 
-From the app model, click on the **Edit** button.
+From the app dialog, click on the **Edit** button.
 
 <p align="center">
   <img src="/images/modals/personal-office-coffee-machine-edit-app.png" width="70%">
 </p>
 
-#### Step 3
+### Step 3: Add your new action
 
-From the app edit model, type in the name of your action in _Actions_ list. The name will autocomplete as you type.
+From the app edit dialog, type in the name of your action in _Actions_ list. The name will autocomplete as you type.
 
 <p align="center">
   <img src="/images/modals/personal-office-coffee-machine-edit-app-actions-trello.png" width="70%">
 </p>
 
-#### Step 4
+### Step 4: Save your changes
 
 Click on the **Save changes** button and you're done!
 
@@ -120,7 +129,7 @@ Click on the **Save changes** button and you're done!
   <img src="/images/modals/personal-office-coffee-machine-edit-app-actions-trello-save.png" width="70%">
 </p>
 
-### Wait for App Interactions
+### Step 5: Wait for app interactions
 
 Now that your app is configured, you just wait until someone interacts with it. Once they do, you'll automatically have a card created in Trello for you that looks something like this.
 
