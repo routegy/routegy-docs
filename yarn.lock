@@ -8525,10 +8525,10 @@ vuepress-plugin-smooth-scroll@^0.0.3:
   dependencies:
     smoothscroll-polyfill "^0.4.3"
 
-vuepress-theme-routegy@1.0.40:
-  version "1.0.40"
-  resolved "https://registry.yarnpkg.com/vuepress-theme-routegy/-/vuepress-theme-routegy-1.0.40.tgz#a32d9836ecb7e9cb95fbc16a67cf315326c09a83"
-  integrity sha512-P79pve2cG4hHGXoXBZMF3tr21QP4iiey2RFB+kEy2DjcXh5va88IFjvCMTalnStw/IkDh2ITqbtuAL+VqQxxyg==
+vuepress-theme-routegy@1.0.44:
+  version "1.0.44"
+  resolved "https://registry.yarnpkg.com/vuepress-theme-routegy/-/vuepress-theme-routegy-1.0.44.tgz#5f16e5e82b571ad662df6a0d615ea71eba005ca6"
+  integrity sha512-J+Xgy+KrIl85R1UWZgpGwT8enFf6NxynSSka+MJDaPJM/9xbTsebdKeE9jFFmQjg2A12w8x/NNT+8aXhRAfQGQ==
   dependencies:
     "@vuepress/plugin-blog" "1.9.4"
     "@vuepress/plugin-medium-zoom" "1.8.2"
