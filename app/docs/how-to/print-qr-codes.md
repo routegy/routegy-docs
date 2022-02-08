@@ -13,7 +13,7 @@ Start by making sure you're in the desired [workspace](/reference/workspaces/). 
 
 <CaptionedImage
   src="/images/navigation/choose-workspace-dropdown.png"
-  alt="Image of an expanded dropdown containing a list of available workspaces in the Routegy admin app"
+  alt="An expanded dropdown containing a list of available workspaces in the Routegy admin app"
   width="90%"
 />
 
@@ -23,7 +23,7 @@ Select the **Apps** tab within the workspace view and click an [app](/reference/
 
 <CaptionedImage
   src="/images/how-tos/select-app.png"
-  alt="Image highlighting the app tab and selection of an app in the Routegy admin app"
+  alt="Highlighting the app tab and selection of an app in the Routegy admin app"
   width="90%"
 />
 
@@ -33,7 +33,7 @@ Select the **Apps** tab within the workspace view and click an [app](/reference/
 
 <CaptionedImage
   src="/images/modals/personal-office-coffee-machine-download-app.png"
-  alt="Image of the app dialog and highlighting the download button in the Routegy admin app"
+  alt="The app dialog and highlighting the download button in the Routegy admin app"
   width="90%"
 />
 
@@ -43,7 +43,7 @@ Open the downloaded QR code image. It will be located in the default Downloads f
 
 <CaptionedImage
   src="/images/navigation/personal-office-coffee-machine-open-app-svg.png"
-  alt="Image of a web browser file download of a coffee machine app QR code SVG"
+  alt="A web browser file download of a coffee machine app QR code SVG"
   width="100%"
 />
 

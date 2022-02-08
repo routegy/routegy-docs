@@ -13,7 +13,7 @@ Start by making sure you're in the desired [workspace](/reference/workspaces/). 
 
 <CaptionedImage
   src="/images/navigation/choose-workspace-dropdown.png"
-  alt="Image of an expanded dropdown containing a list of available workspaces in the Routegy admin app"
+  alt="An expanded dropdown containing a list of available workspaces in the Routegy admin app"
   width="90%"
 />
 
@@ -23,7 +23,7 @@ Select the **Patterns** tab within the workspace view and press the **+ New patt
 
 <CaptionedImage
   src="/images/how-tos/create-new-pattern.png"
-  alt="Image highlighting the patterns tab and 'New pattern' button within the Routegy admin app"
+  alt="Highlighting the patterns tab and 'New pattern' button within the Routegy admin app"
   width="90%"
 />
 
@@ -37,7 +37,7 @@ Fill out the modal dialog with a pattern that captures the information you desir
 
 <CaptionedImage
   src="/images/modals/default-new-pattern-modal.png"
-  alt="Image of the new pattern dialog defining a 'Printer problem' within the Routegy admin app"
+  alt="The new pattern dialog defining a 'Printer problem' within the Routegy admin app"
   width="80%"
 />
 

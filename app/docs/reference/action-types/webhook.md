@@ -21,7 +21,7 @@ Webhooks are not yet configurable using [templating](/reference/templating/).
 
 <CaptionedImage
   src="/images/modals/office-create-action-webhook.png"
-  alt="Image of the 'New action' dialog with the 'Webhook' action type selected in the Routegy admin app"
+  alt="The 'New action' dialog with the 'Webhook' action type selected in the Routegy admin app"
   width="75%"
 />
 
@@ -29,7 +29,7 @@ Webhooks are not yet configurable using [templating](/reference/templating/).
 
 <CaptionedImage
   src="/images/modals/office-create-action-webhook-filled.png"
-  alt="Image of the 'New action' dialog with the 'Webhook' action type configured in the Routegy admin app"
+  alt="The 'New action' dialog with the 'Webhook' action type configured in the Routegy admin app"
   width="75%"
 />
 
@@ -37,6 +37,6 @@ Webhooks are not yet configurable using [templating](/reference/templating/).
 
 <CaptionedImage
   src="/images/actions/personal-office-coffee-machine-webhook.png"
-  alt="Image of a JSON payload POSTed to an endpoint by an interaction with a Routegy app named 'Coffee machine'"
+  alt="A JSON payload POSTed to an endpoint by an interaction with a Routegy app named 'Coffee machine'"
   width="75%"
 />

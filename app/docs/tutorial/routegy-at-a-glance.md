@@ -19,7 +19,7 @@ You don't have to use groups, but they're always there if the need for more orga
 
 <CaptionedImage
   src="/images/navigation/office-1st-floor-conference-room-101-tree.png"
-  alt="Image of an office layout in a tree where rooms are nested and apps like 'Need something?' are placed in relevant rooms"
+  alt="An office layout in a tree where rooms are nested and apps like 'Need something?' are placed in relevant rooms"
   width="60%"
 />
 
@@ -57,7 +57,7 @@ additionalProperties: false
 
 <CaptionedImage
   src="/images/patterns/office-elevator-issue-pattern-preview.png"
-  alt="Image of a rendered UI for reporting an elevator issue based on the YAML above"
+  alt="A rendered UI for reporting an elevator issue based on the YAML above"
   caption="The YAML is rendered into a responsive web application"
   width="85%"
 />
@@ -74,14 +74,14 @@ Minimize the noise of the daily ephemera. Be notified instantly for high priorit
 
 <CaptionedImage
   src="/images/modals/office-experience-edit-app-actions.png"
-  alt="An image of multiple actions like email and Slack assigned to a single app"
+  alt="Multiple actions like email and Slack assigned to a single app"
   caption="You can add as many actions as you'd like to your apps"
   width="85%"
 />
 
 <CaptionedImage
   src="/images/modals/office-create-action-jira.png"
-  alt="An image showing the configuration of a Jira action that specifies the target project and priority for tickets created with it"
+  alt="The configuration of a Jira action that specifies the target project and priority for tickets created with it"
   caption="Configure actions to do exactly what you need them to do"
   width="85%"
 />
@@ -94,7 +94,7 @@ Apps open in a device's web browser, are optimized to adapt to a device's displa
 
 <CaptionedImage
   src="/images/marketing/hotel-survey.jpg"
-  alt="An image of a plastic stand with a printed QR code and the text 'How are we doing?'"
+  alt="A plastic stand with a printed QR code and the text 'How are we doing?'"
   caption="Access your apps from anywhere, including physical spaces via QR codes and NFC tags"
   width="85%"
 />

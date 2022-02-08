@@ -19,9 +19,9 @@ A person interacting with an app will potentially create a [event](/topic/events
 
 | Code (URL) | Name | Description | Image |
 | ---------- | ---- | ----------- | ----- |
-| https://rtgy.io/yPe9BPD | Need something? | Let us know and we'll bring it to your room | [![Image of a sign saying 'Need something?' with a QR code in a hotel closet](/images/marketing/hotel-closet.jpg)](/images/marketing/hotel-closet.jpg) |
-| https://rtgy.io/VRnekwa | Out of coffee? | We'll get you caffeinated in no time | [![Image of an office a sign saying 'Out of coffee?' with a QR code near a coffee machine](/images/marketing/office-coffee.jpg)](/images/marketing/office-coffee.jpg) |
-| https://rtgy.io/y42gVPg | How are we doing? | Let us know so we can provide the best service | [![Image of a sign saying 'How are we doing?' with a QR code on a hotel room coffee table](/images/marketing/hotel-survey.jpg)](/images/marketing/hotel-survey.jpg) |
+| https://rtgy.io/yPe9BPD | Need something? | Let us know and we'll bring it to your room | [![A sign saying 'Need something?' with a QR code in a hotel closet](/images/marketing/hotel-closet.jpg)](/images/marketing/hotel-closet.jpg) |
+| https://rtgy.io/VRnekwa | Out of coffee? | We'll get you caffeinated in no time | [![An office a sign saying 'Out of coffee?' with a QR code near a coffee machine](/images/marketing/office-coffee.jpg)](/images/marketing/office-coffee.jpg) |
+| https://rtgy.io/y42gVPg | How are we doing? | Let us know so we can provide the best service | [![A sign saying 'How are we doing?' with a QR code on a hotel room coffee table](/images/marketing/hotel-survey.jpg)](/images/marketing/hotel-survey.jpg) |
 
 ## Related
 

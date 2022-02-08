@@ -46,7 +46,7 @@ descriptor:
 The following is the same pattern rendered by Routegy.
 <CaptionedImage
   src="/images/patterns/office-printer-problem-pattern-preview.png"
-  alt="Image of a 'Printer issue' form generated from the Routegy schema defined above"
+  alt="A 'Printer issue' form generated from the Routegy schema defined above"
   width="85%"
 />
 

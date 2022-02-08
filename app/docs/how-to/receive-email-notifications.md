@@ -19,7 +19,7 @@ Start by making sure you're in the desired [workspace](/reference/workspaces/). 
 
 <CaptionedImage
   src="/images/navigation/choose-workspace-dropdown.png"
-  alt="Image of an expanded dropdown containing a list of available workspaces in the Routegy admin app"
+  alt="An expanded dropdown containing a list of available workspaces in the Routegy admin app"
   width="90%"
 />
 
@@ -29,7 +29,7 @@ Select the **Actions** tab within the workspace view and click the **+ New Actio
 
 <CaptionedImage
   src="/images/how-tos/create-new-action.png"
-  alt="Image highlighting the actions tab and 'New action' button within the Routegy admin app"
+  alt="Highlighting the actions tab and 'New action' button within the Routegy admin app"
   width="90%"
 />
 
@@ -39,7 +39,7 @@ From the action creation dialog, select **Email** from the _Action type_ dropdow
 
 <CaptionedImage
   src="/images/modals/office-create-action-email.png"
-  alt="Image of an expanded dropdown containing a list of available action types with 'Email' highlighted in the Routegy admin app"
+  alt="An expanded dropdown containing a list of available action types with 'Email' highlighted in the Routegy admin app"
   width="70%"
 />
 
@@ -53,7 +53,7 @@ The email can be to a single person or a mailing list.
 
 <CaptionedImage
   src="/images/modals/office-create-action-email-filled.png"
-  alt="Image of a configured email action in the 'New action' dialog with the 'Create action' button highlighted in the Routegy admin app"
+  alt="A configured email action in the 'New action' dialog with the 'Create action' button highlighted in the Routegy admin app"
   width="70%"
 />
 
@@ -67,7 +67,7 @@ Select the **Apps** tab within the workspace view and select the [app](/referenc
 
 <CaptionedImage
   src="/images/how-tos/edit-app.png"
-  alt="Image highlighting the Apps tab and selection of a 'Coffee machine' app within the Routegy admin app"
+  alt="Highlighting the Apps tab and selection of a 'Coffee machine' app within the Routegy admin app"
   width="90%"
 />
 
@@ -77,7 +77,7 @@ From the app modal, press the **Edit** button.
 
 <CaptionedImage
   src="/images/modals/personal-office-coffee-machine-edit-app.png"
-  alt="Image showing a 'Coffee machine' app in the app editor with the Edit button highlighted in the Routegy admin app"
+  alt="A 'Coffee machine' app in the app editor with the Edit button highlighted in the Routegy admin app"
   width="70%"
 />
 
@@ -87,7 +87,7 @@ From the app edit dialog, type in the name of your action in _Actions_ list. The
 
 <CaptionedImage
   src="/images/modals/personal-office-coffee-machine-edit-app-actions-email.png"
-  alt="Image showing the email action being added to a 'Coffee machine' app using the app editor in the Routegy admin app"
+  alt="The email action being added to a 'Coffee machine' app using the app editor in the Routegy admin app"
   width="70%"
 />
 
@@ -97,7 +97,7 @@ Press on the **Save changes** button and you're done!
 
 <CaptionedImage
   src="/images/modals/personal-office-coffee-machine-edit-app-actions-email-save.png"
-  alt="Image highlighting the 'Save changes' button in the app editor in the Routegy admin app"
+  alt="Highlighting the 'Save changes' button in the app editor in the Routegy admin app"
   width="70%"
 />
 
@@ -107,6 +107,6 @@ Now that your app is configured, you just wait until someone interacts with it. 
 
 <CaptionedImage
   src="/images/actions/personal-office-coffee-machine-email.png"
-  alt="Image of an email created by an interaction with a Routegy app named 'Coffee machine' using the email action defined earlier in this tutorial"
+  alt="An email created by an interaction with a Routegy app named 'Coffee machine' using the email action defined earlier in this tutorial"
   width="90%"
 />

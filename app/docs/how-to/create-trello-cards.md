@@ -21,7 +21,7 @@ Start by making sure you're in the desired [workspace](/reference/workspaces/). 
 
 <CaptionedImage
   src="/images/navigation/choose-workspace-dropdown.png"
-  alt="Image of an expanded dropdown containing a list of available workspaces in the Routegy admin app"
+  alt="An expanded dropdown containing a list of available workspaces in the Routegy admin app"
   width="90%"
 />
 
@@ -31,7 +31,7 @@ Select the **Actions** tab within the workspace view and click the **+ New Actio
 
 <CaptionedImage
   src="/images/how-tos/create-new-action.png"
-  alt="Image highlighting the actions tab and 'New action' button within the Routegy admin app"
+  alt="Highlighting the actions tab and 'New action' button within the Routegy admin app"
   width="90%"
 />
 
@@ -41,7 +41,7 @@ From the action creation dialog, select **Trello** from the _Action type_ dropdo
 
 <CaptionedImage
   src="/images/modals/office-create-action-trello.png"
-  alt="Image of an expanded dropdown containing a list of available action types with 'Trello' highlighted in the Routegy admin app"
+  alt="An expanded dropdown containing a list of available action types with 'Trello' highlighted in the Routegy admin app"
   width="70%"
 />
 
@@ -59,7 +59,7 @@ Hang tight, we're working on it!
 
 <CaptionedImage
   src="/images/modals/office-create-action-trello-api-key.png"
-  alt="Image of the Trello API key and API token fields in the 'New action' dialog in the Routegy admin app"
+  alt="The Trello API key and API token fields in the 'New action' dialog in the Routegy admin app"
   width="70%"
 />
 
@@ -76,7 +76,7 @@ To find this, perform the following steps:
 
 <CaptionedImage
   src="/images/external/trello-list-id.png"
-  alt="Image showing where to find a Trello list ID in Trello's JSON output"
+  alt="Finding a Trello list ID in Trello's JSON output"
   width="100%"
 />
 
@@ -86,7 +86,7 @@ To find this, perform the following steps:
 
 <CaptionedImage
   src="/images/modals/office-create-action-trello-list-id.png"
-  alt="Image of the Trello list ID field in the 'New action' dialog in the Routegy admin app"
+  alt="The Trello list ID field in the 'New action' dialog in the Routegy admin app"
   width="70%"
 />
 
@@ -96,7 +96,7 @@ Customize the name and description of you card by providing your own [Jinja2 tem
 
 <CaptionedImage
   src="/images/modals/office-create-action-trello-filled.png"
-  alt="Image showing the completed 'New action' dialog and highlighting the 'Create action' button in the Routegy admin app"
+  alt="The completed 'New action' dialog and highlighting the 'Create action' button in the Routegy admin app"
   width="70%"
 />
 
@@ -110,7 +110,7 @@ Select the **Apps** tab within the workspace view and select the [app](/referenc
 
 <CaptionedImage
   src="/images/how-tos/edit-app.png"
-  alt="Image highlighting the Apps tab and selection of a 'Coffee machine' app within the Routegy admin app"
+  alt="Highlighting the Apps tab and selection of a 'Coffee machine' app within the Routegy admin app"
   width="90%"
 />
 
@@ -120,7 +120,7 @@ From the app dialog, click on the **Edit** button.
 
 <CaptionedImage
   src="/images/modals/personal-office-coffee-machine-edit-app.png"
-  alt="Image showing a 'Coffee machine' app in the app editor with the Edit button highlighted in the Routegy admin app"
+  alt="A 'Coffee machine' app in the app editor with the Edit button highlighted in the Routegy admin app"
   width="70%"
 />
 
@@ -130,7 +130,7 @@ From the app edit dialog, type in the name of your action in _Actions_ list. The
 
 <CaptionedImage
   src="/images/modals/personal-office-coffee-machine-edit-app-actions-trello.png"
-  alt="Image showing the Trello action being added to a 'Coffee machine' app using the app editor in the Routegy admin app"
+  alt="The Trello action being added to a 'Coffee machine' app using the app editor in the Routegy admin app"
   width="70%"
 />
 
@@ -140,7 +140,7 @@ Click on the **Save changes** button and you're done!
 
 <CaptionedImage
   src="/images/modals/personal-office-coffee-machine-edit-app-actions-trello-save.png"
-  alt="Image highlighting the 'Save changes' button in the app editor in the Routegy admin app"
+  alt="Highlighting the 'Save changes' button in the app editor in the Routegy admin app"
   width="70%"
 />
 
@@ -150,6 +150,6 @@ Now that your app is configured, you just wait until someone interacts with it. 
 
 <CaptionedImage
   src="/images/actions/personal-office-coffee-machine-trello.png"
-  alt="Image of the Trello interface showing a card created in a list by an interaction with a Routegy app named 'Coffee machine' using the Trello action defined earlier in this tutorial"
+  alt="The Trello interface showing a card created in a list by an interaction with a Routegy app named 'Coffee machine' using the Trello action defined earlier in this tutorial"
   width="90%"
 />

@@ -22,7 +22,7 @@ A group has zero or more [apps](/topic/apps/), which define common interactions 
 
 <CaptionedImage
   src="/images/navigation/office-1st-floor-conference-room-101-tree.png"
-  alt="Image of the app tree interface in the Routegy admin app with groups representing an office layout"
+  alt="The app tree interface in the Routegy admin app with groups representing an office layout"
   width="70%"
 />
 

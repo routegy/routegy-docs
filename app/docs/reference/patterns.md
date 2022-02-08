@@ -40,7 +40,7 @@ Here is how this example pattern is rendered as a Routegy app.
 
 <CaptionedImage
   src="/images/patterns/name-example-app-preview.png"
-  alt="Image of a form with first and last name fields generated from a Routegy schema"
+  alt="A form with first and last name fields generated from a Routegy schema"
   width="85%"
 />
 
@@ -64,7 +64,7 @@ descriptor:
 
 <CaptionedImage
   src="/images/patterns/examples/text-input-simple.png"
-  alt="Image of a form with a text input field generated from a Routegy schema"
+  alt="A form with a text input field generated from a Routegy schema"
   width="75%"
 />
 
@@ -104,7 +104,7 @@ descriptor:
 
 <CaptionedImage
   src="/images/patterns/examples/text-input-formats.png"
-  alt="Image of a form with formatted email and date fields generated from a Routegy schema"
+  alt="A form with formatted email and date fields generated from a Routegy schema"
   width="75%"
 />
 
@@ -127,7 +127,7 @@ descriptor:
 
 <CaptionedImage
   src="/images/patterns/examples/text-input-regex.png"
-  alt="Image of a form with a regex-validated API key field generated from a Routegy schema"
+  alt="A form with a regex-validated API key field generated from a Routegy schema"
   width="75%"
 />
 
@@ -154,7 +154,7 @@ descriptor:
 
 <CaptionedImage
   src="/images/patterns/examples/text-input-password.png"
-  alt="Image of a form with a masked field generated from a Routegy schema"
+  alt="A form with a masked field generated from a Routegy schema"
   width="75%"
 />
 
@@ -177,7 +177,7 @@ descriptor:
 
 <CaptionedImage
   src="/images/patterns/examples/text-input-textarea.png"
-  alt="Image of a form with a text area 'comment' field generated from a Routegy schema"
+  alt="A form with a text area 'comment' field generated from a Routegy schema"
   width="75%"
 />
 
@@ -202,7 +202,7 @@ descriptor:
 
 <CaptionedImage
   src="/images/patterns/examples/number-input.png"
-  alt="Image of a form with a number input 'count' field generated from a Routegy schema"
+  alt="A form with a number input 'count' field generated from a Routegy schema"
   width="75%"
 />
 
@@ -228,7 +228,7 @@ descriptor:
 
 <CaptionedImage
   src="/images/patterns/examples/radio-buttons.png"
-  alt="Image of a form with a list of radio options generated from a Routegy schema"
+  alt="A form with a list of radio options generated from a Routegy schema"
   width="75%"
 />
 
@@ -258,7 +258,7 @@ descriptor:
 
 <CaptionedImage
   src="/images/patterns/examples/radio-buttons-custom-labels.png"
-  alt="Image of a form containing a list of radio options with displayed values of 'Yes/No' and data-values of 'true/false' generated from a Routegy schema"
+  alt="A form containing a list of radio options with displayed values of 'Yes/No' and data-values of 'true/false' generated from a Routegy schema"
   width="75%"
 />
 
@@ -285,7 +285,7 @@ descriptor:
 
 <CaptionedImage
   src="/images/patterns/examples/select-input.png"
-  alt="Image of a form containing a list of options in a select dropdown field generated from a Routegy schema"
+  alt="A form containing a list of options in a select dropdown field generated from a Routegy schema"
   width="75%"
 />
 
@@ -308,7 +308,7 @@ descriptor:
 
 <CaptionedImage
   src="/images/patterns/examples/single-checkbox.png"
-  alt="Image of a form containing a checkbox field generated from a Routegy schema"
+  alt="A form containing a checkbox field generated from a Routegy schema"
   width="75%"
 />
 
@@ -338,7 +338,7 @@ descriptor:
 
 <CaptionedImage
   src="/images/patterns/examples/multiple-checkboxes.png"
-  alt="Image of a form containing a list of checkbox fields generated from a Routegy schema"
+  alt="A form containing a list of checkbox fields generated from a Routegy schema"
   width="75%"
 />
 
@@ -362,7 +362,7 @@ descriptor:
 
 <CaptionedImage
   src="/images/patterns/examples/tag-input.png"
-  alt="Image of a form containing a tag-input field generated from a Routegy schema with soda flavor tags added entered into it"
+  alt="A form containing a tag-input field generated from a Routegy schema with soda flavor tags added entered into it"
   width="75%"
 />
 
@@ -387,7 +387,7 @@ descriptor:
 
 <CaptionedImage
   src="/images/patterns/examples/rating.png"
-  alt="Image of a form containing a star rating field generated from a Routegy schema with four stars selected"
+  alt="A form containing a star rating field generated from a Routegy schema with four stars selected"
   width="75%"
 />
 
