@@ -27,7 +27,7 @@ help                           Print Makefile usage.
 
 ### Theme Development
 
-If you're working on theme modifications, it's easiest to just use [yarn link](https://classic.yarnpkg.com/en/docs/cli/link/) so you can modifications on refresh.
+If you're working on theme modifications, it's easiest to just use [yarn link](https://classic.yarnpkg.com/en/docs/cli/link/) so you can view modifications on refresh.
 
 ```sh
 $ cd routegy-vuepress-theme

@@ -1,5 +1,5 @@
 ---
-title: "Action Types | Echo | Reference"
+title: "Action types | Echo | Reference"
 description: "How do echo action types work?"
 ---
 

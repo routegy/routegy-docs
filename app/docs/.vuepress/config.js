@@ -9,7 +9,7 @@ module.exports = {
     [
       '@vuepress/google-analytics',
       {
-          'ga': 'UA-150728185-2'
+        'ga': 'UA-150728185-2'
       }
     ]
   ],
@@ -80,7 +80,7 @@ module.exports = {
                 path: '/how-to/receive-email-notifications',
               },
               {
-                title: 'Receive slack notifications',
+                title: 'Receive Slack notifications',
                 path: '/how-to/receive-slack-notifications',
               },
               {
