@@ -1,5 +1,5 @@
 ---
-title: "Action Types | Webhook | Reference"
+title: "Action types | Webhook | Reference"
 description: "How do webhook action types work?"
 ---
 
@@ -19,12 +19,24 @@ Webhooks are not yet configurable using [templating](/reference/templating/).
 
 ### Create
 
-![Empty Action](/images/modals/office-create-action-webhook.png)
+<CaptionedImage
+  src="/images/modals/office-create-action-webhook.png"
+  alt="Image of the 'New action' dialog with the 'Webhook' action type selected in the Routegy admin app"
+  width="75%"
+/>
 
 ### Configure
 
-![Filled Action](/images/modals/office-create-action-webhook-filled.png)
+<CaptionedImage
+  src="/images/modals/office-create-action-webhook-filled.png"
+  alt="Image of the 'New action' dialog with the 'Webhook' action type configured in the Routegy admin app"
+  width="75%"
+/>
 
 ### Example
 
-![Result](/images/actions/personal-office-coffee-machine-webhook.png)
+<CaptionedImage
+  src="/images/actions/personal-office-coffee-machine-webhook.png"
+  alt="Image of a JSON payload POSTed to an endpoint by an interaction with a Routegy app named 'Coffee machine'"
+  width="75%"
+/>

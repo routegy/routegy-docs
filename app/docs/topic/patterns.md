@@ -43,10 +43,12 @@ descriptor:
         placeholder: E.g. Printer screen shows E104 error, cannot be reset and doesn't print
 ```
 
-The following is the same pattern renedered by Routegy.
-<p align="center">
-  <img src="/images/patterns/office-printer-problem-pattern-preview.png" width="85%">
-</p>
+The following is the same pattern rendered by Routegy.
+<CaptionedImage
+  src="/images/patterns/office-printer-problem-pattern-preview.png"
+  alt="Image of a 'Printer issue' form generated from the Routegy schema defined above"
+  width="85%"
+/>
 
 ## Related
 

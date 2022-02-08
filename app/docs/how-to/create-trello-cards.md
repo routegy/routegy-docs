@@ -3,7 +3,7 @@ title: "Create Trello cards | How-to"
 description: "How do I create Trello cards?"
 ---
 
-# Create Trello Cards
+# Create Trello cards
 
 This document describes how to make use of the [Trello](/reference/action-types/trello/) action to create cards when someone interacts with your apps.
 
@@ -19,14 +19,9 @@ Follow the steps below to create a [action](/reference/actions/) for sending ema
 
 Start by making sure you're in the desired [workspace](/reference/workspaces/). Hover over the menu bar dropdown to choose.
 
-<p align="center">
-  <img src="/images/navigation/choose-workspace-dropdown.png" width="90%">
-</p>
-
 <CaptionedImage
   src="/images/navigation/choose-workspace-dropdown.png"
-  caption="Admin app workspace selection"
-  alt=""
+  alt="Image of an expanded dropdown containing a list of available workspaces in the Routegy admin app"
   width="90%"
 />
 
@@ -34,17 +29,21 @@ Start by making sure you're in the desired [workspace](/reference/workspaces/). 
 
 Select the **Actions** tab within the workspace view and click the **+ New Action** button. This will launch a dialog for creating a new action.
 
-<p align="center">
-  <img src="/images/how-tos/create-new-action.png" width="90%">
-</p>
+<CaptionedImage
+  src="/images/how-tos/create-new-action.png"
+  alt="Image highlighting the actions tab and 'New action' button within the Routegy admin app"
+  width="90%"
+/>
 
 ### Step 3: Select the Trello action type
 
 From the action creation dialog, select **Trello** from the _Action type_ dropdown list.
 
-<p align="center">
-  <img src="/images/modals/office-create-action-trello.png" width="70%">
-</p>
+<CaptionedImage
+  src="/images/modals/office-create-action-trello.png"
+  alt="Image of an expanded dropdown containing a list of available action types with 'Trello' highlighted in the Routegy admin app"
+  width="70%"
+/>
 
 ### Step 4: Enter your API information
 
@@ -58,9 +57,11 @@ Enter your **API Key/Token** for the Trello account you wish to use.
 Hang tight, we're working on it!
 :::
 
-<p align="center">
-  <img src="/images/modals/office-create-action-trello-api-key.png" width="70%">
-</p>
+<CaptionedImage
+  src="/images/modals/office-create-action-trello-api-key.png"
+  alt="Image of the Trello API key and API token fields in the 'New action' dialog in the Routegy admin app"
+  width="70%"
+/>
 
 ### Step 5: Specify which list to use
 
@@ -73,25 +74,31 @@ To find this, perform the following steps:
 * Change the value in your address bar to `https://trello.com/b/3fdtL4eS.json?fields=id,name&lists=open` using **your unique** board identifier. 
 * This URL will display all open lists on your Trello board. Choose the one you want and capture the `id` value. In this example, we're using the `Things To Do` list with an id of `5d700d11bb1d6f12643ace12`.
 
-![Trello List ID](/images/external/trello-list-id.png)
+<CaptionedImage
+  src="/images/external/trello-list-id.png"
+  alt="Image showing where to find a Trello list ID in Trello's JSON output"
+  width="100%"
+/>
 
 ::: warning The board ID is unique to you!
 * The `3fdtL4eS` value used in this example is a **unique** board identifier and the value for your Trello board **will be different**.
 :::
 
-<p align="center">
-  <img src="/images/modals/office-create-action-trello-list-id.png" width="70%">
-</p>
-
+<CaptionedImage
+  src="/images/modals/office-create-action-trello-list-id.png"
+  alt="Image of the Trello list ID field in the 'New action' dialog in the Routegy admin app"
+  width="70%"
+/>
 
 ### Step 6: Finish configuring your action
 
 Customize the name and description of you card by providing your own [Jinja2 template](https://jinja.palletsprojects.com/en/3.0.x/) (optional), and click on **+ Create action** to complete the process.
 
-<p align="center">
-  <img src="/images/modals/office-create-action-trello-filled.png" width="70%">
-</p>
-
+<CaptionedImage
+  src="/images/modals/office-create-action-trello-filled.png"
+  alt="Image showing the completed 'New action' dialog and highlighting the 'Create action' button in the Routegy admin app"
+  width="70%"
+/>
 
 ## Attach the action to an app
 
@@ -101,36 +108,48 @@ Follow the steps below to attach the Trello action created above to one or more 
 
 Select the **Apps** tab within the workspace view and select the [app](/reference/apps/) you wish to create Trello cards.
 
-<p align="center">
-  <img src="/images/how-tos/edit-app.png" width="90%">
-</p>
+<CaptionedImage
+  src="/images/how-tos/edit-app.png"
+  alt="Image highlighting the Apps tab and selection of a 'Coffee machine' app within the Routegy admin app"
+  width="90%"
+/>
 
 ### Step 2: Open the app editor
 
 From the app dialog, click on the **Edit** button.
 
-<p align="center">
-  <img src="/images/modals/personal-office-coffee-machine-edit-app.png" width="70%">
-</p>
+<CaptionedImage
+  src="/images/modals/personal-office-coffee-machine-edit-app.png"
+  alt="Image showing a 'Coffee machine' app in the app editor with the Edit button highlighted in the Routegy admin app"
+  width="70%"
+/>
 
 ### Step 3: Add your new action
 
 From the app edit dialog, type in the name of your action in _Actions_ list. The name will autocomplete as you type.
 
-<p align="center">
-  <img src="/images/modals/personal-office-coffee-machine-edit-app-actions-trello.png" width="70%">
-</p>
+<CaptionedImage
+  src="/images/modals/personal-office-coffee-machine-edit-app-actions-trello.png"
+  alt="Image showing the Trello action being added to a 'Coffee machine' app using the app editor in the Routegy admin app"
+  width="70%"
+/>
 
 ### Step 4: Save your changes
 
 Click on the **Save changes** button and you're done!
 
-<p align="center">
-  <img src="/images/modals/personal-office-coffee-machine-edit-app-actions-trello-save.png" width="70%">
-</p>
+<CaptionedImage
+  src="/images/modals/personal-office-coffee-machine-edit-app-actions-trello-save.png"
+  alt="Image highlighting the 'Save changes' button in the app editor in the Routegy admin app"
+  width="70%"
+/>
 
 ### Step 5: Wait for app interactions
 
 Now that your app is configured, you just wait until someone interacts with it. Once they do, you'll automatically have a card created in Trello for you that looks something like this.
 
-![Action Integration](/images/actions/personal-office-coffee-machine-trello.png)
+<CaptionedImage
+  src="/images/actions/personal-office-coffee-machine-trello.png"
+  alt="Image of the Trello interface showing a card created in a list by an interaction with a Routegy app named 'Coffee machine' using the Trello action defined earlier in this tutorial"
+  width="90%"
+/>

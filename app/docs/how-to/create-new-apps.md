@@ -11,13 +11,21 @@ This document describes how to create a new [app](/topic/apps/) using the [Admin
 
 Start by making sure you're in the desired [workspace](/reference/workspaces/). Hover over the menu bar dropdown to choose.
 
-![Choose Workspace](/images/navigation/choose-workspace-dropdown.png)
+<CaptionedImage
+  src="/images/navigation/choose-workspace-dropdown.png"
+  alt="Image of an expanded dropdown containing a list of available workspaces in the Routegy admin app"
+  width="90%"
+/>
 
 ## Step 2: Bring up the new app dialog
 
 Click or drag and drop the **app** icon from the right-corner into the desired group.
 
-![Drag App](/images/tree/office-drag-drop-app.png)
+<CaptionedImage
+  src="/images/tree/office-drag-drop-app.png"
+  alt="Image of dragging a new app widget into the app tree within the Routegy admin app"
+  width="100%"
+/>
 
 ## Step 3: Configure your new app
 
@@ -27,9 +35,11 @@ Fill out the modal dialog with information about the app you wish to create.
   The `Group` field will be auto-populated if the icon was dragged.
 :::
 
-<p align="center">
-  <img src="/images/modals/office-1st-conf-room-101-create-app.png" width="70%">
-</p>
+<CaptionedImage
+  src="/images/modals/office-1st-conf-room-101-create-app.png"
+  alt="Image of the new app dialog within the Routegy admin app"
+  width="70%"
+/>
 
 ## Step 4: Save your new app
 

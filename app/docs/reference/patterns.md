@@ -16,7 +16,7 @@ A schema part of a pattern document is used to validate a [AppData](/references/
 
 Routegy requires all pattern schemas to be objects with individual data fields defined as their [properties](http://json-schema.org/understanding-json-schema/reference/object.html#properties). A pattern descriptor needs to match that hierarchy, with additional attributes like labels defined in corresponding properties.
 
-Below is an example of a simple pattern that countains an object schema with two string properties - first_name and last_name. By default, string schemas are rendered as basic text inputs. In this example, pattern descriptor is used to define the order of inputs to render, and to set their labels as 'First name' and 'Last name' respectively.
+Below is an example of a simple pattern that contains an object schema with two string properties - first_name and last_name. By default, string schemas are rendered as basic text inputs. In this example, pattern descriptor is used to define the order of inputs to render, and to set their labels as 'First name' and 'Last name' respectively.
 
 ```yaml
 schema:
@@ -38,9 +38,11 @@ descriptor:
 ```
 Here is how this example pattern is rendered as a Routegy app.
 
-<p align="center">
-  <img src="/images/patterns/name-example-app-preview.png" width="85%">
-</p>
+<CaptionedImage
+  src="/images/patterns/name-example-app-preview.png"
+  alt="Image of a form with first and last name fields generated from a Routegy schema"
+  width="85%"
+/>
 
 ## Text inputs
 
@@ -60,9 +62,11 @@ descriptor:
         placeholder: Input some text here
 ```
 
-<p align="center">
-  <img src="/images/patterns/examples/text-input-simple.png" width="75%">
-</p>
+<CaptionedImage
+  src="/images/patterns/examples/text-input-simple.png"
+  alt="Image of a form with a text input field generated from a Routegy schema"
+  width="75%"
+/>
 
 ### HTML input types
 
@@ -91,16 +95,18 @@ schema:
 descriptor:
   properties:
     email:
-      label: E-mail address
+      label: Email address
       attrs:
         placeholder: E.g. john.doe@email.org
     dob:
       label: Date of birth
 ```
 
-<p align="center">
-  <img src="/images/patterns/examples/text-input-formats.png" width="75%">
-</p>
+<CaptionedImage
+  src="/images/patterns/examples/text-input-formats.png"
+  alt="Image of a form with formatted email and date fields generated from a Routegy schema"
+  width="75%"
+/>
 
 ### Regular expressions
 
@@ -119,12 +125,17 @@ descriptor:
       label: API key
 ```
 
-<p align="center">
-  <img src="/images/patterns/examples/text-input-regex.png" width="75%">
-</p>
-
+<CaptionedImage
+  src="/images/patterns/examples/text-input-regex.png"
+  alt="Image of a form with a regex-validated API key field generated from a Routegy schema"
+  width="75%"
+/>
 
 ### Passwords and other masked inputs
+
+::: warning
+Be extremely careful requesting sensitive data in your apps. If you're unsure about how best to process sensitive data, please contact us at [support@routegy.com](mailto:support@routegy.com)
+:::
 
 Masked text inputs can be helpful in collecting sensitive information like passwords. To render one, simply the `kind` property of that fields t `password` in the pattern descriptor.
 
@@ -141,9 +152,11 @@ descriptor:
       label: Password
 ```
 
-<p align="center">
-  <img src="/images/patterns/examples/text-input-password.png" width="75%">
-</p>
+<CaptionedImage
+  src="/images/patterns/examples/text-input-password.png"
+  alt="Image of a form with a masked field generated from a Routegy schema"
+  width="75%"
+/>
 
 ### Text area
 
@@ -162,9 +175,11 @@ descriptor:
       label: Any comments?
 ```
 
-<p align="center">
-  <img src="/images/patterns/examples/text-input-textarea.png" width="75%">
-</p>
+<CaptionedImage
+  src="/images/patterns/examples/text-input-textarea.png"
+  alt="Image of a form with a text area 'comment' field generated from a Routegy schema"
+  width="75%"
+/>
 
 ### Number input
 
@@ -185,10 +200,11 @@ descriptor:
       label: Count
 ```
 
-<p align="center">
-  <img src="/images/patterns/examples/number-input.png" width="75%">
-</p>
-
+<CaptionedImage
+  src="/images/patterns/examples/number-input.png"
+  alt="Image of a form with a number input 'count' field generated from a Routegy schema"
+  width="75%"
+/>
 
 ## Radio buttons
 
@@ -210,9 +226,11 @@ descriptor:
       label: Choose one of the following
 ```
 
-<p align="center">
-  <img src="/images/patterns/examples/radio-buttons.png" width="75%">
-</p>
+<CaptionedImage
+  src="/images/patterns/examples/radio-buttons.png"
+  alt="Image of a form with a list of radio options generated from a Routegy schema"
+  width="75%"
+/>
 
 ### Custom labels
 
@@ -238,9 +256,11 @@ descriptor:
       label: What is your answer?
 ```
 
-<p align="center">
-  <img src="/images/patterns/examples/radio-buttons-custom-labels.png" width="75%">
-</p>
+<CaptionedImage
+  src="/images/patterns/examples/radio-buttons-custom-labels.png"
+  alt="Image of a form containing a list of radio options with displayed values of 'Yes/No' and data-values of 'true/false' generated from a Routegy schema"
+  width="75%"
+/>
 
 ## Select input
 
@@ -263,9 +283,11 @@ descriptor:
       kind: list
 ```
 
-<p align="center">
-  <img src="/images/patterns/examples/select-input.png" width="75%">
-</p>
+<CaptionedImage
+  src="/images/patterns/examples/select-input.png"
+  alt="Image of a form containing a list of options in a select dropdown field generated from a Routegy schema"
+  width="75%"
+/>
 
 
 ## Single checkbox
@@ -284,9 +306,11 @@ descriptor:
       label: Checkbox example
 ```
 
-<p align="center">
-  <img src="/images/patterns/examples/single-checkbox.png" width="75%">
-</p>
+<CaptionedImage
+  src="/images/patterns/examples/single-checkbox.png"
+  alt="Image of a form containing a checkbox field generated from a Routegy schema"
+  width="75%"
+/>
 
 ## Multiple checkboxes
 
@@ -312,9 +336,11 @@ descriptor:
       label: Select all that apply
 ```
 
-<p align="center">
-  <img src="/images/patterns/examples/multiple-checkboxes.png" width="75%">
-</p>
+<CaptionedImage
+  src="/images/patterns/examples/multiple-checkboxes.png"
+  alt="Image of a form containing a list of checkbox fields generated from a Routegy schema"
+  width="75%"
+/>
 
 ## Tag input
 
@@ -334,9 +360,11 @@ descriptor:
       label: Items to refill
 ```
 
-<p align="center">
-  <img src="/images/patterns/examples/tag-input.png" width="75%">
-</p>
+<CaptionedImage
+  src="/images/patterns/examples/tag-input.png"
+  alt="Image of a form containing a tag-input field generated from a Routegy schema with soda flavor tags added entered into it"
+  width="75%"
+/>
 
 ## Star rating
 
@@ -357,10 +385,11 @@ descriptor:
 
 ```
 
-<p align="center">
-  <img src="/images/patterns/examples/rating.png" width="75%">
-</p>
-
+<CaptionedImage
+  src="/images/patterns/examples/rating.png"
+  alt="Image of a form containing a star rating field generated from a Routegy schema with four stars selected"
+  width="75%"
+/>
 
 ## Relations
 

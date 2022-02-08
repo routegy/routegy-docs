@@ -11,17 +11,21 @@ This document describes how to create a new [pattern](/topic/patterns/) using th
 
 Start by making sure you're in the desired [workspace](/reference/workspaces/). Hover over the menu bar dropdown to choose.
 
-<p align="center">
-  <img src="/images/navigation/choose-workspace-dropdown.png" width="90%">
-</p>
+<CaptionedImage
+  src="/images/navigation/choose-workspace-dropdown.png"
+  alt="Image of an expanded dropdown containing a list of available workspaces in the Routegy admin app"
+  width="90%"
+/>
 
 ## Step 2: Bring up the new pattern dialog
 
 Select the **Patterns** tab within the workspace view and press the **+ New pattern** button.
 
-<p align="center">
-  <img src="/images/how-tos/create-new-pattern.png" width="90%">
-</p>
+<CaptionedImage
+  src="/images/how-tos/create-new-pattern.png"
+  alt="Image highlighting the patterns tab and 'New pattern' button within the Routegy admin app"
+  width="90%"
+/>
 
 ## Step 3: Configure your new pattern
 
@@ -31,9 +35,11 @@ Fill out the modal dialog with a pattern that captures the information you desir
   Use the `Preview` tab to view a rendered version of your pattern!
 :::
 
-<p align="center">
-  <img src="/images/modals/default-new-pattern-modal.png" width="80%">
-</p>
+<CaptionedImage
+  src="/images/modals/default-new-pattern-modal.png"
+  alt="Image of the new pattern dialog defining a 'Printer problem' within the Routegy admin app"
+  width="80%"
+/>
 
 ## Step 4: Save your new pattern
 

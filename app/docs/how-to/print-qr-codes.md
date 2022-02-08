@@ -11,26 +11,41 @@ This document describes how to download and print a [QR code](https://en.wikiped
 
 Start by making sure you're in the desired [workspace](/reference/workspaces/). Hover over the menu bar dropdown to choose.
 
-![Choose Workspace](/images/navigation/choose-workspace-dropdown.png)
+<CaptionedImage
+  src="/images/navigation/choose-workspace-dropdown.png"
+  alt="Image of an expanded dropdown containing a list of available workspaces in the Routegy admin app"
+  width="90%"
+/>
 
 ## Step 2: Select an app
 
 Select the **Apps** tab within the workspace view and click an [app](/reference/apps/) in the tree.
 
-![Select App Menu](/images/how-tos/select-app.png)
-
+<CaptionedImage
+  src="/images/how-tos/select-app.png"
+  alt="Image highlighting the app tab and selection of an app in the Routegy admin app"
+  width="90%"
+/>
 
 ## Step 3: Download the QR code
 
  Press the file download button in the app dialog.
 
-![Download App](/images/modals/personal-office-coffee-machine-download-app.png)
+<CaptionedImage
+  src="/images/modals/personal-office-coffee-machine-download-app.png"
+  alt="Image of the app dialog and highlighting the download button in the Routegy admin app"
+  width="90%"
+/>
 
 ## Step 4: Open the QR code
 
 Open the downloaded QR code image. It will be located in the default Downloads folder configured for your web browser.
 
-![Open SVG](/images/navigation/personal-office-coffee-machine-open-app-svg.png)
+<CaptionedImage
+  src="/images/navigation/personal-office-coffee-machine-open-app-svg.png"
+  alt="Image of a web browser file download of a coffee machine app QR code SVG"
+  width="100%"
+/>
 
 ## Step 5: Print (or edit) your QR code
 
