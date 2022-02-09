@@ -1,15 +1,15 @@
 ---
 title: "Events | Reference"
-description: "How do events work?"
+description: "What are Routegy events?"
 ---
 
 # Events
 
 Events are created when people interact with a [app](/reference/apps/).
 
-A event contains [app data](/references/app-data/) data needed to fulfill the [pattern](/refernces/pattern/) of the [app](/reference/apps/).
+A event contains [app data](/reference/app-data/) data needed to fulfill the [pattern](/refernce/pattern/) of the [app](/reference/apps/).
 
-Each event created will be run through every [action](/references/actions/) attached to its [app](/reference/apps/).
+Each event created will be run through every [action](/reference/actions/) attached to its [app](/reference/apps/).
 
 ## Relations
 

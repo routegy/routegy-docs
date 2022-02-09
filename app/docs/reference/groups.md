@@ -1,28 +1,30 @@
 ---
 title: "Groups | Reference"
-description: "How do groups work?"
+description: "What is a Routegy group?"
 ---
 
 # Groups
 
-A group represents a physical space within a workspace. A [workspace](/reference/workspaces/) will have one or more groups that form a hierarchical representation of the physical properties of the workspace.
+A group allows for organization of [apps](/topic/apps) in a tree hierarchy. Groups can represent physical spaces, virtual spaces, objects, etc. They are structured in a tree hierarchy so you can describe more complex structures with them.
 
 An example of a hierarchy of groups could be:
 
 ```
 > University Campus
-    > Building #28
-        > Floor #3
-            > North Breakroom
+    > Jamrich Building
+        > 2nd Floor
+            > Classroom 251
 ```
 
-## Relations
+A group has zero or more [apps](/topic/apps/), which define common interactions relative to that group. For example, an app requesting more printer paper makes sense for an office supply room group but does not make sense for a bathroom group.
 
-A group is made up of the following relations:
+## Examples
 
-* [Workspace](/reference/workspaces/) (many-to-one)
-* [Group](/reference/groups/) (one-to-many)
-* [App](/reference/apps/) (one-to-many)
+<CaptionedImage
+  src="/images/navigation/office-1st-floor-conference-room-101-tree.png"
+  alt="The app tree interface in the Routegy admin app with groups representing an office layout"
+  width="70%"
+/>
 
 ## Permissions
 

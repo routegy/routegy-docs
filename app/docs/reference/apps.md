@@ -1,23 +1,27 @@
 ---
 title: "Apps | Reference"
-description: "How do apps work?"
+description: "What is a Routegy app?"
 ---
 
 # Apps
 
-Apps are where interactions occur within groups of a workspace.
+An app is the point where interactions occur within groups of a workspace.
 
-A person interacting with an app can potentially create a [event](/reference/events/).
+An app is linked to a [code](/reference/codes). This enables referencing an app by an opaque value (URL) that can be encoded into apps like QR codes, NFC tags, API clients, etc.
 
-## Relations
+An app has `name` and `description` fields which define a "call to action", indicating to a person its purpose and what happens when they interact with it. Depending on the physical app used, the length of these values should be limited on a common sense basis.
 
-An app is made up of the following relations:
+An app is linked to a [pattern](/reference/patterns) which defines the user experience when interacting with it. It can used to (optionally) prompt the user for additional information.
 
-* [Group](/reference/groups/) (many-to-one)
-* [Pattern](/reference/patterns/) (many-to-one)
-* [Action](/reference/actions/) (many-to-many)
-* [Event](/reference/events/) (one-to-many)
-* [Code](/reference/codes/) (one-to-one)
+A person interacting with an app will potentially create an [event](/reference/events). The event contains information gathered by the app (as defined by the app pattern), and it will trigger any [action](/reference/actions) that is tied to the app.
+
+## Examples
+
+| Code (URL) | Name | Description | Image |
+| ---------- | ---- | ----------- | ----- |
+| https://rtgy.io/yPe9BPD | Need something? | Let us know and we'll bring it to your room | [![A sign saying 'Need something?' with a QR code in a hotel closet](/images/marketing/hotel-closet.jpg)](/images/marketing/hotel-closet.jpg) |
+| https://rtgy.io/VRnekwa | Out of coffee? | We'll get you caffeinated in no time | [![An office a sign saying 'Out of coffee?' with a QR code near a coffee machine](/images/marketing/office-coffee.jpg)](/images/marketing/office-coffee.jpg) |
+| https://rtgy.io/y42gVPg | How are we doing? | Let us know so we can provide the best service | [![A sign saying 'How are we doing?' with a QR code on a hotel room coffee table](/images/marketing/hotel-survey.jpg)](/images/marketing/hotel-survey.jpg) |
 
 ## Permissions
 

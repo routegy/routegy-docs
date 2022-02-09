@@ -1,22 +1,62 @@
 ---
 title: "Patterns | Reference"
-description: "How do patterns work?"
+description: "What is a Routegy pattern?"
 ---
 
 # Patterns
 
 A pattern defines what interactions and data are exposed and collected by an [app](/reference/apps/). Pattern definition is a YAML document that consists of two parts: a schema and a descriptor. The schema is a [JSON Schema](https://json-schema.org/) document that defines the information to be captured by an app. The descriptor contains additional information that describes how the data is collected. This includes customization of UI components that represent different parts of the schema (e.g. component type, placeholders and more) as well as customization of the app appearance itself.
 
-A pattern with a `null` document indicates that no information should be collected.
+The schema portion of a pattern document is used to validate the [data](/reference/app-data/) when created by an [Event](/reference/events/).
 
-A schema part of a pattern document is used to validate a [AppData](/references/app-data/) document when created. This happens when a [Event](/references/events/) or [Action](/references/actions/) is created.
+## Example
 
+The following is an example pattern in its YAML form that contains a simple [JSON Schema](https://json-schema.org/) to collect information about a problem with an office printer. Collected datainclude a `problem` defined as an array of values from a predefined set of problem categories, and `additional_problem_info` string property for additional details or miscallanous category not included in the list. The descriptor part of the document defines the order of data properties to render, and it defines `additional_problem_info` as a `textarea` field to render it as a multiline text input.
+
+```yaml
+schema:
+  type: object
+  properties:
+    problem:
+      type: array
+      items:
+        - enum:
+            - Doesn't turn on
+            - Paper jam
+            - No paper
+            - No toner
+            - Connectivity issue
+            - Something else
+          type: string
+      title: What's going on?
+      uniqueItems: true
+    additional_problem_info:
+      type: string
+      title: Something else or more details?
+  additionalProperties: false
+descriptor:
+  order:
+    - problem
+    - additional_problem_info
+  properties:
+    additional_problem_info:
+      kind: textarea
+      attrs:
+        placeholder: E.g. Printer screen shows E104 error, cannot be reset and doesn't print
+```
+
+The following is the same pattern rendered by Routegy.
+<CaptionedImage
+  src="/images/patterns/office-printer-problem-pattern-preview.png"
+  alt="A 'Printer issue' form generated from the Routegy schema defined above"
+  width="85%"
+/>
 
 ## Object hierarchy
 
 Routegy requires all pattern schemas to be objects with individual data fields defined as their [properties](http://json-schema.org/understanding-json-schema/reference/object.html#properties). A pattern descriptor needs to match that hierarchy, with additional attributes like labels defined in corresponding properties.
 
-Below is an example of a simple pattern that contains an object schema with two string properties - first_name and last_name. By default, string schemas are rendered as basic text inputs. In this example, pattern descriptor is used to define the order of inputs to render, and to set their labels as 'First name' and 'Last name' respectively.
+Below is an example of a simple pattern that contains an object schema with two string properties - `first_name` and `last_name`. By default, string schemas are rendered as basic text inputs. In this example, pattern descriptor is used to define the order of inputs to render, and to set their labels as "First name" and "Last name" respectively.
 
 ```yaml
 schema:
@@ -391,14 +431,13 @@ descriptor:
   width="75%"
 />
 
-## Relations
+## Empty pattern
 
-A pattern is made up of the following relations:
+An empty pattern will create an event immediately upon interaction with an associated app. The empty pattern can define the custom branding and result message; it simply does not define any data to collect and thus does not render a form or UI.
 
-* [Workspace](/reference/workspaces/) (many-to-one)
-* [AppData](/reference/app-data/) (one-to-many)
-* [App](/reference/apps/) (one-to-many)
-* [ActionType](/reference/action-types/) (one-to-many)
+```yaml
+# TODO
+```
 
 ## Permissions
 
