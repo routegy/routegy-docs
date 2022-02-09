@@ -17,28 +17,23 @@ Temperature change requests a.k.a "Hot/Cold" requests are simple mutually exclus
 
 ### Hot/Cold
 
-This pattern snippet would capture a mutually exclusive choice for whether it is too hot or cold.
+This pattern snippet would capture a mutually exclusive choice ('hot' and 'cold' string values) for whether it is too hot or cold using a specialized UI component.
 
 ```yaml
-type: object
-title: 'Requesting a temperature change?'
-required:
-  - request
-properties:
-  request:
-    type: array
-    attrs:
-      type: radio
-    items:
-      - enum:
-          - It's too hot
-          - It's too cold
-        type: string
-    title: How can we help?
-additionalProperties: false
+schema:
+  type: object
+  properties:
+    hot_or_cold:
+      type: string
+descriptor:
+  label: How is the temperature in this room?
+  properties:
+    hot_or_cold:
+      kind: hotorcold
 ```
 
-## Related
-
-* [How-to: Capture maintenance requests](/how-to/capture-maintenance-requests/)
-* [How-to: Capture supply requests](/how-to/capture-supply-requests/)
+<CaptionedImage
+  src="/images/how-tos/capture-hot-or-cold.png"
+  alt="Capture hot vs. cold request"
+  width="85%"
+/>

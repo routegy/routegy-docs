@@ -5,7 +5,7 @@ description: "How do I capture maintenance requests?"
 
 # Capture maintenance requests
 
-The goal of this document is to cover how to create [patterns](/topic/patterns/) that capture maintenance requests. These are meant to gain immediate insight to the exact area of a problem without requiring additional requests for more information.
+The goal of this document is to cover how to create [patterns](/refenrence/patterns/) that capture maintenance requests. These are meant to gain immediate insight to the exact area of a problem without requiring additional requests for more information.
 
 ## Prerequisites
 
@@ -20,34 +20,43 @@ In most cases, fielding mantenance requests within a space can be handled by a g
 This pattern snippet would capture a problem with an elevator.
 
 ```yaml
-type: object
-title: 'Problem with the elevator?'
-required:
-  - request
-properties:
-  request:
-    type: array
-    attrs:
-      type: checkbox
-    items:
-      - enum:
-          - Making strange sounds
-          - Buttons not working
-          - Door won't close
-          - Stuck
-          - Something else
-        type: string
-    title: What is the problem?
-  additional_comment:
-    type: string
-    attrs:
-      type: textarea
-      placeholder: E.g. 8th floor button does not light up
-      title: Something else or other details?
-additionalProperties: false
+schema:
+  type: object
+  title: Problem with the elevator?
+  required:
+    - problem
+  properties:
+    problem:
+      type: array
+      uniqueItems: true
+      items:
+        - enum:
+            - Making strange sounds
+            - Buttons not working
+            - Door won't close
+            - Stuck
+            - Something else
+          type: string
+      title: What is the problem?
+    additional_comment:
+      type: string
+descriptor:
+  order:
+    - problem
+    - additional_comment
+  properties:
+    problem:
+      label: What is the problem?
+    additional_comment:
+      kind: textarea
+      label: Something else or other details?
+      attrs:
+        placeholder: E.g. 8th floor button does not light up
 ```
 
-## Related
+<CaptionedImage
+  src="/images/how-tos/capture-elevator.png"
+  alt="Capture elevator maintenance request."
+  width="85%"
+/>
 
-* [How-to: Capture supply requests](/how-to/capture-supply-requests/)
-* [How-to: Capture hot/cold requests](/how-to/capture-hot-cold-requests/)
