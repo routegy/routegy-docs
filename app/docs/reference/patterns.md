@@ -406,7 +406,9 @@ descriptor:
   width="75%"
 />
 
-## Star rating
+## Specialized components
+
+### Star rating
 
 To render a star rating widget, define a schema of `integer` or `number` type, and set its kind to `rating` in the descriptor. Use schemas `default` attribute to define the initial star selection.
 
@@ -430,6 +432,43 @@ descriptor:
   alt="A form containing a star rating field generated from a Routegy schema with four stars selected"
   width="75%"
 />
+
+### Net Promotor Score
+
+[Net Promotore Score](https://en.wikipedia.org/wiki/Net_promoter_score) can be used to quantify customer's perception of an experience or a product by asking them how likely they are to recommend it to someone else. Routegy provides a  component for collecting NPS nunmerical value that can be rendered by defining a schema of `integer` type, and setting its kind to `nps` in the descriptor.
+```yaml
+schema:
+  type: object
+  properties:
+    score:
+      type: integer
+descriptor:
+  properties:
+    score:
+      kind: nps
+      minScoreLabel: Absolutely not!
+      maxScoreLabel: Yes!
+      label: Would you recommend this product to a friend?
+```
+
+Minimum and maximum score labels and score ranges are customizable using descriptor attributes as shown below.
+
+
+| Attribute name | Default value | Description |
+| ----------- | ----------- | ----------- |
+| minScoreLabel| Not Very Likely | Label displayed next to the lowest score |
+| maxScoreLabel| Very Likely | Label displayed next to the highest score |
+| minScore| 0 | Lowest score on on the scale |
+| maxScore| 10 | Highest score on the scale |
+| passiveScore| 7 | Starting score for the 'passive' range (orange) |
+| promoterScore| 9 | Starting score  for the 'promoter' range (green) |
+
+<CaptionedImage
+  src="/images/patterns/examples/nps.png"
+  alt="A form containing an NPS field generated from a Routegy schema"
+  width="75%"
+/>
+
 
 ## Empty pattern
 
