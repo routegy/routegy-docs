@@ -1,6 +1,6 @@
 ---
 title: "Auth | Reference"
-description: "How do authentication and authorization work?"
+description: "How do authentication and authorization work in Routegy?"
 ---
 
 # Authentication

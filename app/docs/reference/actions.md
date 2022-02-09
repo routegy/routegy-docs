@@ -1,6 +1,6 @@
 ---
 title: "Actions | Reference"
-description: "How do actions work?"
+description: "What is a Routegy action?"
 ---
 
 # Actions

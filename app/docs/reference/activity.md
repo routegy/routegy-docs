@@ -1,6 +1,6 @@
 ---
 title: "Activity Streams & Feeds | Reference"
-description: "How do activity streams & feeds work?"
+description: "How do activity streams & feeds work in Routegy?"
 ---
 
 # Activity Streams & Feeds

@@ -1,6 +1,6 @@
 ---
 title: "App data | Reference"
-description: "How does app data work?"
+description: "What is Routegy app data?"
 ---
 
 # App data

@@ -1,6 +1,6 @@
 ---
 title: "Templating | Reference"
-description: "How does templating work?"
+description: "How does templating in Routegy work?"
 ---
 
 # Templating

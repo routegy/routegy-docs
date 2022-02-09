@@ -1,6 +1,6 @@
 ---
 title: "Organizations | Reference"
-description: "How do organizations work?"
+description: "What is a Routegy organization?"
 ---
 
 # Organizations

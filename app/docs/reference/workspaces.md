@@ -1,6 +1,6 @@
 ---
 title: "Workspaces | Reference"
-description: "How do workspaces work?"
+description: "What is a Routegy workspace?"
 ---
 
 # Workspaces
