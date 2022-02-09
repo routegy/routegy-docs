@@ -5,7 +5,7 @@ description: "How do I capture hot/cold requests?"
 
 # Capture temperature requests
 
-The goal of this document is to cover how to create [patterns](/topic/patterns/) that capture temperature change requests. These are meant to gain insight into HVAC problems or quickly respond to improve the spaces and people that you serve.
+The goal of this document is to cover how to create [patterns](/reference/patterns/) that capture temperature change requests. These are meant to gain insight into HVAC problems or quickly respond to improve the spaces and people that you serve.
 
 ## Prerequisites
 

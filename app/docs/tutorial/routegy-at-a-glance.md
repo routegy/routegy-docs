@@ -9,11 +9,11 @@ Routegy was designed to empower people to interact with infrastructure and physi
 
 ## People interact with apps
 
-[Routegy apps](/topic/apps/) are web-based and represent common points of interaction, accomplish specific tasks that may span multiple parts of your infrastructure, and contain context to further optimize your processes. Common interactions include reporting issues, making requests, starting chat conversations, providing feedback, or even making purchases.
+[Routegy apps](/reference/apps/) are web-based and represent common points of interaction, accomplish specific tasks that may span multiple parts of your infrastructure, and contain context to further optimize your processes. Common interactions include reporting issues, making requests, starting chat conversations, providing feedback, or even making purchases.
 
 ## Groups organize your apps
 
-Apps belong to [groups](/topic/groups/), which are structured in a tree-like hierarchy. These can represent physical things, like `1st Floor` or `Jamrich Building`, people (E.g. `Employees -> Jane Smith`) or virtual things like `Production Website` or `Inventory`.
+Apps belong to [groups](/reference/groups/), which are structured in a tree-like hierarchy. These can represent physical things, like `1st Floor` or `Jamrich Building`, people (E.g. `Employees -> Jane Smith`) or virtual things like `Production Website` or `Inventory`.
 
 You don't have to use groups, but they're always there if the need for more organization arises.
 
@@ -25,7 +25,7 @@ You don't have to use groups, but they're always there if the need for more orga
 
 ## Patterns define the information your apps collect
 
-Every app has a pattern. [Patterns](/topic/patterns/) control the UX and defines the information to collect for each interaction with an app. Patterns are reusable across multiple apps, allowing for easy scaling and maintenance. For example, you may have a pattern for "New Employee Orientation" and then automatically create a personalized app from that pattern for every new employee.
+Every app has a pattern. [Patterns](/reference/patterns/) control the UX and defines the information to collect for each interaction with an app. Patterns are reusable across multiple apps, allowing for easy scaling and maintenance. For example, you may have a pattern for "New Employee Orientation" and then automatically create a personalized app from that pattern for every new employee.
 
 Patterns are written in YAML and can be used to capture any information you like.
 
@@ -68,7 +68,7 @@ Every time a person (or bot) interacts with your app, an [event](/reference/even
 
 ## Events trigger actions (notifications and integrations)
 
-[Actions](/topic/actions/) control how Routegy processes and routes captured information to you. These can be notifications like `email` or `SMS`, work management systems like `Trello` or `JIRA`, and hooks like `Zapier`, `IFTTT` or `Webhooks`.
+[Actions](/reference/actions/) control how Routegy processes and routes captured information to you. These can be notifications like `email` or `SMS`, work management systems like `Trello` or `JIRA`, and hooks like `Zapier`, `IFTTT` or `Webhooks`.
 
 Minimize the noise of the daily ephemera. Be notified instantly for high priority issues. It's entirely up to you.
 
@@ -88,7 +88,7 @@ Minimize the noise of the daily ephemera. Be notified instantly for high priorit
 
 ## Access apps from anywhere with a web browser
 
-Every [app](/topic/apps/) has its own unique URL. Apps can be shared in email, wikis, Slack, etc. They can also be embedded in QR codes, NFC tags, and even IOT devices placed around your space for people to interact with.
+Every [app](/reference/apps/) has its own unique URL. Apps can be shared in email, wikis, Slack, etc. They can also be embedded in QR codes, NFC tags, and even IOT devices placed around your space for people to interact with.
 
 Apps open in a device's web browser, are optimized to adapt to a device's display, and require no native app installation.
 

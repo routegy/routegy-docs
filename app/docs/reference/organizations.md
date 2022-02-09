@@ -15,18 +15,9 @@ Some examples of an organization could be:
 * Pepsi
 * Northern Michigan University
 
-## Relations
-
-An organization is made up of the following relations:
-
-* [Contact](/reference/contacts/) (many-to-one)
-* [Workspace](/reference/workspaces/) (one-to-many)
-* [Team](/reference/teams/) (one-to-many)
-* [User](/reference/users/) (one-to-many)
-
 ## Personalized Organization
 
-When a [User](/reference/users/) is created through the [sign up flow](/topic/signed-up-flow/), a personalized organization is automatically created. This organization contains resources that help walk the user through the [sign up walkthrough](/tutorials/signed-up-walkthrough/) and quickly get started. This will be named after the user, e.g. "John Smith Organization".
+When a [User](/reference/users/) is created through the [sign up flow](/reference/signed-up-flow/), a personalized organization is automatically created. This organization contains resources that help walk the user through the [sign up walkthrough](/tutorials/signed-up-walkthrough/) and quickly get started. This will be named after the user, e.g. "John Smith Organization".
 
 ## Template Organization
 

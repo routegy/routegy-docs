@@ -14,15 +14,6 @@ Some examples of a workspace could be:
 * 3rd. Ave Building
 * Seattle Campus
 
-## Relations
-
-A workspace is made up of the following relations:
-
-* [Organization](/reference/organizations/) (many-to-one)
-* [Group](/reference/groups/) (one-to-many)
-* [Team](/reference/teams/) (one-to-many)
-* [User](/reference/users/) (one-to-many)
-
 ## Users
 
 [Users](/reference/users/) can gain permissions to a workspace.

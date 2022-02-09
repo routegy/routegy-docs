@@ -5,7 +5,7 @@ description: "How do I create new apps?"
 
 # Create an app
 
-This document describes how to create a new [app](/topic/apps/) using the [Admin web app](https://web.routegy.com).
+This document describes how to create a new [app](/reference/apps/) using the [Admin web app](https://web.routegy.com).
 
 ## Step 1: Choose a workspace
 
@@ -44,10 +44,3 @@ Fill out the modal dialog with information about the app you wish to create.
 ## Step 4: Save your new app
 
 Press **+ Create app** and you're done!
-
-## Related
-
-* [Group | Topic](/topic/groups/)
-* [App | Topic](/topic/apps/)
-* [App | Reference](/reference/apps/)
-

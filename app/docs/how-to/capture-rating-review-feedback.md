@@ -5,7 +5,7 @@ description: "How do I capture rating & review feedback?"
 
 # Capture rating & review feedback
 
-The goal of this document is to cover how to create [patterns](/topic/patterns/) that capture feedback with a rating & review prompt. These are meant to gain insight with a fixed size scoring mechanism and optionally an additional free-form input to capture personalized feedback.
+The goal of this document is to cover how to create [patterns](/reference/patterns/) that capture feedback with a rating & review prompt. These are meant to gain insight with a fixed size scoring mechanism and optionally an additional free-form input to capture personalized feedback.
 
 ## Prerequisites
 

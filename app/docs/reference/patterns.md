@@ -469,7 +469,6 @@ Minimum and maximum score labels and score ranges are customizable using descrip
   width="75%"
 />
 
-
 ## Empty pattern
 
 An empty pattern will create an event immediately upon interaction with an associated app. The empty pattern can define the custom branding and result message; it simply does not define any data to collect and thus does not render a form or UI.

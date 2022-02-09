@@ -5,7 +5,7 @@ description: "How do I capture survey feedback?"
 
 # Capture survey feedback
 
-The goal of this document is to cover how to create [patterns](/topic/patterns/) that capture feedback with a survey. Surveys are meant to gain insight by asking targeted questions to better understand the person and their feedback.
+The goal of this document is to cover how to create [patterns](/reference/patterns/) that capture feedback with a survey. Surveys are meant to gain insight by asking targeted questions to better understand the person and their feedback.
 
 ## Prerequisites
 
@@ -95,8 +95,3 @@ properties:
       placeholder: E.g. I really like the product
     title: How are we doing?
 additionalProperties: false
-```
-
-## Related
-
-* [How-to: Capture rating & review feedback](/how-to/capture-rating-review-feedback/)
