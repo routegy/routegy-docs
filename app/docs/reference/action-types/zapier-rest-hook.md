@@ -1,6 +1,6 @@
 ---
-title: "Action types | Zapier REST hook | Reference"
-description: "How do zapier rest hook action types work?"
+title: "Zapier REST hook | Action types | Reference"
+description: "How do Zapier REST hook action types work?"
 ---
 
 # Zapier REST hook

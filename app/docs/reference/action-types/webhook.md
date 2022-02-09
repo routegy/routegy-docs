@@ -1,5 +1,5 @@
 ---
-title: "Action types | Webhook | Reference"
+title: "Webhook | Action types | Reference"
 description: "How do webhook action types work?"
 ---
 

@@ -1,17 +1,17 @@
 ---
-title: "Action Types | Reference"
+title: "Action types | Reference"
 description: "How do action types work?"
 ---
 
-# Action Types
+# Action types
 
-A action type represents a type of action that can be run for every [event](/reference/events/) created by a [app](/reference/apps/).
+An action type represents a type of action that can be run for every [event](/reference/events/) created by a [app](/reference/apps/).
 
 Some examples of action types could be:
 
 * Send SMS
 * Send email
-* Create ticket in the Trello board
+* Create card in a Trello board
 * Send pager alert via Pagerduty
 * Invoke AWS Lambda function
 
@@ -19,9 +19,8 @@ Some examples of action types could be:
 
 The following is a list of available action types:
 
-* [Echo](/reference/action-types/echo/)
 * [Email](/reference/action-types/email/)
-* [Slack Webhook](/reference/action-types/slack-webhook/)
+* [Slack webhook](/reference/action-types/slack-webhook/)
 * [SMS](/reference/action-types/sms/)
 * [Trello](/reference/action-types/trello/)
 * [Webhook](/reference/action-types/webhook/)
@@ -29,7 +28,7 @@ The following is a list of available action types:
 
 ## Relations
 
-A action type is made up of the following relations:
+An action type is made up of the following relations:
 
 * [Workspace](/reference/workspaces/) (many-to-one)
 * [Pattern](/reference/patterns/) (many-to-one)

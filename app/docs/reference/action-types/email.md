@@ -1,5 +1,5 @@
 ---
-title: "Action types | Email | Reference"
+title: "Email | Action types | Reference"
 description: "How do email action types work?"
 ---
 

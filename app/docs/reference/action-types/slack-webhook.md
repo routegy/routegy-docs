@@ -1,5 +1,5 @@
 ---
-title: "Action types | Slack webhook | Reference"
+title: "Slack webhook | Action types | Reference"
 description: "How do Slack webhook action types work?"
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: "Action types | SMS | Reference"
+title: "SMS | Action types | Reference"
 description: "How do SMS action types work?"
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: "Action types | Trello | Reference"
+title: "Trello | Action types | Reference"
 description: "How do Trello action types work?"
 ---
 
