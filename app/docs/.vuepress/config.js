@@ -124,10 +124,6 @@ module.exports = {
                 collapsable: false,
                 children: [
                   {
-                    title: 'Echo',
-                    path: '/reference/action-types/echo',
-                  },
-                  {
                     title: 'Email',
                     path: '/reference/action-types/email',
                   },
