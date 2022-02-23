@@ -69,7 +69,7 @@ description:
 
 ## Net Promoter Score
 
-Another way to capture and quantify perception of a product or experience is by using a [Net Promoter Score](https://en.wikipedia.org/wiki/Net_promoter_score). This pattern below would capture a numerical NPS value using a specilized  NPS UI component.
+Another way to capture and quantify perception of a product or experience is by using a [Net Promoter Score](https://en.wikipedia.org/wiki/Net_promoter_score). This pattern below would capture a numerical NPS value using a specilized [NPS component](/reference/patterns.html#net-promotor-score)
 
 ```yaml
 schema:
