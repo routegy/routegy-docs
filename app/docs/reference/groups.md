@@ -5,7 +5,7 @@ description: "What is a Routegy group?"
 
 # Groups
 
-A group allows for organization of [apps](/reference/apps) in a tree hierarchy. Groups can represent physical spaces, virtual spaces, objects, etc. They are structured in a tree hierarchy so you can describe more complex structures with them.
+A group allows for organization of [apps](/reference/apps) in a tree-like hierarchy. Groups can represent physical spaces, virtual spaces, objects, etc. They are structured in a tree hierarchy so you can describe more complex structures with them.
 
 An example of a hierarchy of groups could be:
 
