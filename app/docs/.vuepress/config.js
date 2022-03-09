@@ -197,8 +197,8 @@ module.exports = {
                 path: '/how-to/capture-it-requests',
               },
               {
-                title: 'Capture maintenance requests',
-                path: '/how-to/capture-maintenance-requests',
+                title: 'Capture problem reports',
+                path: '/how-to/capture-problem-reports',
               },
               {
                 title: 'Capture rating and review feedback',

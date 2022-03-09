@@ -13,36 +13,43 @@ Before starting, you should familiarize yourself with the [How to: Create new pa
 
 ## Supply Requests
 
-In most cases, managing supply of items within a space can be handled by a group of checkboxes indicating the items to restock and a free-form text input to capture additional details or other items not previously listed.
+In most cases, managing supply of items within a space can be handled by a group of [checkboxes](/reference/patterns.html#multiple-checkboxes) indicating the items to restock and a free-form text input to capture additional details or other items not previously listed.
 
 ### Conference Room Supplies
 
 This pattern snippet capture a supply request for a conference room.
 
 ```yaml
-type: object
-title: Conference room supplies
-required:
-  - supplies
-properties:
-  supplies:
-    type: array
-    attrs:
-      type: checkbox
-    items:
-      - enum:
-          - Whiteboard markers
-          - Whiteboard erasers
-          - A/V adapters
-          - Chairs
-          - Something else
-        type: string
-    title: What needs to be restocked?
-  additional_comment:
-    type: string
-    attrs:
-      type: textarea
-      placeholder: E.g. scissors
-    title: Something else or other details?
-additionalProperties: false
+schema:
+  type: object
+  required:
+    - supplies
+  properties:
+    supplies:
+      type: array
+      items:
+        - enum:
+            - Whiteboard markers
+            - Whiteboard erasers
+            - A/V adapters
+            - Chairs
+            - Something else
+          type: string
+      title: What needs to be restocked?
+      uniqueItems: true
+    additional_comment:
+      type: string
+      title: Something else or other details?
+descriptor:
+  properties:
+    additional_comment:
+      kind: textarea
+      attrs:
+        placeholder: E.g. Red pens
 ```
+
+<CaptionedImage
+  src="/images/how-tos/capture-conf-room-supplies.png"
+  alt="Capture conference room supply request."
+  width="85%"
+/>
