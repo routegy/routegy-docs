@@ -469,6 +469,90 @@ Minimum and maximum score labels and score ranges are customizable using descrip
   width="75%"
 />
 
+## Conditional fields
+
+Routegy offers support for conditionally displayed fields using [JSON schema if/then/else](https://json-schema.org/understanding-json-schema/reference/conditionals.html#if-then-else) keywords. Today, the support is limited to equality comparison based on the `const` keyword, with support for more complex conditional validation scenarios coming soon.
+
+The following pattern demonstrates how two text inputs, defined as `email` and `phone` properties, are conditionally displayed depending on the value of `how_to_contact` radio buttons widgets. 
+
+```yaml
+schema:
+  type: object
+  required:
+    - how_to_contact
+  properties:
+    how_to_contact:
+      enum:
+        - by_email
+        - by_phone
+      type: string
+  if:
+    properties:
+      how_to_contact:
+        const: by_email
+  then:
+    properties:
+      email:
+        type: string
+        format: email
+  else:
+    if:
+      properties:
+        how_to_contact:
+          const: by_phone
+    then:
+      properties:
+        phone:
+          type: string
+          pattern: '^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$'
+descriptor:
+  order:
+    - how_to_contact
+    - email
+    - phone
+  properties:
+    email:
+      attrs:
+        placeholder: E.g. jon.doe@routegy.com
+      label: You email address
+    phone:
+      attrs:
+        placeholder: 'E.g, 555-555-5555'
+      label: You phone number
+    how_to_contact:
+      kind: enum
+      items:
+        by_email:
+          label: Send me an email
+        by_phone:
+          label: Send me a text message
+      label: How would you like to be contacted?
+```
+
+By default, neither `email` nor `phone` widgets are visible.
+
+<CaptionedImage
+  src="/images/patterns/examples/conditional_contact_default.png"
+  alt="A form containing contact me form with no selected option"
+  width="75%"
+/>
+
+If `how_to_contact` value is set to `by_email` (`Send me an email` radio button), `email` widget will be made visible to collect user's email address.
+
+<CaptionedImage
+  src="/images/patterns/examples/conditional_contact_email.png"
+  alt="A form containing contact me form with an email selected as a preferred contact"
+  width="75%"
+/>
+
+If `how_to_contact` value is set to `by_phone` string (labeled as `Send me a text message`), `phone` widget will became visible to collect user's phone number. 
+
+<CaptionedImage
+  src="/images/patterns/examples/conditional_contact_phone.png"
+  alt="A form containing contact me form with a text message selected as a preferred contact"
+  width="75%"
+/>
+
 ## Empty pattern
 
 An empty pattern will create an event immediately upon interaction with an associated app. The empty pattern can define the custom branding and result message; it simply does not define any data to collect and thus does not render a form or UI.
