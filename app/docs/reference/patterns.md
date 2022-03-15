@@ -747,7 +747,19 @@ descriptor:
 An empty pattern will create an event immediately upon interaction with an associated app. The empty pattern can define the custom branding and result message; it simply does not define any data to collect and thus does not render a form or UI.
 
 ```yaml
-# TODO
+descriptor:
+  appearance:
+    headerLogo:
+      >-
+        https://routegy-assets.s3.us-west-2.amazonaws.com/routegy/schemas/mock-approval-logo.svg
+    colors:
+      header: "#2e1046"
+      header-text: "#eff0eb"
+      footer: "#eff0eb"
+      white: "#2e1046"
+      black: "#eff0eb"
+  attrs:
+    successMessage: Thanks for the report!
 ```
 
 ## Permissions
