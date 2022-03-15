@@ -532,7 +532,7 @@ descriptor:
 By default, neither `email` nor `phone` widgets are visible.
 
 <CaptionedImage
-  src="/images/patterns/examples/conditional_contact_default.png"
+  src="/images/patterns/examples/conditional-contact-default.png"
   alt="A form containing contact me form with no selected option"
   width="75%"
 />
@@ -540,7 +540,7 @@ By default, neither `email` nor `phone` widgets are visible.
 If `how_to_contact` value is set to `by_email` (`Send me an email` radio button), `email` widget will be made visible to collect user's email address.
 
 <CaptionedImage
-  src="/images/patterns/examples/conditional_contact_email.png"
+  src="/images/patterns/examples/conditional-contact-email.png"
   alt="A form containing contact me form with an email selected as a preferred contact"
   width="75%"
 />
@@ -548,8 +548,197 @@ If `how_to_contact` value is set to `by_email` (`Send me an email` radio button)
 If `how_to_contact` value is set to `by_phone` string (labeled as `Send me a text message`), `phone` widget will became visible to collect user's phone number. 
 
 <CaptionedImage
-  src="/images/patterns/examples/conditional_contact_phone.png"
+  src="/images/patterns/examples/conditional-contact-phone.png"
   alt="A form containing contact me form with a text message selected as a preferred contact"
+  width="75%"
+/>
+
+## Grouping elements with nested objects
+
+Combining multiple elements into groups can be done by nested object schemas. Set a property `type` to `object` and use its properties to define the elements inside it just like in the top level object schema. Objects schemas can be nested in each other for a multilevel hierarchy. The descriptor need to follow the object hierarchy of the schema, and can be used to define labels for element groups and order of elements with a group.
+
+The sample pattern below demonstrates a simple field grouping for collecting contact information structured in the following way:
+
+```
+Root object
+  - Contact info
+    - Name
+      - First name
+      - Last name
+    - Email address
+```
+
+To accomplish this, the pattern schema uses three levels of nested objects, with the descriptor following the same hierarchy to define labels for groups ("Contact info" and "Name") and elements within them.
+
+```yaml
+schema:
+  type: object
+  properties:
+    contact_info:
+      type: object
+      properties:
+        name:
+          type: object
+          properties:
+            last_name:
+              type: string
+            first_name:
+              type: string
+        email:
+          type: string
+          format: email
+descriptor:
+  properties:
+    contact_info:
+      label: Contact info
+      properties:
+        name:
+          order:
+            - first_name
+            - last_name
+          label: Name
+          properties:
+            last_name:
+              label: Last name
+            first_name:
+              label: First name
+        email:
+          label: Email address
+```
+
+<CaptionedImage
+  src="/images/patterns/examples/grouped-elements.png"
+  alt="A form containing contact me form with a text message selected as a preferred contact"
+  width="75%"
+/>
+
+
+## Multipage patterns
+
+Multipage pattern can be used to organize larger forms into multiple, smaller pages with a wizard-like experience. To define a multipage pattern in Routegy, do the following:
+  - Make root schema properties into object (`type: object`) and use them to define individual pages of your multipage pattern.
+  - In the descriptor, set `kind` of the root object schema to `multipage`
+  - in the descriptor, set the order of your pages using `order` attribute (array)
+
+
+The following sample is a scaffolding for a three page pattern (all pages are empty).
+
+```yaml
+schema:
+  type: object
+  properties:
+    page_1:
+      type: object
+    page_2:
+      type: object
+    page_3:
+      type: object
+descriptor:
+  kind: multipage
+  order:
+    - page_1
+    - page_2
+    - page_3
+```
+
+By default, navigation buttons are captioned as `Next`, `Back` and `Submit`. These captions can be customized using `captions` attribute in the descriptor:
+```yaml
+descriptor:
+  captions:
+    next: Forward
+    back: Previous
+    submit: Send
+```
+
+Below is a complete example for a printer report problem patter that consists of three pages:
+  - Problem page with a list of radio buttons representing most common problems
+  - Details page with a text input for collecting more details about the problem
+  - Follow-up page with an option to opt into email updates on the problem
+
+```yaml
+schema:
+  type: object
+  properties:
+    problem_page:
+      type: object
+      properties:
+        problem:
+          enum:
+            - No paper
+            - No toner
+            - Printer not responding
+            - Printer stuck
+            - Something else
+          type: string
+    details_page:
+      type: object
+      properties:
+        details:
+          type: string
+    follow_up_page:
+      if:
+        properties:
+          email_follow_up_yes_no:
+            const: true
+      then:
+        properties:
+          email:
+            type: string
+            format: email
+      type: object
+      properties:
+        email_follow_up_yes_no:
+          type: boolean
+descriptor:
+  kind: multipage
+  captions:
+    back: Previous
+    submit: Report
+  order:
+    - problem_page
+    - details_page
+    - follow_up_page
+  properties:
+    problem_page:
+      properties:
+        problem:
+          kind: enum
+          label: What is going on?
+    details_page:
+      properties:
+        details:
+          kind: textarea
+          attrs:
+            placeholder: E.g. printer shows error E122
+          label: Any more details?
+    follow_up_page:
+      order:
+        - email_follow_up_yes_no
+        - email
+      properties:
+        email:
+          attrs:
+            placeholder: E.g. john.doe@routegy.com
+          label: Email
+        email_follow_up_yes_no:
+          label: I'd like to receive an update on this via email
+```
+
+<CaptionedImage
+  src="/images/patterns/examples/multipage-problem.png"
+  alt="First page of a multipage pattern showing a list radio buttons representing common printer problems"
+  width="75%"
+/>
+
+<CaptionedImage
+  src="/images/patterns/examples/multipage-details.png"
+  alt="Second page of a multipage pattern showing a text area for problem details"
+  width="75%"
+/>
+
+<CaptionedImage
+  src="/images/patterns/examples/multipage-follow-up.png"
+  alt="Third page of a multipage pattern showing an option to opt into email follow ups"
   width="75%"
 />
 
