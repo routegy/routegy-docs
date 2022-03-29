@@ -48,7 +48,7 @@ descriptor:
 The following is the same pattern rendered by Routegy.
 <CaptionedImage
   src="/images/patterns/office-printer-problem-pattern-preview.png"
-  alt="A 'Printer issue' form generated from the Routegy schema defined above"
+  alt="A 'Printer issue' form generated from the Routegy pattern defined above"
   width="85%"
 />
 
@@ -80,8 +80,102 @@ Here is how this example pattern is rendered as a Routegy app.
 
 <CaptionedImage
   src="/images/patterns/name-example-app-preview.png"
-  alt="A form with first and last name fields generated from a Routegy schema"
+  alt="A form with first and last name fields generated from a Routegy pattern"
   width="85%"
+/>
+
+## Static information
+
+### Markdown
+
+To render text formatted with [markdown](https://spec.commonmark.org/), use a `string` schema property and set its kind to `markdown` in the descriptor. Enter your markdown into the `text` property.
+
+You can dynamically display values entered from elsewhere in your pattern by referencing the value name and placing it in your markdown with the format `${your_value_name}`.
+
+In addition to `text`, you can specify the `size` (`small`, `normal` (default), `medium`, `large`) and whether or not to render the markdown in a visible container with `isBoxed` set to `true`.
+
+::: tip
+Use a pipe (`|`) after the `text` property keyword to allow multi-line strings in your YAML.
+:::
+
+```yaml
+schema:
+  type: object
+  properties:
+    markdown:
+      type: string
+    markdownTitle:
+      type: string
+    name:
+      type: string
+descriptor:
+  order:
+    - name
+    - markdownTitle
+    - markdown
+  properties:
+    name:
+      label: Name
+      attrs:
+        placeholder: Enter your name
+    markdownTitle:
+      kind: markdown
+      size: large
+      text: |
+        # Hello ${name}!
+    markdown:
+      kind: markdown
+      isBoxed: true
+      size: normal
+      text: |
+        # A first-level header
+
+        **This is bold.**
+
+        _And this is italic._
+
+        Use emoji! :) :smile: :shrug: :magic_wand:
+        
+        Links are automatically parsed: URLs like www.routegy.com or email addresses like support@routegy.com
+
+        Of course [regular links](https://routegy.com) are also ok.
+
+        * a list
+        * is easy
+        * to do
+
+        ::: warning
+        :warning: *this is a warning*
+        :::
+
+        ::: info
+        :bulb: *this is informative*
+        :::
+
+        ::: danger
+        :exclamation: *this is an error*
+        :::
+
+        ::: success
+        :white_check_mark: *this is a success*
+        :::
+
+        ::: primary
+        :point_right: *this is important*
+        :::
+
+        ::: normal
+        :sleeping: *this is just boring ol' normal*
+        :::
+
+        # THE END
+
+```
+
+<CaptionedImage
+  src="/images/patterns/examples/markdown.png"
+  alt="A form with a name field and markdown rendered from a Routegy pattern"
+  width="50%"
 />
 
 ## Text inputs
@@ -104,7 +198,7 @@ descriptor:
 
 <CaptionedImage
   src="/images/patterns/examples/text-input-simple.png"
-  alt="A form with a text input field generated from a Routegy schema"
+  alt="A form with a text input field generated from a Routegy pattern"
   width="75%"
 />
 
@@ -144,13 +238,13 @@ descriptor:
 
 <CaptionedImage
   src="/images/patterns/examples/text-input-formats.png"
-  alt="A form with formatted email and date fields generated from a Routegy schema"
+  alt="A form with formatted email and date fields generated from a Routegy pattern"
   width="75%"
 />
 
 ### Regular expressions
 
-To render a text input with automatic validation against a regular expression pattern, set `pattern` property inside the schema to a desired RegEx pattern.
+To render a text input with automatic validation against a regular expression pattern, set the `pattern` property inside the schema to a desired RegEx pattern.
 
 ```yaml
 schema:
@@ -167,14 +261,14 @@ descriptor:
 
 <CaptionedImage
   src="/images/patterns/examples/text-input-regex.png"
-  alt="A form with a regex-validated API key field generated from a Routegy schema"
+  alt="A form with a regex-validated API key field generated from a Routegy pattern"
   width="75%"
 />
 
 ### Passwords and other masked inputs
 
 ::: warning
-Be extremely careful requesting sensitive data in your apps. If you're unsure about how best to process sensitive data, please contact us at [support@routegy.com](mailto:support@routegy.com)
+Be extremely careful requesting sensitive data in your apps. If you're unsure about how best to process sensitive data, please contact us at [support@routegy.com](mailto:support@routegy.com).
 :::
 
 Masked text inputs can be helpful in collecting sensitive information like passwords. To render one, simply the `kind` property of that fields t `password` in the pattern descriptor.
@@ -194,7 +288,7 @@ descriptor:
 
 <CaptionedImage
   src="/images/patterns/examples/text-input-password.png"
-  alt="A form with a masked field generated from a Routegy schema"
+  alt="A form with a masked field generated from a Routegy pattern"
   width="75%"
 />
 
@@ -217,7 +311,7 @@ descriptor:
 
 <CaptionedImage
   src="/images/patterns/examples/text-input-textarea.png"
-  alt="A form with a text area 'comment' field generated from a Routegy schema"
+  alt="A form with a text area 'comment' field generated from a Routegy pattern"
   width="75%"
 />
 
@@ -242,7 +336,7 @@ descriptor:
 
 <CaptionedImage
   src="/images/patterns/examples/number-input.png"
-  alt="A form with a number input 'count' field generated from a Routegy schema"
+  alt="A form with a number input 'count' field generated from a Routegy pattern"
   width="75%"
 />
 
@@ -268,13 +362,13 @@ descriptor:
 
 <CaptionedImage
   src="/images/patterns/examples/radio-buttons.png"
-  alt="A form with a list of radio options generated from a Routegy schema"
+  alt="A form with a list of radio options generated from a Routegy pattern"
   width="75%"
 />
 
 ### Custom labels
 
-Labels for individual radio buttons can be customized using `items` property on the descriptor. This can be particularly helpful when schema `type` is different from `string` like. Here is an example of a schema with two radio boxes mapped to `true` and `false` boolean values, that are labeled as Yes and No respectively.
+Labels for individual radio buttons can be customized using the `items` property on the descriptor. This can be particularly helpful when schema `type` is different from `string` like. Here is an example of a schema with two radio boxes mapped to `true` and `false` boolean values, that are labeled as Yes and No respectively.
 
 ```yaml
 schema:
@@ -298,13 +392,13 @@ descriptor:
 
 <CaptionedImage
   src="/images/patterns/examples/radio-buttons-custom-labels.png"
-  alt="A form containing a list of radio options with displayed values of 'Yes/No' and data-values of 'true/false' generated from a Routegy schema"
+  alt="A form containing a list of radio options with displayed values of 'Yes/No' and data-values of 'true/false' generated from a Routegy pattern"
   width="75%"
 />
 
 ## Select input
 
-To render a dropdown select input, define a schema with a list of item defined inside an `enum` attribute, and set its kind to `list` in the descriptor.
+To render a dropdown select input, define a schema with a list of items defined inside an `enum` attribute, and set its kind to `list` in the descriptor.
 
 ```yaml
 schema:
@@ -325,7 +419,7 @@ descriptor:
 
 <CaptionedImage
   src="/images/patterns/examples/select-input.png"
-  alt="A form containing a list of options in a select dropdown field generated from a Routegy schema"
+  alt="A form containing a list of options in a select dropdown field generated from a Routegy pattern"
   width="75%"
 />
 
@@ -348,13 +442,13 @@ descriptor:
 
 <CaptionedImage
   src="/images/patterns/examples/single-checkbox.png"
-  alt="A form containing a checkbox field generated from a Routegy schema"
+  alt="A form containing a checkbox field generated from a Routegy pattern"
   width="75%"
 />
 
 ## Multiple checkboxes
 
-To render a group of checkboxes use `array` schema type, set its `uniqueItems` property to `true`, define a list of values using its `items` property.
+To render a group of checkboxes use the `array` schema type, set its `uniqueItems` property to `true`, and define a list of values using its `items` property.
 
 ```yaml
 schema:
@@ -378,7 +472,7 @@ descriptor:
 
 <CaptionedImage
   src="/images/patterns/examples/multiple-checkboxes.png"
-  alt="A form containing a list of checkbox fields generated from a Routegy schema"
+  alt="A form containing a list of checkbox fields generated from a Routegy pattern"
   width="75%"
 />
 
@@ -402,7 +496,7 @@ descriptor:
 
 <CaptionedImage
   src="/images/patterns/examples/tag-input.png"
-  alt="A form containing a tag-input field generated from a Routegy schema with soda flavor tags added entered into it"
+  alt="A form containing a tag-input field generated from a Routegy pattern with soda flavor tags added entered into it"
   width="75%"
 />
 
@@ -410,7 +504,7 @@ descriptor:
 
 ### Star rating
 
-To render a star rating widget, define a schema of `integer` or `number` type, and set its kind to `rating` in the descriptor. Use schemas `default` attribute to define the initial star selection.
+To render a star rating widget, define a schema of `integer` or `number` type and set its kind to `rating` in the descriptor. Use the schema's `default` attribute to define the initial star selection.
 
 ```yaml
 schema:
@@ -429,13 +523,13 @@ descriptor:
 
 <CaptionedImage
   src="/images/patterns/examples/rating.png"
-  alt="A form containing a star rating field generated from a Routegy schema with four stars selected"
+  alt="A form containing a star rating field generated from a Routegy pattern with four stars selected"
   width="75%"
 />
 
 ### Net Promotor Score
 
-[Net Promotore Score](https://en.wikipedia.org/wiki/Net_promoter_score) can be used to quantify customer's perception of an experience or a product by asking them how likely they are to recommend it to someone else. Routegy provides a  component for collecting NPS nunmerical value that can be rendered by defining a schema of `integer` type, and setting its kind to `nps` in the descriptor.
+[Net Promotore Score (NPS)](https://en.wikipedia.org/wiki/Net_promoter_score) can be used to quantify customer's perception of an experience or a product by asking them how likely they are to recommend it to someone else. Routegy provides a component for collecting an NPS numerical value that can be rendered by defining a schema of `integer` type, and setting its kind to `nps` in the descriptor.
 ```yaml
 schema:
   type: object
@@ -453,7 +547,6 @@ descriptor:
 
 Minimum and maximum score labels and score ranges are customizable using descriptor attributes as shown below.
 
-
 | Attribute name | Default value | Description |
 | ----------- | ----------- | ----------- |
 | minScoreLabel| Not Very Likely | Label displayed next to the lowest score |
@@ -465,7 +558,7 @@ Minimum and maximum score labels and score ranges are customizable using descrip
 
 <CaptionedImage
   src="/images/patterns/examples/nps.png"
-  alt="A form containing an NPS field generated from a Routegy schema"
+  alt="A form containing an NPS field generated from a Routegy pattern"
   width="75%"
 />
 
@@ -612,7 +705,6 @@ descriptor:
   width="75%"
 />
 
-
 ## Multipage patterns
 
 Multipage pattern can be used to organize larger forms into multiple, smaller pages with a wizard-like experience. To define a multipage pattern in Routegy, do the following:
@@ -742,7 +834,7 @@ descriptor:
   width="75%"
 />
 
-## Empty pattern
+## Empty pattern (Instant events)
 
 An empty pattern will create an event immediately upon interaction with an associated app. The empty pattern can define the custom branding and result message; it simply does not define any data to collect and thus does not render a form or UI.
 
