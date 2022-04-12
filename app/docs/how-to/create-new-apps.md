@@ -43,4 +43,8 @@ Fill out the modal dialog with information about the app you wish to create.
 
 ## Step 4: Save your new app
 
-Press **+ Create app** and you're done!
+Press **+ Create app** and you're ready to use your new app!
+
+## Step 5: Access your new app
+
+You can test your new app by scanning the QR code or by clicking it. You can share your new app by copying the URL or [printing the QR code](/how-to/print-qr-codses) and placing it where people can find it.
