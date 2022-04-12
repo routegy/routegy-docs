@@ -1,13 +1,11 @@
 ---
 title: How-to guides
-description: "Step by step walkthroughs to solve a specific problem"
+description: "Step-by-step walkthroughs to solve specific problems"
 ---
 
 # How-to Guides
 
-How-to guides are goal oriented documents that show how to solve a specific problem in a series of steps. While these how-to guides don't cover topics in depth (see [reference guides](/reference/) for that) they will help you accomplish common tasks quickly.
-
-If you're currently asking yourself a "How do I..." question, you're in the right place.
+These how-to guides show you how to solve specific problems. While these how-to guides don't cover topics in depth (see [reference guides](/reference/) for that) they will help you accomplish common tasks quickly.
 
 ## Guides
 

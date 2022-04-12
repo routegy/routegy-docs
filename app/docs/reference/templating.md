@@ -5,9 +5,9 @@ description: "How does templating in Routegy work?"
 
 # Templating
 
-Routegy supports customizing [actions](/reference/actions/) fields using [Jinja2 template language](https://jinja.palletsprojects.com/en/3.0.x/). This allows actions to react dynamically to the event provided _values_ and the _context_ its being executed in.
+Routegy supports customizing [actions](/reference/actions/) fields using [Jinja2 template language](https://jinja.palletsprojects.com/en/3.0.x/). This allows actions to react dynamically to the event-provided _values_ and _context_ it's being executed in.
 
-Be sure to check out the document for your specific [action type](/reference/action-types/) to see if templating is supported.
+Be sure to check out the documentation for your specific [action type](/reference/action-types/) to see if templating is supported.
 
 ## Values
 
@@ -26,7 +26,7 @@ In addition to the values captured from the end user, templates have access to a
 
 ### Variables
 
-All variables are accessed using the <span v-pre>`{{ variable }}`</span> syntax, e.g. <span v-pre>`{{ context.event.created_at }}`</span>.
+All variables are accessed using the <span v-pre>`{{ variable }}`</span> syntax (E.g. <span v-pre>`{{ context.event.created_at }}`</span>).
 
 | Variable | Description | Example |
 | ---------| ----------- | ------- |
