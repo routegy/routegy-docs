@@ -82,7 +82,6 @@ Every element is defined as a YAML object with a set of properties that determin
 | tags | [Tag input](#tag-input) |
 | markdown | [Markdown element](#markdown) to display static information |
 
-
 ## Text inputs
 
 To render a text input, use a `text` or `string` type, and customize its appearance with `title` and `placeholder` properties.
@@ -320,6 +319,84 @@ tags_example:
   width="75%"
 />
 
+## Static information
+
+### Markdown
+
+To render text formatted with [markdown](https://spec.commonmark.org/), set element type to `markdown` and enter your markdown into the `text` property.
+
+You can dynamically display values entered from elsewhere in your pattern by referencing the value name and placing it in your markdown with the format `${your_value_name}`.
+
+In addition to `text`, you can specify the `size` (`small`, `normal` (default), `medium`, `large`) and whether or not to render the markdown in a visible container with `isBoxed` set to `true`.
+
+::: tip
+Use a pipe (`|`) after the `text` property keyword to allow multi-line strings in your YAML.
+:::
+
+```yaml
+name:
+  type: string
+  label: Name
+  placeholder: Enter your name
+markdownTitle:
+  type: markdown
+  size: large
+  text: |
+    # Hello ${name}!
+markdown:
+  type: markdown
+  isBoxed: true
+  size: normal
+  text: |
+    # A first-level header
+
+    **This is bold.**
+
+    _And this is italic._
+
+    Use emoji! :) :smile: :shrug: :magic_wand:
+
+    Links are automatically parsed: URLs like www.routegy.com or email addresses like support@routegy.com
+
+    Of course [regular links](https://routegy.com) are also ok.
+
+    * a list
+    * is easy
+    * to do
+
+    ::: warning
+    :warning: *this is a warning*
+    :::
+
+    ::: info
+    :bulb: *this is informative*
+    :::
+
+    ::: danger
+    :exclamation: *this is an error*
+    :::
+
+    ::: success
+    :white_check_mark: *this is a success*
+    :::
+
+    ::: primary
+    :point_right: *this is important*
+    :::
+
+    ::: normal
+    :sleeping: *this is just boring ol' normal*
+    :::
+
+    # THE END
+```
+
+<CaptionedImage
+  src="/images/patterns/examples/markdown.png"
+  alt="A form with a name field and markdown rendered from a Routegy pattern"
+  width="50%"
+/>
+
 ## Specialized components
 
 ### Star rating
@@ -365,100 +442,6 @@ Minimum and maximum score labels and score ranges are customizable using additio
   src="/images/patterns/examples/nps.png"
   alt="A form containing an NPS field generated from a Routegy pattern"
   width="75%"
-/>
-
-## Static information
-
-### Markdown
-
-To render text formatted with [markdown](https://spec.commonmark.org/), use a `string` schema property and set its kind to `markdown` in the descriptor. Enter your markdown into the `text` property.
-
-You can dynamically display values entered from elsewhere in your pattern by referencing the value name and placing it in your markdown with the format `${your_value_name}`.
-
-In addition to `text`, you can specify the `size` (`small`, `normal` (default), `medium`, `large`) and whether or not to render the markdown in a visible container with `isBoxed` set to `true`.
-
-::: tip
-Use a pipe (`|`) after the `text` property keyword to allow multi-line strings in your YAML.
-:::
-
-```yaml
-schema:
-  type: object
-  properties:
-    markdown:
-      type: string
-    markdownTitle:
-      type: string
-    name:
-      type: string
-descriptor:
-  order:
-    - name
-    - markdownTitle
-    - markdown
-  properties:
-    name:
-      label: Name
-      attrs:
-        placeholder: Enter your name
-    markdownTitle:
-      kind: markdown
-      size: large
-      text: |
-        # Hello ${name}!
-    markdown:
-      kind: markdown
-      isBoxed: true
-      size: normal
-      text: |
-        # A first-level header
-
-        **This is bold.**
-
-        _And this is italic._
-
-        Use emoji! :) :smile: :shrug: :magic_wand:
-        
-        Links are automatically parsed: URLs like www.routegy.com or email addresses like support@routegy.com
-
-        Of course [regular links](https://routegy.com) are also ok.
-
-        * a list
-        * is easy
-        * to do
-
-        ::: warning
-        :warning: *this is a warning*
-        :::
-
-        ::: info
-        :bulb: *this is informative*
-        :::
-
-        ::: danger
-        :exclamation: *this is an error*
-        :::
-
-        ::: success
-        :white_check_mark: *this is a success*
-        :::
-
-        ::: primary
-        :point_right: *this is important*
-        :::
-
-        ::: normal
-        :sleeping: *this is just boring ol' normal*
-        :::
-
-        # THE END
-
-```
-
-<CaptionedImage
-  src="/images/patterns/examples/markdown.png"
-  alt="A form with a name field and markdown rendered from a Routegy pattern"
-  width="50%"
 />
 
 ## Conditional fields
