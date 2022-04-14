@@ -5,83 +5,366 @@ description: "What is a Routegy pattern?"
 
 # Patterns
 
-A pattern defines what interactions and data are exposed and collected by an [app](/reference/apps/). Pattern definition is a YAML document that consists of two parts: a schema and a descriptor. The schema is a [JSON Schema](https://json-schema.org/) document that defines the information to be captured by an app. The descriptor contains additional information that describes how the data is collected. This includes customization of UI components that represent different parts of the schema (e.g. component type, placeholders and more) as well as customization of the app appearance itself.
-
-The schema portion of a pattern document is used to validate the [data](/reference/app-data/) when created by an [Event](/reference/events/).
+A pattern defines what interactions and data are exposed and collected by an [app](/reference/apps/). Pattern definition is a YAML document that defines UI elements of an app. Every UI element is an object with a set of properties that define its looks and behavior. Element's `type` property is mandatory and it defines a type of UI element to render. Routegy supports numerous built-in element types that range from simple text inputs (`type: text`) to more advanced and specialized components like Net Promoter Score element (`type: nps`). In addition to `type`, element objects support other properties for element configration. Some of them, like `title` (interchangable with `label` and `caption`), are supported by most types of elements, while others are type specific.
 
 ## Example
 
-The following is an example pattern in its YAML form that contains a simple [JSON Schema](https://json-schema.org/) to collect information about a problem with an office printer. Collected datainclude a `problem` defined as an array of values from a predefined set of problem categories, and `additional_problem_info` string property for additional details or miscallanous category not included in the list. The descriptor part of the document defines the order of data properties to render, and it defines `additional_problem_info` as a `textarea` field to render it as a multiline text input.
+The following is an example YAML pattern for an app that collects information about a problem with an office printer. This UI pattern includes a list of checkboxes that map to a list of predefined problem categories, and `additional_problem_info` textarea field for additional details or miscallanous category not included in the list. 
 
 ```yaml
-schema:
-  type: object
-  properties:
-    problem:
-      type: array
-      items:
-        - enum:
-            - Doesn't turn on
-            - Paper jam
-            - No paper
-            - No toner
-            - Connectivity issue
-            - Something else
-          type: string
-      title: What's going on?
-      uniqueItems: true
-    additional_problem_info:
-      type: string
-      title: Something else or more details?
-  additionalProperties: false
-descriptor:
-  order:
-    - problem
-    - additional_problem_info
-  properties:
-    additional_problem_info:
-      kind: textarea
-      attrs:
-        placeholder: E.g. Printer screen shows E104 error, cannot be reset and doesn't print
+problem:
+  type: checkboxes
+  items:
+    - Doesn't turn on
+    - Paper jam
+    - No paper
+    - No toner
+    - Connectivity issue
+    - Something else
+  title: What's going on?
+additional_problem_info:
+  type: textarea
+  title: Something else or more details?
+  placeholder: E.g. Printer screen shows E104 error, cannot be reset and doesn't print
 ```
 
 The following is the same pattern rendered by Routegy.
+
 <CaptionedImage
   src="/images/patterns/office-printer-problem-pattern-preview.png"
   alt="A 'Printer issue' form generated from the Routegy pattern defined above"
-  width="85%"
+  width="75%"
 />
 
-## Object hierarchy
+Once submitted, data collected by this app will be a JSON object with two properties: `problem` array property and `additional_problem_info` string property. Example:
 
-Routegy requires all pattern schemas to be objects with individual data fields defined as their [properties](http://json-schema.org/understanding-json-schema/reference/object.html#properties). A pattern descriptor needs to match that hierarchy, with additional attributes like labels defined in corresponding properties.
+```json
+{
+  "problem": [
+      "No paper",
+      "No toner"
+  ],
+  "additional_problem_info": "No supplies can be found anywhere in the print room."
+}
+```
 
-Below is an example of a simple pattern that contains an object schema with two string properties - `first_name` and `last_name`. By default, string schemas are rendered as basic text inputs. In this example, pattern descriptor is used to define the order of inputs to render, and to set their labels as "First name" and "Last name" respectively.
+## Element properties
+
+Every element is defined as a YAML object with a set of properties that determine the type, appearance and behavior of a UI component to be rendered in the app. Below is a list of properties that are support in most of the built-in components.
+
+| Property | Description |
+| ----------- | ----------- |
+| `type`| Determines the type of the UI element. If `type` property is not defined, the object is treated as a [fieldset](#grouping-elements-into-fieldsets). If `type` is defined, it must be one of the [supported element types](#supported-element-types).
+| `label` (also `caption` and `title`)| Defines a label for the UI element (optional).|
+| `visible`| [Conditional visibility](#conditional-fields) expression (optional). |
+| `default`| The default value for the element (optional). Supported by all built-in elements except for `markdown`|
+| `placeholder`| Placeholder string (optional). Supported by elements based on the text input including `text`, `textarea`, `email`, `phone` etc|
+| `items`| List of items for multiple or single choice elements like [radio buttons](#radio-buttons) and [checkboxes](#multiple-checkboxes)|
+
+## Supported element types
+
+| Type | Description |
+|------|-------------|
+| string, text| [Basic text input](#text-inputs) |
+| textarea | [Multiline textarea input](#text-area) |
+| date| [Date input](#html-input-types) based on HTML date input type|
+| datetime| [Datetime input](#html-input-types) based on HTML datetime-local input time|
+| email| [Email input](#html-input-types) based on HTML email input type|
+| time| [Time input](#html-input-types) based on HTML time input type|
+| uri, url| [Url input](#html-input-types) based on HTML url input type|
+| phone | Text input with a [RegEx pattern](#regular-expressions) matching US phone numbers]
+| password| [Masked text input](#passwords-and-other-masked-inputs) for senstive information|
+| number, integer | [Integer input](#number-input) with up-and-down controls |
+| radio, radios, radiobuttons| [Multiple radio buttons](#radio-buttons) |
+| dropdown | [Dropdown select input](#select-input) |
+| checkboxes | [Multiple checkboxes](#multiple-checkboxes) |
+| checkbox, boolean | [Single checkbox](#single-checkbox) |
+| tags | [Tag input](#tag-input) |
+| markdown | [Markdown element](#markdown) to display static information |
+
+
+## Text inputs
+
+To render a text input, use a `text` or `string` type, and customize its appearance with `title` and `placeholder` properties.
 
 ```yaml
-schema:
-  type: object
-  properties:
-    first_name:
-      type: string
-    last_name:
-      type: string
-descriptor:
-  order:
-    - first_name
-    - last_name
-  properties:
-    first_name:
-      label: First name
-    last_name:
-      label: Last name
+text_input:
+  type: text
+  label: Text input
+  placeholder: Input some text here
 ```
-Here is how this example pattern is rendered as a Routegy app.
 
 <CaptionedImage
-  src="/images/patterns/name-example-app-preview.png"
-  alt="A form with first and last name fields generated from a Routegy pattern"
-  width="85%"
+  src="/images/patterns/examples/text-input-simple.png"
+  alt="A form with a text input field generated from a Routegy pattern"
+  width="75%"
+/>
+
+### Regular expressions
+
+To render a text input with automatic validation against a regular expression pattern, set the `pattern` property inside the element of a `text` or `string` `type` to a desired RegEx pattern.
+
+```yaml
+api_key:
+  type: string
+  pattern: '^[0-9a-zA-Z]{32}$'
+  label: API key
+```
+
+<CaptionedImage
+  src="/images/patterns/examples/text-input-regex.png"
+  alt="A form with a regex-validated API key field generated from a Routegy pattern"
+  width="75%"
+/>
+
+### HTML input types
+
+Routegy offers a built-in support for various HTML input types. Here is a list element types mapped to support HTML input types. 
+
+| Routegy element type | HTML input type |
+| ----------- | ----------- |
+| date| date|
+| datetime|datetime-local|
+| email| email|
+| time| time|
+| uri| url|
+
+Below is an example of a pattern that contains inputs of `email` and `date` types.
+
+```yaml
+email:
+  type: email
+  label: Email address
+  placeholder: E.g. john.doe@email.org
+dob:
+  type: date
+  label: Date of birth
+```
+
+<CaptionedImage
+  src="/images/patterns/examples/text-input-formats.png"
+  alt="A form with formatted email and date fields generated from a Routegy pattern"
+  width="75%"
+/>
+
+### Passwords and other masked inputs
+
+::: warning
+Be extremely careful requesting sensitive data in your apps. If you're unsure about how best to process sensitive data, please contact us at [support@routegy.com](mailto:support@routegy.com).
+:::
+
+Masked text inputs can be helpful in collecting sensitive information like passwords. To render one, set element's type to `password`.
+
+```yaml
+password:
+  type: password
+  label: Password
+  placeholder: Enter your password here
+```
+
+<CaptionedImage
+  src="/images/patterns/examples/text-input-password.png"
+  alt="A form with a masked field generated from a Routegy pattern"
+  width="75%"
+/>
+
+### Text area
+
+To render a textarea, set element's type to `textarea`.
+
+```yaml
+comments:
+  type: textarea
+  label: Any comments?
+```
+
+<CaptionedImage
+  src="/images/patterns/examples/text-input-textarea.png"
+  alt="A form with a text area 'comment' field generated from a Routegy pattern"
+  width="75%"
+/>
+
+### Number input
+
+To render a number input with up and down buttons, set element's type to `integer` or `number`. Optionally, set `minimum` and `maximum` properties attributes to define the allowed range, and set a default value using the `default` property.
+
+```yaml
+count:
+  type: integer
+  label: Count
+  default: 5
+  maximum: 10
+  minimum: 1
+```
+
+<CaptionedImage
+  src="/images/patterns/examples/number-input.png"
+  alt="A form with a number input 'count' field generated from a Routegy pattern"
+  width="75%"
+/>
+
+## Radio buttons
+
+To render a group of radio buttons, set element's type to `radio`, `radios` or `radiobuttons`, and define a list of their values/labels using `items` array property. 
+
+```yaml
+options:
+  type: radios
+  label: Choose one of the following
+  items:
+    - Option 1
+    - Option 2
+    - Option 3
+```
+
+<CaptionedImage
+  src="/images/patterns/examples/radio-buttons.png"
+  alt="A form with a list of radio options generated from a Routegy pattern"
+  width="75%"
+/>
+
+### Custom labels
+
+Labels for individual radio buttons can be customized by turning items of the `items` property into objects with `value` and `label` properties. Below is an example of a schema with two radio boxes mapped to `true` and `false` values, that are labeled as Yes and No respectively.
+
+```yaml
+options:
+  type: radios
+  label: What is your answer?
+  items:
+    - value: true
+      label: Yes
+    - value: false
+      label: No
+```
+
+<CaptionedImage
+  src="/images/patterns/examples/radio-buttons-custom-labels.png"
+  alt="A form containing a list of radio options with displayed values of 'Yes/No' and data-values of 'true/false' generated from a Routegy pattern"
+  width="75%"
+/>
+
+## Select input
+
+To render a dropdown select input, set element type to `dropdown`, and define a list of dropdown items items using `items` property.
+
+```yaml
+options:
+  type: dropdown
+  items:
+    - Option 1
+    - Option 2
+    - Option 3
+  type: string
+  label: Choose one of the following
+```
+
+<CaptionedImage
+  src="/images/patterns/examples/select-input.png"
+  alt="A form containing a list of options in a select dropdown field generated from a Routegy pattern"
+  width="75%"
+/>
+
+
+## Single checkbox
+
+To render a single checkbox, define an element of `checkbox` or `boolean` type.
+
+```yaml
+checkbox:
+  type: checkbox
+  label: Checkbox example
+```
+
+<CaptionedImage
+  src="/images/patterns/examples/single-checkbox.png"
+  alt="A form containing a checkbox field generated from a Routegy pattern"
+  width="75%"
+/>
+
+## Multiple checkboxes
+
+To render a group of checkboxes, set type to `checkboxes` and define a list of checbox values and labels using `items` property.
+
+```yaml
+checkboxes:
+  type: checkboxes
+  label: Select all that apply
+  items:
+    - Option one
+    - Another option
+    - One more option
+    - Last option
+```
+
+<CaptionedImage
+  src="/images/patterns/examples/multiple-checkboxes.png"
+  alt="A form containing a list of checkbox fields generated from a Routegy pattern"
+  width="75%"
+/>
+
+## Tag input
+
+Tag input is an input element for entering a list of string tags. To render one, use `tags` element type. Optionally, `maxItems` property can be used to define a maxium number of tags allowed.
+
+```yaml
+tags_example:
+  type: tags
+  maxItems: 10
+  label: Items to refill
+```
+
+<CaptionedImage
+  src="/images/patterns/examples/tag-input.png"
+  alt="A form containing a tag-input field generated from a Routegy pattern with soda flavor tags added entered into it"
+  width="75%"
+/>
+
+## Specialized components
+
+### Star rating
+
+To render a star rating widget, add an element of `rating` type. Optionally, set `size` property to `small`, `medium` or `large` to customize the size of rendered stars (`small` is the default size).
+
+```yaml
+experience:
+  type: rating
+  default: 4
+  label: How was your experience?
+```
+
+<CaptionedImage
+  src="/images/patterns/examples/rating.png"
+  alt="A form containing a star rating field generated from a Routegy pattern with four stars selected"
+  width="75%"
+/>
+
+### Net Promotor Score
+
+[Net Promotore Score (NPS)](https://en.wikipedia.org/wiki/Net_promoter_score) can be used to quantify customer's perception of an experience or a product by asking them how likely they are to recommend it to someone else. Routegy provides a component for collecting an NPS numerical value that can be rendered setting type to `nps`.
+```yaml
+score:
+  type: nps
+  minScoreLabel: Absolutely not!
+  maxScoreLabel: Yes!
+  label: Would you recommend this product to a friend?
+```
+
+Minimum and maximum score labels and score ranges are customizable using additional element properties as shown below.
+
+| Attribute name | Default value | Description |
+| ----------- | ----------- | ----------- |
+| minScoreLabel| Not Very Likely | Label displayed next to the lowest score |
+| maxScoreLabel| Very Likely | Label displayed next to the highest score |
+| minScore| 0 | Lowest score on on the scale |
+| maxScore| 10 | Highest score on the scale |
+| passiveScore| 7 | Starting score for the 'passive' range (orange) |
+| promoterScore| 9 | Starting score  for the 'promoter' range (green) |
+
+<CaptionedImage
+  src="/images/patterns/examples/nps.png"
+  alt="A form containing an NPS field generated from a Routegy pattern"
+  width="75%"
 />
 
 ## Static information
@@ -178,448 +461,48 @@ descriptor:
   width="50%"
 />
 
-## Text inputs
-
-To render a text input, use a `string` schema property, and customize its appearance with `label` and `placeholder` attribute in a corresponding property in the descriptor. Example:
-
-```yaml
-schema:
-  type: object
-  properties:
-    text:
-      type: string
-descriptor:
-  properties:
-    text:
-      label: Text input
-      attrs:
-        placeholder: Input some text here
-```
-
-<CaptionedImage
-  src="/images/patterns/examples/text-input-simple.png"
-  alt="A form with a text input field generated from a Routegy pattern"
-  width="75%"
-/>
-
-### HTML input types
-
-Use JSON schema `format`  property to redner various HTML types, and force a corresponding validation of the input value. Here is a list of format support today. 
-
-| JSON schema format | HTML input type |
-| ----------- | ----------- |
-| date| date|
-| date-time|datetime-local|
-| email| email|
-| time| time|
-| uri| url|
-
-Below is an example of a pattern that contains inputs of `email` and `date` types.
-
-```yaml
-schema:
-  type: object
-  properties:
-    email:
-      type: string
-      format: email
-    dob:
-      type: string
-      format: date
-descriptor:
-  properties:
-    email:
-      label: Email address
-      attrs:
-        placeholder: E.g. john.doe@email.org
-    dob:
-      label: Date of birth
-```
-
-<CaptionedImage
-  src="/images/patterns/examples/text-input-formats.png"
-  alt="A form with formatted email and date fields generated from a Routegy pattern"
-  width="75%"
-/>
-
-### Regular expressions
-
-To render a text input with automatic validation against a regular expression pattern, set the `pattern` property inside the schema to a desired RegEx pattern.
-
-```yaml
-schema:
-  type: object
-  properties:
-    api_key:
-      type: string
-      pattern: '^[0-9a-zA-Z]{32}$'
-descriptor:
-  properties:
-    api_key:
-      label: API key
-```
-
-<CaptionedImage
-  src="/images/patterns/examples/text-input-regex.png"
-  alt="A form with a regex-validated API key field generated from a Routegy pattern"
-  width="75%"
-/>
-
-### Passwords and other masked inputs
-
-::: warning
-Be extremely careful requesting sensitive data in your apps. If you're unsure about how best to process sensitive data, please contact us at [support@routegy.com](mailto:support@routegy.com).
-:::
-
-Masked text inputs can be helpful in collecting sensitive information like passwords. To render one, simply the `kind` property of that fields t `password` in the pattern descriptor.
-
-```yaml
-schema:
-  type: object
-  properties:
-    comments:
-      type: string
-descriptor:
-  properties:
-    comments:
-      kind: password
-      label: Password
-```
-
-<CaptionedImage
-  src="/images/patterns/examples/text-input-password.png"
-  alt="A form with a masked field generated from a Routegy pattern"
-  width="75%"
-/>
-
-### Text area
-
-To render a text input as a textarea, simply set `kind` to `textarea` in its descriptor.
-
-```yaml
-schema:
-  type: object
-  properties:
-    comments:
-      type: string
-descriptor:
-  properties:
-    comments:
-      kind: textarea
-      label: Any comments?
-```
-
-<CaptionedImage
-  src="/images/patterns/examples/text-input-textarea.png"
-  alt="A form with a text area 'comment' field generated from a Routegy pattern"
-  width="75%"
-/>
-
-### Number input
-
-To render a number input with up and down buttons, define a schema of `input` or `number` type. Optionally, set `minimum` and `maximum` schema attributes to define the allowed range, and set a default value using the `default` attribute.
-
-```yaml
-schema:
-  type: object
-  properties:
-    count:
-      type: integer
-      default: 5
-      maximum: 10
-      minimum: 1
-descriptor:
-  properties:
-    count:
-      label: Count
-```
-
-<CaptionedImage
-  src="/images/patterns/examples/number-input.png"
-  alt="A form with a number input 'count' field generated from a Routegy pattern"
-  width="75%"
-/>
-
-## Radio buttons
-
-To render a group of radio buttons, define a schema with a list defined inside an `enum` attribute.
-
-```yaml
-schema:
-  type: object
-  properties:
-    options:
-      enum:
-        - Option 1
-        - Option 2
-        - Option 3
-      type: string
-descriptor:
-  properties:
-    options:
-      label: Choose one of the following
-```
-
-<CaptionedImage
-  src="/images/patterns/examples/radio-buttons.png"
-  alt="A form with a list of radio options generated from a Routegy pattern"
-  width="75%"
-/>
-
-### Custom labels
-
-Labels for individual radio buttons can be customized using the `items` property on the descriptor. This can be particularly helpful when schema `type` is different from `string` like. Here is an example of a schema with two radio boxes mapped to `true` and `false` boolean values, that are labeled as Yes and No respectively.
-
-```yaml
-schema:
-  type: object
-  properties:
-    options:
-      enum:
-        - true
-        - false
-      type: boolean
-descriptor:
-  properties:
-    options:
-      items:
-        'true':
-          label: 'Yes'
-        'false':
-          label: 'No'
-      label: What is your answer?
-```
-
-<CaptionedImage
-  src="/images/patterns/examples/radio-buttons-custom-labels.png"
-  alt="A form containing a list of radio options with displayed values of 'Yes/No' and data-values of 'true/false' generated from a Routegy pattern"
-  width="75%"
-/>
-
-## Select input
-
-To render a dropdown select input, define a schema with a list of items defined inside an `enum` attribute, and set its kind to `list` in the descriptor.
-
-```yaml
-schema:
-  type: object
-  properties:
-    options:
-      enum:
-        - Option 1
-        - Option 2
-        - Option 3
-      type: string
-descriptor:
-  properties:
-    options:
-      label: Choose one of the following
-      kind: list
-```
-
-<CaptionedImage
-  src="/images/patterns/examples/select-input.png"
-  alt="A form containing a list of options in a select dropdown field generated from a Routegy pattern"
-  width="75%"
-/>
-
-
-## Single checkbox
-
-To render a single checkbox, define a schema of `boolean` type.
-
-```yaml
-schema:
-  type: object
-  properties:
-    checkbox:
-      type: boolean
-descriptor:
-  properties:
-    checkbox:
-      label: Checkbox example
-```
-
-<CaptionedImage
-  src="/images/patterns/examples/single-checkbox.png"
-  alt="A form containing a checkbox field generated from a Routegy pattern"
-  width="75%"
-/>
-
-## Multiple checkboxes
-
-To render a group of checkboxes use the `array` schema type, set its `uniqueItems` property to `true`, and define a list of values using its `items` property.
-
-```yaml
-schema:
-  type: object
-  properties:
-    checkboxes:
-      type: array
-      uniqueItems: true
-      items:
-        - type: string
-          enum:
-            - Option one
-            - Another option
-            - One more option
-            - Last option
-descriptor:
-  properties:
-    checkboxes:
-      label: Select all that apply
-```
-
-<CaptionedImage
-  src="/images/patterns/examples/multiple-checkboxes.png"
-  alt="A form containing a list of checkbox fields generated from a Routegy pattern"
-  width="75%"
-/>
-
-## Tag input
-
-Tag input is an input element for entering a list of string tags. To render one, define a schema of `array` type and set its kind in the descriptor to `tags`. Schema's `maxItems` attribute (optional) can be used to define a maxium number of tags that can be entered.
-
-```yaml
-schema:
-  type: object
-  properties:
-    items:
-      type: array
-      maxItems: 10
-descriptor:
-  properties:
-    items:
-      kind: tags
-      label: Items to refill
-```
-
-<CaptionedImage
-  src="/images/patterns/examples/tag-input.png"
-  alt="A form containing a tag-input field generated from a Routegy pattern with soda flavor tags added entered into it"
-  width="75%"
-/>
-
-## Specialized components
-
-### Star rating
-
-To render a star rating widget, define a schema of `integer` or `number` type and set its kind to `rating` in the descriptor. Use the schema's `default` attribute to define the initial star selection.
-
-```yaml
-schema:
-  type: object
-  properties:
-    experience:
-      type: integer
-      default: 4
-descriptor:
-  properties:
-    experience:
-      kind: rating
-      label: How was your experience?
-
-```
-
-<CaptionedImage
-  src="/images/patterns/examples/rating.png"
-  alt="A form containing a star rating field generated from a Routegy pattern with four stars selected"
-  width="75%"
-/>
-
-### Net Promotor Score
-
-[Net Promotore Score (NPS)](https://en.wikipedia.org/wiki/Net_promoter_score) can be used to quantify customer's perception of an experience or a product by asking them how likely they are to recommend it to someone else. Routegy provides a component for collecting an NPS numerical value that can be rendered by defining a schema of `integer` type, and setting its kind to `nps` in the descriptor.
-```yaml
-schema:
-  type: object
-  properties:
-    score:
-      type: integer
-descriptor:
-  properties:
-    score:
-      kind: nps
-      minScoreLabel: Absolutely not!
-      maxScoreLabel: Yes!
-      label: Would you recommend this product to a friend?
-```
-
-Minimum and maximum score labels and score ranges are customizable using descriptor attributes as shown below.
-
-| Attribute name | Default value | Description |
-| ----------- | ----------- | ----------- |
-| minScoreLabel| Not Very Likely | Label displayed next to the lowest score |
-| maxScoreLabel| Very Likely | Label displayed next to the highest score |
-| minScore| 0 | Lowest score on on the scale |
-| maxScore| 10 | Highest score on the scale |
-| passiveScore| 7 | Starting score for the 'passive' range (orange) |
-| promoterScore| 9 | Starting score  for the 'promoter' range (green) |
-
-<CaptionedImage
-  src="/images/patterns/examples/nps.png"
-  alt="A form containing an NPS field generated from a Routegy pattern"
-  width="75%"
-/>
-
 ## Conditional fields
 
-Routegy offers support for conditionally displayed fields using [JSON schema if/then/else](https://json-schema.org/understanding-json-schema/reference/conditionals.html#if-then-else) keywords. Today, the support is limited to equality comparison based on the `const` keyword, with support for more complex conditional validation scenarios coming soon.
+Routegy offers support for conditionally displayed elements using simple comparison logic define inside  the `visible` property of an element. This allows for setting element's visiblity based on comparing a value of any element to a value of another element. 
 
-The following pattern demonstrates how two text inputs, defined as `email` and `phone` properties, are conditionally displayed depending on the value of `how_to_contact` radio buttons widgets. 
+For instance, the following `visible` property would evaluate to true only if a value associated with `provide_more_info` element is set to `true`.
 
 ```yaml
-schema:
-  type: object
-  required:
-    - how_to_contact
-  properties:
-    how_to_contact:
-      enum:
-        - by_email
-        - by_phone
-      type: string
-  if:
-    properties:
-      how_to_contact:
-        const: by_email
-  then:
-    properties:
-      email:
-        type: string
-        format: email
-  else:
-    if:
-      properties:
-        how_to_contact:
-          const: by_phone
-    then:
-      properties:
-        phone:
-          type: string
-          pattern: '^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$'
-descriptor:
-  order:
-    - how_to_contact
-    - email
-    - phone
-  properties:
-    email:
-      attrs:
-        placeholder: E.g. jon.doe@routegy.com
-      label: You email address
-    phone:
-      attrs:
-        placeholder: 'E.g, 555-555-5555'
-      label: You phone number
-    how_to_contact:
-      kind: enum
-      items:
-        by_email:
-          label: Send me an email
-        by_phone:
-          label: Send me a text message
-      label: How would you like to be contacted?
+visible:
+  provide_more_info:
+    equals_to: true
+```
+
+Since `equals_to` is the default comparison operator (more on different operator below), it can be ommited and the entire expression can be reduced to:
+
+```yaml
+visible:
+  provide_more_info: true
+```
+
+Below is a more complete example that demonstrates how two text inputs, defined as `email` and `phone`, are conditionally displayed depending on the value of `how_to_contact` radio buttons element. 
+
+```yaml
+how_to_contact:
+  type: radio
+  label: How would you like to be contacted?
+  items:
+    - value: by_email
+      label: Send me an email
+    - value: by_text
+      label: Send me a text message
+email:
+  type: email
+  placeholder: E.g. jon.doe@routegy.com
+  label: You email address
+  visible:
+    how_to_contact: by_email
+phone:
+  placeholder: 'E.g, 555-555-5555'
+  label: You phone number
+  type: phone
+  visible:
+    how_to_contact: by_text
 ```
 
 By default, neither `email` nor `phone` widgets are visible.
@@ -630,7 +513,7 @@ By default, neither `email` nor `phone` widgets are visible.
   width="75%"
 />
 
-If `how_to_contact` value is set to `by_email` (`Send me an email` radio button), `email` widget will be made visible to collect user's email address.
+If `how_to_contact` value is set to `by_email` (`Send me an email` radio button), `email` input is made visible to collect user's email address.
 
 <CaptionedImage
   src="/images/patterns/examples/conditional-contact-email.png"
@@ -638,7 +521,7 @@ If `how_to_contact` value is set to `by_email` (`Send me an email` radio button)
   width="75%"
 />
 
-If `how_to_contact` value is set to `by_phone` string (labeled as `Send me a text message`), `phone` widget will became visible to collect user's phone number. 
+If `how_to_contact` value is set to `by_text` string (labeled as `Send me a text message`), `phone` input is made visible to collect user's phone number. 
 
 <CaptionedImage
   src="/images/patterns/examples/conditional-contact-phone.png"
@@ -646,57 +529,86 @@ If `how_to_contact` value is set to `by_phone` string (labeled as `Send me a tex
   width="75%"
 />
 
-## Grouping elements with nested objects
+### Comparison operators
 
-Combining multiple elements into groups can be done by nested object schemas. Set a property `type` to `object` and use its properties to define the elements inside it just like in the top level object schema. Objects schemas can be nested in each other for a multilevel hierarchy. The descriptor need to follow the object hierarchy of the schema, and can be used to define labels for element groups and order of elements with a group.
+Here is a list of comparison operators supported inside `visible` property. 
 
-The sample pattern below demonstrates a simple field grouping for collecting contact information structured in the following way:
+| Property name | Description |
+| ----------- | ----------- |
+| equalTo | True if a specified value is equal to the value of its parent element.|
+| notEqualTo |  True if a specified value is not equal to the value of its parent element.|
+| lessThan | True if a specified value is less than the value of its parent element. Useful when working with elements that have numerical values like `integer`, `rating` or `nps`.|
+| greaterThan | True if a specified value is less than the value of its parent element. Useful when working with elements that have numerical values like `integer`, `rating` or `nps`.|
+| contains | True if a specified value is contained in the value of its parent element. Useful when working with elements associated with array values like `checkboxes` and `tags`, or any text elements.|
+| doesntContain | True if a specified value is not contained in the value of its parent element. Useful when working with elements associated with array values like `checkboxes` and `tags`, or any text elements.|
 
-```
-Root object
-  - Contact info
-    - Name
-      - First name
-      - Last name
-    - Email address
-```
 
-To accomplish this, the pattern schema uses three levels of nested objects, with the descriptor following the same hierarchy to define labels for groups ("Contact info" and "Name") and elements within them.
+### Additional examples for conditional elements
+
+Make `something_else` textarea visible only if `Something else` checkbox is checked in the `problem` element. Since the value associated with the `problem` element is an array of strings (values of checked checkboxes), `contains` operator is used.
 
 ```yaml
-schema:
-  type: object
-  properties:
-    contact_info:
-      type: object
-      properties:
-        name:
-          type: object
-          properties:
-            last_name:
-              type: string
-            first_name:
-              type: string
-        email:
-          type: string
-          format: email
-descriptor:
-  properties:
-    contact_info:
-      label: Contact info
-      properties:
-        name:
-          order:
-            - first_name
-            - last_name
-          label: Name
-          properties:
-            last_name:
-              label: Last name
-            first_name:
-              label: First name
-        email:
-          label: Email address
+problem:
+  type: checkboxes
+  title: Printer problem?
+  items:
+    - Doesn't turn on
+    - Paper jam
+    - No paper
+    - No toner
+    - Something else
+something_else:
+  type: textarea
+  title: Something else or more details?
+  visible:
+    problem:
+      contains: Something else
+```
+
+Make `how_can_we_improve` textarea visible only if less than three stars are selected in the `experience` starrating element.
+
+```yaml
+experience:
+  type: rating
+  size: large
+  label: How would you rate your experience today?
+how_can_we_improve:
+  type: textarea
+  label: Please let us know how can we make the experience better
+  visible:
+    experience:
+      lessThan: 3
+```
+
+## Grouping elements into fieldsets
+
+Combining multiple elements into a fieldset can be done by nesting them inside a parent object that doesn't have a `type` property set. Fieldsets can be also nested in each other to create a multilevel hierarchy.
+
+A sample pattern below demonstrates a simple field grouping for collecting contact information structured in the following way:
+
+```
+Contact info
+  Name
+    First name
+    Last name
+  Email address
+```
+
+To accomplish this, the following YAML definition uses three levels of nested objects. Fieldsets (`Contact info` and `Name`) are labeled using `label` property (optional), but they don't have a `type` property like other elements.
+
+```yaml
+contact_info:
+  label: Contact info
+  name:
+    last_name:
+      type: text
+      label: Last name
+    first_name:
+      type: text
+      label: First name
+  email:
+    type: email
+    label: Email address
 ```
 
 <CaptionedImage
@@ -708,35 +620,26 @@ descriptor:
 ## Multipage patterns
 
 Multipage pattern can be used to organize larger forms into multiple, smaller pages with a wizard-like experience. To define a multipage pattern in Routegy, do the following:
-  - Make root schema properties into object (`type: object`) and use them to define individual pages of your multipage pattern.
-  - In the descriptor, set `kind` of the root object schema to `multipage`
-  - in the descriptor, set the order of your pages using `order` attribute (array)
+  - Set top-level `type` prtoperty to `wizard` or `multipage`
+  - Define pages of your pattern as top level properties - every page is an object that can contain element and field set.
 
 
 The following sample is a scaffolding for a three page pattern (all pages are empty).
 
 ```yaml
-schema:
-  type: object
-  properties:
-    page_1:
-      type: object
-    page_2:
-      type: object
-    page_3:
-      type: object
-descriptor:
-  kind: multipage
-  order:
-    - page_1
-    - page_2
-    - page_3
+type: wizard
+page_1:
+  // Page 1 definition
+page_2:
+  // Page 2 definition
+page_3:
+  // Page 3 definition
 ```
 
-By default, navigation buttons are captioned as `Next`, `Back` and `Submit`. These captions can be customized using `captions` attribute in the descriptor:
+By default, navigation buttons are captioned as `Next`, `Back` and `Submit`. These captions can be customized using `buttonCaptions` property inside `appSettings`:
 ```yaml
-descriptor:
-  captions:
+appSettings:
+  buttonCaptions:
     next: Forward
     back: Previous
     submit: Send
@@ -745,75 +648,48 @@ descriptor:
 Below is a complete example for a printer report problem patter that consists of three pages:
   - Problem page with a list of radio buttons representing most common problems
   - Details page with a text input for collecting more details about the problem
-  - Follow-up page with an option to opt into email updates on the problem
+  - Follow-up page with an option to opt into email or text updates on the problem
 
 ```yaml
-schema:
-  type: object
-  properties:
-    problem_page:
-      type: object
-      properties:
-        problem:
-          enum:
-            - No paper
-            - No toner
-            - Printer not responding
-            - Printer stuck
-            - Something else
-          type: string
-    details_page:
-      type: object
-      properties:
-        details:
-          type: string
-    follow_up_page:
-      if:
-        properties:
-          email_follow_up_yes_no:
-            const: true
-      then:
-        properties:
-          email:
-            type: string
-            format: email
-      type: object
-      properties:
-        email_follow_up_yes_no:
-          type: boolean
-descriptor:
-  kind: multipage
-  captions:
-    back: Previous
-    submit: Report
-  order:
-    - problem_page
-    - details_page
-    - follow_up_page
-  properties:
-    problem_page:
-      properties:
-        problem:
-          kind: enum
-          label: What is going on?
-    details_page:
-      properties:
-        details:
-          kind: textarea
-          attrs:
-            placeholder: E.g. printer shows error E122
-          label: Any more details?
-    follow_up_page:
-      order:
-        - email_follow_up_yes_no
-        - email
-      properties:
-        email:
-          attrs:
-            placeholder: E.g. john.doe@routegy.com
-          label: Email
-        email_follow_up_yes_no:
-          label: I'd like to receive an update on this via email
+type: wizard
+problem_page:
+  problem:
+    type: radios
+    label: What is going on?
+    items:
+      - No paper
+      - No toner
+      - Printer not responding
+      - Printer stuck
+      - Something else
+details_page:
+  details:
+    type: textarea
+    placeholder: E.g. printer shows error E122
+    label: Any more details?
+follow_up_page:
+  how_to_contact:
+    type: radios
+    items:
+      - value: by_email
+        label: 'Yes, send me an email'
+      - value: by_phone
+        label: 'Yes, send me a text message'
+      - value: no_contact
+        label: 'No, thanks'
+    label: Would you like to recieve updates on this?
+  email:
+    type: email
+    placeholder: E.g. jon.doe@routegy.com
+    label: You email address
+    visible:
+      how_to_contact: by_email
+  phone:
+    type: phone
+    placeholder: 'E.g, 555-555-5555'
+    label: You phone number
+    visible:
+      how_to_contact: by_phone
 ```
 
 <CaptionedImage
@@ -839,19 +715,17 @@ descriptor:
 An empty pattern will create an event immediately upon interaction with an associated app. The empty pattern can define the custom branding and result message; it simply does not define any data to collect and thus does not render a form or UI.
 
 ```yaml
-descriptor:
-  appearance:
-    headerLogo:
-      >-
-        https://routegy-assets.s3.us-west-2.amazonaws.com/routegy/schemas/mock-approval-logo.svg
-    colors:
-      header: "#2e1046"
-      header-text: "#eff0eb"
-      footer: "#eff0eb"
-      white: "#2e1046"
-      black: "#eff0eb"
-  attrs:
-    successMessage: Thanks for the report!
+appSettings:
+  logo:
+    >-
+      https://routegy-assets.s3.us-west-2.amazonaws.com/routegy/schemas/mock-approval-logo.svg
+  colors:
+    header: "#2e1046"
+    header-text: "#eff0eb"
+    footer: "#eff0eb"
+    white: "#2e1046"
+    black: "#eff0eb"
+  successMessage: Thanks for the report!
 ```
 
 ## Permissions
