@@ -711,6 +711,90 @@ appSettings:
   successMessage: Thanks for the report!
 ```
 
-## Permissions
+## Application settings
 
-Patterns inherit permissions from their [Workspace](/reference/workspaces/) and its [Organization](/reference/organizations/). Read more about permission inheritance [here](/reference/permissions/).
+In addition to the information about components and their layout, pattern can also contain application-level settings like custom colors, header logo, custom Submit button captions and post-submit success message.
+
+::: tip
+These visual features are not visible when the pattern is edited and previewed in the Routegy admin application. They will take effect when a pattern is associated with an app, and can be seen when the app is launched.
+:::
+
+App customizations can be defined using a top level `appSettings` object that supports the following properties:
+
+| Property name | Description | Default |
+|---|---|---
+|logo|Path to a custom logo to be displayed at the top of the app header| No logo |
+|successMessage|Message to be displayed after interaction with an app has been successfully completed| Thank you for your feedback! |
+|buttonCaptions|Custom captions for built-in navigation buttons. This includes the Submit button as well as Next and Back buttons used in the [wizard/multipage patterns](#multipage-patterns)| Submit, Next and Back |
+|colors|Custom colors for various elements of an app that will override default Routegy brand colors. | Please see the [custom colors section](#custom-color-reference) |
+
+### Example
+
+Here is an example pattern that demonstrates some of these customizations including a custom app logo,, Submit button caption and selected colors.
+
+```yaml
+appSettings:
+  logo: https://routegy-assets.s3.us-west-2.amazonaws.com/routegy/schemas/mock-room-help-logo.svg
+  colors:
+    header: black
+    headerText: '#00fab3'
+    black: black
+    footer: black
+    grey: grey
+    primary: '#007252'
+    lightGrey: lightgrey
+    white: white
+    success: '#00b682'
+    buttonText: white
+  buttonCaptions:
+    submit: Report
+problem:
+  type: radios
+  label: What is the problem?
+  items:
+    - Call quality is poor
+    - WiFi signal is poor
+    - Projector/TV not working
+    - Missing A/V adapters
+    - Something else
+additional_comment:
+  type: textarea
+  label: Something else or more details?
+  placeholder: Provide additional information here
+```
+
+A screenshot of the app showing all of these customizations in effect is shown below.
+
+<CaptionedImage
+  src="/images/patterns/examples/custom-app-settings.png"
+  alt="Screenshot of a conference room problem report app with custom appSettings."
+  width="65%"
+/>
+
+### Custom color reference
+
+Below is a list if customizable colors along with their default values. When override a color, any Any valid [CSS color notation](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value) can be used.
+
+<style>
+  .colorBlock {
+    width: 100%;
+    height: 2em;
+  }
+</style>
+
+| Name | Description | Default |
+|---|---|---|
+|header| App header background color | <div class="colorBlock" style="background-color:#2e1046"/>|
+|headerText| App header text color. Used for app name and description text displayed in the app header |<div class="colorBlock" style="background-color:#eff0eb"/>|
+|footer| App footer background color | <div class="colorBlock" style="background-color:#2e1046"/> |
+|white| Background color for contents of an app rendered between the header and the footer| <div class="colorBlock" style="background-color:#eff0eb"/>|
+|black| Color used for static text like labels as well as text entered into input elements.| <div class="colorBlock" style="background-color:#2e1046"/> |
+|grey| Secondary color used for visual elements like outlines of checkboxes and radio buttons. | <div class="colorBlock" style="background-color:#ac6dde"/> |
+|lightGrey| Secondary color used for borders of various input elements when they are not active (not focused)| <div class="colorBlock" style="background-color:#e2cdf3"/> |
+|primary| Color used for borders of active (focused) input elements as well as labels | <div class="colorBlock" style="background-color:#d410c5"/> |
+|buttonText| Text color for buttons | <div class="colorBlock" style="background-color:white"/> |
+|success| Background color for elements associated with success actions and notifications e.g. application submit button |<div class="colorBlock" style="background-color:#1cd748"/> |
+|warning| Background color for elements associated with warning notifications |<div class="colorBlock" style="background-color:#ffe08a"/> |
+|danger| Background color for elements associated with danger notifications e.g. error messages |<div class="colorBlock" style="background-color:#c81355"/> |
+
+
