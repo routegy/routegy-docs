@@ -525,7 +525,8 @@ Here is a list of comparison operators supported inside the `visible` property.
 | lessThanOrEqualTo | True if the specified value is less than or equal to the value of the specified element. |
 | greaterThan | True if the specified value is less than the value of the specified element. Useful when working with elements that have numerical values like `integer`, `rating` or `nps`. |
 | greaterThanOrEqualTo | True if the specified value is less than or equal to the value of the specified element. |
-| isEmpty | True if the specified element's value is empty or undefined. |
+| empty | True if specified element's value is empty or undefined. Specified value must be boolean (true or false) |
+| notEmpty | True if specified element's value is not empty and not undefined. Specified value must be boolean (true or false) |
 | contains | True if the specified value is contained in the value of the specified element. Useful when working with elements associated with array values like `checkboxes` and `tags` or any text element. |
 | doesntContain | True if the specified value is not contained in the value of the specified element. Useful when working with elements associated with array values like `checkboxes` and `tags` or any text element. |
 
