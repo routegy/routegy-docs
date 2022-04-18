@@ -5,11 +5,11 @@ description: "What is a Routegy pattern?"
 
 # Patterns
 
-A pattern defines what interactions and data are exposed and collected by an [app](/reference/apps/). Pattern definition is a YAML document that defines UI elements of an app. Every UI element is an object with a set of properties that define its looks and behavior. Element's `type` property is mandatory and it defines a type of UI element to render. Routegy supports numerous built-in element types that range from simple text inputs (`type: text`) to more advanced and specialized components like Net Promoter Score element (`type: nps`). In addition to `type`, element objects support other properties for element configration. Some of them, like `title` (interchangable with `label` and `caption`), are supported by most types of elements, while others are type specific.
+Patterns define the interactions and data that are exposed and collected by an [app](/reference/apps/). A pattern definition is a YAML document that defines the UI elements of an app. Every UI element is an object with a set of properties that define its looks and behavior. Routegy supports numerous built-in element types that range from simple text inputs (`type: text`) to more advanced and specialized components like Net Promoter Score element (`type: nps`).
 
 ## Example
 
-The following is an example YAML pattern for an app that collects information about a problem with an office printer. This UI pattern includes a list of checkboxes that map to a list of predefined problem categories, and `additional_problem_info` textarea field for additional details or miscallanous category not included in the list. 
+The following is an example YAML pattern for an app that collects information about a problem with an office printer. This UI pattern includes a list of checkboxes that map to a list of predefined problem categories, and an `additional_problem_info` textarea field for additional details or miscellaneous problems not included in the list. 
 
 ```yaml
 problem:
@@ -50,16 +50,16 @@ Once submitted, data collected by this app will be a JSON object with two proper
 
 ## Element properties
 
-Every element is defined as a YAML object with a set of properties that determine the type, appearance and behavior of a UI component to be rendered in the app. Below is a list of properties that are support in most of the built-in components.
+Every element is defined as a YAML object with a set of properties that determine the type, appearance, and behavior of a UI component to be rendered in the app. Below is a list of properties that are support in most of the built-in components.
 
 | Property | Description |
 | ----------- | ----------- |
-| `type`| Determines the type of the UI element. If `type` property is not defined, the object is treated as a [fieldset](#grouping-elements-into-fieldsets). If `type` is defined, it must be one of the [supported element types](#supported-element-types).
-| `label` (also `caption` and `title`)| Defines a label for the UI element (optional).|
-| `visible`| [Conditional visibility](#conditional-fields) expression (optional). |
-| `default`| The default value for the element (optional). Supported by all built-in elements except for `markdown`|
-| `placeholder`| Placeholder string (optional). Supported by elements based on the text input including `text`, `textarea`, `email`, `phone` etc|
-| `items`| List of items for multiple or single choice elements like [radio buttons](#radio-buttons) and [checkboxes](#multiple-checkboxes)|
+| `type` | Determines the type of the UI element. If `type` property is not defined, the object is treated as a [fieldset](#grouping-elements-into-fieldsets). If `type` is defined, it must be one of the [supported element types](#supported-element-types).
+| `label` (also `caption` and `title`) | Defines a label for the UI element (optional). |
+| `visible` | [Conditional visibility](#conditional-fields) expression (optional). |
+| `default` | The default value for the element (optional). Supported by all built-in elements except for `markdown` |
+| `placeholder` | Placeholder string (optional). Supported by elements based on the text input including `text`, `textarea`, `email`, `phone` etc |
+| `items` | List of items for multiple or single choice elements like [radio buttons](#radio-buttons) and [checkboxes](#multiple-checkboxes) |
 
 ## Supported element types
 
@@ -67,13 +67,13 @@ Every element is defined as a YAML object with a set of properties that determin
 |------|-------------|
 | string, text| [Basic text input](#text-inputs) |
 | textarea | [Multiline textarea input](#text-area) |
-| date| [Date input](#html-input-types) based on HTML date input type|
-| datetime| [Datetime input](#html-input-types) based on HTML datetime-local input time|
-| email| [Email input](#html-input-types) based on HTML email input type|
-| time| [Time input](#html-input-types) based on HTML time input type|
-| uri, url| [Url input](#html-input-types) based on HTML url input type|
+| date| [Date input](#html-input-types) based on HTML date input type |
+| datetime| [Datetime input](#html-input-types) based on HTML datetime-local input time |
+| email| [Email input](#html-input-types) based on HTML email input type |
+| time| [Time input](#html-input-types) based on HTML time input type |
+| uri, url| [Url input](#html-input-types) based on HTML url input type |
 | phone | Text input with a [RegEx pattern](#regular-expressions) matching US phone numbers]
-| password| [Masked text input](#passwords-and-other-masked-inputs) for senstive information|
+| password | [Masked text input](#passwords-and-other-masked-inputs) for senstive information |
 | number, integer | [Integer input](#number-input) with up-and-down controls |
 | radio, radios, radiobuttons| [Multiple radio buttons](#radio-buttons) |
 | dropdown | [Dropdown select input](#select-input) |
@@ -84,7 +84,7 @@ Every element is defined as a YAML object with a set of properties that determin
 
 ## Text inputs
 
-To render a text input, use a `text` or `string` type, and customize its appearance with `title` and `placeholder` properties.
+To render a text input, use a `text` or `string` type and customize its appearance with `title` and `placeholder` properties.
 
 ```yaml
 text_input:
@@ -118,15 +118,15 @@ api_key:
 
 ### HTML input types
 
-Routegy offers a built-in support for various HTML input types. Here is a list element types mapped to support HTML input types. 
+Routegy offers built-in support for various HTML input types. Here is a list element types mapped to supported HTML input types. 
 
 | Routegy element type | HTML input type |
 | ----------- | ----------- |
-| date| date|
-| datetime|datetime-local|
-| email| email|
-| time| time|
-| uri| url|
+| date | date |
+| datetime | datetime-local |
+| email | email| 
+| time | time |
+| uri | url |
 
 Below is an example of a pattern that contains inputs of `email` and `date` types.
 
@@ -149,10 +149,10 @@ dob:
 ### Passwords and other masked inputs
 
 ::: warning
-Be extremely careful requesting sensitive data in your apps. If you're unsure about how best to process sensitive data, please contact us at [support@routegy.com](mailto:support@routegy.com).
+Be extremely careful when requesting sensitive data in your apps. If you're unsure about how best to process sensitive data, please contact us at [support@routegy.com](mailto:support@routegy.com).
 :::
 
-Masked text inputs can be helpful in collecting sensitive information like passwords. To render one, set element's type to `password`.
+Masked text inputs can be helpful when collecting sensitive information like passwords. To render one, set the element's type to `password`.
 
 ```yaml
 password:
@@ -169,7 +169,7 @@ password:
 
 ### Text area
 
-To render a textarea, set element's type to `textarea`.
+To render a textarea, set the element's type to `textarea`.
 
 ```yaml
 comments:
@@ -204,7 +204,7 @@ count:
 
 ## Radio buttons
 
-To render a group of radio buttons, set element's type to `radio`, `radios` or `radiobuttons`, and define a list of their values/labels using `items` array property. 
+To render a group of radio buttons, set the element's type to `radio`, `radios` or `radiobuttons` and define a list of their values/labels using the `items` array property. 
 
 ```yaml
 options:
@@ -224,7 +224,7 @@ options:
 
 ### Custom labels
 
-Labels for individual radio buttons can be customized by turning items of the `items` property into objects with `value` and `label` properties. Below is an example of a schema with two radio boxes mapped to `true` and `false` values, that are labeled as Yes and No respectively.
+Labels for individual radio buttons can be customized by turning items of the `items` property into objects with `value` and `label` properties. Below is an example of a pattern with two radio boxes mapped to `true` and `false` values that are labeled as Yes and No respectively.
 
 ```yaml
 options:
@@ -245,7 +245,7 @@ options:
 
 ## Select input
 
-To render a dropdown select input, set element type to `dropdown`, and define a list of dropdown items items using `items` property.
+To render a dropdown select input, set the element's type to `dropdown` and define a list of dropdown items items using the `items` property.
 
 ```yaml
 options:
@@ -267,7 +267,7 @@ options:
 
 ## Single checkbox
 
-To render a single checkbox, define an element of `checkbox` or `boolean` type.
+To render a single checkbox, define an element of type `checkbox` or `boolean`.
 
 ```yaml
 checkbox:
@@ -283,7 +283,7 @@ checkbox:
 
 ## Multiple checkboxes
 
-To render a group of checkboxes, set type to `checkboxes` and define a list of checbox values and labels using `items` property.
+To render a group of checkboxes, set the type to `checkboxes` and define a list of checbox values and labels using the `items` property.
 
 ```yaml
 checkboxes:
@@ -304,7 +304,7 @@ checkboxes:
 
 ## Tag input
 
-Tag input is an input element for entering a list of string tags. To render one, use `tags` element type. Optionally, `maxItems` property can be used to define a maxium number of tags allowed.
+Tag input is an input element for entering a list of string tags. To render one, use the `tags` element type. Optionally, the `maxItems` property can be used to define a maximum number of tags allowed.
 
 ```yaml
 tags_example:
@@ -323,7 +323,7 @@ tags_example:
 
 ### Markdown
 
-To render text formatted with [markdown](https://spec.commonmark.org/), set element type to `markdown` and enter your markdown into the `text` property.
+To render text formatted with [markdown](https://spec.commonmark.org/), set the element type to `markdown` and enter your markdown into the `text` property.
 
 You can dynamically display values entered from elsewhere in your pattern by referencing the value name and placing it in your markdown with the format `${your_value_name}`.
 
@@ -401,7 +401,7 @@ markdown:
 
 ### Star rating
 
-To render a star rating widget, add an element of `rating` type. Optionally, set `size` property to `small`, `medium` or `large` to customize the size of rendered stars (`small` is the default size).
+To render a star rating widget, add an element of type `rating`. Optionally, set the `size` property to `small` (default), `medium` or `large` to customize the size of rendered stars.
 
 ```yaml
 experience:
@@ -418,7 +418,8 @@ experience:
 
 ### Net Promotor Score
 
-[Net Promotore Score (NPS)](https://en.wikipedia.org/wiki/Net_promoter_score) can be used to quantify customer's perception of an experience or a product by asking them how likely they are to recommend it to someone else. Routegy provides a component for collecting an NPS numerical value that can be rendered setting type to `nps`.
+[Net Promotore Score (NPS)](https://en.wikipedia.org/wiki/Net_promoter_score) can be used to quantify a customer's perception of an experience or a product by asking them how likely they are to recommend it to someone else. Routegy provides a component for collecting an NPS numerical value that can be rendered setting type to `nps`.
+
 ```yaml
 score:
   type: nps
@@ -431,12 +432,12 @@ Minimum and maximum score labels and score ranges are customizable using additio
 
 | Attribute name | Default value | Description |
 | ----------- | ----------- | ----------- |
-| minScoreLabel| Not Very Likely | Label displayed next to the lowest score |
-| maxScoreLabel| Very Likely | Label displayed next to the highest score |
-| minScore| 0 | Lowest score on on the scale |
-| maxScore| 10 | Highest score on the scale |
-| passiveScore| 7 | Starting score for the 'passive' range (orange) |
-| promoterScore| 9 | Starting score  for the 'promoter' range (green) |
+| minScoreLabel | Not Very Likely | Label displayed next to the lowest score |
+| maxScoreLabel | Very Likely | Label displayed next to the highest score |
+| minScore | 0 | Lowest score on on the scale |
+| maxScore | 10 | Highest score on the scale |
+| passiveScore | 7 | Starting score for the 'passive' range (orange) |
+| promoterScore | 9 | Starting score  for the 'promoter' range (green) |
 
 <CaptionedImage
   src="/images/patterns/examples/nps.png"
@@ -446,14 +447,14 @@ Minimum and maximum score labels and score ranges are customizable using additio
 
 ## Conditional fields
 
-Routegy offers support for conditionally displayed elements using simple comparison logic define inside  the `visible` property of an element. This allows for setting element's visiblity based on comparing a value of any element to a value of another element. 
+Routegy offers support for conditionally displaying elements using simple comparison logic defined inside the `visible` property of an element. This allows control of an element's visiblity based on a comparison of an elements value to another element's value or to a defined value.
 
-For instance, the following `visible` property would evaluate to true only if a value associated with `provide_more_info` element is set to `true`.
+For instance, the following `visible` property would evaluate to true only if a value associated with the `provide_more_info` element is set to `true`.
 
 ```yaml
 visible:
   provide_more_info:
-    equals_to: true
+    equalTo: true
 ```
 
 Since `equals_to` is the default comparison operator (more on different operator below), it can be ommited and the entire expression can be reduced to:
@@ -463,7 +464,7 @@ visible:
   provide_more_info: true
 ```
 
-Below is a more complete example that demonstrates how two text inputs, defined as `email` and `phone`, are conditionally displayed depending on the value of `how_to_contact` radio buttons element. 
+Below is a more complete example that demonstrates how two text inputs, defined as `email` and `phone`, are conditionally displayed depending on the value of the `how_to_contact` radio buttons element. 
 
 ```yaml
 how_to_contact:
@@ -476,8 +477,8 @@ how_to_contact:
       label: Send me a text message
 email:
   type: email
-  placeholder: E.g. jon.doe@routegy.com
-  label: You email address
+  placeholder: E.g. you@example.com
+  label: Your email address
   visible:
     how_to_contact: by_email
 phone:
@@ -492,43 +493,46 @@ By default, neither `email` nor `phone` widgets are visible.
 
 <CaptionedImage
   src="/images/patterns/examples/conditional-contact-default.png"
-  alt="A form containing contact me form with no selected option"
+  alt="A form containing a 'Contact me' form with no selected option"
   width="75%"
 />
 
-If `how_to_contact` value is set to `by_email` (`Send me an email` radio button), `email` input is made visible to collect user's email address.
+If `how_to_contact`'s value is set to `by_email` (`Send me an email` radio button), the `email` input is made visible to collect an email address.
 
 <CaptionedImage
   src="/images/patterns/examples/conditional-contact-email.png"
-  alt="A form containing contact me form with an email selected as a preferred contact"
+  alt="A form containing a 'Contact me' form with an email selected as a preferred contact"
   width="75%"
 />
 
-If `how_to_contact` value is set to `by_text` string (labeled as `Send me a text message`), `phone` input is made visible to collect user's phone number. 
+If `how_to_contact`'s value is set to `by_text` (`Send me a text message` radio button), the `phone` input is made visible to collect a phone number. 
 
 <CaptionedImage
   src="/images/patterns/examples/conditional-contact-phone.png"
-  alt="A form containing contact me form with a text message selected as a preferred contact"
+  alt="A form containing a 'Contact me' form with a text message selected as a preferred contact"
   width="75%"
 />
 
 ### Comparison operators
 
-Here is a list of comparison operators supported inside `visible` property. 
+Here is a list of comparison operators supported inside the `visible` property. 
 
 | Property name | Description |
 | ----------- | ----------- |
-| equalTo | True if a specified value is equal to the value of its parent element.|
-| notEqualTo |  True if a specified value is not equal to the value of its parent element.|
-| lessThan | True if a specified value is less than the value of its parent element. Useful when working with elements that have numerical values like `integer`, `rating` or `nps`.|
-| greaterThan | True if a specified value is less than the value of its parent element. Useful when working with elements that have numerical values like `integer`, `rating` or `nps`.|
-| contains | True if a specified value is contained in the value of its parent element. Useful when working with elements associated with array values like `checkboxes` and `tags`, or any text elements.|
-| doesntContain | True if a specified value is not contained in the value of its parent element. Useful when working with elements associated with array values like `checkboxes` and `tags`, or any text elements.|
+| equalTo | True if the specified value is equal to the value of the specified element. |
+| notEqualTo |  True if the specified value is not equal to the value of the specified element. |
+| lessThan | True if the specified value is less than the value of the specified element. Useful when working with elements that have numerical values like `integer`, `rating` or `nps`. |
+| lessThanOrEqualTo | True if the specified value is less than or equal to the value of the specified element. |
+| greaterThan | True if the specified value is less than the value of the specified element. Useful when working with elements that have numerical values like `integer`, `rating` or `nps`. |
+| greaterThanOrEqualTo | True if the specified value is less than or equal to the value of the specified element. |
+| isEmpty | True if the specified element's value is empty or undefined. |
+| contains | True if the specified value is contained in the value of the specified element. Useful when working with elements associated with array values like `checkboxes` and `tags` or any text element. |
+| doesntContain | True if the specified value is not contained in the value of the specified element. Useful when working with elements associated with array values like `checkboxes` and `tags` or any text element. |
 
 
 ### Additional examples for conditional elements
 
-Make `something_else` textarea visible only if `Something else` checkbox is checked in the `problem` element. Since the value associated with the `problem` element is an array of strings (values of checked checkboxes), `contains` operator is used.
+Make the `something_else` textarea visible only if the `Something else` checkbox is checked in the `problem` element. Since the value associated with the `problem` element is an array of strings (values of checked checkboxes), the `contains` operator is used.
 
 ```yaml
 problem:
@@ -548,7 +552,7 @@ something_else:
       contains: Something else
 ```
 
-Make `how_can_we_improve` textarea visible only if less than three stars are selected in the `experience` starrating element.
+Make the `how_can_we_improve` textarea visible only if fewer than three stars are selected in the `experience` rating element.
 
 ```yaml
 experience:
@@ -565,9 +569,9 @@ how_can_we_improve:
 
 ## Grouping elements into fieldsets
 
-Combining multiple elements into a fieldset can be done by nesting them inside a parent object that doesn't have a `type` property set. Fieldsets can be also nested in each other to create a multilevel hierarchy.
+Combining multiple elements into a fieldset can be done by nesting them inside a parent object that doesn't have a `type` property set. Fieldsets can be also nested in each other to create a multi-level hierarchy.
 
-A sample pattern below demonstrates a simple field grouping for collecting contact information structured in the following way:
+The sample pattern below demonstrates a simple field grouping for collecting contact information structured in the following way:
 
 ```
 Contact info
@@ -577,7 +581,7 @@ Contact info
   Email address
 ```
 
-To accomplish this, the following YAML definition uses three levels of nested objects. Fieldsets (`Contact info` and `Name`) are labeled using `label` property (optional), but they don't have a `type` property like other elements.
+To accomplish this, the following YAML definition uses three levels of nested objects. Fieldsets (`Contact info` and `Name`) are labeled using the `label` property (optional), but they don't have a `type` property like other elements.
 
 ```yaml
 contact_info:
@@ -596,30 +600,30 @@ contact_info:
 
 <CaptionedImage
   src="/images/patterns/examples/grouped-elements.png"
-  alt="A form containing contact me form with a text message selected as a preferred contact"
+  alt="A form containing a 'Contact me' form with a text message selected as a preferred contact"
   width="75%"
 />
 
 ## Multipage patterns
 
 Multipage pattern can be used to organize larger forms into multiple, smaller pages with a wizard-like experience. To define a multipage pattern in Routegy, do the following:
-  - Set top-level `type` prtoperty to `wizard` or `multipage`
+  - Set top-level `type` property to `wizard` or `multipage`
   - Define pages of your pattern as top level properties - every page is an object that can contain element and field set.
 
-
-The following sample is a scaffolding for a three page pattern (all pages are empty).
+The following sample is scaffolding for a three-page pattern (all pages are empty).
 
 ```yaml
 type: wizard
 page_1:
-  // Page 1 definition
+  # Page 1 definition
 page_2:
-  // Page 2 definition
+  # Page 2 definition
 page_3:
-  // Page 3 definition
+  # Page 3 definition
 ```
 
-By default, navigation buttons are captioned as `Next`, `Back` and `Submit`. These captions can be customized using `buttonCaptions` property inside `appSettings`:
+By default, navigation buttons are captioned as `Next`, `Back`, and `Submit`. Captions can be customized using the `buttonCaptions` property inside `appSettings`:
+
 ```yaml
 appSettings:
   buttonCaptions:
@@ -628,8 +632,8 @@ appSettings:
     submit: Send
 ```
 
-Below is a complete example for a printer report problem patter that consists of three pages:
-  - Problem page with a list of radio buttons representing most common problems
+Below is a complete example for a printer problem pattern that consists of three pages:
+  - Problem page with a list of radio buttons representing common problems
   - Details page with a text input for collecting more details about the problem
   - Follow-up page with an option to opt into email or text updates on the problem
 
@@ -663,7 +667,7 @@ follow_up_page:
     label: Would you like to recieve updates on this?
   email:
     type: email
-    placeholder: E.g. jon.doe@routegy.com
+    placeholder: E.g. me@example.com
     label: You email address
     visible:
       how_to_contact: by_email
@@ -693,18 +697,21 @@ follow_up_page:
   width="75%"
 />
 
-## Empty pattern (Instant events)
+## Instant events
 
-An empty pattern will create an event immediately upon interaction with an associated app. The empty pattern can define the custom branding and result message; it simply does not define any data to collect and thus does not render a form or UI.
+A pattern of `type: instant` will create an event immediately upon interaction with an associated app. The pattern can define the custom branding and result message; it simply does not define any data to collect and thus does not render a form or UI.
+
+This can be helpful for basic help requests (E.g. Assistance needed!) or notifications (E.g. Someone is using this asset now).
 
 ```yaml
+type: instant
 appSettings:
   logo:
     >-
       https://routegy-assets.s3.us-west-2.amazonaws.com/routegy/schemas/mock-approval-logo.svg
   colors:
     header: "#2e1046"
-    header-text: "#eff0eb"
+    headerText: "#eff0eb"
     footer: "#eff0eb"
     white: "#2e1046"
     black: "#eff0eb"
@@ -713,24 +720,24 @@ appSettings:
 
 ## Application settings
 
-In addition to the information about components and their layout, pattern can also contain application-level settings like custom colors, header logo, custom Submit button captions and post-submit success message.
+In addition to the information about components and their layout, pattern can contain application-level settings like custom colors, header logo, button captions, and a post-submit success message.
 
 ::: tip
-These visual features are not visible when the pattern is edited and previewed in the Routegy admin application. They will take effect when a pattern is associated with an app, and can be seen when the app is launched.
+These visual features are not visible when the pattern is edited and previewed in the Routegy admin application. They will take effect when a pattern is associated with an app, and can be seen when the app is launched. We suggest opening the app in a separate tab and refreshing as you make changes to the pattern.
 :::
 
 App customizations can be defined using a top level `appSettings` object that supports the following properties:
 
 | Property name | Description | Default |
-|---|---|---
-|logo|Path to a custom logo to be displayed at the top of the app header| No logo |
-|successMessage|Message to be displayed after interaction with an app has been successfully completed| Thank you for your feedback! |
-|buttonCaptions|Custom captions for built-in navigation buttons. This includes the Submit button as well as Next and Back buttons used in the [wizard/multipage patterns](#multipage-patterns)| Submit, Next and Back |
-|colors|Custom colors for various elements of an app that will override default Routegy brand colors. | Please see the [custom colors section](#custom-color-reference) |
+| --- | --- | --- |
+| logo | Path to a custom logo to be displayed at the top of the app header | No logo |
+| successMessage | Message to be displayed after interaction with an app has been successfully completed | Thank you for your feedback! |
+| buttonCaptions | Custom captions for built-in navigation buttons. This includes the Submit button as well as Next and Back buttons used in the [wizard/multipage patterns](#multipage-patterns) | Submit, Next, and Back |
+| colors | Custom colors for various elements of an app that will override default Routegy brand colors. | Please see the [custom colors section](#custom-color-reference) |
 
 ### Example
 
-Here is an example pattern that demonstrates some of these customizations including a custom app logo,, Submit button caption and selected colors.
+Here is an example pattern that demonstrates some of these customizations including a custom app logo, Submit button caption, and selected colors.
 
 ```yaml
 appSettings:
@@ -773,28 +780,26 @@ A screenshot of the app showing all of these customizations in effect is shown b
 
 ### Custom color reference
 
-Below is a list if customizable colors along with their default values. When override a color, any Any valid [CSS color notation](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value) can be used.
+Below is a list if customizable colors along with their default values. When overriding a color, any valid [CSS color notation](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value) can be used.
 
 <style>
-  .colorBlock {
-    width: 100%;
-    height: 2em;
-  }
+.colorBlock {
+  width: 100%;
+  height: 2em;
+}
 </style>
 
 | Name | Description | Default |
-|---|---|---|
-|header| App header background color | <div class="colorBlock" style="background-color:#2e1046"/>|
-|headerText| App header text color. Used for app name and description text displayed in the app header |<div class="colorBlock" style="background-color:#eff0eb"/>|
-|footer| App footer background color | <div class="colorBlock" style="background-color:#2e1046"/> |
-|white| Background color for contents of an app rendered between the header and the footer| <div class="colorBlock" style="background-color:#eff0eb"/>|
-|black| Color used for static text like labels as well as text entered into input elements.| <div class="colorBlock" style="background-color:#2e1046"/> |
-|grey| Secondary color used for visual elements like outlines of checkboxes and radio buttons. | <div class="colorBlock" style="background-color:#ac6dde"/> |
-|lightGrey| Secondary color used for borders of various input elements when they are not active (not focused)| <div class="colorBlock" style="background-color:#e2cdf3"/> |
-|primary| Color used for borders of active (focused) input elements as well as labels | <div class="colorBlock" style="background-color:#d410c5"/> |
-|buttonText| Text color for buttons | <div class="colorBlock" style="background-color:white"/> |
-|success| Background color for elements associated with success actions and notifications e.g. application submit button |<div class="colorBlock" style="background-color:#1cd748"/> |
-|warning| Background color for elements associated with warning notifications |<div class="colorBlock" style="background-color:#ffe08a"/> |
-|danger| Background color for elements associated with danger notifications e.g. error messages |<div class="colorBlock" style="background-color:#c81355"/> |
-
-
+| --- |--- | --- |
+| header | App header background color | <div class="colorBlock" style="background-color:#2e1046"/> |
+| headerText | App header text color. Used for app name and description text displayed in the app header |<div class="colorBlock" style="background-color:#eff0eb"/>|
+| footer | App footer background color | <div class="colorBlock" style="background-color:#2e1046"/> |
+| white | Background color for contents of an app rendered between the header and the footer | <div class="colorBlock" style="background-color:#eff0eb"/> |
+| black | Color used for static text like labels as well as text entered into input elements. | <div class="colorBlock" style="background-color:#2e1046"/> |
+| grey | Secondary color used for visual elements like outlines of checkboxes and radio buttons. | <div class="colorBlock" style="background-color:#ac6dde"/> |
+| lightGrey | Secondary color used for borders of various input elements when they are not active (not focused) | <div class="colorBlock" style="background-color:#e2cdf3"/> |
+| primary | Color used for borders of active (focused) input elements as well as labels | <div class="colorBlock" style="background-color:#d410c5"/> |
+| buttonText | Text color for buttons | <div class="colorBlock" style="background-color:white"/> |
+| success | Background color for elements associated with success actions and notifications e.g. application submit button | <div class="colorBlock" style="background-color:#1cd748"/> |
+| warning | Background color for elements associated with warning notifications | <div class="colorBlock" style="background-color:#ffe08a"/> |
+| danger | Background color for elements associated with danger notifications e.g. error messages | <div class="colorBlock" style="background-color:#c81355"/> |
