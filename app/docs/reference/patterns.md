@@ -57,9 +57,10 @@ Every element is defined as a YAML object with a set of properties that determin
 | `type` | Determines the type of the UI element. If `type` property is not defined, the object is treated as a [fieldset](#grouping-elements-into-fieldsets). If `type` is defined, it must be one of the [supported element types](#supported-element-types).
 | `label` (also `caption` and `title`) | Defines a label for the UI element (optional). |
 | `visible` | [Conditional visibility](#conditional-fields) expression (optional). |
-| `default` | The default value for the element (optional). Supported by all built-in elements except for `markdown` |
+| `default` | The default value for the element (optional). Supported by all built-in elements except for `markdown`. |
+| `required` | Set to true to make entering a valid value into this element mandatory. |
 | `placeholder` | Placeholder string (optional). Supported by elements based on the text input including `text`, `textarea`, `email`, `phone` etc |
-| `items` | List of items for multiple or single choice elements like [radio buttons](#radio-buttons) and [checkboxes](#multiple-checkboxes) |
+| `items` | List of items for multiple or single choice elements like [radio buttons](#radio-buttons) and [checkboxes](#multiple-checkboxes). |
 
 ## Supported element types
 
