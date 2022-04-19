@@ -68,9 +68,7 @@ Every time a person (or bot) interacts with your app, an [event](/reference/even
 
 ## Events trigger actions (notifications and integrations)
 
-[Actions](/reference/actions/) control how Routegy processes and routes captured information to you. These can be notifications like `email` or `SMS`, work management systems like `Trello` or `JIRA`, and hooks like `Zapier`, `IFTTT` or `Webhooks`.
-
-Minimize the noise of the daily ephemera. Be notified instantly for high priority issues. It's entirely up to you.
+[Actions](/reference/actions/) control how Routegy processes and routes captured information to you and your infrastructure. These can be notifications like `email` or `SMS`, work management systems like `Trello` or `JIRA`, and hooks like `Zapier`, `IFTTT` or `Webhooks`.
 
 <CaptionedImage
   src="/images/modals/office-experience-edit-app-actions.png"
