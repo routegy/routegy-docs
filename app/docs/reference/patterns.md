@@ -402,7 +402,7 @@ markdown:
 
 ### Star rating
 
-To render a star rating widget, add an element of type `rating`. Optionally, set the `size` property to `small` (default), `medium` or `large` to customize the size of rendered stars.
+To render a star rating widget, add an element of type `rating`. Optionally, set the `size` property to `small`, `medium` (default), or `large` to customize the size of rendered stars.
 
 ```yaml
 experience:
@@ -526,8 +526,8 @@ Here is a list of comparison operators supported inside the `visible` property.
 | lessThanOrEqualTo | True if the specified value is less than or equal to the value of the specified element. |
 | greaterThan | True if the specified value is less than the value of the specified element. Useful when working with elements that have numerical values like `integer`, `rating` or `nps`. |
 | greaterThanOrEqualTo | True if the specified value is less than or equal to the value of the specified element. |
-| empty | True if specified element's value is empty or undefined. Specified value must be boolean (true or false) |
-| notEmpty | True if specified element's value is not empty and not undefined. Specified value must be boolean (true or false) |
+| empty | True if the specified element's value is empty or undefined. The specified value must be boolean `true` or `false`. |
+| notEmpty | True if the specified element's value is not empty and not undefined. The specified value must be boolean `true` or `false`. |
 | contains | True if the specified value is contained in the value of the specified element. Useful when working with elements associated with array values like `checkboxes` and `tags` or any text element. |
 | doesntContain | True if the specified value is not contained in the value of the specified element. Useful when working with elements associated with array values like `checkboxes` and `tags` or any text element. |
 
@@ -739,7 +739,7 @@ App customizations can be defined using a top level `appSettings` object that su
 
 ### Example
 
-Here is an example pattern that demonstrates some of these customizations including a custom app logo, Submit button caption, and selected colors.
+Here is an example pattern that demonstrates some of these customizations including a custom app logo, submit button caption, and selected colors.
 
 ```yaml
 appSettings:
@@ -782,7 +782,7 @@ A screenshot of the app showing all of these customizations in effect is shown b
 
 ### Custom color reference
 
-Below is a list if customizable colors along with their default values. When overriding a color, any valid [CSS color notation](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value) can be used.
+Below is a list of customizable colors along with their default values. When overriding a color, any valid [CSS color notation](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value) can be used.
 
 <style>
 .colorBlock {
@@ -794,14 +794,14 @@ Below is a list if customizable colors along with their default values. When ove
 | Name | Description | Default |
 | --- |--- | --- |
 | header | App header background color | <div class="colorBlock" style="background-color:#2e1046"/> |
-| headerText | App header text color. Used for app name and description text displayed in the app header |<div class="colorBlock" style="background-color:#eff0eb"/>|
+| headerText | App header text color used for app name and description text displayed in the app header |<div class="colorBlock" style="background-color:#eff0eb"/>|
 | footer | App footer background color | <div class="colorBlock" style="background-color:#2e1046"/> |
 | white | Background color for contents of an app rendered between the header and the footer | <div class="colorBlock" style="background-color:#eff0eb"/> |
-| black | Color used for static text like labels as well as text entered into input elements. | <div class="colorBlock" style="background-color:#2e1046"/> |
-| grey | Secondary color used for visual elements like outlines of checkboxes and radio buttons. | <div class="colorBlock" style="background-color:#ac6dde"/> |
+| black | Color used for static text like labels as well as text entered into input elements | <div class="colorBlock" style="background-color:#2e1046"/> |
+| grey | Secondary color used for visual elements like outlines of checkboxes and radio buttons | <div class="colorBlock" style="background-color:#ac6dde"/> |
 | lightGrey | Secondary color used for borders of various input elements when they are not active (not focused) | <div class="colorBlock" style="background-color:#e2cdf3"/> |
-| primary | Color used for borders of active (focused) input elements as well as labels | <div class="colorBlock" style="background-color:#d410c5"/> |
+| primary | Color used for borders of active (focused) input elements, hover color for radio and checkbox labels, and fill color for radios, checkboxes, and dropdown arrows | <div class="colorBlock" style="background-color:#d410c5"/> |
 | buttonText | Text color for buttons | <div class="colorBlock" style="background-color:white"/> |
-| success | Background color for elements associated with success actions and notifications e.g. application submit button | <div class="colorBlock" style="background-color:#1cd748"/> |
+| success | Background color for elements associated with success actions and notifications (E.g. application submit button) | <div class="colorBlock" style="background-color:#1cd748"/> |
 | warning | Background color for elements associated with warning notifications | <div class="colorBlock" style="background-color:#ffe08a"/> |
-| danger | Background color for elements associated with danger notifications e.g. error messages | <div class="colorBlock" style="background-color:#c81355"/> |
+| danger | Background color for elements associated with danger notifications (E.g. error messages) | <div class="colorBlock" style="background-color:#c81355"/> |
