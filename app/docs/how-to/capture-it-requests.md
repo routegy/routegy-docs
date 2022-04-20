@@ -22,34 +22,24 @@ IT related requests tend to be a merge between the patterns used in [maintenance
 This pattern snippet would capture isssues within a call room.
 
 ```yaml
-type: object
 title: 'Problem in the call room?'
-required:
-  - problem
-properties:
-  problem:
-    type: array
-    attrs:
-      type: checkbox
-    items:
-      - enum:
-          - Call quality is poor
-          - WiFi signal is poor
-          - Projector/TV not working
-          - Audio system not working
-          - Web camera not working
-          - Tablet battery is dead
-          - Missing A/V adapters
-          - Something else
-        type: string
-    title: What is the problem?
-  additional_comment:
-    type: string
-    attrs:
-      type: textarea
-      placeholder: Provide any additional information here to help us
-      title: Something else or other details?
-additionalProperties: false
+problem:
+  type: checkboxes
+  title: What is the problem?
+  required: true
+  items:
+    - Call quality is poor
+    - WiFi signal is poor
+    - Projector/TV not working
+    - Audio system not working
+    - Web camera not working
+    - Tablet battery is dead
+    - Missing A/V adapters
+    - Something else
+additional_comment:
+  type: textarea
+  placeholder: Provide any additional information here to help us
+  title: Something else or other details?
 ```
 
 ## Related

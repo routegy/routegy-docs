@@ -16,17 +16,10 @@ Before starting, you should familiarize yourself with the [How to: Create new pa
 This pattern snippet would capture a 1 to 5 rating using a star rating component.
 
 ```yaml
-schema:
-  type: object
-  properties:
-    product_rating:
-      type: integer
-      default: 3
-descriptor:
-  properties:
-    product_rating:
-      kind: rating
-      label: How would your rate this product?
+product_rating:
+  type: rating
+  default: 3
+  label: How would your rate this product?
 ```
 
 <CaptionedImage
@@ -40,25 +33,15 @@ descriptor:
 This pattern snippet would capture a boolean `recommend` value using two radio buttons labeled as "Yes" and "No" (mapped to true and false values respecitvely). 
 
 ```yaml
-schema:
-  type: object
-  required:
-    - recommend
-  properties:
-    recommend:
-      type: boolean
-      enum:
-        - true
-        - false
-description:
-  properties:
-    recommend:
-      label: Would you recommend this product to anyone?
-      items:
-        true:
-          label: Yes
-        false:
-          label: No
+recommend:
+  type: radiobuttons
+  label: Would you recommend this product to anyone?
+  required: true
+  items:
+    - value: true
+      label: Yes
+    - value: false
+      label: No
 ```
 
 <CaptionedImage
@@ -72,16 +55,9 @@ description:
 Another way to capture and quantify perception of a product or experience is by using a [Net Promoter Score](https://en.wikipedia.org/wiki/Net_promoter_score). This pattern below would capture a numerical NPS value using a specilized [NPS component](/reference/patterns.html#net-promotor-score)
 
 ```yaml
-schema:
-  type: object
-  properties:
-    score:
-      type: integer
-descriptor:
-  properties:
-    score:
-      kind: nps
-      label: How likely are you to recommend this product to a friend?
+score:
+  type: nps
+  label: How likely are you to recommend this product to a friend?
 ```
 
 <CaptionedImage
@@ -101,36 +77,19 @@ It can be a great tool to understand the sentiment of the people you serve and f
 This pattern snippet would capture a high level Happy/Unhappy experience feedback, and conditionally display a comment box if the answer to the 'Are you happy with the experience today?' is set to 'No'.
 
 ```yaml
-schema:
-  if:
-    properties:
-      happy:
-        const: 'No'
-  then:
-    properties:
-      comment:
-        type: string
-  type: object
-  required:
-    - happy
-  properties:
-    happy:
-      enum:
-        - 'Yes'
-        - 'No'
-      type: string
-descriptor:
-  order:
-    - happy
-    - comment
-  properties:
-    happy:
-      label: Are you happy with the experience today?
-    comment:
-      kind: textarea
-      attrs:
-        placeholder: E.g. wait time was unacceptable today
-      label: What can we change to improve the experience?
+happy:
+  type: radiobuttons
+  label: Are you happy with the experience today?
+  items:
+    - Yes
+    - No
+  required: true
+comment:
+  type: textarea
+  placeholder: E.g. wait time was unacceptable today
+  label: What can we change to improve the experience?
+  visible:
+    happy: No
 ```
 
 <CaptionedImage

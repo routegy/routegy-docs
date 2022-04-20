@@ -13,85 +13,52 @@ Before starting, you should familiarize yourself with the [How to: Create new pa
 
 ### Example
 
-This pattern snippet is an imaginary survey that capture some information about the person and how they heard about the company before asking them for feedback.
+This pattern snippet is an imaginary survey that captures some information about the person and how they heard about the company before asking them for feedback.
 
 ```yaml
-type: object
-title: 'Request a Routegy demo'
-required:
-  - name
-  - email
-  - learn
-  - industry
-  - rating
-  - review
-properties:
-  name:
-    type: string
-    attrs:
-      type: string
-      placeholder: e.g. Suzan Johnson
-    title: Your name
-  email:
-    type: string
-    attrs:
-      type: email
-      placeholder: e.g. suzan.johnson@gmail.com
-    title: Your email address
-  learn:
-    type: array
-    attrs:
-      type: radio
-    items:
-      - enum:
-          - Hacker News
-          - Twitter
-          - Product Hunt
-          - I know one of the founders
-          - Other
-        type: string
-    title: How did you first learn about Routegy?
-  other_learn:
-    type: string
-    attrs:
-      placeholder: E.g. LinkedIn
-    default: ''
-  industry:
-    type: array
-    attrs:
-      type: radio
-    items:
-      - enum:
-          - Workplace Experience
-          - Hospitality
-          - Healthcare
-          - Airlines
-          - Restaurant/Retail
-          - Other
-        type: string
-    title: What industry do you work in?
-  other_industry:
-    type: string
-    attrs:
-      placeholder: E.g. Sport venues
-    default: ''
-  rating:
-    enum:
-      - 1
-      - 2
-      - 3
-      - 4
-      - 5
-    type: integer
-    attrs:
-      type: radio
-    title: Rating
-    description: Higher is better
-    default: 3
-  review:
-    type: string
-    attrs:
-      type: textarea
-      placeholder: E.g. I really like the product
-    title: How are we doing?
-additionalProperties: false
+title: 'Routegy trial survay'
+customer_name:
+  type: text
+  placeholder: e.g. Suzan Johnson
+  title: Your name
+customer_email:
+  type: email
+  placeholder: e.g. suzan.johnson@gmail.com
+  title: Your email address
+learn:
+  type: radiobuttons
+  items:
+    - Hacker News
+    - Twitter
+    - Product Hunt
+    - I know one of the founders
+    - Other
+  title: How did you first learn about Routegy?
+other_learn:
+  type: string
+  placeholder: E.g. LinkedIn
+  visible:
+    learn: Other
+industry:
+  type: radiobuttons
+  items:
+    - Workplace Experience
+    - Hospitality
+    - Healthcare
+    - Airlines
+    - Restaurant/Retail
+    - Other
+  title: What industry do you work in?
+other_industry:
+  type: string
+  placeholder: E.g. Sport venues
+  visible:
+    industry: Other
+rating:
+  type: rating
+  title: How would you rate your experience with Routegy so far?
+  default: 3
+review:
+  type: textarea
+  placeholder: E.g. I really like the product
+  title: Any comments or suggestions?

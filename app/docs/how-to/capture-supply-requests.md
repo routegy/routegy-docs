@@ -20,32 +20,19 @@ In most cases, managing supply of items within a space can be handled by a group
 This pattern snippet capture a supply request for a conference room.
 
 ```yaml
-schema:
-  type: object
-  required:
-    - supplies
-  properties:
-    supplies:
-      type: array
-      items:
-        - enum:
-            - Whiteboard markers
-            - Whiteboard erasers
-            - A/V adapters
-            - Chairs
-            - Something else
-          type: string
-      title: What needs to be restocked?
-      uniqueItems: true
-    additional_comment:
-      type: string
-      title: Something else or other details?
-descriptor:
-  properties:
-    additional_comment:
-      kind: textarea
-      attrs:
-        placeholder: E.g. Red pens
+supplies:
+  type: checkboxes
+  items:
+    - Whiteboard markers
+    - Whiteboard erasers
+    - A/V adapters
+    - Chairs
+    - Something else
+  title: What needs to be restocked?
+additional_comment:
+  type: textarea
+  title: Something else or other details?
+  placeholder: E.g. Red pens
 ```
 
 <CaptionedImage

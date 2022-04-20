@@ -20,16 +20,9 @@ Temperature change requests a.k.a "Hot/Cold" requests are simple mutually exclus
 This pattern snippet would capture a mutually exclusive choice ('hot' and 'cold' string values) for whether it is too hot or cold using a specialized UI component.
 
 ```yaml
-schema:
-  type: object
-  properties:
-    hot_or_cold:
-      type: string
-descriptor:
-  label: How is the temperature in this room?
-  properties:
-    hot_or_cold:
-      kind: hotorcold
+label: How is the temperature in this room?
+hot_or_cold:
+  type: hotorcold
 ```
 
 <CaptionedImage

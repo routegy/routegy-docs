@@ -20,35 +20,20 @@ In most cases, fielding problem reports within a space can be handled by a group
 This pattern snippet would capture a problem with an elevator.
 
 ```yaml
-schema:
-  type: object
-  title: Problem with the elevator?
-  required:
-    - problem
-  properties:
-    problem:
-      enum:
-        - Making strange sounds
-        - Buttons not working
-        - Door won't close
-        - Stuck
-        - Something else
-      type: string
-    additional_comment:
-      type: string
-descriptor:
-  order:
-    - problem
-    - additional_comment
-  properties:
-    problem:
-      kind: enum
-      label: What is the problem?
-    additional_comment:
-      kind: textarea
-      attrs:
-        placeholder: E.g. 8th floor button does not light up
-      label: Something else or other details?
+title: Problem with the elevator?
+problem:
+  type: radiobuttons
+  label: What is the problem?
+  items:
+    - Making strange sounds
+    - Buttons not working
+    - Door won't close
+    - Stuck
+    - Something else
+additional_comment:
+  type: textarea
+  placeholder: E.g. 8th floor button does not light up
+  label: Something else or other details?
 ```
 
 <CaptionedImage
