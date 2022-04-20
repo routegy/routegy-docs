@@ -5,15 +5,17 @@ description: "How do I use Routegy?"
 
 # Routegy at a glance
 
-Routegy was designed to empower people to interact with infrastructure and physical spaces in streamlined ways. Here’s a high-level overview of how Routegy works.
+Routegy makes building no-code microapps quick and easy. Routegy microapps empower people to interact with your infrastructure and physical spaces in streamlined ways. Here’s a high-level overview of how Routegy works.
 
 ## People interact with apps
 
-[Routegy apps](/reference/apps/) are web-based and represent common points of interaction, accomplish specific tasks that may span multiple parts of your infrastructure, and contain context to further optimize your processes. Common interactions include reporting issues, making requests, starting chat conversations, providing feedback, or even making purchases.
+[Routegy apps](/reference/apps/) open in a web browser and represent common points of interaction, accomplish specific tasks that may span multiple parts of your infrastructure, and contain context to further optimize your processes. Common interactions include reporting issues, making requests, starting chat conversations, providing feedback, and even making purchases.
+
+TODO: Image of an app
 
 ## Groups organize your apps
 
-Apps belong to [groups](/reference/groups/), which are structured in a tree-like hierarchy. These can represent physical things, like `1st Floor` or `Jamrich Building`, people (E.g. `Employees -> Jane Smith`) or virtual things like `Production Website` or `Inventory`.
+Apps belong to [groups](/reference/groups/), which are structured in a tree-like hierarchy. These can represent physical things, like `1st Floor` or `HQ Building 1`, people (E.g. `Employees -> Jane Smith`), or virtual things like `Production Website` or `Inventory`.
 
 You don't have to use groups, but they're always there if the need for more organization arises.
 
