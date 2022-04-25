@@ -32,29 +32,20 @@ Every app has a pattern. [Patterns](/reference/patterns/) control the UX and def
 Patterns are written in YAML and can be used to capture any information you like.
 
 ```yaml
-type: object
 title: Something wrong with the elevator?
-properties:
-  request:
-    type: array
-    attrs:
-      type: checkbox
-    items:
-      - enum:
-          - Making strange sounds
-          - Buttons not working
-          - Door won't close
-          - Stuck
-          - Something else
-        type: string
-    title: What's the problem?
-  additional_comment:
-    type: string
-    attrs:
-      type: textarea
-      placeholder: E.g. 8th floor button does not light up
-    title: Something else or other details?
-additionalProperties: false
+request:
+  type: checkboxes
+  items:
+    - Making strange sounds
+    - Buttons not working
+    - Door won't close
+    - Stuck
+    - Something else
+  title: What's the problem?
+additional_comment:
+  type: textarea
+  placeholder: E.g. 8th floor button does not light up
+  title: Something else or other details?
 ```
 
 <CaptionedImage
