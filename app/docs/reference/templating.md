@@ -13,7 +13,7 @@ Be sure to check out the documentation for your specific [action type](/referenc
 
 Templates have access to all of the data captured by the [app](/reference/apps/) for the [event](/reference/events/). These values are top-level items in the templating language.
 
-For example, imagine you have a [pattern](/reference/patterns/) that uses an [object schema](http://json-schema.org/understanding-json-schema/reference/object.html) with two properties: `problem` and `additional_comment`.
+For example, imagine you have a [pattern](/reference/patterns/) that defines two elements: `problem` and `additional_comment`.
 
 These values would be accessed in your [actions](/reference/actions/) fields by using:
 
