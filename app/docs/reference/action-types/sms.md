@@ -8,7 +8,7 @@ description: "How do SMS action types work?"
 The SMS action type is used to send text messages to a configured phone number for every [event](/reference/events/) created by an [app](/reference/apps/).
 
 ::: tip
-Text messages can be configured using [templating](/reference/templating/).
+Text messages can be configured using [templating](/reference/templating/). This applies to both Phone Number and Message configuration options.
 :::
 
 ## Guides
