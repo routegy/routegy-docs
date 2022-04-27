@@ -11,7 +11,11 @@ Routegy makes building no-code microapps quick and easy. Routegy microapps empow
 
 [Routegy apps](/reference/apps/) open in a web browser and represent common points of interaction, accomplish specific tasks that may span multiple parts of your infrastructure, and contain context to further optimize your processes. Common interactions include reporting issues, making requests, starting chat conversations, providing feedback, and even making purchases.
 
-TODO: Image of an app
+<CaptionedImage
+  src="/images/patterns/examples/custom-app-settings.png"
+  alt="A Routegy app with custom branding that captures conference room requests"
+  width="50%"
+/>
 
 ## Groups organize your apps
 
@@ -22,7 +26,7 @@ You don't have to use groups, but they're always there if the need for more orga
 <CaptionedImage
   src="/images/navigation/office-1st-floor-conference-room-101-tree.png"
   alt="An office layout in a tree where rooms are nested and apps like 'Need something?' are placed in relevant rooms"
-  width="60%"
+  width="50%"
 />
 
 ## Patterns define the information your apps collect
@@ -51,8 +55,8 @@ additional_comment:
 <CaptionedImage
   src="/images/patterns/office-elevator-issue-pattern-preview.png"
   alt="A rendered UI for reporting an elevator issue based on the YAML above"
-  caption="The YAML is rendered into a responsive web application"
-  width="85%"
+  caption="The YAML is rendered into a responsive web application for capturing elevator issues"
+  width="50%"
 />
 
 ## People interact with your apps and create events
@@ -74,7 +78,7 @@ Every time a person (or bot) interacts with your app, an [event](/reference/even
   src="/images/modals/office-create-action-jira.png"
   alt="The configuration of a Jira action that specifies the target project and priority for tickets created with it"
   caption="Configure actions to do exactly what you need them to do"
-  width="85%"
+  width="50%"
 />
 
 ## Access apps from anywhere with a web browser
