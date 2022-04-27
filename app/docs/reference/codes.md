@@ -13,7 +13,7 @@ Creating an [app](/reference/apps/) automatically creates a new code.
 
 You can create codes independent of app creation. This allows for easy provisioning, such as deploying a large number of embedded codes (E.g. QR code signs) and creating apps from them dynamically in the field.
 
-To link a code to an app, simply navigate to a Routegy app URL with a code that has been created but does not correspond to an app. This will automatically open the Routegy admin app and prompt for you to create a new app with the specified code.
+To link a code to an app, simply navigate to a Routegy app URL with a code that has been created but does not correspond to an app. This will automatically open the [Routegy admin app](https://web.routegy.com) and prompt for you to create a new app with the specified code.
 
 ## Tracking where app access is coming from
 

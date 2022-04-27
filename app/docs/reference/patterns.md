@@ -725,7 +725,7 @@ appSettings:
 In addition to the information about components and their layout, pattern can contain application-level settings like custom colors, header logo, button captions, and a post-submit success message.
 
 ::: tip
-These visual features are not visible when the pattern is edited and previewed in the Routegy admin application. They will take effect when a pattern is associated with an app, and can be seen when the app is launched. We suggest opening the app in a separate tab and refreshing as you make changes to the pattern.
+These visual features are not visible when the pattern is edited and previewed in the [Routegy admin app](https://web.routegy.com). They will take effect when a pattern is associated with an app, and can be seen when the app is launched. We suggest opening the app in a separate tab and refreshing as you make changes to the pattern.
 :::
 
 App customizations can be defined using a top level `appSettings` object that supports the following properties:
