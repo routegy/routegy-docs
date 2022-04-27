@@ -30,9 +30,9 @@ To get started you will need the following:
 
 Let's get started!
 
-## Creating a Routegy App for curbside delivery
+## Creating a Routegy app for curbside delivery
 
-We will start by creating a [app](/reference/apps/) that collects information from the customer when they arrive and scan the code. We are going to ask for their name, how they placed the order, and for some details about their vehicle.
+We will start by creating an [app](/reference/apps/) that collects information from the customer when they arrive and scan the code. We are going to ask for their name, how they placed the order, and for some details about their vehicle.
 
 ### Step 1: Choose a workspace
 

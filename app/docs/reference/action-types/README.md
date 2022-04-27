@@ -5,7 +5,7 @@ description: "How do action types work?"
 
 # Action types
 
-An action type represents a type of action that can be run for every [event](/reference/events/) created by a [app](/reference/apps/).
+An action type represents a type of action that can be run for every [event](/reference/events/) created by an [app](/reference/apps/).
 
 Some examples of action types could be:
 
