@@ -5,7 +5,7 @@ description: "How do I receive SMS notifications?"
 
 # Receive SMS notifications
 
-This document describes how to make use of the [SMS Action Type](/reference/action-types/sms/) to receive text message notifications when someone interacts with one of your apps.
+This how-to covers how to make use of the [SMS Action Type](/reference/action-types/sms/) to receive text message notifications when someone interacts with one of your apps.
 
 SMS actions are commonly used with high priority [apps](/reference/apps/) that require immediate attention or staff members that are constantly on the go.
 

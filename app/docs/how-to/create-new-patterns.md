@@ -5,7 +5,7 @@ description: "How do I create new patterns?"
 
 # Create a pattern
 
-This document describes how to create a new [pattern](/reference/patterns/) using the [Admin web app](https://web.routegy.com).
+This how-to covers how to create a new [pattern](/reference/patterns/) using the [Routegy admin app](https://web.routegy.com).
 
 ## Step 1: Choose a workspace
 

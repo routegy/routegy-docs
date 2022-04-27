@@ -5,27 +5,23 @@ description: "How do I capture IT requests?"
 
 # Capture IT requests
 
-The goal of this document is to cover how to create [patterns](/reference/patterns/) that capture IT requests. These are meant to gain immediate insight to the exact area of a problem without requiring additional requests for more information.
+This how-to covers how to create [patterns](/reference/patterns/) that capture IT requests. These patterns are meant to gain immediate insight to the exact area of a problem without requiring additional requests for more information (E.g. Information that can be inferred like who is performing the request or where they're making the request).
 
-## Prerequisites
+## Prerequisite
 
-Before starting, you should familiarize yourself with the [How to: Create new patterns](/how-to/create-new-patterns/) document. Only once you've read that and are confident in creating new patterns in the Admin web app, should you continue.
+You should be familiar with [creating new patterns](/how-to/create-new-patterns/).
 
-## IT Requests
+## Call room problem example
 
-IT problems are dynamic in nature but can be handled by a group of checkboxes indicating the common problems to report and a free-form text input to capture additional details or other items not previously listed.
+This pattern captures isssues within a call room. IT problems are dynamic in nature, so in this example they're handled by a group of checkboxes indicating common problems and a free-form text input to capture additional details or other items that aren't listed.
 
-IT related requests tend to be a merge between the patterns used in [maintenance requests](/how-to/capture-maintenance-requests/) and [supply requests](/how-to/capture-supply-requests/).
-
-### Call Room Problems
-
-This pattern snippet would capture isssues within a call room.
+IT related requests tend to be a blend of the patterns used in [maintenance requests](/how-to/capture-maintenance-requests/) and [supply requests](/how-to/capture-supply-requests/).
 
 ```yaml
 title: 'Problem in the call room?'
 problem:
   type: checkboxes
-  title: What is the problem?
+  title: What's the problem?
   required: true
   items:
     - Call quality is poor
@@ -38,7 +34,7 @@ problem:
     - Something else
 additional_comment:
   type: textarea
-  placeholder: Provide any additional information here to help us
+  placeholder: Provide any additional information here to help us help you
   title: Something else or other details?
 ```
 

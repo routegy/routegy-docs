@@ -5,22 +5,18 @@ description: "How do I capture hot/cold requests?"
 
 # Capture temperature requests
 
-The goal of this document is to cover how to create [patterns](/reference/patterns/) that capture temperature change requests. These are meant to gain insight into HVAC problems or quickly respond to improve the spaces and people that you serve.
+This how-to covers how to create [patterns](/reference/patterns/) that capture temperature-change (I.e. "Hot/Cold") requests. These are meant to gain insight into HVAC problems and quickly respond to peoples' preferences within your spaces. Temperature change requests are simple, mutually exclusive choices indicating how a person feels relative to the current temperature.
 
-## Prerequisites
+## Prerequisite
 
-Before starting, you should familiarize yourself with the [How to: Create new patterns](/how-to/create-new-patterns/) document. Only once you've read that and are confident in creating new patterns in the Admin web app, should you continue.
+You should be familiar with [creating new patterns](/how-to/create-new-patterns/).
 
-## Temperature Changes
+## Hot/Cold example
 
-Temperature change requests a.k.a "Hot/Cold" requests are simple mutually exclusive choices indicating how the person feels relative to the current temperature.
-
-### Hot/Cold
-
-This pattern snippet would capture a mutually exclusive choice ('hot' and 'cold' string values) for whether it is too hot or cold using a specialized UI component.
+This pattern captures a mutually exclusive choice ('hot' and 'cold' string values) for whether it is too hot or cold using a specialized UI component as seen below.
 
 ```yaml
-label: How is the temperature in this room?
+label: How's the temperature in this room?
 hot_or_cold:
   type: hotorcold
 ```

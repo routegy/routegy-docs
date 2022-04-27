@@ -5,7 +5,7 @@ description: "How do I receive email notifications?"
 
 # Receive email notifications
 
-This document describes how to make use of the [Email Action Type](/reference/action-types/email/) to receive email notifications when someone interacts with one of your apps.
+This how-to covers how to make use of the [Email Action Type](/reference/action-types/email/) to receive email notifications when someone interacts with one of your apps.
 
 Email actions are commonly used for lower-priority [apps](/reference/apps/) that can be addressed in an asynchronous fashion.
 

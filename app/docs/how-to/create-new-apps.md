@@ -5,7 +5,7 @@ description: "How do I create new apps?"
 
 # Create an app
 
-This document describes how to create a new [app](/reference/apps/) using the [Admin web app](https://web.routegy.com).
+This how-to covers how to create a new [app](/reference/apps/) using the [Routegy admin app](https://web.routegy.com).
 
 ## Step 1: Choose a workspace
 

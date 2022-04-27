@@ -5,15 +5,15 @@ description: "How do I capture rating & review feedback?"
 
 # Capture rating & review feedback
 
-The goal of this document is to cover how to create [patterns](/reference/patterns/) that capture feedback with a rating & review prompt. These are meant to gain insight with a fixed size scoring mechanism and optionally an additional free-form input to capture personalized feedback.
+This how-to covers how to create [patterns](/reference/patterns/) that capture feedback with various rating and review prompts.
 
-## Prerequisites
+## Prerequisite
 
-Before starting, you should familiarize yourself with the [How to: Create new patterns](/how-to/create-new-patterns/) document. Only once you've read that and are confident in creating new patterns in the Admin web app, should you continue.
+You should be familiar with [creating new patterns](/how-to/create-new-patterns/).
 
-## Star ratings
+## Star rating example
 
-This pattern snippet would capture a 1 to 5 rating using a star rating component.
+This pattern captures a rating value between one (worst) and five (best) using a star rating component.
 
 ```yaml
 product_rating:
@@ -24,13 +24,13 @@ product_rating:
 
 <CaptionedImage
   src="/images/how-tos/capture-rating.png"
-  alt="Star rating pattern"
+  alt="Routegy app with a star rating component with three stars selected"
   width="85%"
 />
 
-## Recommend?
+## Recommendation survey example
 
-This pattern snippet would capture a boolean `recommend` value using two radio buttons labeled as "Yes" and "No" (mapped to true and false values respecitvely). 
+This pattern captures a boolean `recommend` value using two radio buttons labeled as "Yes" and "No" (mapped to `true` and `false` respecitvely). 
 
 ```yaml
 recommend:
@@ -46,13 +46,13 @@ recommend:
 
 <CaptionedImage
   src="/images/how-tos/capture-recommend.png"
-  alt="Recommend product pattern"
+  alt="Routegy app that captures whether a person recommends a product by selecting one of two radio buttons to indicate their answer"
   width="85%"
 />
 
-## Net Promoter Score
+## Net promoter score (NPS) example
 
-Another way to capture and quantify perception of a product or experience is by using a [Net Promoter Score](https://en.wikipedia.org/wiki/Net_promoter_score). This pattern below would capture a numerical NPS value using a specilized [NPS component](/reference/patterns.html#net-promotor-score)
+Another way to capture and quantify perception of a product or experience is by using a [net promoter score](https://en.wikipedia.org/wiki/Net_promoter_score). This pattern captures a numerical NPS value using a specilized [NPS component](/reference/patterns.html#net-promotor-score)
 
 ```yaml
 score:
@@ -62,19 +62,15 @@ score:
 
 <CaptionedImage
   src="/images/how-tos/capture-nps.png"
-  alt="Capture NPS pattern"
+  alt="Routegy app that captures a net promotor score to indicate how likely someone is to refcommend a product to a friend"
   width="85%"
 />
 
-## Review Feedback
+## Open-ended review example
 
-Reviews are used to capture high variation, personalized feedback. As a digital version of a comment card, there are no constraints beyond the imagination of the author.
+Reviews are used to capture high variation, personalized feedback. Think of these as the digital version of a comment card. They can be a great tool to understand the sentiment of the people you serve and find areas for improvement.
 
-It can be a great tool to understand the sentiment of the people you serve and find areas for improvement.
-
-### Open-ended Form
-
-This pattern snippet would capture a high level Happy/Unhappy experience feedback, and conditionally display a comment box if the answer to the 'Are you happy with the experience today?' is set to 'No'.
+This pattern captures high level Happy/Unhappy experience feedback, and conditionally displays a text area if the answer to the 'Are you happy with the experience today?' question is answered 'No' in order to collect additional information.
 
 ```yaml
 happy:
@@ -86,14 +82,14 @@ happy:
   required: true
 comment:
   type: textarea
-  placeholder: E.g. wait time was unacceptable today
-  label: What can we change to improve the experience?
+  placeholder: E.g. Wait time was unacceptable today
+  label: How did we fail to meet your expectations?
   visible:
     happy: No
 ```
 
 <CaptionedImage
   src="/images/how-tos/capture-comment-conditional.png"
-  alt="Highlighting the patterns tab and 'New pattern' button within the Routegy admin app"
+  alt="Routegy app that captures whether a person is happy with an experience and if they say no are asked for additional information"
   width="85%"
 />

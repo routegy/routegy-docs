@@ -1,23 +1,21 @@
 ---
-title: "Capture problem reports | How-to"
-description: "How do I capture problem reports?"
+title: "Capture maintenance requests | How-to"
+description: "How do I capture maintenance requests?"
 ---
 
-# Capture problem reports
+# Capture maintenance reports
 
-The goal of this document is to cover how to create [patterns](/reference/patterns/) that capture problem reports. These are meant to gain immediate insight to the exact area of a problem without requiring additional requests for more information.
+This how-to covers how to create [patterns](/reference/patterns/) that capture maintenance requests. These are meant to gain immediate insight to the exact area of a request or issue without requiring additional requests for more information (E.g. who is making the request, where the request is being made).
 
-## Prerequisites
+## Prerequisite
 
-Before starting, you should familiarize yourself with the [How to: Create new patterns](/how-to/create-new-patterns/) document. Only once you've read that and are confident in creating new patterns in the Admin web app, should you continue.
+You should be familiar with [creating new patterns](/how-to/create-new-patterns/).
 
-## Maintenance Requests
+## Elevator problem example
 
-In most cases, fielding problem reports within a space can be handled by a group of [radio butons](/reference/patterns.html#radio-buttons) indicating the common problems to report and a free-form text input to capture additional details or other items not previously listed.
+This pattern captures a problem with an elevator. Because the app has context, the reporter won't need to specify which evelevator has the issue.
 
-### Elevator Problem
-
-This pattern snippet would capture a problem with an elevator.
+In many cases, fielding maintenance issues within a space can be handled by [radio butons](/reference/patterns.html#radio-buttons) indicating common problems and a free-form text input to capture additional details or other items that aren't listed.
 
 ```yaml
 title: Problem with the elevator?
@@ -38,6 +36,6 @@ additional_comment:
 
 <CaptionedImage
   src="/images/how-tos/capture-elevator.png"
-  alt="Capture elevator maintenance request."
+  alt="Routegy app for capturing elevator maintenance requests with radio buttons for common issues and a text area for additional details"
   width="85%"
 />

@@ -5,15 +5,15 @@ description: "How do I capture survey feedback?"
 
 # Capture survey feedback
 
-The goal of this document is to cover how to create [patterns](/reference/patterns/) that capture feedback with a survey. Surveys are meant to gain insight by asking targeted questions to better understand the person and their feedback.
+This how-to covers how to create [patterns](/reference/patterns/) that capture feedback with a survey. Surveys are meant to gain insight by asking targeted questions to better understand a person and their feedback.
 
-## Prerequisites
+## Prerequisite
 
-Before starting, you should familiarize yourself with the [How to: Create new patterns](/how-to/create-new-patterns/) document. Only once you've read that and are confident in creating new patterns in the Admin web app, should you continue.
+You should be familiar with [creating new patterns](/how-to/create-new-patterns/).
 
-### Example
+## Feedback survey example
 
-This pattern snippet is an imaginary survey that captures some information about the person and how they heard about the company before asking them for feedback.
+This survey pattern captures information about a person and how they heard about the company before asking them for feedback.
 
 ```yaml
 title: 'Routegy trial survay'

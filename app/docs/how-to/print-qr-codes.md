@@ -5,7 +5,7 @@ description: "How do I print QR codes?"
 
 # Download and print a QR Code
 
-This document describes how to download and print a [QR code](https://en.wikipedia.org/wiki/QR_code) for a Routegy [app](/reference/apps/).
+This how-to covers how to download and print a [QR code](https://en.wikipedia.org/wiki/QR_code) for a Routegy [app](/reference/apps/).
 
 ## Step 1: Choose a workspace
 
