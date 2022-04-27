@@ -3,9 +3,9 @@ title: "Capture maintenance requests | How-to"
 description: "How do I capture maintenance requests?"
 ---
 
-# Capture maintenance reports
+# Capture maintenance requests
 
-This how-to covers how to create [patterns](/reference/patterns/) that capture maintenance requests. These are meant to gain immediate insight to the exact area of a request or issue without requiring additional requests for more information (E.g. who is making the request, where the request is being made).
+This how-to covers how to create [patterns](/reference/patterns/) that capture maintenance requests. These are meant to gain immediate insight to the exact area of a request or issue without requiring additional requests for information (E.g. who is making the request, where the request is being made).
 
 ## Prerequisite
 

@@ -197,7 +197,7 @@ module.exports = {
                 path: '/how-to/capture-it-requests',
               },
               {
-                title: 'Capture problem reports',
+                title: 'Capture maintenance requests',
                 path: '/how-to/capture-problem-reports',
               },
               {

@@ -5,7 +5,7 @@ description: "How do I capture IT requests?"
 
 # Capture IT requests
 
-This how-to covers how to create [patterns](/reference/patterns/) that capture IT requests. These patterns are meant to gain immediate insight to the exact area of a problem without requiring additional requests for more information (E.g. Information that can be inferred like who is performing the request or where they're making the request).
+This how-to covers how to create [patterns](/reference/patterns/) that capture IT requests. These patterns are meant to gain immediate insight to the exact area of a problem without requiring additional requests for information (E.g. Information that can be inferred like who is performing the request or where they're making the request).
 
 ## Prerequisite
 
