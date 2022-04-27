@@ -102,22 +102,22 @@ module.exports = {
             //path: '/reference/',
             collapsable: false,
             children: [
-              {
-                title: 'Activity',
-                path: '/reference/activity',
-              },
+              // {
+              //   title: 'Activity',
+              //   path: '/reference/activity',
+              // },
               {
                 title: 'Apps',
                 path: '/reference/apps',
               },
-              {
-                title: 'App data',
-                path: '/reference/app-data',
-              },
-              {
-                title: 'Auth',
-                path: '/reference/auth',
-              },
+              // {
+              //   title: 'App data',
+              //   path: '/reference/app-data',
+              // },
+              // {
+              //   title: 'Auth',
+              //   path: '/reference/auth',
+              // },
               {
                 title: 'Actions',
                 path: '/reference/actions',
