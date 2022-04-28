@@ -733,7 +733,7 @@ App customizations can be defined using a top level `appSettings` object that su
 | Property name | Description | Default |
 | --- | --- | --- |
 | logo | Path to a custom logo to be displayed at the top of the app header | No logo |
-| successMessage | Message to be displayed after interaction with an app has been successfully completed | Thank you for your feedback! |
+| successMessage | Message to be displayed after interaction with an app has been successfully completed. [Markdown](https://spec.commonmark.org/) is supported. | `# Thank you! { .m-0 align=center }` |
 | buttonCaptions | Custom captions for built-in navigation buttons. This includes the Submit button as well as Next and Back buttons used in the [wizard/multipage patterns](#multipage-patterns) | Submit, Next, and Back |
 | colors | Custom colors for various elements of an app that will override default Routegy brand colors. | Please see the [custom colors section](#custom-color-reference) |
 
@@ -805,3 +805,4 @@ Below is a list of customizable colors along with their default values. When ove
 | success | Background color for elements associated with success actions and notifications (E.g. application submit button) | <div class="colorBlock" style="background-color:#1cd748"/> |
 | warning | Background color for elements associated with warning notifications | <div class="colorBlock" style="background-color:#ffe08a"/> |
 | danger | Background color for elements associated with danger notifications (E.g. error messages) | <div class="colorBlock" style="background-color:#c81355"/> |
+| info | Background color for elements associated with info notifications (E.g. next button in wizards) | <div class="colorBlock" style="background-color:#3e8ed0"/> |
