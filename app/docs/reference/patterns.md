@@ -59,8 +59,9 @@ Every element is defined as a YAML object with a set of properties that determin
 | `visible` | [Conditional visibility](#conditional-fields) expression (optional). |
 | `default` | The default value for the element (optional). Supported by all built-in elements except for `markdown`. |
 | `required` | Set to true to make entering a valid value into this element mandatory. |
-| `placeholder` | Placeholder string (optional). Supported by elements based on the text input including `text`, `textarea`, `email`, `phone` etc |
+| `placeholder` | Placeholder string (optional). Supported by elements based on the text input including `text`, `textarea`, `email`, `phone`, etc. |
 | `items` | List of items for multiple or single choice elements like [radio buttons](#radio-buttons) and [checkboxes](#multiple-checkboxes). |
+| `tooltip` | Adds a tooltip to a label that appears on hover or touch. You can also specify `tooltipSize` as `small`, `medium` (default), or `large`, as well as `tooltipPosition` as `top`, `right` (default), `bottom`, or `left`. |
 
 ## Supported element types
 
