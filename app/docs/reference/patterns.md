@@ -613,6 +613,10 @@ Multipage pattern can be used to organize larger forms into multiple, smaller pa
   - Set top-level `type` property to `wizard` or `multipage`
   - Define pages of your pattern as top level properties - every page is an object that can contain element and field set.
 
+::: tip
+[Conditional fields](#conditional-fields) within a wizard must be fully qualified with the page they belong to (E.g. `step_one.prop`) .
+:::
+
 The following sample is scaffolding for a three-page pattern (all pages are empty).
 
 ```yaml
@@ -679,7 +683,7 @@ follow_up_page:
     placeholder: 'E.g, 555-555-5555'
     label: You phone number
     visible:
-      how_to_contact: by_phone
+      follow_up_page.how_to_contact: by_phone
 ```
 
 <CaptionedImage
