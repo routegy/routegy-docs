@@ -7,8 +7,8 @@ description: "How do webhook action types work?"
 
 The webhook action type is used to call a webhook URL with JSON payload for every [event](/reference/events/) created by an [app](/reference/apps/).
 
-::: warning
-Webhooks are not yet configurable using [templating](/reference/templating/).
+::: tip
+Webhooks must return a response within 25 seconds.
 :::
 
 ## Guides
