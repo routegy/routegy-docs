@@ -5,7 +5,7 @@ description: "How does templating in Routegy work?"
 
 # Templating
 
-Routegy supports customizing [actions](/reference/actions/) fields using [Jinja2 template language](https://jinja.palletsprojects.com/en/3.0.x/). This allows actions to react dynamically to the event-provided _values_ and _context_ it's being executed in.
+Routegy supports customizing most [action](/reference/actions/) fields using the [Jinja2 template language](https://jinja.palletsprojects.com/en/3.0.x/). This allows actions to react dynamically to event-provided _values_ and the _context_ of the app generating the event.
 
 Be sure to check out the documentation for your specific [action type](/reference/action-types/) to see if templating is supported.
 
@@ -22,7 +22,7 @@ These values would be accessed in your [actions](/reference/actions/) fields by 
 
 ## Context
 
-In addition to the values captured from the end user, templates have access to all of the _related_ data. The [app](/reference/apps/) that was used, its [group](/reference/groups/), the [workspace](/reference/workspaces/) these are encapsulated in, etc. All of this values are stored and available to templates through the `context` object.
+In addition to the values supplied by the person using your app, templates have access to all of the event's _related_ data. The [app](/reference/apps/) that was used, its [group](/reference/groups/), the [workspace](/reference/workspaces/) these are encapsulated in, etc. All of these values are available to templates through the `context` object.
 
 ### Variables
 
@@ -70,6 +70,7 @@ All variables are accessed using the <span v-pre>`{{ variable }}`</span> syntax 
 | `context.app.created_at` | Datetime when app was created | 2020-06-04T11:53:25-07:00 |
 | `context.app.updated_at` | Datetime when app was last updated | 2020-06-04T12:32:54-07:00 |
 | `context.app.breadcrumbs` | Breadcrumbs of app | Office / First Floor / Kitchen / Coffee Machine |
+| `context.app.metadata.attributes` | [Attributes](/reference/apps#attributes) associated with the app | `context.app.metadata.attributes.myValue` |
 | `context.app.pattern.id` | ID of the app pattern | 8e2e5a9a-e8f0-4f83-839d-246d865c98cb |
 | `context.app.pattern.url` | URL of the app pattern | https://web.routegy.com/workspaces/4e96d27a-7624-45ef-8411-a2ef8f27cc29/patterns/8e2e5a9a-e8f0-4f83-839d-246d865c98cb |
 | `context.app.pattern.name` | Name of the app pattern | Coffee machine problem |
