@@ -28,7 +28,7 @@ module.exports = {
     subdomainLogo: '/images/routegy-docs-logo-light.svg',
     subdomainLogoAlt: 'Text image that says \'Docs\'',
     hostname: 'https://docs.routegy.com',
-    joinCta: 'Start today!',
+    joinCta: 'Build an app!',
     nav: [
       {
         text: 'API Docs',
@@ -126,6 +126,10 @@ module.exports = {
                   {
                     title: 'Email',
                     path: '/reference/action-types/email',
+                  },
+                  {
+                    title: 'Jira',
+                    path: '/reference/action-types/jira',
                   },
                   {
                     title: 'Slack',
