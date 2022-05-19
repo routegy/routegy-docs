@@ -224,14 +224,33 @@ options:
   width="75%"
 />
 
+### Item data types
+
+By default, values listed under `items` property have to be defined as strings. This can be overridden by using `dataType` property that can be set to one of the following primitive types: `string`, `integer`, `boolean`.
+
+Below is an example pattern with radio buttons mapped to some integer values.
+
+```yaml
+options:
+  type: radios
+  dataType: integer
+  label: Select a number
+  items:
+    - 1
+    - 2
+    - 3
+```
+
+
 ### Custom labels
 
-Labels for individual radio buttons can be customized by turning items of the `items` property into objects with `value` and `label` properties. Below is an example of a pattern with two radio boxes mapped to `true` and `false` values that are labeled as Yes and No respectively.
+Labels for individual radio buttons can be customized by turning items of the `items` property into objects with `value` and `label` properties. This can be combined with a custom `dataType` to map non-string values to text labels. Below is an example of a pattern with two radio boxes mapped to `true` and `false` boolean values that are labeled as Yes and No respectively.
 
 ```yaml
 options:
   type: radios
   label: What is your answer?
+  dataType: boolean
   items:
     - value: true
       label: Yes
@@ -252,12 +271,11 @@ To render a dropdown select input, set the element's type to `dropdown` and defi
 ```yaml
 options:
   type: dropdown
+  label: Choose one of the following
   items:
     - Option 1
     - Option 2
     - Option 3
-  type: string
-  label: Choose one of the following
 ```
 
 <CaptionedImage
@@ -266,6 +284,22 @@ options:
   width="75%"
 />
 
+### Item data types
+
+By default, values listed under `items` property have to be defined as strings. This can be overridden by using `dataType` property that can be set to one of the following primitive types: `string`, `integer`, `boolean`.
+
+Below is an example pattern with a dropdown list of integer values.
+
+```yaml
+options:
+  type: dropdown
+  dataType: integer
+  label: Choose one of the following
+  items:
+    - 1
+    - 2
+    - 3
+```
 
 ## Single checkbox
 
@@ -303,6 +337,30 @@ checkboxes:
   alt="A form containing a list of checkbox fields generated from a Routegy pattern"
   width="75%"
 />
+
+### Item data types
+
+By default, values listed under `items` property have to be defined as strings. This can be overridden by using `dataType` property that can be set to one of the following primitive types: `string`, `integer`, `boolean`.
+
+### Custom labels
+
+Labels for individual checkboxes can be customized by turning items of the `items` property into objects with `value` and `label` properties. This can be combined with a custom `dataType` to map non-string values to text labels.
+
+Below is an example pattern with checkboxes that represent integer values labeled with number names. The resulting pattern data will be an array of integers, E.g. `[10, 10000]`.
+
+```yaml
+numbers:
+  type: checkboxes
+  dataType: integer
+  label: Choose one or more
+  items:
+    - value: 100
+      label: One hundred
+    - value: 1000
+      label: One thousand
+    - value: 10000
+      label: Then thousands
+```
 
 ## Tag input
 
