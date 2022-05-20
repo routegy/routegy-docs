@@ -7,7 +7,7 @@ description: "What is a Routegy action?"
 
 An action is a task that is run for every [event](/reference/events/) created by an [app](/reference/apps/).
 
-An action joins a [action type](/reference/action-types/) with [app data](/reference/app-data/). For example, "Send SMS" would be the action type and "+1-123-123-1234" would be the phone number in the app data.
+An action joins an [action type](/reference/action-types/) with [app data](/reference/app-data/). For example, "Send SMS" would be the action type and "+1-123-123-1234" would be the phone number in the app data.
 
 Some examples of actions could be:
 
