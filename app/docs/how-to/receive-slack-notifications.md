@@ -7,8 +7,6 @@ description: "How do I receive Slack notifications?"
 
 This how-to covers how to make use of the [Slack Webhook Action Type](/reference/action-types/slack-webhook/) to receive slack message notifications when someone interacts with one of your apps.
 
-Slack actions are used with a wide variety of [apps](/reference/apps/). These can require near immediate attention, a slower asynchronous approach, or even provide an easy-to-browse archive of all interactions.
-
 ## Create the action
 
 Follow the steps below to create an [action](/reference/actions/) for sending email notifications.
