@@ -5,11 +5,11 @@ description: "How do I create Trello cards?"
 
 # Create Trello cards
 
-This document describes how to make use of the [Trello](/reference/action-types/trello/) action to create cards when someone interacts with your apps.
+This how-to covers how to make use of the [Trello](/reference/action-types/trello/) action to create cards when someone interacts with your apps.
 
 If you don't have a Trello account, you can create one [here](https://trello.com/signup).
 
-[Routegy](https://routegy.com) + [Trello](https://trello.com) is an extremely powerful combination and is being used by people around the world to manage supply requests, purchase orders, and curbside pickups. Trello can be customized in near infinite ways to fit your exact needs.
+[Routegy](https://routegy.com) + [Trello](https://trello.com) is especially useful for managing supply requests, purchase orders, and curbside pickups.
 
 ## Create the action
 
