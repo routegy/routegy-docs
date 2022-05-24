@@ -7,7 +7,7 @@ description: "How do I receive webhook requests?"
 
 This how-to covers how to make use of the [Webhook Action Type](/reference/action-types/webhook/) to receive HTTP requests with JSON data when someone interacts with one of your apps.
 
-Webhook actions are extremely powerful as they can be integrated with any existing system that can receive HTTP requests.
+Webhook actions are extremely powerful as they can be integrated with any existing system that receives HTTP requests.
 
 ## Create the action
 
