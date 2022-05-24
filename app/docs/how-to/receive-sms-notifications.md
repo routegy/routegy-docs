@@ -7,8 +7,6 @@ description: "How do I receive SMS notifications?"
 
 This how-to covers how to make use of the [SMS Action Type](/reference/action-types/sms/) to receive text message notifications when someone interacts with one of your apps.
 
-SMS actions are commonly used with high priority [apps](/reference/apps/) that require immediate attention or staff members that are constantly on the go.
-
 ## Create the action
 
 Follow the steps below to create an [action](/reference/actions/) for sending SMS notifications.
@@ -46,7 +44,7 @@ From the action creation model, select **SMS** from the _Action type_ dropdown l
 
 ### Step 4: Configure the action
 
-Enter a _name_, _description_ (optional) and desired phone number. You can also customize a text _Message_ format by providing your own [Jinja2 template](https://jinja.palletsprojects.com/en/3.0.x/) that follows [Routegy templating guide](/reference/templating). _Phone Number_ can be set to a static value (e.g. 555-555-5555) or to any variable available in the [templating context](/reference/templating.html#values). For instance, if your app pattern includes an element named `phone_number` nested in a fieldset named `contact_info`, you can just enter `contact_info.phone_number`, and Routegy will send a text message to a phone number collected by your app from a user.
+Enter a _name_, _description_ (optional) and desired phone number. You can also customize a text _Message_ format by providing your own [Jinja2 template](https://jinja.palletsprojects.com/en/3.0.x/) that follows the [Routegy templating guide](/reference/templating). _Phone Number_ can be set to a static value (e.g. 555-555-5555) or to any variable available in the [templating context](/reference/templating.html#values). For instance, if your app pattern includes an element named `phone_number` nested in a fieldset named `contact_info`, you can just enter `contact_info.phone_number`, and Routegy will send a text message to a phone number collected by your app from a user.
 
 
 ::: tip
