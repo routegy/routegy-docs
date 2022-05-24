@@ -9,7 +9,7 @@ The Zapier REST hook action type allows you to easily trigger Zaps from your Rou
 
 ## Creating a Zapier action
 
-1. Go to Zapier and [enable the Routegy integration on your account]https://zapier.com/developer/public-invite/98082/ae11ff8968057d402d4c3e419c79c105/).
+1. Go to Zapier and [enable the Routegy integration on your account](https://zapier.com/developer/public-invite/98082/ae11ff8968057d402d4c3e419c79c105/).
 
 2. Create a new Zap using the Routegy integration.
 
