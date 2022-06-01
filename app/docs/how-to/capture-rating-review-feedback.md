@@ -37,6 +37,7 @@ recommend:
   type: radiobuttons
   label: Would you recommend this product to anyone?
   required: true
+  dataType: boolean
   items:
     - value: true
       label: Yes
