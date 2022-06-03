@@ -31,7 +31,7 @@ You don't have to use groups, but they're always there if the need for more orga
 
 ## Patterns define the information your apps collect
 
-Every app has a pattern. [Patterns](/reference/patterns/) control the UX and defines the information to collect for each interaction with an app. Patterns are reusable across multiple apps, allowing for easy scaling and maintenance. For example, you may have a pattern for "New Employee Orientation" and then automatically create a personalized app from that pattern for every new employee.
+Every app has a pattern. [Patterns](/reference/patterns/) control the UX and define the information to collect for each interaction with an app. Patterns are reusable across multiple apps, allowing for easy scaling and maintenance. For example, you may have a pattern for "New Employee Orientation" and then automatically create a personalized app from that pattern for every new employee.
 
 Patterns are written in YAML and can be used to capture any information you like.
 
