@@ -777,7 +777,8 @@ appSettings:
   colors:
     header: "#2e1046"
     headerText: "#eff0eb"
-    footer: "#eff0eb"
+    footer: "#2e1046"
+    footerText: "#eff0eb"
     white: "#2e1046"
     black: "#eff0eb"
   successMessage: Thanks for the report!
@@ -812,6 +813,7 @@ appSettings:
     headerText: '#00fab3'
     black: black
     footer: black
+    footerText: white
     grey: grey
     primary: '#007252'
     lightGrey: lightgrey
@@ -859,6 +861,7 @@ Below is a list of customizable colors along with their default values. When ove
 | header | App header background color | <div class="colorBlock" style="background-color:#2e1046"/> |
 | headerText | App header text color used for app name and description text displayed in the app header |<div class="colorBlock" style="background-color:#eff0eb"/>|
 | footer | App footer background color | <div class="colorBlock" style="background-color:#2e1046"/> |
+| footerText | App footer text color used for text displayed in the app footer |<div class="colorBlock" style="background-color:#2e1046"/>|
 | white | Background color for contents of an app rendered between the header and the footer | <div class="colorBlock" style="background-color:#eff0eb"/> |
 | black | Color used for static text like labels as well as text entered into input elements | <div class="colorBlock" style="background-color:#2e1046"/> |
 | grey | Secondary color used for visual elements like outlines of checkboxes and radio buttons | <div class="colorBlock" style="background-color:#ac6dde"/> |
