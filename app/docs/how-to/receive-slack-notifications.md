@@ -7,9 +7,20 @@ description: "How do I receive Slack notifications?"
 
 This how-to covers how to make use of the [Slack Webhook Action Type](/reference/action-types/slack-webhook/) to receive slack message notifications when someone interacts with one of your apps.
 
+
+## Enable incoming webhooks in your Slack workspace
+
+First, create an incoming webhook for your slack workspace as outlined in [this official guide](https://api.slack.com/messaging/webhooks). Once your webhook is created, copy and save its URL - you will need it in the next step.
+
+<CaptionedImage
+  src="/images/how-tos/slack-copy-webhook-url.png"
+  alt="Slack incoming webhooks configurations page"
+  width="70%"
+/>
+
 ## Create the action
 
-Follow the steps below to create an [action](/reference/actions/) for sending email notifications.
+Second, follow the steps below to create an [action](/reference/actions/) for sending Slack messages using the webbhook that you created above.
 
 ### Step 1: Choose a workspace
 
@@ -33,31 +44,27 @@ Select the **Actions** tab within the workspace view and press the **+ New Actio
 
 ### Step 3: Select the Slack action type
 
-From the action creation model, select **Slack** from the _Action type_ dropdown list.
+In the action creation dialog, select **Slack Webhook** from the _Action type_ dropdown list.
 
 <CaptionedImage
-  src="/images/modals/personal-office-coffee-machine-edit-app-actions-slack.png"
+  src="/images/modals/office-create-action-slack.png"
   alt="An expanded dropdown containing a list of available action types with 'Slack' highlighted in the Routegy admin app"
   width="70%"
 />
 
 ### Step 4: Configure the action
 
-Enter the URL for your Slack Outgoing Webhook you wish to use, and click on **+ Create action** to complete the process.
-
-::: tip
-Create or view your Slack webhook integrations [here](https://slack.com/apps/A0F7VRG6Q-outgoing-webhooks).
-:::
+Enter the URL of the Slack Incoming Webhook that your created earlier. Optionally, you can also customize the body and footer of a Slack message. Both _Body_ and _Footer_ fields support [Routegy templating](/reference/templating) that is based on [Jinja2](https://jinja.palletsprojects.com/en/3.0.x/). When all fields are configured, click on **+ Create action** to complete the process.
 
 <CaptionedImage
-  src="/images/modals/personal-office-coffee-machine-edit-app-actions-slack-save.png"
+  src="/images/modals/office-create-action-slack-filled.png"
   alt="The completed Slack action in the 'New action' dialog with the 'Create action' button highlighted in the Routegy admin app"
   width="70%"
 />
 
 ## Attach the action to an app
 
-Follow the steps below to attach the Webhook action created above to one or more [apps](/reference/apps/).
+Finally, follow the steps below to attach the Slack Webhook action created above to one or more [apps](/reference/apps/).
 
 ### Step 1: Choose an app
 
