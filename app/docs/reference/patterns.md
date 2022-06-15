@@ -864,9 +864,9 @@ Below is a list of customizable colors along with their default values. When ove
 | footerText | App footer text color used for text displayed in the app footer |<div class="colorBlock" style="background-color:#2e1046"/>|
 | white | Background color for contents of an app rendered between the header and the footer | <div class="colorBlock" style="background-color:#eff0eb"/> |
 | black | Color used for static text like labels as well as text entered into input elements | <div class="colorBlock" style="background-color:#2e1046"/> |
-| grey | Secondary color used for visual elements like outlines of checkboxes and radio buttons | <div class="colorBlock" style="background-color:#ac6dde"/> |
+| grey | Secondary color used for outlines of checkboxes and radio buttons and fill color for inactive wizard steps and wizard "back" buttons | <div class="colorBlock" style="background-color:#ac6dde"/> |
 | lightGrey | Secondary color used for borders of various input elements when they are not active (not focused) | <div class="colorBlock" style="background-color:#e2cdf3"/> |
-| primary | Color used for borders of active (focused) input elements, hover color for radio and checkbox labels, and fill color for radios, checkboxes, and dropdown arrows | <div class="colorBlock" style="background-color:#d410c5"/> |
+| primary | Color used for borders of active (focused) input elements, hover color for radio and checkbox labels, and fill color for radios, checkboxes, dropdown arrows, and active/complete wizard steps | <div class="colorBlock" style="background-color:#d410c5"/> |
 | buttonText | Text color for buttons | <div class="colorBlock" style="background-color:white"/> |
 | success | Background color for elements associated with success actions and notifications (E.g. application submit button) | <div class="colorBlock" style="background-color:#1cd748"/> |
 | warning | Background color for elements associated with warning notifications | <div class="colorBlock" style="background-color:#ffe08a"/> |
