@@ -10,9 +10,9 @@ The SMS action type is used to send text messages to a configured phone number f
 You can customize the message of the SMS with [Routegy templating](/reference/templating).
 
 
-## Sending messages to dynamic addresses
+## Sending messages to dynamic phone numbers
 
-It's possible to use a value collected by an app's pattern. To do so, create an SMS action as normal, but in the *Phone number* field place a reference to the value using the syntax <span v-pre>`{{ valueName }}`</span>. For example, if you have a [multi-page wizard](/reference/patterns#multipage-patterns) with a page named `step1` and an input called `customerPhone`, you can send an SMS to the collected address using <span v-pre>`{{ step1.customerPhone }}`</span> in the *Phone number* field.
+It's possible to use a value collected by an app's pattern as phone number. To do so, create an SMS action as normal, but in the *Phone number* field place a reference to the value using the syntax <span v-pre>`{{ valueName }}`</span>. For example, if you have a [multi-page wizard](/reference/patterns#multipage-patterns) with a page named `step1` and an input called `customerPhone`, you can send an SMS to the collected address using <span v-pre>`{{ step1.customerPhone }}`</span> in the *Phone number* field.
 
 ## Guides
 

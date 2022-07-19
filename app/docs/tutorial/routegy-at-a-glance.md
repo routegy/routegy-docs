@@ -7,15 +7,15 @@ description: "How do I use Routegy?"
 
 Routegy makes building no-code microapps quick and easy. Routegy microapps empower people to interact with your infrastructure and physical spaces in streamlined ways. Here’s a high-level overview of how Routegy works.
 
-## People interact with apps
-
-[Routegy apps](/reference/apps/) open in a web browser and represent common points of interaction, accomplish specific tasks that may span multiple parts of your infrastructure, and contain context to further optimize your processes. Common interactions include reporting issues, making requests, starting chat conversations, providing feedback, and even making purchases.
-
 <CaptionedImage
-  src="/images/patterns/examples/custom-app-settings.png"
+  src="/images/tutorials/at-a-glance/example-app.png"
   alt="A Routegy app with custom branding that captures conference room requests"
   width="50%"
 />
+
+## People interact with apps
+
+[Routegy apps](/reference/apps/) open in a web browser and represent common points of interaction, accomplish specific tasks that may span multiple parts of your infrastructure, and contain context to further optimize your processes. Common interactions include reporting issues, making requests, starting chat conversations, providing feedback, and even making purchases.
 
 ## Groups organize your apps
 
@@ -31,7 +31,7 @@ You don't have to use groups, but they're always there if the need for more orga
 
 ## Patterns define the information your apps collect
 
-Every app has a pattern. [Patterns](/reference/patterns/) control the UX and defines the information to collect for each interaction with an app. Patterns are reusable across multiple apps, allowing for easy scaling and maintenance. For example, you may have a pattern for "New Employee Orientation" and then automatically create a personalized app from that pattern for every new employee.
+Every app has a pattern. [Patterns](/reference/patterns/) control the UX and define the information to collect for each interaction with an app. Patterns are reusable across multiple apps, allowing for easy scaling and maintenance. For example, you may have a pattern for "New Employee Orientation" and then automatically create a personalized app from that pattern for every new employee.
 
 Patterns are written in YAML and can be used to capture any information you like.
 

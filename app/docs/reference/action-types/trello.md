@@ -7,9 +7,8 @@ description: "How do Trello action types work?"
 
 The Trello action type is used to create cards in a configured board/list for every [event](/reference/events/) created by an [app](/reference/apps/).
 
-::: tip
-Trello cards can be configured using [templating](/reference/templating/).
-:::
+
+Configuration options include Trello API key token, the ID of the Trello list where the new card will be create, and a card name and description for the new card. Both name and description support [Routegy templating](/reference/templating).
 
 ## Guides
 
